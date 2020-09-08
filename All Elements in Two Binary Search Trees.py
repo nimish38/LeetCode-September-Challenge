@@ -7,7 +7,7 @@
 class Solution:
     def getAllElements(self, root1: int, root2: int) -> List[int]:
     
-        # inorder traversal of BTree, which returns sorted list
+        # inorder traversal of BTree, which return sorted list
         def inorder(root, lst):
             if not root: return
             inorder(root.left, lst)
