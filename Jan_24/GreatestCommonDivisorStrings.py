@@ -1,11 +1,12 @@
+import math
 class Solution:
-    def gcd(self, a, b):
-        if a == b:
-            return a
-        if a > b:
-            return self.gcd(a - b, b)
-        else:
-            return self.gcd(a, b - a)
+    # def gcd(self, a, b):
+    #     if a == b:
+    #         return a
+    #     if a > b:
+    #         return self.gcd(a - b, b)
+    #     else:
+    #         return self.gcd(a, b - a)
 
     def gcdOfStrings(self, str1: str, str2: str) -> str:
         # if str1 == str2:
@@ -30,7 +31,7 @@ class Solution:
         #         Optimal Solution
         if str1 + str2 != str2 + str1:
             return ""
-        gcdNum = self.gcd(len(str1), len(str2))
+        gcdNum = math.gcd(len(str1), len(str2))
         return str1[:gcdNum]
 
 
