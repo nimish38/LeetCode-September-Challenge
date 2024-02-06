@@ -1,9 +1,12 @@
 class Solution:
     def canPlaceFlowers(self, flowerbed, n):
-
-        if flowerbed[0]==0 and flowerbed[1] == 0:
-            flowerbed[0] = 1
-            n -= 1
+        if len(flowerbed) > 1:
+            if flowerbed[0] == 0 and flowerbed[1] == 0:
+                flowerbed[0] = 1
+                n -= 1
+        else:
+            if not flowerbed[0]:
+                n -= 1
 
         i = 2
         while i < len(flowerbed) - 2 and n > 0:
@@ -15,9 +18,9 @@ class Solution:
         if flowerbed[len(flowerbed) - 1] == 0 and flowerbed[len(flowerbed) - 2] == 0:
             n -= 1
 
-        if n:
+        if n > 0:
             return False
         return True
 
 a= Solution()
-print(a.canPlaceFlowers([0,0,1,0,1], 1))
+print(a.canPlaceFlowers([0], 1))
