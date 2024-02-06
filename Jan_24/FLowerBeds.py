@@ -13,6 +13,7 @@ class Solution:
             if flowerbed[i] == 0 and flowerbed[i-1] == 0 and flowerbed[i+1] == 0:
                 flowerbed[i] = 1
                 n -= 1
+                i += 1
             i += 1
 
         if flowerbed[len(flowerbed) - 1] == 0 and flowerbed[len(flowerbed) - 2] == 0:
