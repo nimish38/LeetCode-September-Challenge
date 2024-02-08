@@ -1,5 +1,7 @@
 class Solution:
     def productExceptSelf(self, nums):
+        if nums.count(0) > 1:
+            return [0]*len(nums)
         prefixProd, suffixProd = 1, 1
         res = [1]*len(nums)
         for i in range(1, len(nums)):
