@@ -1,20 +1,12 @@
 class Solution:
     def productExceptSelf(self, nums):
-        prefixProd = [1]*len(nums)
-        suffixProd = [1]*len(nums)
-        res = []
-        cnt = 1
-        sf = 1
+        prefixProd, suffixProd = 1, 1
+        res = [1]*len(nums)
         for i in range(1, len(nums)):
-            cnt *= nums[i-1]
-            prefixProd[i] = cnt
-
-            sf *= nums[len(nums) - i]
-            suffixProd[len(nums) - i - 1] = sf
-
-        for i in range(len(nums)):
-            res.append(prefixProd[i] * suffixProd[i])
-
+            prefixProd *= nums[i-1]
+            res[i] *= prefixProd
+            suffixProd *= nums[len(nums) - i]
+            res[len(nums) - i - 1] *= suffixProd
         return res
 
 a= Solution()
