@@ -1,13 +1,12 @@
 class Solution:
     def increasingTriplet(self, nums):
-        minOne = float('inf')
-        minTwo = float("Inf")
+        minOne = minTwo = float("Inf")
         for num in nums:
-            if num < minOne:
+            if num <= minOne:
                 minOne = num
-            elif num > minOne and num < minTwo:
+            elif num <= minTwo:
                 minTwo = num
-            elif num > minTwo:
+            else:
                 return True
         return False
 
