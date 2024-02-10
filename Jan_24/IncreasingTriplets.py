@@ -1,16 +1,16 @@
 class Solution:
     def increasingTriplet(self, nums):
-        prevIncreasing = False
-        for i in range(len(nums) - 2):
-            lastIncrement = float('inf')
-            for j in range(i + 1, len(nums)):
-                if nums[j] > nums[i]:
-                    if prevIncreasing and nums[j] > lastIncrement:
-                        return True
-                    prevIncreasing = True
-                    lastIncrement = min(lastIncrement, nums[j])
+        minOne = float('inf')
+        minTwo = float("Inf")
+        for num in nums:
+            if num < minOne:
+                minOne = num
+            elif num > minOne and num < minTwo:
+                minTwo = num
+            elif num > minTwo:
+                return True
         return False
 
 
 a = Solution()
-print(a.increasingTriplet([1,5,0,4,1,3]))
+print(a.increasingTriplet([0,4,2,1,0,-1,-3]))
