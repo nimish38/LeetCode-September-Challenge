@@ -3,15 +3,18 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        temp, cnt = [], 0
-        for num in nums:
-            if num != 0:
-                temp.append(num)
+        zero, i = [], 0
+        while i < len(nums):
+            if nums[i] == 0:
+                zero.append(i)
             else:
-                cnt += 1
-        nums = temp.copy()
-        nums.extend([0]*cnt)
+                if len(zero) > 0:
+                    nums[zero[0]] = nums[i]
+                    del zero[0]
+                    nums[i] = 0
+                    zero.append(i)
+            i += 1
         print(nums)
 
 a = Solution()
-a.moveZeroes([0,1,0,3,12])
+a.moveZeroes([0])
