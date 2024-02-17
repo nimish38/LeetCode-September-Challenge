@@ -1,20 +1,11 @@
 class Solution:
-    def countVowels(self, str, vowels):
-        cnt = 0
-        for char in str:
-            if char in vowels:
-                cnt += 1
-        return cnt
-
     def maxVowels(self, s: str, k: int) -> int:
         vowels = 'aeiou'
-        curVow, maxVow = self.countVowels(s[:k], vowels), 0
-        for i in range(1, len(s) - k + 1):
-            if s[i - 1] in vowels:
-                curVow -= 1
-            if s[i + k - 1] in vowels:
-                curVow += 1
-            maxVow = max(curVow, maxVow)
-        return maxVow
+        cur_v = max_v = sum([1 for x in s[:k] if x in vowels])
+        for i in range(0, len(s) - k):
+            cur_v += (s[i + k] in vowels) - (s[i] in vowels)
+            if cur_v > max_v:
+                max_v = cur_v
+        return max_v
 
-print(Solution().maxVowels("leetcode", 3))
+print(Solution().maxVowels("ibpbhixfiouhdljnjfflpapptrxgcomvnb", 33))
