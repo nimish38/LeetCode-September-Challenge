@@ -3,11 +3,16 @@ class Solution:
         if len(nums) == 1:
             return 0
 
-        start, end, maxOnes = 0, 0, 0
+        start, end, zeros = 0, 0, 0
         for end in range(len(nums)):
-            maxOnes = max(end - start + 1, maxOnes)
             if not nums[end]:
-                start += 1
-        return maxOnes - 1
+                zeros += 1
 
-print(Solution().longestSubarray([1,0,0,1,1,0,1,1,1]))
+            if zeros > 1:
+                if nums[start] == 0:
+                    zeros -= 1
+                start += 1
+
+        return end - start
+
+print(Solution().longestSubarray([1,1,1]))
