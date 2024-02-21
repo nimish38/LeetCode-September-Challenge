@@ -1,14 +1,8 @@
 from collections import Counter
 class Solution:
     def closeStrings(self, word1, word2):
-        cnt1, cnt2 = Counter(word1), Counter(word2)
-        if cnt1.keys() == cnt2.keys():
-            cnt1 = list(cnt1.values())
-            cnt2 = list(cnt2.values())
-            if len(cnt1) == len(cnt2):
-                cnt1.sort()
-                cnt2.sort()
-                return cnt1 == cnt2
+        if set(word1) == set(word2) and Counter(Counter(word1).values()) == Counter(Counter(word2).values()):
+            return True
         return False
 
-print(Solution().closeStrings('sabbba', 'abbccc'))
+print(Solution().closeStrings('abc', 'acb'))
