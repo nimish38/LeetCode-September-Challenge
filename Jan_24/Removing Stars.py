@@ -1,11 +1,14 @@
 class Solution:
     def removeStars(self, s: str) -> str:
-        new_str = ''
-        for char in s:
-            if char == '*':
-                new_str = new_str[:-1]
+        s = list(s)
+        ptr = 0
+        for i in range(len(s)):
+            if s[i] == '*':
+                ptr -= 1
             else:
-                new_str += char
-        return new_str
+                s[ptr] = s[i]
+                ptr += 1
+        s = ''.join(s)
+        return s[:ptr]
 
-print(Solution().removeStars("leet**cod*e"))
+print(Solution().removeStars("erase*****"))
