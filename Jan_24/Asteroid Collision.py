@@ -1,21 +1,43 @@
 class Solution:
     def asteroidCollision(self, asteroids):
-        stack, top = [asteroids[0]], 0
-        for i in range(1, len(asteroids)):
-            if asteroids[i] > 0:
-                stack.append(asteroids[i])
+        stack, top = [], -1
+        for ast in asteroids:
+            if top is -1:
+                stack.append(ast)
                 top += 1
             else:
-                while top >= 0 and stack[top] < abs(asteroids[i]):
-                    stack.pop()
-                    top -= 1
-                if stack[top] == abs(asteroids[i]):
-                    stack.pop()
-                    top -= 1
-                    continue
-                if top == -1:
-                    stack.append(asteroids[i])
-                    top+= 1
+                if ast < 0:
+                    if stack[top] < 0:
+                        stack.append(ast)
+                        top += 1
+                    else:
+                        while top >= 0 and stack[top] < abs(ast):
+                            stack.pop()
+                            top -= 1
+
+                        if top is -1:
+                            stack.append(ast)
+                            top += 1
+                        else:
+                            if stack[top] == abs(ast):
+                                stack.pop()
+                                top -= 1
+                else:
+                    if stack[top] > 0:
+                        stack.append(ast)
+                        top += 1
+                    else:
+                        while top >= 0 and abs(stack[top]) < ast:
+                            stack.pop()
+                            top -= 1
+
+                        if top is -1:
+                            stack.append(ast)
+                            top += 1
+                        else:
+                            if abs(stack[top]) == ast:
+                                stack.pop()
+                                top -= 1
         return stack
 
-print(Solution().asteroidCollision([10,2,-5]))
+print(Solution().asteroidCollision([-2,-1,1,2]))
