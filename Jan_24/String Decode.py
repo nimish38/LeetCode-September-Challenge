@@ -2,18 +2,18 @@ class Solution:
     def decodeString(self, s: str) -> str:
         res, stack = '', []
         for char in s:
-            if char is ']':
+            if char != ']':
+                stack.append(char)
+            else:
                 curr = ''
                 while stack[-1] != '[':
                     curr = stack.pop() + curr
                 # pop opening bracket
                 stack.pop()
                 num = ''
-                while stack and stack[-1].isnumeric():
+                while stack and stack[-1].isdigit():
                     num = stack.pop() + num
                 stack.append(curr * int(num))
-            else:
-                stack.append(char)
 
         return ''.join(stack)
 
