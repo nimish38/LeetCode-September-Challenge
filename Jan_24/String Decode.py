@@ -11,13 +11,10 @@ class Solution:
                 num = ''
                 while stack and stack[-1].isnumeric():
                     num = stack.pop() + num
-                num = int(num)
-                stack.append(curr * num)
+                stack.append(curr * int(num))
             else:
                 stack.append(char)
 
-        while stack:
-            res = stack.pop() + res
-        return res
+        return ''.join(stack)
 
 print(Solution().decodeString('2[abc]3[cd]ef'))
