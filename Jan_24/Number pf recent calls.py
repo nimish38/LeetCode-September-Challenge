@@ -2,17 +2,17 @@ class RecentCounter:
 
     def __init__(self):
         self.req = []
+        self.front, self.back = 0, -1
 
     def ping(self, t: int) -> int:
-        cnt = 1
-        for i in range(len(self.req) - 1, -1, -1):
-            print(t - self.req[i])
-            if t - self.req[i] <= 3000:
-                cnt += 1
-            else:
-                break
+        self.back += 1
         self.req.append(t)
-        return cnt
+
+        while self.front <= self.back and self.req[self.back] - self.req[self.front] > 3000:
+            self.front += 1
+
+        return self.back - self.front + 1
+
 
 # Your RecentCounter object will be instantiated and called as such:
 obj = RecentCounter()
