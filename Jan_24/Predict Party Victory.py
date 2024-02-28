@@ -1,25 +1,22 @@
+from collections import deque
 class Solution:
-    def removeCyclic(self, arr, delete, i):
-        for _ in range(len(arr) + 1):
-            if arr[i] == delete:
-                del arr[i]
-                return
-            i = (i+1) % len(arr)
-
     def predictPartyVictory(self, senate: str) -> str:
-        senate, i = list(senate), 0
-        while len(set(senate)) == 2:
+        senate= list(senate)
+        dire, rad = deque(), deque()
+
+        for i in range(len(senate)):
             if senate[i] == 'R':
-                self.removeCyclic(senate,'D', i)
+                rad.append(i)
             else:
-                self.removeCyclic(senate, 'R', i)
-            if i + 1 >= len(senate):
-                i = 0
+                dire.append(i)
+
+        while rad and dire:
+            radIndx, dirIndx = rad.popleft(), dire.popleft()
+            if radIndx < dirIndx:
+                rad.append(radIndx+len(senate))
             else:
-                i += 1
+                dire.append(dirIndx+len(senate))
 
-        if set(senate).pop() == 'R':
-            return 'Radiant'
-        return 'Dire'
+        return "Radiant" if rad else "Dire"
 
-print(Solution().predictPartyVictory('DRRD'))
+print(Solution().predictPartyVictory('RDD'))
