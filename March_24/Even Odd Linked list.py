@@ -24,30 +24,20 @@ class LinkedList:
 
 class Solution:
     def oddEvenList(self, head):
-        odd = head
-        if odd and odd.next:
-            even = evenHead = odd.next
-            first, second = None, None
-            if even and even.next:
-                first = even.next
-            if first:
-                second = first.next
+        if not head: return None
+        odd = oddHead = head
+        evenHead = even = head.next
 
-            while first:
-                odd.next = first
-                even.next = second
-                first.next = evenHead
+        while odd.next and even.next:
+            # Connect the current odd node to the next odd node
+            odd.next = odd.next.next
+            # Move the current odd node to the next odd node
+            odd = odd.next
+            even.next = even.next.next
+            even = even.next
 
-                if second:
-                    odd = first
-                    even = second
-                    first = second.next
-                    if first:
-                        second = first.next
-                else:
-                    break
-
-        return head
+        odd.next = evenHead
+        return oddHead
 
 Llist = LinkedList()
 for i in [2,1,3,5,6,4,7]:
