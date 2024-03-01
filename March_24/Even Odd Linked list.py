@@ -24,24 +24,28 @@ class LinkedList:
 
 class Solution:
     def oddEvenList(self, head):
-        odd, even = head, head.next
+        odd, even, evenHead = head, head.next, head.next
         first, second = even.next, even.next.next
 
         while first:
             odd.next = first
             even.next = second
-            first.next = even
+            first.next = evenHead
 
             if second:
                 odd = first
                 even = second
                 first = second.next
-                second = first.next
+                if first:
+                    second = first.next
+            else:
+                break
 
         return head
 
 Llist = LinkedList()
-for i in range(1, 6):
+for i in [2,1,3,5,6,4,7]:
     Llist.inserAtEnd(i)
 head = Llist.returnHead()
 Solution().oddEvenList(head)
+print(head)
