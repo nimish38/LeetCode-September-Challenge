@@ -24,18 +24,18 @@ class LinkedList:
 
 class Solution:
     def reverseList(self, head):
-        if not head: return None
+        if not head or not head.next: return head
+        prev, curr, post = None, head, head.next
 
-        val, cn = [], head
-        while cn:
-            val.append(cn.val)
-            cn = cn.next
+        while post:
+            curr.next = prev
+            prev = curr
+            curr = post
+            post = post.next
 
-        cn = head
-        while cn:
-            cn.val = val.pop()
-            cn = cn.next
-        return head
+        curr.next = prev
+        return curr
+
 
 
 Llist = LinkedList()
