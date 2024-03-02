@@ -25,16 +25,16 @@ class LinkedList:
 class Solution:
     def reverseList(self, head):
         if not head or not head.next: return head
-        prev, curr, post = None, head, head.next
+        prev, post = None, head.next
 
         while post:
-            curr.next = prev
-            prev = curr
-            curr = post
+            head.next = prev
+            prev = head
+            head = post
             post = post.next
 
-        curr.next = prev
-        return curr
+        head.next = prev
+        return head
 
 
 
