@@ -23,16 +23,30 @@ class LinkedList:
 
 class Solution:
     def TwinSumLinkedList(self, head):
-        nums = []
-        while head:
-            nums.append(head.val)
-            head = head.next
+        slow, fast = head, head.next
+        while fast.next:
+            slow = slow.next
+            fast = fast.next.next
 
-        maxsum, n = -1, len(nums)
-        for i in range(n//2):
-            if nums[i] + nums[n - 1 - i] > maxsum:
-                maxsum = nums[i] + nums[n - 1 -i]
+        fast = slow.next
+        slow.next = None
+        last = None
+
+        while fast:
+            temp = fast.next
+            fast.next = last
+            last = fast
+            fast = temp
+
+        maxsum = -1
+        while head and last:
+            if head.val + last.val > maxsum:
+                maxsum = head.val + last.val
+            head = head.next
+            last = last.next
         return maxsum
+
+
 
 Llist = LinkedList()
 for i in [2,11,3,5,6,8]:
