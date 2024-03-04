@@ -1,14 +1,17 @@
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
 class Solution:
-    def recursiveDepth(self, node):
-        if not node:
-            return 0
-        return 1 + max(self.recursiveDepth(node.left), self.recursiveDepth(node.right))
-
     def maxDepth(self, root):
-        return self.recursiveDepth(root)
+        if not root: return 0
+        cnt, levels, kids = 1, [root], []
+        while levels:
+            node = levels.pop(0)
+            if node.left:
+                kids.append(node.left)
+            if node.right:
+                kids.append(node.right)
+            if len(levels) == 0:
+                levels = kids.copy()
+                kids.clear()
+                cnt += 1
+        return cnt
+
