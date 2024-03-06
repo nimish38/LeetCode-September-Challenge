@@ -1,15 +1,13 @@
 class Solution:
-    def findgood(self, node, lineage):
-        cnt = leftCnt = rightCnt = 0
-        if node.val >= lineage:
-            cnt = 1
-        if node.left:
-            leftCnt = self.findgood(node.left, max(lineage, node.val))
-        if node.right:
-            rightCnt = self.findgood(node.right, max(lineage, node.val))
-
-        return cnt + leftCnt + rightCnt
-
     def goodNodes(self, root):
-        val = float('-inf')
-        return self.findgood(root, val)
+        stack, cnt = [(root, float('-INF'))], 0
+        while stack:
+            node = stack.pop()
+            curr, lineage = node[0], node[1]
+            if curr.val >= lineage:
+                cnt += 1
+            if curr.right:
+                stack.append((curr.right, max(lineage, curr.val)))
+            if node[0].left:
+                stack.append((curr.left, max(lineage, curr.val)))
+        return cnt
