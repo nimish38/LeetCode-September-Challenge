@@ -6,23 +6,19 @@ class TreeNode:
 
 class Solution:
     def rightSideView(self, root):
-        if not root:
-            return []
-        res, queue = [], [root]
+        final = {}
+        queue = [(root, 0)]
         while queue:
-            n = len(queue)
-            for i in range(n):
-                item = queue.pop(0)
-                if i == n - 1:
-                    res.append(item.val)
-                if item.left:
-                    queue.append(item.left)
-                if item.right:
-                    queue.append(item.right)
-        return res
+            node, level = queue.pop(0)
+            final[level] = node.val
+            if node.left:
+                queue.append((node.left, level + 1))
+            if node.right:
+                queue.append((node.right, level + 1))
+
+        return final.values()
 
 a = TreeNode(1)
 a.left = TreeNode(2)
 a.right = TreeNode(3)
-a.left.left = TreeNode(4)
 print(Solution().rightSideView(a))
