@@ -15,11 +15,10 @@ class Solution:
             inorder_succ = self.findReplacement(root.right)
             if not inorder_succ:
                 if root.left:
-                    root.val = root.left.val
-                    del root.left
+                    root = root.left
                 else:
-                    return
+                    return None
             else:
                 root.val = inorder_succ.val
-                inorder_succ.right = self.deleteNode(root.right, inorder_succ.val)
+                root.right = self.deleteNode(root.right, inorder_succ.val)
         return root
