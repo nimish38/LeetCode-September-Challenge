@@ -1,11 +1,11 @@
 class Solution:
     def canVisitAllRooms(self, rooms):
-        visited, stack = [0], [0]
+        visited, stack = {0}, [0]
         while len(visited) < len(rooms) and stack:
             item = stack.pop()
-            for ele in rooms[item]:
+            for ele in set(rooms[item]) - visited:
                 if ele not in visited:
-                    visited.append(ele)
+                    visited.add(ele)
                     stack.append(ele)
 
         return len(visited) == len(rooms)
