@@ -12,6 +12,15 @@ class Solution:
                     que.append(j)
                     self.visited[j] = True
 
+    def dfs(self, node):
+        que = [node]
+        while que:
+            item = que.pop()
+            for j in range(self.n):
+                if item != j and self.graph[item][j] and not self.visited[j]:
+                    que.append(j)
+                    self.visited[j] = True
+
     def findCircleNum(self, isConnected):
         self.n, self.graph, cnt = len(isConnected), isConnected, 0
         self.visited = [False] * self.n
@@ -19,7 +28,7 @@ class Solution:
         for i in range(self.n):
             if not self.visited[i]:
                 self.visited[i] = True
-                self.bfs(i)
+                self.dfs(i)
                 cnt += 1
         return cnt
 
