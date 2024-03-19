@@ -1,24 +1,26 @@
 class Solution:
+    def __init__(self):
+        self.n = 0
+        self.graph = []
+
+    def bfs(self, node):
+        que = [node]
+        while que:
+            item = que.pop(0)
+            for j in range(self.n):
+                if item != j and self.graph[item][j] and not self.visited[j]:
+                    que.append(j)
+                    self.visited[j] = True
+
     def findCircleNum(self, isConnected):
-        visited, n = {}, len(isConnected)
+        self.n, self.graph, cnt = len(isConnected), isConnected, 0
+        self.visited = [False] * self.n
 
-        # forming adjacency matrix
-        for i in range(n):
-            visited[i] = set()
-            for j in range(n):
-                if i != j and isConnected[i][j] and j not in visited:
-                    visited[i].add(j)
+        for i in range(self.n):
+            if not self.visited[i]:
+                self.visited[i] = True
+                self.bfs(i)
+                cnt += 1
+        return cnt
 
-        # check transitive
-        i = 0
-        while i < len(visited):
-            j = 0
-            adj = list(visited[list(visited.keys())[i]])
-            while j < len(adj):
-                visited[i] = visited[i].union(visited[adj[j]])
-                del visited[adj[j]]
-                j += 1
-            i += 1
-        return len(visited)
-
-print(Solution().findCircleNum([[1,0,0,1],[0,1,1,0],[0,1,1,1],[1,0,1,1]]))
+print(Solution().findCircleNum([[1,1,0],[1,1,0],[0,0,1]]))
