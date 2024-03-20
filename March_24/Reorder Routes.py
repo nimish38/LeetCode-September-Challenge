@@ -1,20 +1,24 @@
+from collections import defaultdict
 class Solution:
     def minReorder(self, n, connections):
-        self.cnt, self.visited = 0, [False] * n
-        self.visited[0] = True
-        stack = [0]
+        cnt, graph, roads = 0, defaultdict(list), set()
+
+        for u,v in connections:
+            roads.add((u, v))
+            graph[u].append(v)
+            graph[v].append(u)
+        stack = [(0, -1)]
         while stack:
-            parent = stack.pop()
-            for i in range(n):
-                if [i, parent] in connections and not self.visited[i]:
-                    self.visited[i] = True
-                    stack.append(i)
-                elif [parent, i] in connections and not self.visited[i]:
-                    self.cnt += 1
-                    self.visited[i] = True
-                    stack.append(i)
+            item = stack.pop()
+            if (item[1], item[0]) in roads:
+                cnt += 1
+
+            for nei in graph[item[0]]:
+                if nei == item[1]:
+                    continue
+                stack.append((nei, item[0]))
 
 
-        return self.cnt
+        return cnt
 
 print(Solution().minReorder(6, [[0,1],[1,3],[2,3],[4,0],[4,5]]))
