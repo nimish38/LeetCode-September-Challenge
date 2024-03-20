@@ -4,10 +4,12 @@ class Solution:
         while stack:
             parent = stack.pop()
             for i in range(n):
-                if self.graph[parent][i] == -1 and not self.visited[i]:
+                if self.graph[i][parent] == -1 and not self.visited[i]:
                     self.cnt += 1
+                    self.visited[i] = True
                     stack.append(i)
-                elif self.graph[parent][i] and not self.visited[i]:
+                elif self.graph[i][parent] and not self.visited[i]:
+                    self.visited[i] = True
                     stack.append(i)
 
 
@@ -23,4 +25,4 @@ class Solution:
         self.dfs(0, n)
         return self.cnt
 
-print(Solution().minReorder(6, [[0,1],[1,3],[2,3],[4,0],[4,5]]))
+print(Solution().minReorder(5, [[1,0],[1,2],[3,2],[3,4]]))
