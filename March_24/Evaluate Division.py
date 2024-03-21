@@ -1,20 +1,16 @@
 from collections import defaultdict
 class Solution:
     def dfs(self, src, dest):
-        stack = [(src, -1, 1.0)]
+        stack, vis = [(src, 1.0)], set()
         while stack:
             item = stack.pop()
+            vis.add(item[0])
             for neighbor, val in self.graph[item[0]]:
                 if neighbor == dest:
-                    return item[2] * val
-                elif neighbor == item[1]:
-                    continue
-                else:
-                    stack.append((neighbor, item[0], item[2] * val))
+                    return item[1] * val
+                elif neighbor not in vis:
+                    stack.append((neighbor, item[1] * val))
         return -1.0
-
-
-
 
     def calcEquation(self, equations, values, queries):
         self.graph, i = defaultdict(list), 0
@@ -34,4 +30,4 @@ class Solution:
 
         return res
 
-print(Solution().calcEquation(equations = [["a","b"],["b","c"]], values = [2.0,3.0], queries = [["a","c"],["b","a"],["a","e"],["a","a"],["x","x"]]))
+print(Solution().calcEquation(equations = [["a","b"],["b","c"],["a","c"],["d","e"]], values = [2.0,3.0,6.0,1.0], queries = [["a","c"],["b","c"],["a","e"],["a","a"],["x","x"],["a","d"]]))
