@@ -9,38 +9,30 @@ class Solution:
                 if grid[i][j] == 1:
                     good += 1
                 if grid[i][j] == 2:
-                    stack.append(([i, j], time))
+                    stack.append((i, j))
 
         while stack and good:
-            item = stack.pop()
-            i, j = item[0][0], item[0][1]
+            time += 1
+            for _ in range(len(stack)):
+                item = stack.pop()
+                x, y = item[0], item[0]
 
-            if j > 0 and grid[i][j - 1] == 1:
-                stack.append(([i, j - 1], item[1] + 1))
-                grid[i][j - 1] = 2
-                time = max(time, item[1] + 1)
-                good -= 1
+                for dx, dy in [(0, 1), (1, 0), (0, -1), (-1, 0)]:
+                    i = x + dx
+                    j = y + dy
 
-            if j < col - 1 and grid[i][j + 1] == 1:
-                stack.append(([i, j + 1], item[1] + 1))
-                grid[i][j + 1] = 2
-                time = max(time, item[1] + 1)
-                good -= 1
+                    if i < 0 or i == col or j == row or j < 0:
+                        continue
 
-            if i > 0 and grid[i - 1][j] == 1:
-                stack.append(([i - 1, j], item[1] + 1))
-                grid[i - 1][j] = 2
-                time = max(time, item[1] + 1)
-                good -= 1
+                    if grid[i][j] == 0 or grid[i][j] == 2:
+                
 
-            if i < row - 1 and grid[i + 1][j] == 1:
-                stack.append(([i + 1, j], item[1] + 1))
-                grid[i + 1][j] = 2
-                time = max(time, item[1] + 1)
-                good -= 1
+                    stack.append((i, j))
+                    grid[i][j] = 2
+                    good -= 1
 
         if good > 0:
             return -1
         return time
 
-# print(Solution().orangesRotting(grid = [[0,2]]))
+print(Solution().orangesRotting(grid = [[2,1,1],[1,1,1],[0,1,2]]))
