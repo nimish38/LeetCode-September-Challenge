@@ -24,9 +24,9 @@ class Solution:
                     if i < 0 or i == col or j == row or j < 0:
                         continue
 
-                    if grid[i][j] == 0 or grid[i][j] == 2:
-                
-
+                    if grid[i][j] == 0 or grid[i][j]:
+                        continue
+                        
                     stack.append((i, j))
                     grid[i][j] = 2
                     good -= 1
