@@ -20,8 +20,7 @@ class Solution:
             curr -= heapq.heappop(minheap)
             heapq.heappush(minheap, nums2Sorted[i][0])
             curr += nums2Sorted[i][0]
-            if curr * nums2Sorted[i][1] > maximum:
-                maximum = curr * nums2Sorted[i][1]
+            maximum = max(maximum, curr * nums2Sorted[i][1])
             i += 1
 
         return maximum
