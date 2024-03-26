@@ -1,32 +1,32 @@
 import heapq
-from collections import defaultdict
 class Solution:
     def maxScore(self, nums1, nums2, k):
-        maximum, curr, nums2Sorted = 0, 0, defaultdict()
+        maximum, curr, nums2Sorted = 0, 0, []
 
         for i in range(len(nums2)):
-            nums2Sorted[nums2[i]] = nums1[i]
+            nums2Sorted.append((nums1[i], nums2[i]))
 
-        i, minheap, values = 0, [], list(nums2Sorted.keys())
-        values.sort(reverse=True)
+        i, minheap = 0, []
+        nums2Sorted.sort(reverse=True, key=lambda tup: tup[1])
+
         while i < k:
-            minheap.append(nums2Sorted[values[i]])
-            curr += nums2Sorted[values[i]]
+            minheap.append(nums2Sorted[i][0])
+            curr += nums2Sorted[i][0]
             i += 1
 
         heapq.heapify(minheap)
-        maximum = curr * values[k - 1]
+        maximum = curr * nums2Sorted[k - 1][1]
         while i < len(nums2):
             curr -= heapq.heappop(minheap)
-            heapq.heappush(minheap, nums2Sorted[values[i]])
-            curr += nums2Sorted[values[i]]
-            if curr * values[i] > maximum:
-                maximum = curr * values[i]
+            heapq.heappush(minheap, nums2Sorted[i][0])
+            curr += nums2Sorted[i][0]
+            if curr * nums2Sorted[i][1] > maximum:
+                maximum = curr * nums2Sorted[i][1]
             i += 1
 
         return maximum
 
-print(Solution().maxScore(nums1 = [4,2,3,1,1], nums2 = [7,5,10,9,6], k = 1))
+print(Solution().maxScore(nums1 = [1,3,3,2], nums2 = [2,1,3,4], k = 3))
 
 
 
