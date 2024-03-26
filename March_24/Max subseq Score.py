@@ -7,23 +7,26 @@ class Solution:
         for i in range(len(nums2)):
             nums2Sorted[nums2[i]] = nums1[i]
 
-        sorted(nums2Sorted, reverse=True)
-        i, minheap, values = 0, [], nums2Sorted.values()
+        i, minheap, values = 0, [], list(nums2Sorted.keys())
+        values.sort(reverse=True)
         while i < k:
-            heapq.heappush(minheap, nums2Sorted[i])
-            curr += nums2Sorted[i]
+            minheap.append(nums2Sorted[values[i]])
+            curr += nums2Sorted[values[i]]
             i += 1
 
+        heapq.heapify(minheap)
         maximum = curr * values[k - 1]
         while i < len(nums2):
             curr -= heapq.heappop(minheap)
-            heapq.heappush(minheap, nums2Sorted[i])
-            curr += nums2Sorted[i]
-
+            heapq.heappush(minheap, nums2Sorted[values[i]])
+            curr += nums2Sorted[values[i]]
             if curr * values[i] > maximum:
                 maximum = curr * values[i]
+            i += 1
 
         return maximum
+
+print(Solution().maxScore(nums1 = [4,2,3,1,1], nums2 = [7,5,10,9,6], k = 1))
 
 
 
