@@ -9,8 +9,8 @@ class Solution:
     def guessNumber(self, n: int) -> int:
         low, high = 1, n
         while True:
-            mid = (low + high) // 2
-            guess_num = guess(mid)
+            mid = ((high - low) // 2) + low
+            guess_num = self.guess(mid)
             if guess_num is 0:
                 return mid
             elif guess_num is -1:
