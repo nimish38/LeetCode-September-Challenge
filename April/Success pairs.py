@@ -2,14 +2,15 @@ import math
 class Solution:
     def successfulPairs(self, spells, potions, success):
         def minLargest(key):
-            mid = n // 2
-            while key > potions[mid]:
-                mid = (n - mid)//2 + mid
-
-            while mid > 0 and key <= potions[mid - 1]:
-                mid -= 1
-
-            return n - mid
+            low, high, best = 0, n - 1, n
+            while low <= high:
+                mid = ((high - low) // 2) + low
+                if potions[mid] >= key:
+                    best = mid
+                    high = mid - 1
+                else:
+                    low = mid + 1
+            return n - best
 
         potions.sort()
         pairs, n = [], len(potions)
