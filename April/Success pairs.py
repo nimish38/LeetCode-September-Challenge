@@ -6,7 +6,7 @@ class Solution:
             while key > potions[mid]:
                 mid = (n - mid)//2 + mid
 
-            while key < potions[mid]:
+            while mid > 0 and key <= potions[mid - 1]:
                 mid -= 1
 
             return n - mid
@@ -23,4 +23,4 @@ class Solution:
                 pairs.append(minLargest(mid))
         return pairs
 
-print(Solution().successfulPairs(spells = [3,1,2], potions = [8,5,8], success = 16))
+print(Solution().successfulPairs(spells = [5,1,3], potions = [1,2,3,4,5], success = 7))
