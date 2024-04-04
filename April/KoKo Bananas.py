@@ -2,6 +2,7 @@ import math
 class Solution:
     def minEatingSpeed(self, piles, h):
 
+        # remove import as leetcode performance improves
         def canEat(bananas_per_hour):
             cnt = 0
             for pile in piles:
