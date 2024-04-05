@@ -13,6 +13,14 @@ class Solution:
             if i == 7 or i == 9:
                 buttons[i].append(letters[cnt])
                 cnt += 1
-        print(buttons)
 
-Solution().letterCombinations(digits = "23")
+        letters = []
+        letters.extend(buttons[int(digits[0])])
+        for i in range(1, len(digits)):
+            for j in range(len(letters)):
+                for char in buttons[int(digits[i])]:
+                    letters.append(letters[j] + char)
+            letters = letters[j + 1:]
+        return letters
+
+print(Solution().letterCombinations(digits = "2345"))
