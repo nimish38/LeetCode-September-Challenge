@@ -1,5 +1,3 @@
-from collections import defaultdict
-import string
 class Solution:
     def letterCombinations(self, digits):
         if not digits:
@@ -15,13 +13,16 @@ class Solution:
             "8": "tuv",
             "9": "wxyz"
         }
-        letters = []
-        letters.extend(buttons[digits[0]])
-        for i in range(1, len(digits)):
-            for j in range(len(letters)):
-                for char in buttons[digits[i]]:
-                    letters.append(letters[j] + char)
-            letters = letters[j + 1:]
-        return letters
 
-print(Solution().letterCombinations(digits = "2345"))
+        def backtrack(idx, current_str):
+            if idx == len(digits):
+                res.append(current_str)
+                return
+            for char in buttons[digits[idx]]:
+                backtrack(idx + 1, current_str + char)
+
+        res = []
+        backtrack(0, "")
+        return res
+
+print(Solution().letterCombinations(digits = "23"))
