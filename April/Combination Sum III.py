@@ -5,9 +5,8 @@ class Solution:
 
         def backtrack(start, curr_sum, k, combo):
             if k == 0:
-                if curr_sum + start == n:
-                    combo.append(start)
-                    res.append(combo)
+                if curr_sum == n:
+                    res.append(list(combo))
                 return
 
             if start < 9:
@@ -20,4 +19,4 @@ class Solution:
         backtrack(1, 0, k, [])
         return res
 
-print(Solution().combinationSum3(k = 3, n = 7))
+print(Solution().combinationSum3(k = 4, n = 1))
