@@ -9,7 +9,7 @@ class Solution:
                     res.append(list(combo))
                 return
 
-            if start < 9:
+            if start < 10:
                 combo.append(start)
                 backtrack(start + 1, curr_sum + start, k - 1, combo)
                 combo.pop()
@@ -19,4 +19,4 @@ class Solution:
         backtrack(1, 0, k, [])
         return res
 
-print(Solution().combinationSum3(k = 4, n = 1))
+print(Solution().combinationSum3(k = 9, n = 45))
