@@ -7,11 +7,11 @@ class Solution:
             for item in options:
                 combo.append(item)
                 options.remove(item)
-                explore(combo, options)
+                explore(list(combo), set(options))
                 combo.pop()
-                options.append(item)
+                options.add(item)
         res = []
-        explore([], nums)
+        explore([], set(nums))
         return res
 
-print(Solution().permute(nums = [1,2,3]))
+print(Solution().permute(nums = [1]))
