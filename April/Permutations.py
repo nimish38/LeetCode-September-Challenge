@@ -1,17 +1,16 @@
 class Solution:
     def permute(self, nums):
-        def explore(combo, options):
-            if len(options) == 0:
+        def explore(combo):
+            if len(combo) == len(nums):
                 res.append(combo)
                 return
-            for item in options:
-                combo.append(item)
-                options.remove(item)
-                explore(list(combo), set(options))
-                combo.pop()
-                options.add(item)
+            for item in nums:
+                if item not in combo:
+                    combo.append(item)
+                    explore(list(combo))
+                    combo.pop()
         res = []
-        explore([], set(nums))
+        explore([])
         return res
 
-print(Solution().permute(nums = [1]))
+print(Solution().permute(nums = [1, 2, 3]))
