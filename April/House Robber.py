@@ -3,7 +3,10 @@ class Solution:
         def steal(ind):
             if ind >= len(nums):
                 return 0
-            return max(nums[ind] + steal(ind + 2), steal(ind + 1))
+            if profit[ind] == -1:
+                profit[ind] = max(nums[ind] + steal(ind + 2), steal(ind + 1))
+            return profit[ind]
+        profit = [-1] * len(nums)
         return steal(0)
 
 
