@@ -4,16 +4,14 @@ class Solution:
     ## Check derivation in codestorywithmik video
 
     def numTilings(self, n: int) -> int:
-        def solve(n):
-            if n == 1 or n == 2:
-                return n
-            if n == 3:
-                return 5
-            if memoi[n] == -1:
-                memoi[n] = (2 * solve(n - 1)) + solve(n - 3)
-            return memoi[n]
-
+        if n==1 or n==2:
+            return n
         memoi = [-1]*(n+1)
-        return solve(n) % 1000000007
+        memoi[0], memoi[1], memoi[2], memoi[3] = 0, 1, 2, 5
+
+        for i in range(4, n+1):
+            memoi[i] = (2*memoi[i-1]) + memoi[i-3]
+
+        return memoi[n] % 1000000007
 
 print(Solution().numTilings(100))
