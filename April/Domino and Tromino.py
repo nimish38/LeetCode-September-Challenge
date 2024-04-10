@@ -9,7 +9,11 @@ class Solution:
                 return n
             if n == 3:
                 return 5
-            return (2 * solve(n - 1)) + solve(n - 3)
-        return solve(n)
+            if memoi[n] == -1:
+                memoi[n] = (2 * solve(n - 1)) + solve(n - 3)
+            return memoi[n]
 
-print(Solution().numTilings(4))
+        memoi = [-1]*(n+1)
+        return solve(n) % 1000000007
+
+print(Solution().numTilings(100))
