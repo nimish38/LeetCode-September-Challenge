@@ -8,10 +8,11 @@ class Solution:
         def dpLcs(i, j):
             if i == m or j == n:
                 return 0
-            if text1[i] == text2[j]:
-                return 1 + dpLcs(i + 1, j + 1)
             if memo[i][j] == -1:
-                memo[i][j] = max(dpLcs(i + 1, j), dpLcs(i, j + 1))
+                if text1[i] == text2[j]:
+                    memo[i][j] = 1 + dpLcs(i + 1, j + 1)
+                else:
+                    memo[i][j] = max(dpLcs(i + 1, j), dpLcs(i, j + 1))
             return memo[i][j]
         return dpLcs(0, 0)
 
