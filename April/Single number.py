@@ -1,8 +1,7 @@
+import functools
+import operator
 class Solution:
     def singleNumber(self, nums):
-        xor = 0
-        for num in nums:
-            xor ^= num
-        return xor
+        return functools.reduce(operator.xor, nums)
 
 print(Solution().singleNumber(nums = [4,4,2,1,2]))
