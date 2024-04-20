@@ -10,13 +10,13 @@ class Trie:
             curr = curr[letter]
         curr['*'] = True
 
-    def getwords(self, let, curr):
+    def getwords(self, prefix, let, curr):
         stack, res = [(let, curr[let])], []
-        while stack:
+        while stack and len(res) < 3:
             item = stack.pop()
-            for char in item[1]:
+            for char in sorted(item[1], reverse=True):
                 if char == '*':
-                    res.append(item[0])
+                    res.append(prefix + item[0])
                 else:
                     stack.append((item[0] + char, item[1][char]))
         if len(res) > 3:
@@ -24,12 +24,13 @@ class Trie:
         return res
 
     def suggestions(self, searchWord):
-        res = []
+        res, prefix = [], ''
         curr = self.trie
         for letter in searchWord:
             if letter in curr:
-                res.append(self.getwords(letter, curr))
+                res.append(self.getwords(prefix, letter, curr))
                 curr = curr[letter]
+                prefix += letter
             else:
                 break
         while len(res) < len(searchWord):
@@ -43,4 +44,4 @@ class Solution:
             trie.insert(word)
         return trie.suggestions(searchWord)
 
-print(Solution().suggestedProducts(products = ["mobile","mouse","moneypot","monitor","mousepad"], searchWord = "mouse"))
+print(Solution().suggestedProducts(products = ["havana"], searchWord = "havana"))
