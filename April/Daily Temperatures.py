@@ -1,11 +1,12 @@
 class Solution:
     def dailyTemperatures(self, temperatures):
-        res = [0]*len(temperatures)
-        for i in range(len(temperatures) - 1):
-            for j in range(i + 1, len(temperatures)):
-                if temperatures[j] > temperatures[i]:
-                    res[i] = j - i
-                    break
+        res, stack = [0]*len(temperatures), []
+        for i in range(len(temperatures) - 1, -1, -1):
+            while stack and temperatures[stack[-1]] <= temperatures[i]:
+                stack.pop()
+            if stack:
+                res[i] = stack[-1] - i
+            stack.append(i)
         return res
 
 print(Solution().dailyTemperatures([73,74,75,71,69,72,76,73]))
