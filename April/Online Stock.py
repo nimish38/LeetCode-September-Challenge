@@ -3,11 +3,11 @@ class StockSpanner:
         self.stack = []
 
     def next(self, price: int) -> int:
-        cnt, i = 1, len(self.stack) - 1
-        while i >= 0 and self.stack[i] <= price:
-            cnt += 1
-            i -= 1
-        self.stack.append(price)
+        if self.stack and price > self.stack[-1][0]:
+            cnt = self.stack[-1][1] + 1
+        else:
+            cnt = 1
+        self.stack.append((price, cnt))
         return cnt
 
 s = StockSpanner()
@@ -16,8 +16,8 @@ print(s.next(41))
 print(s.next(48))
 print(s.next(59))
 print(s.next(79))
-# print(s.next(75))
-# print(s.next(85))
+print(s.next(75))
+print(s.next(85))
 
 
 
