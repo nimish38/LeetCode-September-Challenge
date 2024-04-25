@@ -10,8 +10,13 @@ class Solution:
                 nums1[ins] = nums2[j]
                 j -= 1
                 ins -= 1
-        return nums1
 
-print(Solution().merge(nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3))
+        if j >= 0:
+            for k in range(j + 1):
+                nums1[k] = nums2[k]
+
+        print(nums1)
+
+print(Solution().merge(nums1 = [2,0], m = 1, nums2 = [1], n = 1))
 
 
