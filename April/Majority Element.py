@@ -1,14 +1,14 @@
 class Solution:
     def majorityElement(self, nums):
-        cnt = {}
-        for num in nums:
-            if num in cnt:
-                cnt[num] += 1
+        candidate, cnt = nums[0], 1
+        for i in range(1, len(nums)):
+            if nums[i] == candidate:
+                cnt += 1
             else:
-                cnt[num] = 1
+                if cnt == 0:
+                    candidate = nums[i]
+                cnt -= 1
+        return candidate
 
-        for key in cnt.keys():
-            if cnt[key] > len(nums) // 2:
-                return key
 
 print(Solution().majorityElement(nums = [2,2,1,1,1,2,2]))
