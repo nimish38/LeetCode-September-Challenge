@@ -7,8 +7,10 @@ class Solution:
             else:
                 if cnt == 0:
                     candidate = nums[i]
-                cnt -= 1
+                    cnt = 1
+                else:
+                    cnt -= 1
         return candidate
 
 
-print(Solution().majorityElement(nums = [2,2,1,1,1,2,2]))
+print(Solution().majorityElement(nums = [1,1,2,2,3,2,3,2,2]))
