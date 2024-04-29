@@ -6,8 +6,16 @@ class Solution:
         n = len(nums)
         if k > n:
             k %= n
-        split, nums = nums[n - k:], nums[:n - k]
-        nums = split + nums
+
+        def reverse(low, high):
+            while low < high:
+                nums[low], nums[high] = nums[high], nums[low]
+                low += 1
+                high -= 1
+
+        reverse(0, n - k -1)
+        reverse(n - k, n - 1)
+        reverse(0, n - 1)
         print(nums)
 
-Solution().rotate(nums = [1,2,3,4,5,6,7], k = 3)
+Solution().rotate(nums = [1,2,3,4,5,6,7], k = 5)
