@@ -3,10 +3,11 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        if k > len(nums):
-            k %= len(nums)
-        for _ in range(k):
-            nums.insert(0, nums.pop())
-        # print(nums)
+        n = len(nums)
+        if k > n:
+            k %= n
+        split, nums = nums[n - k:], nums[:n - k]
+        nums = split + nums
+        print(nums)
 
 Solution().rotate(nums = [1,2,3,4,5,6,7], k = 3)
