@@ -1,5 +1,7 @@
 class Solution:
     def maxProfit(self, prices):
+        if len(prices) == 1:
+            return 0
         buy, profit = float('inf'), 0
         for i in range(len(prices) - 1):
             if buy == -1 or buy > prices[i]:
@@ -8,6 +10,6 @@ class Solution:
                 profit += prices[i] - buy
                 buy = -1
         if buy != -1:
-            profit = max(profit, prices[i + 1] - buy)
+            profit = max(profit, profit + prices[i + 1] - buy)
         return profit
-print(Solution().maxProfit(prices = [7,6,4,3,1]))
+print(Solution().maxProfit(prices = [6,1,3,2,4,7]))
