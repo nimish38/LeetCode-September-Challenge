@@ -3,7 +3,7 @@ class Solution:
         stack = [(0, nums[0])]
         while stack:
             ind, num = stack.pop()
-            for i in range(ind + 1, ind + num):
+            for i in range(ind + 1, ind + num + 1):
                 if i >= len(nums):
                     return True
                 stack.append((i, nums[i]))
@@ -11,5 +11,5 @@ class Solution:
             return True
         return False
 
-    
+print(Solution().canJump(nums = [3,2,1,0,4]))
 
