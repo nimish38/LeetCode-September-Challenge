@@ -1,5 +1,7 @@
 class Solution:
     def canJump(self, nums):
+        if len(nums) == 1:
+            return True
         zeroFlag, dist = False, 0
         for i in range(len(nums) - 1, -1, -1):
             if zeroFlag:
