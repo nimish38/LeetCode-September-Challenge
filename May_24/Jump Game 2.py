@@ -4,15 +4,16 @@ class Solution:
             return 0
         i, cnt = 0, 0
         while i < len(nums) - 1:
-            maxval, maxind, j = -1, -1, i + 1
-            while j < i + nums[i] + 1:
-                if j >= len(nums) - 1:
-                    return cnt + 1
-                if nums[j] > maxval:
-                    maxval, maxind = nums[j], j
-                j += 1
-            i = maxind
             cnt += 1
+            if i + nums[i] >= len(nums) - 1:
+                return cnt
+            maxval, maxind = -1, -1
+            for j in range(i + 1, i + nums[i] + 1):
+                if j + nums[j] >= len(nums) - 1:
+                    return cnt + 1
+                if nums[j] >= maxval:
+                    maxval, maxind = nums[j], j
+            i = maxind
         return cnt
 
-print(Solution().jump(nums = [2,3,0,1,4]))
+print(Solution().jump([1,2]))
