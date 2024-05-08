@@ -11,9 +11,9 @@ class Solution:
             for j in range(i + 1, i + nums[i] + 1):
                 if j + nums[j] >= len(nums) - 1:
                     return cnt + 1
-                if nums[j] >= maxval:
-                    maxval, maxind = nums[j], j
+                if j + nums[j] >= maxval:
+                    maxval, maxind = j + nums[j], j
             i = maxind
         return cnt
 
-print(Solution().jump([1,2]))
+print(Solution().jump([9,8,2,2,0,2,2,0,4,1,5,7,9,6,6,0,6,5,0,5]))
