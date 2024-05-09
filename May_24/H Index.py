@@ -1,9 +1,9 @@
 class Solution:
     def hIndex(self, citations):
         citations.sort()
-        i, n = 0, len(citations)
-        while i < n and citations[i] < n - i:
-            i += 1
-        return n - i
+        i, n = len(citations) - 1, len(citations)
+        while i >= 0 and citations[i] >= n - i:
+                i -= 1
+        return n - i - 1
 
-print(Solution().hIndex(citations = [0, 1, 3, 6]))
+print(Solution().hIndex(citations = [3,0,6,1,5]))
