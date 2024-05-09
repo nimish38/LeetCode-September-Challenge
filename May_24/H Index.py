@@ -2,7 +2,7 @@ class Solution:
     def hIndex(self, citations):
         citations.sort()
         i, n = 0, len(citations)
-        while citations[i] < n - i:
+        while i < n and citations[i] < n - i:
             i += 1
         return n - i
 
