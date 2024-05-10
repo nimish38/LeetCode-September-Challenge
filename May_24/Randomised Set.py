@@ -1,6 +1,5 @@
 import random
 class RandomizedSet:
-
     def __init__(self):
         self.list = []
         self.dict = {}
@@ -16,9 +15,12 @@ class RandomizedSet:
 
     def remove(self, val: int) -> bool:
         if val in self.dict:
-            del self.list[self.dict[val]]
-            del self.dict[val]
+            index = self.dict[val]
+            last_element = self.list[-1]
+            self.list[index], self.dict[last_element] = last_element, index
+            self.list.pop()
             self.cnt -= 1
+            del self.dict[val]
             return True
         return False
 
