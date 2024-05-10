@@ -17,7 +17,10 @@ class RandomizedSet:
         return False
 
     def getRandom(self) -> int:
-        return random.choice(list(self.myset.values()))
+        # return random.choice(list(self.myset.values()))
+        x = self.myset.popitem()[0]
+        self.myset[x] = x
+        return x
 
 x = RandomizedSet()
 print(x.insert(1))
