@@ -1,14 +1,14 @@
 class Solution:
     def canCompleteCircuit(self, gas, cost):
         def checkcircuit(ind):
-            tank, n = gas[ind], len(gas)
+            tank, n = gas[ind] - cost[ind], len(gas)
             curr = (ind + 1) % n
             while curr != ind:
-                tank += gas[curr] - cost[curr - 1]
+                tank += gas[curr] - cost[curr]
                 if tank < 0:
                     return False
                 curr = (curr + 1) % n
-            if tank - cost[ind] > 0:
+            if tank >= 0:
                 return True
             return False
 
