@@ -1,21 +1,13 @@
 class Solution:
     def canCompleteCircuit(self, gas, cost):
-        def checkcircuit(ind):
-            tank, n = gas[ind] - cost[ind], len(gas)
-            curr = (ind + 1) % n
-            while curr != ind:
-                tank += gas[curr] - cost[curr]
-                if tank < 0:
-                    return False
-                curr = (curr + 1) % n
-            if tank >= 0:
-                return True
-            return False
-
+        if sum(gas) < sum(cost):
+            return -1
+        total, res = 0, 0
         for i in range(len(gas)):
-            if gas[i] >= cost[i]:
-                if checkcircuit(i):
-                    return i
-        return -1
+            total += gas[i] - cost[i]
+            if total < 0:
+                total = 0
+                res = i + 1
+        return res
 
-print(Solution().canCompleteCircuit(gas = [2,3,4], cost = [3,4,3]))
+print(Solution().canCompleteCircuit([5,1,2,3,4], [4,4,1,5,1]))
