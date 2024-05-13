@@ -13,7 +13,7 @@ class Solution:
             return False
 
         for i in range(len(gas)):
-            if gas[i] > cost[i]:
+            if gas[i] >= cost[i]:
                 if checkcircuit(i):
                     return i
         return -1
