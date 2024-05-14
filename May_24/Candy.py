@@ -5,11 +5,10 @@ class Solution:
         # check left neightbor
         for i in range(1, n):
             if ratings[i] > ratings[i - 1]:
-                L2R[i] = L2R[i - 1] + 1
+                L2R[i] = max(L2R[i], L2R[i - 1] + 1)
         # check right neighbor
-        for i in range(n - 2, -1, -1):
-            if ratings[i] > ratings[i + 1]:
-                L2R[i] = max(L2R[i], L2R[i + 1] + 1)
+            if ratings[n - i - 1] > ratings[n - i]:
+                L2R[n - i - 1] = max(L2R[n - i - 1], L2R[n - i] + 1)
         return sum(L2R)
 
 print(Solution().candy(ratings = [1,3,4,5,2]))
