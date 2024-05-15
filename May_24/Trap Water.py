@@ -1,18 +1,19 @@
 class Solution:
     def trap(self, height):
         n = len(height)
-        left_max, right_max = [], []
+        left_max, right_max = [0] * n, [0] * n
 
-        for i in range(1, n - 1):
-            left_max.append(max(height[:i + 1]))
-            right_max.append(max(height[i:]))
+        # build left max
+        left_max[0] = height[0]
+        for i in range(1, n):
+            left_max[i] = max(left_max[i - 1], height[i])
 
-        left_max.insert(0, height[0])
-        left_max.append(max(height))
+        # build right max in reverse
+        right_max[-1] = height[-1]
+        for i in range(n - 2, -1, -1):
+            right_max[i] = max(right_max[i + 1], height[i])
 
-        right_max.insert(0, max(height))
-        right_max.append(height[-1])
-
+        # find trapped water
         water = 0
         for i in range(n):
             water += min(left_max[i], right_max[i]) - height[i]
