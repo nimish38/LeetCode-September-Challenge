@@ -1,8 +1,7 @@
 class Solution:
     def intToRoman(self, num: int) -> str:
-        res, j = '', 0
-        conversions = {'M': 1000, 'C': 100, 'X': 10, 'I': 1}
-        exceptions = ['D', 'L', 'V']
+        res, j = '', 4
+        conversions = {'M': 1000, 'C': 100, 'X': 10, 'I': 1, 'D': 0, 'L': 0,'V': 0}
         conv = list(conversions.keys())
         for i in range(3):
             char = conv[i]
@@ -11,17 +10,17 @@ class Solution:
             num %= val
             res += char * count
 
-            cond = val / 10
+            cond = val // 10
             if num >= 9 * cond:
                 res += conv[i + 1] + conv[i]
                 num -= 9 * cond
 
             if num >= 5 * cond:
-                res += exceptions[j]
+                res += conv[j]
                 num -= 5 * cond
 
             if num >= 4 * cond:
-                res += conv[i + 1] + exceptions[j]
+                res += conv[i + 1] + conv[j]
                 num -= 4 * cond
 
             j += 1
@@ -81,7 +80,7 @@ class Solution:
         # res += 'I' * num
         # return res
 
-print(Solution().intToRoman(3749))
+print(Solution().intToRoman(1994))
 
 
 
