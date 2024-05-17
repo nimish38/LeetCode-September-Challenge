@@ -1,7 +1,7 @@
 class Solution:
     def intToRoman(self, num: int) -> str:
         res = ''
-        m_count = num / 1000
+        m_count = num // 1000
         num = num % 1000
         res += 'M' * m_count
 
@@ -17,7 +17,7 @@ class Solution:
             res += 'CD'
             num -= 400
 
-        c_count = num / 100
+        c_count = num // 100
         num %= 100
         res += 'C' * c_count
 
@@ -33,7 +33,7 @@ class Solution:
             res += 'XL'
             num -= 40
 
-        x_count = num / 10
+        x_count = num // 10
         num %= 10
         res += 'X' * x_count
 
@@ -52,7 +52,7 @@ class Solution:
         res += 'I' * num
         return res
 
-print(Solution().intToRoman(1994))
+print(Solution().intToRoman(3749))
 
 
 
