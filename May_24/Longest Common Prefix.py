@@ -1,14 +1,12 @@
 class Solution:
-    def longestCommonPrefix(self, strs):
-        lcp = strs[0]
-        for i in range(1, len(strs)):
-            curr = strs[i]
-            j = 0
-            while j < min(len(lcp), len(curr)) and lcp[j] == curr[j]:
-                j += 1
-            if j == 0:
-                return ""
-            lcp = lcp[:j]
-        return lcp
+    def longestCommonPrefix(self, s) -> str:
+        ans = ""
+        s.sort()
 
+        for i in range(min(len(s[0]), len(s[-1]))):
+            if s[0][i] != s[-1][i]:
+                return ans
+            ans += s[0][i]
+        return ans
 
+print(Solution().longestCommonPrefix(s = ["flower","flow","flight"]))
