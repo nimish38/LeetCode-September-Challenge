@@ -4,16 +4,19 @@ class Solution:
 
         while i >= 0:
             if s[i] == ' ':
-                if curr:
-                    res += ' ' + curr
+                if len(curr):
+                    res += curr + ' '
                     curr = ''
                 else:
+                    i -= 1
                     continue
             else:
                 curr = s[i] + curr
             i -= 1
 
         if curr:
-            res += ' ' + curr
+            res += curr
 
-print(Solution().reverseWords(s = "the sky is blue"))
+        return res
+
+print(Solution().reverseWords(s = "  hello world  "))
