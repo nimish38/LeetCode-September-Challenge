@@ -16,6 +16,8 @@ class Solution:
 
         if curr:
             res += curr
+        if res[-1] == ' ':
+            return res[:len(res) - 1]
 
         return res
 
