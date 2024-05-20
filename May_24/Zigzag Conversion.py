@@ -1,7 +1,7 @@
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
         zigzag, n = [], len(s) // 2
-        for _ in numRows:
+        for _ in range(numRows):
             zigzag.append([''] * n)
 
         inc, cnt = True, 0
@@ -24,3 +24,4 @@ class Solution:
             res += ''.join(zigzag[i])
         return res
 
+print(Solution().convert(s = "A", numRows = 1))
