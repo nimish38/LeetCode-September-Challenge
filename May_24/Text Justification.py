@@ -4,7 +4,7 @@ class Solution:
         while i < len(words) :
             lettercount, curr, selectedWords = 0, '', []
             while i < len(words) and lettercount + len(words[i]) < maxWidth:
-                lettercount += len(words) + 1
+                lettercount += len(words[i]) + 1
                 selectedWords.append(words[i])
                 i += 1
 
@@ -21,9 +21,9 @@ class Solution:
                     left_margin = extras % (len(selectedWords) - 1)
 
                     curr += selectedWords[0] + ' ' + (' ' * (additional + left_margin))
-                    for j in (1, len(selectedWords) - 1):
+                    for j in range(1, len(selectedWords) - 1):
                         curr += selectedWords[j] + ' ' + (' ' * additional)
-                    curr += selectedWords[j]
+                    curr += selectedWords[-1]
             res.append(curr)
 
         return res
