@@ -3,7 +3,7 @@ class Solution:
         i, res = 0, []
         while i < len(words) :
             lettercount, curr, selectedWords = 0, '', []
-            while i < len(words) and lettercount + words[i] < maxWidth:
+            while i < len(words) and lettercount + len(words[i]) < maxWidth:
                 lettercount += len(words) + 1
                 selectedWords.append(words[i])
                 i += 1
@@ -23,7 +23,9 @@ class Solution:
                     curr += selectedWords[0] + ' ' + (' ' * (additional + left_margin))
                     for j in (1, len(selectedWords) - 1):
                         curr += selectedWords[j] + ' ' + (' ' * additional)
-                    curr += selectedWords[j + 1]
+                    curr += selectedWords[j]
             res.append(curr)
 
         return res
+
+print(Solution().fullJustify(words = ["This", "is", "an", "example", "of", "text", "justification."], maxWidth = 16))
