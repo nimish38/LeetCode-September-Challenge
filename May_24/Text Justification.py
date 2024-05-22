@@ -7,9 +7,9 @@ class Solution:
                 lettercount += len(words[i]) + 1
                 selectedWords.append(words[i])
                 i += 1
-
+            lettercount -= 1
             if len(selectedWords) == 1:
-                curr += selectedWords[0] + ' ' + (' ' * (maxWidth - lettercount))
+                curr += selectedWords[0] + (' ' * (maxWidth - lettercount))
             else:
                 if i == len(words):
                     for k in selectedWords:
@@ -28,4 +28,5 @@ class Solution:
 
         return res
 
-print(Solution().fullJustify(words = ["This", "is", "an", "example", "of", "text", "justification."], maxWidth = 16))
+print(Solution().fullJustify(words = ["What","must","be","acknowledgment","shall","be"], maxWidth = 16))
+print(["What   must   be","acknowledgment  ","shall be        "])
