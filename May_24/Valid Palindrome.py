@@ -1,9 +1,12 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        s, t = s.lower(), ''
+        t = ''
         for char in s:
-            if 96 < ord(char) < 123 or 47 < ord(char) < 58:
+            asci = ord(char)
+            if 64 < asci < 91 or 47 < asci < 58:
                 t += char
+            if 96 < asci < 123:
+                t += chr(asci - 32)
         if len(t) < 2:
             return True
         i, j = 0, len(t) - 1
@@ -13,7 +16,5 @@ class Solution:
         if i < j:
             return False
         return True
-
-
 
 print(Solution().isPalindrome(s = "0P"))
