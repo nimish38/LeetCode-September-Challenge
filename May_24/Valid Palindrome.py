@@ -1,20 +1,11 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        t = ''
+        s,t = s.lower(), ''
         for char in s:
-            asci = ord(char)
-            if 64 < asci < 91 or 47 < asci < 58:
+            if char.isalnum():
                 t += char
-            if 96 < asci < 123:
-                t += chr(asci - 32)
-        if len(t) < 2:
+        if t == t[::-1]:
             return True
-        i, j = 0, len(t) - 1
-        while i < j and t[i] == t[j]:
-            i += 1
-            j -= 1
-        if i < j:
-            return False
-        return True
+        return False
 
-print(Solution().isPalindrome(s = "0P"))
+print(Solution().isPalindrome(s = "0Pananap"))
