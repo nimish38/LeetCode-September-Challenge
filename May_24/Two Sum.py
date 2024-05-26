@@ -1,3 +1,4 @@
+import bisect
 class Solution:
     def twoSum(self, numbers, target):
         i, j = 0, len(numbers) - 1
@@ -6,9 +7,9 @@ class Solution:
             if curr == target:
                 return [i + 1, j + 1]
             elif curr < target:
-                i += 1
+                i = bisect.bisect_left(numbers, target - numbers[j], i + 1, j)
             else:
-                j -= 1
+                j = bisect.bisect_right(numbers, target - numbers[i], i + 1, j) - 1
 
-print(Solution().twoSum(numbers = [2,7,11,15], target = 9))
+print(Solution().twoSum(numbers = [-3,3,4,90], target = 0))
 
