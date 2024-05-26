@@ -2,9 +2,10 @@ class Solution:
     def twoSum(self, numbers, target):
         i, j = 0, len(numbers) - 1
         while i < j:
-            if numbers[i] + numbers[j] == target:
+            curr = numbers[i] + numbers[j]
+            if curr == target:
                 return [i + 1, j + 1]
-            elif numbers[i] + numbers[j] < target:
+            elif curr < target:
                 i += 1
             else:
                 j -= 1
