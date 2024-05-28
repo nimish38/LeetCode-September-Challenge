@@ -7,7 +7,8 @@ class Solution:
             while j < k:
                 curr = nums[j] + nums[k] + nums[i]
                 if curr == 0:
-                    res.append([nums[i], nums[j], nums[k]])
+                    if [nums[i], nums[j], nums[k]] not in res:
+                        res.append([nums[i], nums[j], nums[k]])
                     j += 1
                     k -= 1
                 elif curr < 0:
