@@ -9,9 +9,9 @@ class Solution:
             while j < k:
                 curr = nums[j] + nums[k] + nums[i]
                 if curr == 0:
-                    while nums[j] == nums[j + 1]:
+                    while j < k and nums[j] == nums[j + 1]:
                         j += 1
-                    while nums[k] == nums[k - 1]:
+                    while j < k and nums[k] == nums[k - 1]:
                         k -= 1
                     res.append([nums[i], nums[j], nums[k]])
                     j += 1
