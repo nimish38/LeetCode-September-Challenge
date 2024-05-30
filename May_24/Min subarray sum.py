@@ -9,9 +9,11 @@ class Solution:
                 curr_sum -= nums[i]
                 i += 1
             j += 1
+        if minwindow == len(nums) and curr_sum < target:
+            return 0
         return minwindow
 
-print(Solution().minSubArrayLen())
+print(Solution().minSubArrayLen(target = 7, nums = [2,3,1,2,4,3]))
 
 
 
