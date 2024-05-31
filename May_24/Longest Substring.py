@@ -8,8 +8,10 @@ class Solution:
                 curr.add(s[j])
             else:
                 curr.remove(s[i])
+                curr.add(s[j])
                 i += 1
+            res = max(res, len(curr))
             j += 1
-        return j - i
+        return res
 
-print(Solution().lengthOfLongestSubstring())
+print(Solution().lengthOfLongestSubstring(s = "abcabcbb"))
