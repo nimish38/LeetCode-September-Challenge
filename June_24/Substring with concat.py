@@ -1,17 +1,27 @@
-import itertools
 class Solution:
     def findSubstring(self, s: str, words):
-        combo = list(itertools.permutations(words))
-        perms = []
-        for lis in combo:
-            perms.append(''.join(lis))
+        word_len, num_words = len(words[0]), len(words)
+        n, cnt, res = num_words * word_len, {}, []
 
-        i, n, res = 0, len(perms[0]), []
-        while i < len(s) - n + 1:
-            # print(s[i: i + n])
-            if s[i: i + n] in perms:
+        for word in words:
+            if word in cnt:
+                cnt[word] += 1
+            else:
+                cnt[word] = 1
+
+        for i in range(0, len(s) - n + 1):
+            checklist = cnt
+            for j in range(i, i + n + 1, word_len):
+                curr = s[j: j + word_len]
+                if curr in checklist:
+                    if checklist[curr] == 1:
+                        del checklist[curr]
+                    else:
+                        checklist[curr] -= 1
+                else:
+                    break
+            if len(checklist) == 0:
                 res.append(i)
-            i += 1
         return res
 
-print(Solution().findSubstring(s = "barfoothefoobar", words = ["foo","bar"]))
+print(Solution().findSubstring(s = "barfoofoobarthefoobarman", words = ["bar","foo","the"]  ))
