@@ -10,7 +10,7 @@ class Solution:
                 cnt[word] = 1
 
         for i in range(0, len(s) - n + 1):
-            checklist = cnt
+            checklist = dict(cnt)
             for j in range(i, i + n + 1, word_len):
                 curr = s[j: j + word_len]
                 if curr in checklist:
@@ -24,4 +24,4 @@ class Solution:
                 res.append(i)
         return res
 
-print(Solution().findSubstring(s = "barfoofoobarthefoobarman", words = ["bar","foo","the"]  ))
+print(Solution().findSubstring(s = "barfoothefoobar", words = ["foo","bar"]))
