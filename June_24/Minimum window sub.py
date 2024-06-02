@@ -25,7 +25,8 @@ class Solution:
                     cnt = 1
                 i += 1
             j += 1
-
-        return s[start: start + window]
+        if start >= 0 and window > 0:
+            return s[start: start + window]
+        return ""
 
 print(Solution().minWindow(s = "ADOBCOAEBANIIIC", t = "ABC"))
