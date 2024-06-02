@@ -24,7 +24,8 @@ class Solution:
                 if mapping[s[i]] > 0:
                     cnt = 1
                 i += 1
+            j += 1
 
         return s[start: start + window]
 
-print(Solution().minWindow(s = "ADOBECODEBANC", t = "ABC"))
+print(Solution().minWindow(s = "ADOBCOAEBANIIIC", t = "ABC"))
