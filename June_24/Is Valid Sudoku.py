@@ -1,43 +1,26 @@
 class Solution:
     def isValidSudoku(self, board):
-        for row in board:
-            num = 0
-            curr = set()
-            for ele in  row:
-                if ele != '.':
-                    num += 1
-                    curr.add(ele)
-            if num != len(curr):
-                return False
-            
+        row_set, col_set, box_set = set(), set(), set()
         for i in range(9):
-            num = 0
-            curr = set()
             for j in range(9):
-                if board[j][i] != '.':
-                    num += 1
-                    curr.add(board[j][i])
-            if num != len(curr):
-                return False
+                if board[i][j] != '.':
+                    x = str(i) + '_ROW_' + str(board[i][j])
+                    if x in row_set:
+                        return False
+                    row_set.add(x)
 
-        def Traverse(sr, er, sc, ec):
-            num, curr = 0, set()
-            for i in range(sr, er + 1):
-                for j in range(sc, ec + 1):
-                    if board[i][j] != '.':
-                        num += 1
-                        curr.add(board[i][j])
-                if num != len(curr):
-                    return False
-            return True
-                    
-        for start_row in range(0, 9, 3):
-            end_row = start_row + 2
-            for start_col in range(0, 9, 3):
-                end_col = start_col + 2
-                if not Traverse(start_row, end_row, start_col, end_col):
-                    return False
+                    y = str(j) + '_COL_' + str(board[i][j])
+                    if y in col_set:
+                        return False
+                    col_set.add(y)
+
+                    z = str(i//3) + str(j//3) + '_BOX_' + str(board[i][j])
+                    if z in box_set:
+                        return False
+                    box_set.add(z)
         return True
+
+
 
 print(Solution().isValidSudoku(board =
 [[".",".",".",".","5",".",".","1","."],
