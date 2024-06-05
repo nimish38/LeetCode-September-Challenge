@@ -7,29 +7,24 @@ class Solution:
             for i in range(left, right + 1):
                 res.append(matrix[up][i])
             up += 1
-            if len(res) == n:
-                break
 
             # Down
             for i in range(up, down + 1):
                 res.append(matrix[i][right])
             right -= 1
-            if len(res) == n:
-                break
 
             # Left
+            if not (left <= right and up <= down): break
+
             for i in range(right, left - 1, -1):
                 res.append(matrix[down][i])
             down -= 1
-            if len(res) == n:
-                break
 
             # Up
             for i in range(down, up - 1, -1):
                 res.append(matrix[i][left])
             left += 1
-            if len(res) == n:
-                break
+
 
         return res
 
