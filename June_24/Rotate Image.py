@@ -7,7 +7,9 @@ class Solution:
                 x.append(matrix[i][j])
             temp.append(x)
 
-        matrix = temp
+        for i in range(n):
+            for j in range(n):
+                matrix[i][j] = temp[i][j]
         print(matrix)
 
 Solution().rotate(matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]])
