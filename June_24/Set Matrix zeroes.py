@@ -1,18 +1,19 @@
 class Solution:
     def setZeroes(self, matrix):
-        row, col, n = set(), set(), len(matrix[0])
+        m, n = len(matrix), len(matrix[0])
         for i in range(len(matrix)):
             for j in range(len(matrix[i])):
                 if matrix[i][j] == 0:
-                    row.add(i)
-                    col.add(j)
+                    matrix[i][0] = matrix[0][j] = 0
 
-        for r in row:
-            matrix[r] = [0] * n
+        for r in range(m):
+            if matrix[r][0] == 0:
+                matrix[r] = [0] * n
 
-        for c in col:
-            for i in range(len(matrix)):
-                matrix[i][c] = 0
+        for c in range(n):
+            if matrix[0][c] == 0:
+                for i in range(1, m):
+                    matrix[i][c] = 0
 
         print(matrix)
 
