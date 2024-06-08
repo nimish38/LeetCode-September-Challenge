@@ -1,48 +1,51 @@
 class Solution:
-    def gameOfLife(self, board):
-        m, n = len(board), len(board[0])
-        lives = []
-        def count(row, col):
-            live = 0
-            if row > 0:
-                if board[row - 1][col]:
-                    live += 1
-            if row < m - 1:
-                if board[row + 1][col]:
-                    live += 1
-            if col > 0:
-                if board[row][col - 1]:
-                    live += 1
-            if col < n - 1:
-                if board[row][col + 1]:
-                    live += 1
-            if row > 0 and col > 0:
-                if board[row - 1][col - 1]:
-                    live += 1
-            if row < m - 1 and col < n - 1:
-                if board[row + 1][col + 1]:
-                    live += 1
-            if row > 0 and col < n - 1:
-                if board[row - 1][col + 1]:
-                    live += 1
-            if row < m - 1 and col > 0:
-                if board[row + 1][col - 1]:
-                    live += 1
-            lives[row].append(live)
+    def gameOfLife(self, board) -> None:
+        """
+        Do not return anything, modify board in-place instead.
+        """
+        # Original | New | State
+        #    0     |  0  | 0
+        #    1     |  0  | 1
+        #    0     |  1  | 2
+        #    1     |  1  | 3
 
-        for i in range(m):
-            lives.append([])
-            for j in range(n):
-                count(i, j)
+        # 1 -> 2,3 lives; else dies
+        # 0 -> 3 lives; else dies
 
-        for i in range(m):
-            for j in range(n):
-                if board[i][j]:
-                    if lives[i][j] < 2 or lives[i][j] > 3:
-                        board[i][j] = 0
+        # Time complexity = 0(n^2)
+        # Space complexity = O(1)
+
+        rows = len(board)
+        cols = len(board[0])
+
+        def countNeighbors(r, c):
+            nei = 0
+
+            for i in range(r - 1, r + 2):
+                for j in range(c - 1, c + 2):
+                    if (i == r and j == c) or i < 0 or j < 0 or i == rows or j == cols:
+                        continue
+                    elif board[i][j] in [1, 3]:
+                        nei += 1
+
+            return nei
+
+        for r in range(rows):
+            for c in range(cols):
+                nei = countNeighbors(r, c)
+                if board[r][c]:
+                    if nei in [2, 3]:
+                        board[r][c] = 3
                 else:
-                    if lives[i][j] == 3:
-                        board[i][j] = 1
+                    if nei == 3:
+                        board[r][c] = 2
+
+        for r in range(rows):
+            for c in range(cols):
+                if board[r][c] == 1:
+                    board[r][c] = 0
+                elif board[r][c] in [2, 3]:
+                    board[r][c] = 1
 
         print(board)
 
