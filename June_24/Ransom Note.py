@@ -7,12 +7,12 @@ class Solution:
             return False
 
         letters = Counter(magazine)
+        rans = Counter(ransomNote)
 
-        for i in range(len(ransomNote)):
-            if ransomNote[i] not in letters or letters[ransomNote[i]] == 0:
+        for char in rans:
+            if char not in letters or rans[char] > letters[char]:
                 return False
-            letters[ransomNote[i]] -= 1
 
         return True
 
-print(Solution().canConstruct(ransomNote = "aaa", magazine = "aab"))
+print(Solution().canConstruct(ransomNote = "aa", magazine = "aab"))
