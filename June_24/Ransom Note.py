@@ -11,10 +11,10 @@ class Solution:
             letters[magazine[i]] += 1
 
         for i in range(len(ransomNote)):
-            if ransomNote[i] not in letters or letters[ransomNote] == 0:
+            if ransomNote[i] not in letters or letters[ransomNote[i]] == 0:
                 return False
             letters[ransomNote[i]] -= 1
 
         return True
 
-print(Solution().canConstruct(ransomNote = "aa", magazine = "aab"))
+print(Solution().canConstruct(ransomNote = "aaa", magazine = "aab"))
