@@ -1,4 +1,4 @@
-from collections import defaultdict
+from collections import Counter
 
 
 class Solution:
@@ -6,9 +6,7 @@ class Solution:
         if len(ransomNote) > len(magazine):
             return False
 
-        letters = defaultdict(lambda : 0)
-        for i in range(len(magazine)):
-            letters[magazine[i]] += 1
+        letters = Counter(magazine)
 
         for i in range(len(ransomNote)):
             if ransomNote[i] not in letters or letters[ransomNote[i]] == 0:
