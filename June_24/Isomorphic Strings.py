@@ -7,8 +7,8 @@ class Solution:
             if s[i] in chars:
                 s[i] = chars[s[i]]
             else:
-                s[i] = t[i]
                 chars[s[i]] = t[i]
-        return ''.join(s) == t
+                s[i] = t[i]
+        return ''.join(s) == t and len(chars) == len(set(chars.values()))
 
-print(Solution().isIsomorphic(s = "paperp", t = "titles"))
+print(Solution().isIsomorphic(s = "badc", t = "baba"))
