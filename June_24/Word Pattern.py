@@ -8,6 +8,6 @@ class Solution:
             else:
                 mapping[pattern[i]] = word
             i += 1
-        return True
+        return len(mapping) == len(set(mapping.values()))
 
-print(Solution().wordPattern(pattern = "abba", s = "dog cat cat dogs"))
+print(Solution().wordPattern(pattern = "abba", s = "dog dog dog dog"))
