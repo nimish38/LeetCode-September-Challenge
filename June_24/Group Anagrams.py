@@ -3,9 +3,9 @@ class Solution:
     def groupAnagrams(self, strs):
         curr, mappings = set(), defaultdict(list)
         for str in strs:
-            curr = set(str)
+            curr = ''.join(sorted(str))
             mappings[curr].append(str)
 
         return list(mappings.values())
 
-print()
+print(Solution().groupAnagrams(strs = ["a"]))
