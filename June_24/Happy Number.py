@@ -7,7 +7,7 @@ class Solution:
                 sum += val[char]
             n = sum
 
-        if n == 1:
+        if n == 1 or n == 7:
             return True
         return False
 
