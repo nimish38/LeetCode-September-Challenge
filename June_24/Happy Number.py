@@ -1,14 +1,11 @@
 class Solution:
     def isHappy(self, n: int) -> bool:
-        val, curr = {'0': 0, '1': 1, '2': 4, '3': 9, '4': 16, '5': 25, '6': 36, '7': 49, '8': 64, '9': 81}, -1
-        while n > 9 and curr != n:
-            curr, sum = n, 0
-            for char in str(n):
-                sum += val[char]
-            n = sum
+        vis = set()
+        while n != 1:
+            if n in vis:
+                return False
+            vis.add(n)
+            n = sum([int(i)**2 for i in str(n)])
+        return True
 
-        if n == 1 or n == 7:
-            return True
-        return False
-
-print(Solution().isHappy(n = 97))
+print(Solution().isHappy(n = 7))
