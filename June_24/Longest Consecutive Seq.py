@@ -3,24 +3,11 @@ class Solution:
         if len(nums) == 0:
             return 0
         val, res = {}, -1
-        for num in nums:
-            if num in val:
-                continue
-            lcont, rcont = 0, 0
-            if num - 1 in val:
-                lcont = val[num - 1]
-            if num + 1 in val:
-                rcont = val[num + 1]
-            val[num] = lcont + rcont + 1
-            if lcont:
-                while lcont > 0:
-                    val[num - lcont] = val[num]
-                    lcont -= 1
-            if rcont:
-                while rcont:
-                    val[num + rcont] = val[num]
-                    rcont -= 1
-            res = max(res, val[num])
+        for num in set(nums):
+            lcont, rcont = val.get(num - 1, 0), val.get(num + 1, 0)
+            curr = lcont + rcont + 1
+            val[num - lcont] = val[num + rcont] = curr
+            res = max(res, curr)
         return res
 
-print(Solution().longestConsecutive(nums = [0,3,7,2,5,8,4,6,0,1]))
+print(Solution().longestConsecutive(nums = [4,0,-4,-2,2,5,2,0,-8,-8,-8,-8,-1,7,4,5,5,-4,6,6,-3]))
