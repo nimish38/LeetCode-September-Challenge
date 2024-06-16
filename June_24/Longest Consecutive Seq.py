@@ -8,6 +8,6 @@ class Solution:
             else:
                 res = max(res, cnt)
                 cnt = 1
-        return res
+        return max(res, cnt)
 
-print(Solution().longestConsecutive())
+print(Solution().longestConsecutive(nums = [0,3,7,2,5,8,4,6,0,1]))
