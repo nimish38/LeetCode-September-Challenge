@@ -2,6 +2,7 @@ class Solution:
     def longestConsecutive(self, nums) -> int:
         if len(nums) == 0:
             return 0
+        nums = list(set(nums))
         nums.sort()
         cnt, res = 1, -1
         for i in range(1, len(nums)):
