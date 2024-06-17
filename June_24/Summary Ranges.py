@@ -7,9 +7,9 @@ class Solution:
 
         def build_range(l, r):
             if l == r - 1:
-                ranges.append(str(nums[l]))
+                ranges.append(f"{nums[l]}")
             else:
-                ranges.append(str(nums[l]) + '->' + str(nums[r - 1]))
+                ranges.append(f"{nums[l]}->{nums[r - 1]}")
 
         while right < n:
             if nums[right] - nums[right - 1] == 1:
