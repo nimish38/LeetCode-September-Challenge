@@ -16,11 +16,8 @@ class Solution:
                 elif end < int[0]:
                     res.append(int)
         if not flag:
-            if end < res[0][0]:
-                res.insert(0, newInterval)
-            else:
-                res.append(newInterval)
-        return res
+            res.append(newInterval)
+        return sorted(res)
 
 print(Solution().insert(intervals = [[1,5]], newInterval = [0,0]))
 
