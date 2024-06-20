@@ -4,7 +4,7 @@ class Solution:
         for int in intervals:
             if not flag:
                 if int[0] <= start <= int[1]:
-                    res.append(int[0], int[1])
+                    res.append([int[0], max(int[1], end)])
                     flag = True
                 else:
                     res.append(int)
@@ -15,4 +15,5 @@ class Solution:
                     res.append(int)
         return res
 
+print(Solution().insert(intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]))
 
