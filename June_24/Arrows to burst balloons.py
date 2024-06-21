@@ -9,4 +9,4 @@ class Solution:
                 res, start, end = res + 1, pt[0], pt[1]
         return res + 1
 
-print(Solution().findMinArrowShots(points = [[10,16],[2,8],[1,6],[7,12]]))
+print(Solution().findMinArrowShots(points = [[1,2],[2,3],[3,4],[4,5]]))
