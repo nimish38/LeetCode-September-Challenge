@@ -2,7 +2,7 @@ class Solution:
     def simplifyPath(self, path: str) -> str:
         st = []
         for dir in path.split('/'):
-            if dir == '':
+            if dir == '' or dir == '.':
                 continue
             if dir == '..':
                 if st:
@@ -12,4 +12,4 @@ class Solution:
 
         return '/' + '/'.join(st)
 
-print(Solution().simplifyPath("/home/user/Documents/../Pictures"))
+print(Solution().simplifyPath("/.../a/../b/c/../d/./"))
