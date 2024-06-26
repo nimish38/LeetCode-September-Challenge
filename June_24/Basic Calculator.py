@@ -29,6 +29,8 @@ class Solution:
                 elif st[-1] in operators:
                     op, num = st.pop(), st.pop()
                     st.append(operators[op](num, int(char)))
+                elif type(st[-1]) is int:
+                    st[-1] = (st[-1] * 10) + int(char)
                 else:
                     st.append(int(char))
 
@@ -38,5 +40,5 @@ class Solution:
 
         return st[0]
 
-print(Solution().calculate(s = "(1+(4+5+2)-3)+(6+8)"))
+print(Solution().calculate(s = "2147483647"))
 
