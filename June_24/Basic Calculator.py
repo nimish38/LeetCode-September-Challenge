@@ -25,6 +25,13 @@ class Solution:
                     op, num = st.pop(), st.pop()
                     st.append(op(int(char), num))
                 else:
-                    st.append(char)
+                    st.append(int(char))
 
-        
+        while len(st) > 1:
+            op2, op, op1 = st.pop(), st.pop(), st.pop()
+            st.push(op(op1, op2))
+
+        return st[0]
+
+print(Solution().calculate())
+
