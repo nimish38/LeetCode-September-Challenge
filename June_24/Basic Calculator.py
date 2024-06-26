@@ -6,7 +6,7 @@ class Solution:
             if char == ' ':
                 continue
             elif char in operators:
-                if not st or st[-1] in operators:
+                if not st or st[-1] in operators or st[-1] == '(':
                     neg = True
                 else:
                     st.append(char)
@@ -40,5 +40,5 @@ class Solution:
 
         return st[0]
 
-print(Solution().calculate(s = "2147483647"))
+print(Solution().calculate(s = "1-(     -2)"))
 
