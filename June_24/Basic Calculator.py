@@ -22,10 +22,11 @@ class Solution:
             elif char == '(':
                 st.append(char)
             else:
-                if not st:
-                    st.append(int(char))
-                elif neg:
+                if neg:
                     st.append(-1 * int(char))
+                    neg = False
+                elif not st:
+                    st.append(int(char))
                 elif st[-1] in operators:
                     op, num = st.pop(), st.pop()
                     st.append(operators[op](num, int(char)))
@@ -40,5 +41,5 @@ class Solution:
 
         return st[0]
 
-print(Solution().calculate(s = "1-(     -2)"))
+print(Solution().calculate(s = "-2+ 1"))
 
