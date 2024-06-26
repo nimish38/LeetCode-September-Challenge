@@ -5,11 +5,11 @@ class Solution:
         for char in s:
             if char == ' ':
                 continue
-            elif char in operator:
-                if not st or st[-1] in operator:
+            elif char in operators:
+                if not st or st[-1] in operators:
                     neg = True
                 else:
-                    st.append(operators[char])
+                    st.append(char)
             elif char == ')':
                 num = st.pop()
                 st.pop()
@@ -19,19 +19,19 @@ class Solution:
             else:
                 if not st:
                     st.append(int(char))
-                if neg:
+                elif neg:
                     st.append(-1 * int(char))
-                elif st[-1] in operator:
+                elif st[-1] in operators:
                     op, num = st.pop(), st.pop()
-                    st.append(op(int(char), num))
+                    st.append(operators[op](num, int(char)))
                 else:
                     st.append(int(char))
 
         while len(st) > 1:
             op2, op, op1 = st.pop(), st.pop(), st.pop()
-            st.push(op(op1, op2))
+            st.append(operators[op](op1, op2))
 
         return st[0]
 
-print(Solution().calculate())
+print(Solution().calculate(s = "(1+(4+5+2)-3)+(6+8)"))
 
