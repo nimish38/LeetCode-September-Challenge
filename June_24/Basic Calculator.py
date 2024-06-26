@@ -11,9 +11,14 @@ class Solution:
                 else:
                     st.append(char)
             elif char == ')':
-                num = st.pop()
+                emt = []
+                while st[-1] != '(':
+                    emt.append(st.pop())
+                while len(emt) > 1:
+                    op2, op, op1 = emt.pop(), emt.pop(), emt.pop()
+                    emt.append(operators[op](op1, op2))
                 st.pop()
-                st.append(num)
+                st.append(emt[0])
             elif char == '(':
                 st.append(char)
             else:
