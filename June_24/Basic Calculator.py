@@ -2,7 +2,9 @@ import operator
 class Solution:
     def calculate(self, s: str) -> int:
         st, operators, neg, start = [], {'+': operator.add, '-': operator.sub}, False, 1
-        for char in s:
+        i = 0
+        while i < len(s):
+            char = s[i]
             if char == ' ':
                 continue
             elif char in operators:
@@ -29,18 +31,21 @@ class Solution:
                 else:
                     st.append(char)
             else:
+                number = char
+                while i + 1 < len(s) and s[i + 1].isnumeric():
+                    i += 1
+                    number += s[i]
                 if neg:
-                    st.append(-1 * int(char))
+                    st.append(-1 * int(number))
                     neg = False
                 elif not st:
-                    st.append(int(char))
+                    st.append(int(number))
                 elif st[-1] in operators:
                     op, num = st.pop(), st.pop()
-                    st.append(operators[op](num, int(char)))
-                elif type(st[-1]) is int:
-                    st[-1] = (st[-1] * 10) + int(char)
+                    st.append(operators[op](num, int(number)))
                 else:
-                    st.append(int(char))
+                    st.append(int(number))
+            i += 1
 
         while len(st) > 1:
             op2, op, op1 = st.pop(), st.pop(), st.pop()
@@ -48,5 +53,5 @@ class Solution:
 
         return st[0]
 
-print(Solution().calculate(s = "- (3 + (4 + 5))"))
+print(Solution().calculate(s = "12311"))
 
