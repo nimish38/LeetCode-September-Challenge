@@ -16,8 +16,10 @@ class Solution:
         return first
 
     def addTwoNumbers(self, l1, l2):
+        l1 = self.build_LL(l1)
+        l2 = self.build_LL(l2)
         res = head = ListNode(0)
-        first, carry = False, False
+        first, carry = True, False
         while l1 or l2:
             num1 = num2 = 0
             if l1:
@@ -40,7 +42,10 @@ class Solution:
             else:
                 newNode = ListNode(value)
                 res.next = newNode
+                res = newNode
         if carry:
             newNode = ListNode(1)
             res.next = newNode
         return head
+
+print(Solution().addTwoNumbers(l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]))
