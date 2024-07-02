@@ -19,7 +19,7 @@ class Solution:
         l1 = self.build_LL(l1)
         l2 = self.build_LL(l2)
         res = head = ListNode(0)
-        first, carry = True, False
+        first, carry = True, 0
         while l1 or l2:
             num1 = num2 = 0
             if l1:
@@ -29,13 +29,9 @@ class Solution:
                 num2 = l2.val
                 l2 = l2.next
 
-            value = num1 + num2
-            if carry:
-                value += 1
-                carry = False
-            if value > 9:
-                value %= 10
-                carry = True
+            value = carry + num1 + num2
+            carry = value // 10
+            value %= 10
             if first:
                 res.val = value
                 first = False
