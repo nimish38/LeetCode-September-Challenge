@@ -17,8 +17,6 @@ class Solution:
         return first
 
     def mergeTwoLists(self, list1, list2):
-        list1 = self.build_LL(list1)
-        list2 = self.build_LL(list2)
         if not list1 and not list2:
             return None
         first, head, res, node = True, None, None, None
@@ -37,23 +35,17 @@ class Solution:
                 res.next = node
                 res = node
 
-        while list1:
+        if list1:
             if first:
-                res = head = list1
-                first = False
+                head = list1
             else:
                 res.next = list1
-                res = list1
-            list1 = list1.next
 
-        while list2:
+        if list2:
             if first:
-                res = head = list2
-                first = False
+                head = list2
             else:
                 res.next = list2
-                res = list2
-            list2 = list2.next
 
         return head
 
