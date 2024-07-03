@@ -1,6 +1,25 @@
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+
 class Solution:
+    def build_LL(self, head):
+        first, prev = None, None
+        for i in range(len(head)):
+            a = ListNode(head[i])
+            if i == 0:
+                first = prev = a
+            else:
+                prev.next = a
+                prev = a
+        return first
+
     def mergeTwoLists(self, list1, list2):
-        if not list1 and list2:
+        list1 = self.build_LL(list1)
+        list2 = self.build_LL(list2)
+        if not list1 and not list2:
             return None
         first, head, res, node = True, None, None, None
         while list1 and list2:
@@ -39,3 +58,4 @@ class Solution:
         return head
 
 
+print(Solution().mergeTwoLists(list1 = [], list2 = [0]))
