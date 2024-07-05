@@ -14,8 +14,15 @@ class Solution:
             new_node = Node(curr.val, curr.next)
             curr.next = new_node
             curr = new_node.next
+        # handle random pointers
+        curr = head
+        while curr:
+            if curr.random:
+                curr.next.random = curr.random.next
+            else:
+                curr.next.random = None
+            curr = curr.next.next
 
-        
 
 
 
