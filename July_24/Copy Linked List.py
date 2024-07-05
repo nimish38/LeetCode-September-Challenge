@@ -22,9 +22,15 @@ class Solution:
             else:
                 curr.next.random = None
             curr = curr.next.next
-
-
-
+        # separate 2 lists
+        curr, new_head = head.next, head.next
+        while curr:
+            if curr.next:
+                curr.next = curr.next.next
+            else:
+                curr.next = None
+            curr = curr.next
+        return new_head
 
 print(Solution().copyRandomList([[7,None],[13,0],[11,4],[10,2],[1,0]]))
 
