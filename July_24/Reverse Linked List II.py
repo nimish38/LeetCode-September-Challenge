@@ -5,7 +5,21 @@ class ListNode:
 
 
 class Solution:
+    def build_LL(self, head):
+        first, prev = None, None
+        for i in range(len(head)):
+            a = ListNode(head[i])
+            if i == 0:
+                first = prev = a
+            else:
+                prev.next = a
+                prev = a
+        return first
+
     def reverseBetween(self, head, left: int, right: int):
+        head = self.build_LL(head)
+        if not head or not head.next:
+            return head
         dummy = ListNode(-1)
         dummy.next = head
 
@@ -14,6 +28,7 @@ class Solution:
             prev = prev.next
 
         start = first = prev.next
+        curr = second = None
         if first:
             curr = first.next
         if curr:
