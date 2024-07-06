@@ -37,9 +37,10 @@ class Solution:
         for i in range(left, right):
             curr.next = first
             first, curr, second = curr, second, second.next
-
-        prev.next = curr
-        start.next = second
+            if second:
+                second = second.next
+        prev.next = first
+        start.next = curr
         return dummy.next
 
 print(Solution().reverseBetween(head = [1,2,3,4,5], left = 2, right = 4))
