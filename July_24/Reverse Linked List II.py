@@ -1,17 +1,30 @@
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+
 class Solution:
     def reverseBetween(self, head, left: int, right: int):
-        curr, i, vals = head, 1, []
-        while curr:
-            if left <= i <= right:
-                vals.append(curr.val)
-            curr = curr.next
-            i += 1
-        curr, i = head, 1
-        while curr:
-            if left <= i <= right:
-                curr.val = vals.pop()
-            curr = curr.next
-            i += 1
-        return head
+        dummy = ListNode(-1)
+        dummy.next = head
+
+        prev = dummy
+        for i in range(1, left):
+            prev = prev.next
+
+        start = first = prev.next
+        if first:
+            curr = first.next
+        if curr:
+            second = curr.next
+
+        for i in range(left, right):
+            curr.next = first
+            first, curr, second = curr, second, second.next
+
+        prev.next = curr
+        start.next = second
+        return dummy.next
 
 print(Solution().reverseBetween(head = [1,2,3,4,5], left = 2, right = 4))
