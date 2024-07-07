@@ -40,6 +40,7 @@ class Solution:
             for i in range(k - 1):
                 if not temp:
                     lastFlag = True
+                    break
                 temp = temp.next
             if not temp or lastFlag:
                 prev.next = curr
@@ -55,4 +56,4 @@ class Solution:
 
 
 
-print(Solution().reverseKGroup(head = [1,2,3,4,5], k = 3))
+print(Solution().reverseKGroup(head = [1,2], k = 2))
