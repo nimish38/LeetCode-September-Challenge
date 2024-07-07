@@ -27,13 +27,31 @@ class Solution:
                 succ = succ.next
         return prev
 
-
-
     def reverseKGroup(self, head, k: int):
         head = self.build_LL(head)
-        new_head = self.reverse_LL(head)
-        return new_head
-        # dummy = ListNode(-1)
-        # dummy.next = head
+        if not head or not head.next or k == 1:
+            return head
+        dummy = ListNode(-1)
+        dummy.next = head
+        prev, lastFlag,  = dummy, False
+        next_node = prev.next
+        while not lastFlag:
+            curr, temp = next_node, next_node
+            for i in range(k - 1):
+                if not temp:
+                    lastFlag = True
+                temp = temp.next
+            if lastFlag:
+                prev.next = temp
+            else:
+                next_node = temp.next
+                temp.next = None
+                rev = self.reverse_LL(curr)
+                prev.next = rev
+                prev = curr
+
+        return dummy.next
+
+
 
 print(Solution().reverseKGroup(head = [1,2,3,4,5], k = 2))
