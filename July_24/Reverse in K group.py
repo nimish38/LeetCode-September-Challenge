@@ -16,9 +16,23 @@ class Solution:
                 prev = a
         return first
 
+    def reverse_LL(self, node):
+        prev = node
+        curr, succ = prev.next, prev.next.next
+        node.next = None
+        while curr:
+            curr.next = prev
+            prev, curr = curr, succ
+            if succ:
+                succ = succ.next
+        return prev
+
+
+
     def reverseKGroup(self, head, k: int):
         head = self.build_LL(head)
-        new_head = self.rever_LL(head)
+        new_head = self.reverse_LL(head)
+        return new_head
         # dummy = ListNode(-1)
         # dummy.next = head
 
