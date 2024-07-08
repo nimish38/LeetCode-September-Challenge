@@ -1,7 +1,7 @@
 class ListNode:
-    def __init__(self, x):
+    def __init__(self, x, next = None):
         self.val = x
-        self.next = None
+        self.next = next
 
 class Solution:
     def build_LL(self, head):
@@ -17,23 +17,19 @@ class Solution:
 
     def removeNthFromEnd(self, head, n: int):
         head = self.build_LL(head)
-        dummy = ListNode(-1)
-        dummy.next = head
+        dummy = ListNode(-1, head)
 
-        i, curr = 0, head
-        while curr:
-            curr = curr.next
-            i += 1
-        prev, curr, ind = dummy, head, i - n
+        left = right = dummy
+        for _ in range(n + 1):
+            right = right.next
 
-        for _ in range(ind):
-            prev = curr
-            curr = curr.next
+        # when light reaches end of list, left is at correct position
 
-        prev.next = curr.next
-        curr.next = None
-        del curr
+        while(right):
+            left = left.next
+            right = right.next
+        left.next = left.next.next
         return dummy.next
 
 
-print(Solution().removeNthFromEnd(head = [1,2,3,4,5], n = 2))
+print(Solution().removeNthFromEnd(head = [2,1], n = 1))
