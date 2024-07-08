@@ -24,6 +24,16 @@ class Solution:
         while curr:
             curr = curr.next
             i += 1
-        return i
+        prev, curr, ind = dummy, head, i - n
+
+        for _ in range(ind):
+            prev = curr
+            curr = curr.next
+
+        prev.next = curr.next
+        curr.next = None
+        del curr
+        return dummy.next
+
 
 print(Solution().removeNthFromEnd(head = [1,2,3,4,5], n = 2))
