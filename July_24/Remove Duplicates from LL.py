@@ -17,8 +17,14 @@ class Solution:
 
     def deleteDuplicates(self, head):
         head = self.build_LL(head)
-        dummy = ListNode(-420, head)
+        curr = head
+        while curr.next and curr.val == curr.next.val:
+            curr = curr.next
+        head = curr.next
 
-        return dummy.next
 
-print(Solution().deleteDuplicates(head = [1,2,3,3,4,4,5]))
+
+
+        return head.val
+
+print(Solution().deleteDuplicates(head = [1,1,2,3,3,4,4,5]))
