@@ -27,9 +27,10 @@ class Solution:
             else:
                 if prev.val == curr.val:
                     lastUnique.next = curr.next
+                    prev = None
                 else:
                     lastUnique = prev
-                prev = None
+                    prev = curr
             curr = curr.next
         return dummy.next
 
