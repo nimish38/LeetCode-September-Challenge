@@ -17,14 +17,20 @@ class Solution:
 
     def deleteDuplicates(self, head):
         head = self.build_LL(head)
-        curr = head
-        while curr.next and curr.val == curr.next.val:
+        if not head or not head.next:
+            return head
+        dummy = ListNode(-420, head)
+        lastUnique, curr, prev = dummy, head.next, head
+        while curr:
+            if not prev:
+                prev = curr
+            else:
+                if prev.val == curr.val:
+                    lastUnique.next = curr.next
+                else:
+                    lastUnique = prev
+                prev = None
             curr = curr.next
-        head = curr.next
-
-
-
-
-        return head.val
+        return dummy.next
 
 print(Solution().deleteDuplicates(head = [1,1,2,3,3,4,4,5]))
