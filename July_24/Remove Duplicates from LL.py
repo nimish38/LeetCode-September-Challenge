@@ -20,18 +20,15 @@ class Solution:
         if not head or not head.next:
             return head
         dummy = ListNode(-420, head)
-        lastUnique, curr, prev = dummy, head.next, head
-        while curr:
-            if not prev:
-                prev = curr
+        prev = dummy
+        while head:
+            if head.next and head.val == head.next.val:
+                while head.next and head.val == head.next.val:
+                    head = head.next
+                prev.next = head.next
             else:
-                if prev.val == curr.val:
-                    lastUnique.next = curr.next
-                    prev = None
-                else:
-                    lastUnique = prev
-                    prev = curr
-            curr = curr.next
+                prev = prev.next
+            head = head.next
         return dummy.next
 
-print(Solution().deleteDuplicates(head = [1,1,2,3,3,4,4,5]))
+print(Solution().deleteDuplicates(head = [1,2,3,3,4,4,5]))
