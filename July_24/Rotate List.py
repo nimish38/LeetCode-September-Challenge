@@ -16,6 +16,9 @@ class Solution:
         return first
 
     def rotateRight(self, head, k: int):
+        head = self.build_LL(head)
+        if not head or not head.next:
+            return head
         left, cnt = head, 0
         while left:
             cnt += 1
@@ -29,9 +32,9 @@ class Solution:
         while right.next:
             right = right.next
             left = left.next
-        left = left.next
         temp = left.next
         left.next = None
         right.next = head
         return temp
 
+print(Solution().rotateRight(head = [0,1,2], k = 4))
