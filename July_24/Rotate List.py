@@ -23,9 +23,10 @@ class Solution:
         while left:
             cnt += 1
             left = left.next
-        if k == cnt:
-            return head
+
         k %= cnt
+        if k == 0:
+            return head
         right = left = head
         for _ in range(k):
             right = right.next
