@@ -26,4 +26,12 @@ class Solution:
         for _ in range(k):
             right = right.next
 
-        
+        while right.next:
+            right = right.next
+            left = left.next
+        left = left.next
+        temp = left.next
+        left.next = None
+        right.next = head
+        return temp
+
