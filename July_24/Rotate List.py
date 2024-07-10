@@ -17,13 +17,14 @@ class Solution:
 
     def rotateRight(self, head, k: int):
         head = self.build_LL(head)
-        if not head or not head.next:
+        if not head or not head.next or k is 0:
             return head
         left, cnt = head, 0
         while left:
             cnt += 1
             left = left.next
-
+        if k == cnt:
+            return head
         k %= cnt
         right = left = head
         for _ in range(k):
