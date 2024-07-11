@@ -22,6 +22,19 @@ class Solution:
         head = self.build_LL(head)
         dummy = ListNode(-420, head)
 
+        insertPos = curr = dummy
+        largeFound = False
+        while curr.next:
+            if curr.next.val < x and largeFound:
+                temp, succ = curr.next, curr.next.next
+                curr.next = succ
+                partition = insertPos.next
+                partition.next = temp
+                temp.next = partition
+            else:
+                largeFound = True
+            curr = curr.next
+
         return dummy.next
 
 print(Solution().partition(head = [1,4,3,2,5,2], x = 3))
