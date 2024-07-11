@@ -24,15 +24,17 @@ class Solution:
 
         insertPos = curr = dummy
         largeFound = False
-        while curr.next:
+        while curr and curr.next:
             if curr.next.val < x and largeFound:
                 temp, succ = curr.next, curr.next.next
                 curr.next = succ
                 partition = insertPos.next
-                partition.next = temp
+                insertPos.next = temp
                 temp.next = partition
-            else:
+                insertPos = temp
+            elif curr.next.val >= x and not largeFound:
                 largeFound = True
+                insertPos = insertPos.next
             curr = curr.next
 
         return dummy.next
