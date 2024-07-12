@@ -33,6 +33,7 @@ class Solution:
                     insertPos.next = temp
                     temp.next = partition
                     insertPos = temp
+                    continue
                 else:
                     insertPos = insertPos.next
             elif curr.next.val >= x and not largeFound:
@@ -41,4 +42,4 @@ class Solution:
 
         return dummy.next
 
-print(Solution().partition(head = [1,4,3,2,5,2], x = 3))
+print(Solution().partition(head = [1,4,3,0,2,5,2], x = 3))
