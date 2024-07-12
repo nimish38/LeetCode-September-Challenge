@@ -20,26 +20,20 @@ class Solution:
         if not head:
             return head
         head = self.build_LL(head)
-        dummy = ListNode(-420, head)
-
-        insertPos = curr = dummy
-        largeFound = False
-        while curr and curr.next:
-            if curr.next.val < x:
-                if largeFound:
-                    temp, succ = curr.next, curr.next.next
-                    curr.next = succ
-                    partition = insertPos.next
-                    insertPos.next = temp
-                    temp.next = partition
-                    insertPos = temp
-                    continue
-                else:
-                    insertPos = insertPos.next
-            elif curr.next.val >= x and not largeFound:
-                largeFound = True
-            curr = curr.next
-
-        return dummy.next
+        before = ListNode(0)
+        after = ListNode(0)
+        beforeptr = before
+        afterptr = after
+        while(head):
+            if (head.val<x):
+                beforeptr.next = head
+                beforeptr = head
+            else:
+                afterptr.next = head
+                afterptr = head
+            head=head.next
+        afterptr.next =None
+        beforeptr.next = after.next
+        return before.next
 
 print(Solution().partition(head = [1,4,3,0,2,5,2], x = 3))
