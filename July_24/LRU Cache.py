@@ -34,6 +34,18 @@ class LRUCache:
                 self.remove_node(lru_node)
             self.push_back(key, value)
 
+    def remove_node(self, node):
+        p, n = node.prev, node.next
+        p.next, n.prev = n, p
+        del self.cache[node.key]
+
+    def push_back(self, key, val):
+        new_node = Dll(key, val)
+        last_node = self.tail.prev
+        new_node.prev, new_node.next = last_node, self.tail
+        last_node.next, self.tail.prev = new_node, new_node
+        self.cache[key] = (val, new_node)
+
 
 lRUCache = LRUCache(2)
 print(lRUCache.get(2))
