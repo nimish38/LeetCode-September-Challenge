@@ -8,15 +8,17 @@ class Solution:
     def isSameTree(self, p, q) -> bool:
         if not p and not q:
             return True
-        x, y = [], []
+        x, y = [p], [q]
         while x and y:
             a, b = x.pop(), y.pop()
+            if not a and not b:
+                continue
             if (not a and b) or (a and not b):
                 return False
             if (a and b) and a.val != b.val:
                 return False
             x.extend([a.left, a.right])
-            y.append([b.left, b.right])
+            y.extend([b.left, b.right])
         if x or y:
             return False
         return True
