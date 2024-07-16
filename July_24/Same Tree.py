@@ -5,17 +5,21 @@ class TreeNode:
         self.right = right
 
 class Solution:
-    def similar(self, p, q):
+    def isSameTree(self, p, q) -> bool:
         if not p and not q:
             return True
-        if (not p and q) or (p and not q):
+        x, y = [], []
+        while x and y:
+            a, b = x.pop(), y.pop()
+            if (not a and b) or (a and not b):
+                return False
+            if (a and b) and a.val != b.val:
+                return False
+            x.extend([a.left, a.right])
+            y.append([b.left, b.right])
+        if x or y:
             return False
-        if (p and q) and p.val != q.val:
-            return False
-        return self.similar(p.left, q.left) and self.similar(p.right, q.right)
-
-    def isSameTree(self, p, q) -> bool:
-        return self.similar(p, q)
+        return True
 
 
 x, y = TreeNode(2), TreeNode(3)
