@@ -6,6 +6,7 @@ class Solution:
             self.invert(node.left)
         if node.right:
             self.invert(node.right)
+        return node
 
 
     def invertTree(self, root):
