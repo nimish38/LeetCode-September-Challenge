@@ -1,12 +1,11 @@
-class Solution:
-    def checkSymmetry(self, left, right):
-        if not left and not right:
+    class Solution:
+        def isSymmetric(self, root) -> bool:
+            st = [(root.left, root.right)]
+            while st:
+                p, q = st.pop()
+                if not p and not q:
+                    continue
+                if not p or not q or p.val != q.val:
+                    return False
+                st.extend([(p.left, q.right), (p.right, q.left)])
             return True
-        if not left or not right or left.val != right.val:
-            return False
-        return self.checkSymmetry(left.left, right.right) and self.checkSymmetry(left.right, right.left)
-
-    def isSymmetric(self, root) -> bool:
-        if not root.left and not root.right:
-            return True
-        return self.checkSymmetry(root.left, root.right)
