@@ -9,4 +9,3 @@ class Solution:
                 return False
             st.extend([(p.left, q.right), (p.right, q.left)])
         return True
-    
