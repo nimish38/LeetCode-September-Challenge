@@ -6,16 +6,10 @@ class TreeNode:
 
 class Solution:
     def buildTree(self, preorder, inorder = []):
-        root = curr = TreeNode(preorder[0])
-        i, j, n = 0, 0, len(preorder)
-        while i < n:
-            while j < n and inorder[j] != preorder[i]:
-                j += 1
-            subtree = inorder[i : j]
-
-            i = i + 1
-            while i < j:
-                if preorder[i] == inorder[i]:
-                    
-                i += 1
+        # do the following
+#   make first node from preorder as root
+#   find that node in inorder
+#   recursively call all left nodes in inorder as root.left
+# recursively call all right nodes in inorder as root.right
+#  repeat till empty
 
