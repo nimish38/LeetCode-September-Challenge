@@ -7,19 +7,22 @@ class TreeNode:
 
 class Solution:
     def buildTree(self, preorder, inorder):
-        def construct(start, end):
-            root, i = TreeNode(preorder[start]), start
-            while inorder[i] != root.val:
-                i += 1
+        def construct(start, end, curr):
+            root, i = TreeNode(preorder[curr]), start
+            for i in range(start, end + 1):
+                if inorder[i] == root.val:
+                    break
+            self.curr += 1
             if i > start:
-                root.left = construct(start, i - 1)
-            if i < end - 1:
-                root.right = construct(i + 1, end)
+                root.left = construct(start, i - 1, self.curr)
+            if i < end:
+                root.right = construct(i + 1, end, self.curr)
             return root
 
-        return construct(0, len(preorder))
+        self.curr = 0
+        return construct(0, len(preorder) - 1, self.curr)
 
 
-x = Solution().buildTree(preorder = [3,9,20,15,7], inorder = [9,3,15,20,7])
+x = Solution().buildTree(preorder = [1,2,3], inorder = [2,3,1])
 print(x)
 
