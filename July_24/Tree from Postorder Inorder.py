@@ -7,13 +7,16 @@ class TreeNode:
 class Solution:
     def buildTree(self, inorder, postorder):
         def construct(in_start, in_end, post_start, post_end):
-            if post_start > post_end or in_start > in_end:
+            if in_start > in_end:
                 return
             root, i = TreeNode(postorder[post_end]), in_start
-            while inorder[i] != root.val:
+            while i <= in_end and inorder[i] != root.val:
                 i += 1
-            root.right = construct(i + 1, in_end, i, post_end - 1)
-            root.left = construct(in_start, i - 1, post_start, i - 1)
+            left_subarray, right_subarray = i - in_start, in_end - i
+            if right_subarray:
+                root.right = construct(i + 1, in_end, post_end - right_subarray, post_end - 1)
+            if left_subarray:
+                root.left = construct(in_start, i - 1, post_start, post_start + left_subarray - 1)
             return root
 
         n = len(inorder) - 1
