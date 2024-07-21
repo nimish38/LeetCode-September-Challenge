@@ -7,6 +7,8 @@ class TreeNode:
 class Solution:
     def buildTree(self, inorder, postorder):
         def construct(start, end):
+            if start > end:
+                return
             root, i = TreeNode(postorder[self.idx]), start
             self.idx -= 1
             while inorder[i] != root.val:
@@ -15,7 +17,8 @@ class Solution:
             root.left = construct(i, end)
             return root
 
-        self.idx = len(inorder)
-        return construct(0, len(inorder))
+        self.idx = len(inorder) - 1
+        return construct(0, len(inorder) - 1)
 
-    
+x = Solution().buildTree(inorder = [9,3,15,20,7], postorder = [9,15,7,20,3])
+print(x.val)
