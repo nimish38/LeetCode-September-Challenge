@@ -13,14 +13,13 @@ class Solution:
         while level:
             nodes = len(level)
             for i in range(nodes):
-                poped = level.pop()
+                poped = level.pop(0)
                 if i < nodes - 1:
                     poped.next = level[0]
-                if poped.right:
-                    level.append(poped.right)
                 if poped.left:
                     level.append(poped.left)
-
+                if poped.right:
+                    level.append(poped.right)
         return root
 
 a = Node(4)
