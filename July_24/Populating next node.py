@@ -16,8 +16,23 @@ class Solution:
                 poped = level.pop()
                 if i < nodes - 1:
                     poped.next = level[0]
-                if poped.left:
-                    level.append(poped.left)
                 if poped.right:
                     level.append(poped.right)
+                if poped.left:
+                    level.append(poped.left)
+
         return root
+
+a = Node(4)
+b = Node(5)
+c = Node(7)
+d = Node(2)
+d.left = a
+d.right = b
+e = Node(3)
+e.right = c
+f = Node(1)
+f.left = d
+f.right = e
+x = Solution().connect(f)
+print(f)
