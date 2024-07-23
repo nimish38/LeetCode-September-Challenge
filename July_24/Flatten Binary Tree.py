@@ -16,3 +16,13 @@ class Solution:
             if curr.left:
                 st.append(curr.left)
         return root
+
+
+d, e, f = TreeNode(3), TreeNode(4), TreeNode(6)
+a, b, c = TreeNode(1), TreeNode(2), TreeNode(5)
+a.left, a.right = b, c
+b.left, b.right = d, e
+c.right = f
+
+x = Solution().flatten(a)
+print(x)
