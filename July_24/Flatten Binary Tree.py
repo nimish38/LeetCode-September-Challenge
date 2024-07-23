@@ -7,14 +7,18 @@ class Solution:
     def flatten(self, root) -> None:
         if not root:
             return root
-        curr, st = TreeNode(0), [root]
+        curr, st = root, []
+        if root.right:
+            st.append(root.right)
+        if root.left:
+            st.append(root.left)
         while st:
             node = st.pop()
-            curr.next, curr = node, node
-            if curr.right:
-                st.append(curr.right)
-            if curr.left:
-                st.append(curr.left)
+            if node.right:
+                st.append(node.right)
+            if node.left:
+                st.append(node.left)
+            curr.right, curr.left, curr = node, None, node
         return root
 
 
