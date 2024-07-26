@@ -11,6 +11,7 @@ class Solution:
                     return True
                 return False
             return calculate(node.left, currSum + node.val) or calculate(node.right, currSum + node.val)
-
+        if not root:
+            return False
         return calculate(root, 0)
 
