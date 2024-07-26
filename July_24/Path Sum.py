@@ -5,19 +5,17 @@ class TreeNode:
         self.right = right
 class Solution:
     def hasPathSum(self, root, targetSum: int) -> bool:
-        def calculate(node, currSum):
-            if not node.left and not node.right:
-                if currSum + node.val == targetSum:
-                    return True
-                return False
-            Left, Right = False, False
-            if node.left:
-                Left = calculate(node.left, currSum + node.val)
-            if node.right:
-                Right = calculate(node.right, currSum + node.val)
-
-            return Left or Right
         if not root:
             return False
-        return calculate(root, 0)
+        st = [(root, root.val)]
+        while st:
+            node, currSum = st.pop()
+            if not node.left and not node.right:
+                if currSum == targetSum:
+                    return True
+            if node.right:
+                st.append((node.right, currSum + node.right.val))
+            if node.left:
+                st.append((node.left, currSum + node.left.val))
+        return False
 
