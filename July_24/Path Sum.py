@@ -6,11 +6,17 @@ class TreeNode:
 class Solution:
     def hasPathSum(self, root, targetSum: int) -> bool:
         def calculate(node, currSum):
-            if not node:
-                if currSum == targetSum:
+            if not node.left and not node.right:
+                if currSum + node.val == targetSum:
                     return True
                 return False
-            return calculate(node.left, currSum + node.val) or calculate(node.right, currSum + node.val)
+            Left, Right = False, False
+            if node.left:
+                Left = calculate(node.left, currSum + node.val)
+            if node.right:
+                Right = calculate(node.right, currSum + node.val)
+
+            return Left or Right
         if not root:
             return False
         return calculate(root, 0)
