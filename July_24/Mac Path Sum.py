@@ -1,3 +1,10 @@
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
 class Solution:
     def maxPathSum(self, root) -> int:
         if not root:
@@ -19,3 +26,9 @@ class Solution:
 
         solve(root)
         return bestSum
+
+a = TreeNode(1)
+b = TreeNode(3)
+c = TreeNode(2)
+a.left, a.right = b, c
+print(Solution().maxPathSum(a))
