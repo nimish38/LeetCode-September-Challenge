@@ -9,7 +9,7 @@ class Solution:
     def maxPathSum(self, root) -> int:
         if not root:
             return 0
-        bestSum = float('-inf')
+        self.bestSum = float('-inf')
 
         def solve(node):
             if not node:
@@ -21,11 +21,11 @@ class Solution:
             singlePath = max(leftSum, rightSum) + node.val
             onlynode = node.val
 
-            bestSum = max(bestSum, belowPath, singlePath, onlynode)
+            self.bestSum = max(self.bestSum, belowPath, singlePath, onlynode)
             return max(singlePath, onlynode)
 
         solve(root)
-        return bestSum
+        return self.bestSum
 
 a = TreeNode(1)
 b = TreeNode(3)
