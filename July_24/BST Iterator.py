@@ -22,7 +22,7 @@ class BSTIterator:
         return self.st[self.curr - 1]
 
     def hasNext(self) -> bool:
-        return self.curr == self.len
+        return self.curr != self.len
 
 
 a = TreeNode(9)
