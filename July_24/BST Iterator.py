@@ -15,13 +15,14 @@ class BSTIterator:
     def __init__(self, root):
         self.st = []
         self.inorder(root)
-        print(self.st)
+        self.curr, self.len = 0, len(self.st)
 
     def next(self) -> int:
-        return 1
+        self.curr += 1
+        return self.st[self.curr - 1]
 
     def hasNext(self) -> bool:
-        return False
+        return self.curr == self.len
 
 
 a = TreeNode(9)
