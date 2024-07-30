@@ -5,32 +5,22 @@ class TreeNode:
         self.right = right
 
 class BSTIterator:
-    def inorder(self, node):
-        cn, store = node, []
-        while True:
-            if cn:
-                store.append(cn)
-                cn = cn.left
-            elif store:
-                val = store.pop()
-                self.st.append(val.val)
-                cn = val.right
-            else:
-                break
-
-
     def __init__(self, root):
-        self.st = []
-        self.inorder(root)
-        print(self.st)
-        self.curr, self.len = 0, len(self.st)
+        self.curr, self.st = root, []
+        while self.curr:
+            self.st.append(self.curr)
+            self.curr = self.curr.left
 
     def next(self) -> int:
-        self.curr += 1
-        return self.st[self.curr - 1]
+        node = self.st.pop()
+        self.curr = node.right
+        while self.curr:
+            self.st.append(self.curr)
+            self.curr = self.curr.left
+        return node.val
 
     def hasNext(self) -> bool:
-        return self.curr != self.len
+        return len(self.st) >= 1
 
 
 a = TreeNode(9)
