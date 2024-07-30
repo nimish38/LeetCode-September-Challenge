@@ -6,15 +6,23 @@ class TreeNode:
 
 class BSTIterator:
     def inorder(self, node):
-        if not node:
-            return
-        self.inorder(node.left)
-        self.st.append(node.val)
-        self.inorder(node.right)
+        cn, store = node, []
+        while True:
+            if cn:
+                store.append(cn)
+                cn = cn.left
+            elif store:
+                val = store.pop()
+                self.st.append(val.val)
+                cn = val.right
+            else:
+                break
+
 
     def __init__(self, root):
         self.st = []
         self.inorder(root)
+        print(self.st)
         self.curr, self.len = 0, len(self.st)
 
     def next(self) -> int:
