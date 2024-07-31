@@ -4,18 +4,25 @@ class TreeNode:
         self.left = left
         self.right = right
 
+
 class Solution:
     def countNodes(self, root) -> int:
         if not root:
             return 0
-        st, i = [root], 0
-        while i < len(st):
-            node, i = st[i], i + 1
-            if node.left:
-                st.append(node.left)
-            if node.right:
-                st.append(node.right)
-        return i
+
+        l_depth, r_depth = 0, 0
+        l, r = root, root
+        while l:
+            l_depth += 1
+            l = l.left
+        while r:
+            r_depth += 1
+            r = r.right
+
+        if l_depth == r_depth:
+            return 2 ** l_depth - 1
+
+        return 1 + self.countNodes(root.left) + self.countNodes(root.right)
 
 m, n, o = TreeNode(4), TreeNode(5), TreeNode(6)
 p, q = TreeNode(2), TreeNode(3)
