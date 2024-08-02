@@ -9,15 +9,17 @@ class Solution:
     def rightSideView(self, root):
         if not root:
             return root
-        st, res = [root], []
-        while st:
+        st, res, i = [root], [], 0
+        while i < len(st):
             res.append(st[-1].val)
-            for _ in range(len(st)):
-                node = st.pop(0)
+            moves = len(st)
+            for _ in range(i, moves):
+                node = st[_]
                 if node.left:
                     st.append(node.left)
                 if node.right:
                     st.append(node.right)
+                i += 1
         return res
 
 a, b, c = TreeNode(1), TreeNode(2), TreeNode(3)
