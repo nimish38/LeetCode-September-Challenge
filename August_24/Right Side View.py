@@ -13,7 +13,7 @@ class Solution:
         while st:
             res.append(st[-1].val)
             for _ in range(len(st)):
-                node = st.pop()
+                node = st.pop(0)
                 if node.left:
                     st.append(node.left)
                 if node.right:
@@ -22,5 +22,5 @@ class Solution:
 
 a, b, c = TreeNode(1), TreeNode(2), TreeNode(3)
 a.left, a.right = b, c
-b.left = TreeNode(4)
+b.right, c.right = TreeNode(5), TreeNode(4)
 print(Solution().rightSideView(a))
