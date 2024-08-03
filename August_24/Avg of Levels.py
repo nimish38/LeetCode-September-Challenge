@@ -16,6 +16,10 @@ class Solution:
             for _ in range(num):
                 node = qu.popleft()
                 val += node.val
+                if node.left:
+                    qu.append(node.left)
+                if node.right:
+                    qu.append(node.right)
             res.append(val / num)
         return res
 
