@@ -10,6 +10,8 @@ class TreeNode:
 
 class Solution:
     def levelOrder(self, root):
+        if not root:
+            return []
         qu, res = deque([root]), []
         while qu:
             lvl, num = [], len(qu)
