@@ -9,22 +9,25 @@ class Solution:
     def zigzagLevelOrder(self, root):
         if not root:
             return []
-        qu, res, l2r = deque([root]), [], True
-        while qu:
-            lvl, num = [], len(qu)
-            for _ in range(num):
-                node = qu.popleft()
-                if not l2r:
+        left, right, res, l2r = [root], [], [], True
+        while left or right:
+            lvl = []
+            if l2r:
+                while left:
+                    node = left.pop()
                     if node.left:
-                        qu.append(node.left)
+                        right.append(node.left)
                     if node.right:
-                        qu.append(node.right)
-                else:
+                        right.append(node.right)
+                    lvl.append(node)
+            else:
+                while right:
+                    node = right.pop()
                     if node.right:
-                        qu.append(node.right)
+                        left.append(node.right)
                     if node.left:
-                        qu.append(node.left)
-                lvl.append(node.val)
+                        left.append(node.left)
+                    lvl.append(node)
             l2r = not l2r
             res.append(lvl)
         return res
