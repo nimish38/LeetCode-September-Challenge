@@ -6,17 +6,31 @@ class TreeNode:
 
 class Solution:
     def getMinimumDifference(self, root):
-        diff, st = float('inf'), [root]
-        while st:
-            node = st.pop()
-            if node.left:
-                diff = min(diff, abs(node.val - node.left.val))
-                st.append(node.left)
-            if node.right:
-                diff = min(diff, abs(node.val - node.right.val))
-                st.append(node.right)
+        diff, st, curr = float('inf'), [], root
+        prev = diff
+        while curr:
+            st.append(curr)
+            curr = curr.left
+
+        while st or curr:
+            if not curr:
+                curr = st.pop()
+                # print(curr.val)
+                diff = min(diff, abs(curr.val - prev))
+                prev = curr.val
+                curr = curr.right
+            else:
+                while curr:
+                    st.append(curr)
+                    curr = curr.left
+
         return diff
 
 a, b, c = TreeNode(4), TreeNode(2), TreeNode(6)
 a.left, a.right = b, c
 b.left, b.right = TreeNode(1), TreeNode(3)
+
+
+# a, b, c = TreeNode(1), TreeNode(3), TreeNode(2)
+# a.right, b.left = b, c
+print(Solution().getMinimumDifference(a))
