@@ -1,3 +1,9 @@
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
 class Solution:
     def kthSmallest(self, root, k: int) -> int:
         curr, st = root, []
@@ -17,3 +23,7 @@ class Solution:
                     st.append(curr)
                     curr = curr.left
 
+a, b, c = TreeNode(3), TreeNode(4), TreeNode(1)
+a.right, a.left = b, c
+c.right = TreeNode(2)
+print(Solution().kthSmallest(a, 3))
