@@ -26,4 +26,4 @@ class Solution:
 a, b, c = TreeNode(3), TreeNode(4), TreeNode(1)
 a.right, a.left = b, c
 c.right = TreeNode(2)
-print(Solution().kthSmallest(a, 3))
+print(Solution().kthSmallest(a, 4))
