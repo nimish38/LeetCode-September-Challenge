@@ -5,24 +5,28 @@ class TreeNode:
         self.right = right
 
 class Solution:
-    def isValidBST(self, root) -> bool:
+    def isValidBST(self, root, lsub = [], rsub = []) -> bool:
         left, right = True, True
         if root.left:
-            if root.left.val >= root.val :
-                return False
-            left = self.isValidBST(root.left)
+            rsub.append(root.val)
+            for value in rsub:
+                if root.left.val >= value :
+                    return False
+            left = self.isValidBST(root.left, lsub, rsub)
 
         if root.right:
-            if root.right.val <= root.val :
-                return False
-            right = self.isValidBST(root.right)
+            lsub.append(root.val)
+            for value in rsub:
+                if root.right.val <= value :
+                    return False
+            right = self.isValidBST(root.right, lsub, rsub)
 
         return left and right
 
-# a, b, c = TreeNode(5), TreeNode(4), TreeNode(1)
-# a.right, a.left = b, c
-# b.left, b.right = TreeNode(3), TreeNode(2)
+a, b, c = TreeNode(5), TreeNode(4), TreeNode(1)
+a.right, a.left = b, c
+b.left, b.right = TreeNode(3), TreeNode(2)
 
-a, b = TreeNode(0), TreeNode(1)
-a.right = b
+# a, b = TreeNode(0), TreeNode(1)
+# a.right = b
 print(Solution().isValidBST(a))
