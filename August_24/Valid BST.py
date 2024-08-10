@@ -16,17 +16,17 @@ class Solution:
 
         if root.right:
             lsub.append(root.val)
-            for value in rsub:
+            for value in lsub:
                 if root.right.val <= value :
                     return False
             right = self.isValidBST(root.right, lsub, rsub)
 
         return left and right
 
-a, b, c = TreeNode(5), TreeNode(4), TreeNode(1)
-a.right, a.left = b, c
-b.left, b.right = TreeNode(3), TreeNode(2)
+# a, b, c = TreeNode(5), TreeNode(4), TreeNode(1)
+# a.right, a.left = b, c
+# b.left, b.right = TreeNode(3), TreeNode(2)
 
-# a, b = TreeNode(0), TreeNode(1)
-# a.right = b
+a, b = TreeNode(0), TreeNode(1)
+a.right = b
 print(Solution().isValidBST(a))
