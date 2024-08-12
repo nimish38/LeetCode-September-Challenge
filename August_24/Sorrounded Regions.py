@@ -22,4 +22,11 @@ class Solution:
                 if board[i][j] == 'O':
                     dfs(i, j)
 
+        for i in range(m):
+            for j in range(n):
+                if board[i][j] == 'O':
+                    board[i][j] = 'X'
+                if board[i][j] == 'V':
+                    board[i][j] = 'O'
+
         return board
