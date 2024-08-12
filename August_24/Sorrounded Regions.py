@@ -30,3 +30,5 @@ class Solution:
                     board[i][j] = 'O'
 
         return board
+
+print(Solution().solve(board = [["X","X","X","X"],["X","O","O","X"],["X","X","O","X"],["X","O","X","X"]]))
