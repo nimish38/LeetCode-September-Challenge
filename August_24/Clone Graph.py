@@ -6,6 +6,9 @@ class Node:
 
 class Solution:
     def cloneGraph(self, node):
+        if not node:
+            return node
+
         hashmap = {}
 
         def dfs(val):
@@ -13,7 +16,7 @@ class Solution:
             while st:
                 vertex = st.pop()
                 if vertex not in hashmap:
-                    hashmap[vertex] = Node(vertex)
+                    hashmap[vertex] = Node(vertex.val)
                     for elem in vertex.neighbors:
                         if elem not in hashmap:
                             st.append(elem)
@@ -25,3 +28,8 @@ class Solution:
                 target.neighbors.append(hashmap[nei])
 
         return hashmap[node]
+
+
+a = Node(1, [])
+b = Solution().cloneGraph(a)
+print(b)
