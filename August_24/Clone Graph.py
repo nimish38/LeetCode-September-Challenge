@@ -11,15 +11,17 @@ class Solution:
         def dfs(val):
             st = [val]
             while st:
-                node = st.pop()
-                value = node.val
-                if value not in hashmap:
-                    hashmap[value] = Node(value)
-                    for elem in node.neighbors:
-                        if elem.val in hashmap:
-                            hashmap[value].neighbprs.append(hashmap[elem.val])
-                        else:
+                vertex = st.pop()
+                if vertex not in hashmap:
+                    hashmap[vertex] = Node(vertex)
+                    for elem in vertex.neighbors:
+                        if elem not in hashmap:
                             st.append(elem)
-
         dfs(node)
-        return hashmap[1]
+
+        for elem in hashmap:
+            target = hashmap[elem]
+            for nei in elem.neighbors:
+                target.neighbors.append(hashmap[nei])
+
+        return hashmap[node]
