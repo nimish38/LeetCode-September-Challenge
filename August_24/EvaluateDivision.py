@@ -25,7 +25,7 @@ class Solution:
             src, dest, vis = que[0], que[1], set()
             if src not in adj or dest not in adj:
                 res.append(-1.0)
-            if src == dest:
+            elif src == dest:
                 res.append(1.0)
             else:
                 self.ans, prod = -1.0, 1.0
