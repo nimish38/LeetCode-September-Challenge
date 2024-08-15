@@ -4,30 +4,25 @@ class Node:
         self.val = val
         self.neighbors = neighbors if neighbors is not None else []
 
+
 class Solution:
     def cloneGraph(self, node):
-        if not node:
-            return node
+        visited = {}
 
-        hashmap = {}
+        def dfs(curr):
+            if not node:
+                return None
 
-        def dfs(val):
-            st = [val]
-            while st:
-                vertex = st.pop()
-                if vertex not in hashmap:
-                    hashmap[vertex] = Node(vertex.val)
-                    for elem in vertex.neighbors:
-                        if elem not in hashmap:
-                            st.append(elem)
-        dfs(node)
+            if curr in visited:
+                return visited[curr]
 
-        for elem in hashmap:
-            target = hashmap[elem]
-            for nei in elem.neighbors:
-                target.neighbors.append(hashmap[nei])
+            clone = Node(curr.val, [])
+            visited[curr] = clone
+            clone.neighbors = [dfs(n) for n in curr.neighbors]
 
-        return hashmap[node]
+            return clone
+
+        return dfs(node)
 
 
 a = Node(1, [])
