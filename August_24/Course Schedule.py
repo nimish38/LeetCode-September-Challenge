@@ -1,7 +1,7 @@
 from collections import defaultdict, deque
 class Solution:
     def canFinish(self, numCourses: int, prerequisites):
-        adj, indegree = defaultdict(list), [0]*numCourses
+        adj, vis, inRec = defaultdict(list), [False] * numCourses, [False]*numCourses
 
         def topologicalSort():
             cnt, que = 0, deque()
@@ -21,8 +21,11 @@ class Solution:
         for item in prerequisites:
             a, b = item[0], item[1]
             adj[b].append(a)
-            indegree[a] += 1
-        return topologicalSort()
+
+        for i in range(numCourses):
+            if not vis[i] and isCycleDFS(i, vis, inRec):
+                return False
+        return True
 
 
 print(Solution().canFinish(numCourses = 5, prerequisites = [[1,4],[2,4],[3,1],[3,2]]))
