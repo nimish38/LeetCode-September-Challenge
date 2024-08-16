@@ -5,7 +5,7 @@ class Solution:
 
         def topologicalSort():
             cnt, que = 0, deque()
-            for i in indegree:
+            for i in range(numCourses):
                 if indegree[i] == 0:
                     cnt += 1
                     que.append(i)
@@ -25,4 +25,4 @@ class Solution:
         return topologicalSort()
 
 
-print(Solution().canFinish(numCourses = 2, prerequisites = [[1,0],[0,1]]))
+print(Solution().canFinish(numCourses = 5, prerequisites = [[1,4],[2,4],[3,1],[3,2]]))
