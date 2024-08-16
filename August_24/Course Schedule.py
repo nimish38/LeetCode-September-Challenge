@@ -18,6 +18,16 @@ class Solution:
                         que.append(neighbor)
             return cnt == numCourses
 
+        def isCycleDFS(node, vis, inRec):
+            vis[node] = inRec[node] = True
+            for nei in adj[node]:
+                if not vis[nei] and isCycleDFS(nei, vis, inRec):
+                    return True
+                elif inRec[nei]:
+                    return True
+            inRec[node] = False
+            return False
+
         for item in prerequisites:
             a, b = item[0], item[1]
             adj[b].append(a)
