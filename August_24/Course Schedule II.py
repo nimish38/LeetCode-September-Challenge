@@ -1,35 +1,32 @@
-from collections import defaultdict, deque
+from collections import defaultdict
 class Solution:
     def findOrder(self, numCourses: int, prerequisites):
-        adj, indeg = defaultdict(list), [0]*numCourses
+        adj, vis, inrec = defaultdict(list), [False]*numCourses, [False]*numCourses
+        self.res, self.cycle  = [], False
 
-        def BFSTopoSort():
-            res, cnt, que = [], 0, deque()
-            for i in range(numCourses):
-                if indeg[i] == 0:
-                    que.append(i)
-                    res.append(i)
-                    cnt += 1
+        def DFSTopo(u, v, w, r):
+            if not v[u]:
+                v[u] = w[u] = True
 
-            while que:
-                node = que.popleft()
-                for nei in adj[node]:
-                    indeg[nei] -= 1
-
-                    if indeg[nei] == 0:
-                        que.append(nei)
-                        res.append(nei)
-                        cnt += 1
-
-            if cnt == numCourses:
-                return res
-            return []
+            for nei in adj[u]:
+                if w[nei]:
+                    self.cycle = True
+                    return
+                if not vis[nei]:
+                    DFSTopo(nei, v, w, r)
+            r.append(u)
+            w[u] = False
 
         for item in prerequisites:
             a, b = item[0], item[1]
             adj[b].append(a)
-            indeg[a] += 1
+        for i in range(numCourses):
+            if not vis[i]:
+                DFSTopo(i, vis, inrec, self.res)
 
-        return BFSTopoSort()
+        if not self.cycle:
+            return self.res[::-1]
+        return []
+
 
 print(Solution().findOrder(numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]))
