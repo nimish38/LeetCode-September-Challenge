@@ -18,7 +18,7 @@ class Solution:
 
                     if indeg[nei] == 0:
                         que.append(nei)
-                        res.append(i)
+                        res.append(nei)
                         cnt += 1
 
             if cnt == numCourses:
@@ -31,3 +31,5 @@ class Solution:
             indeg[a] += 1
 
         return BFSTopoSort()
+
+print(Solution().findOrder(numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]))
