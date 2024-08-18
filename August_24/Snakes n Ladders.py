@@ -25,15 +25,16 @@ class Solution:
                     return steps
                 for i in range(1, 7):
                     val = cell + i
-                    if val < n*n:
-                        row, col = getCords(val)
-                        if vis[row][col]:
-                            continue
-                        if board[row][col] == -1:
-                            que.append(val)
-                        else:
-                            que.append(board[row][col])
-                        vis[row][col] = True
+                    if val > n*n:
+                        break
+                    row, col = getCords(val)
+                    if vis[row][col]:
+                        continue
+                    if board[row][col] == -1:
+                        que.append(val)
+                    else:
+                        que.append(board[row][col])
+                    vis[row][col] = True
 
             steps += 1
         return -1
