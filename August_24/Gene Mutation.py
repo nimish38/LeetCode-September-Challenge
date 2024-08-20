@@ -3,7 +3,7 @@ class Solution:
     def minMutation(self, startGene: str, endGene: str, bank) -> int:
         if endGene not in bank:
             return -1
-        que, muta, genes, n, bank, vis = deque([startGene]), 0, {'A', 'T', 'C', 'G'}, len(startGene), dict(bank), {}
+        que, muta, genes, n, bank, vis = deque([startGene]), 0, {'A', 'T', 'C', 'G'}, len(startGene), dict.fromkeys(bank,0), {startGene: 1}
         # print(genes - {'A'})
         while que:
             lvl = len(que)
@@ -16,9 +16,9 @@ class Solution:
                             if new_gene == endGene:
                                 return muta + 1
                             que.append(new_gene)
-                            vis.add(gene)
+                            vis[gene] = 0
             muta += 1
         return -1
 
-print(Solution().minMutation(startGene = "AACCGGTT", endGene = "AAACGGTA", bank = ["AACCGGTA","AACCGCTA","AAACGGTA"]))
+print(Solution().minMutation(startGene = "AACCGGTT", endGene = "AAACGGTA", bank = ["AACCGATT","AACCGATA","AAACGATA","AAACGGTA"]))
 
