@@ -7,7 +7,7 @@ class Solution:
 
         vis, letters, n = {}, set(), len(beginWord)
         for w in wordList:
-            letters.add(set(w))
+            letters = letters.union(set(w))
 
         while que:
             lvl = len(que)
@@ -23,3 +23,5 @@ class Solution:
                             vis[word] = 1
             cnt += 1
         return 0
+
+print(Solution().ladderLength(beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log","cog"]))
