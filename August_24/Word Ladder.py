@@ -18,7 +18,7 @@ class Solution:
                 for i in range(n):
                     for char in letters:
                         new_word = word[:i] + char + word[i + 1:]
-                        if new_word not in vis and new_word in wordList:
+                        if new_word not in vis and new_word in wordList and new_word not in que:
                             que.append(new_word)
                             vis[word] = 1
             cnt += 1
