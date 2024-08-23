@@ -1,5 +1,4 @@
 class Trie:
-
     def __init__(self):
         self.trie = set()
 
@@ -21,3 +20,9 @@ class Trie:
             return True
 
     def startsWith(self, prefix: str) -> bool:
+        curr = self.trie
+        for char in prefix:
+            if char not in curr:
+                return False
+            curr = curr[char]
+        return True
