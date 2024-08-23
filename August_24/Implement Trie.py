@@ -12,5 +12,12 @@ class Trie:
         curr['*'] = True
 
     def search(self, word: str) -> bool:
+        curr = self.trie
+        for char in word:
+            if char not in curr:
+                return False
+            curr = curr[char]
+        if '*' in curr:
+            return True
 
     def startsWith(self, prefix: str) -> bool:
