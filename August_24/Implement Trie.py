@@ -1,12 +1,12 @@
 class Trie:
     def __init__(self):
-        self.trie = set()
+        self.trie = {}
 
     def insert(self, word: str) -> None:
         curr = self.trie
         for char in word:
             if char not in curr:
-                curr[char] = set()
+                curr[char] = {}
             curr = curr[char]
         curr['*'] = True
 
@@ -18,6 +18,7 @@ class Trie:
             curr = curr[char]
         if '*' in curr:
             return True
+        return False
 
     def startsWith(self, prefix: str) -> bool:
         curr = self.trie
@@ -26,3 +27,12 @@ class Trie:
                 return False
             curr = curr[char]
         return True
+
+trie =Trie()
+trie.insert("apple")
+print(trie.search("apple"))
+print(trie.search("app"))
+print(trie.startsWith("app"))
+trie.insert("app")
+print(trie.search("app"))
+print(trie.search('bhosad'))
