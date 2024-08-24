@@ -14,6 +14,8 @@ class WordDictionary:
         return self.regexSearch(word, self.dick)
 
     def regexSearch(self, word, curr):
+        if not isinstance(curr, dict):
+            return False
         for i in range(len(word)):
             char = word[i]
             if char == '.':
@@ -25,15 +27,13 @@ class WordDictionary:
                 return False
             else:
                 curr = curr[char]
-        if curr['*']:
+        if '*' in curr:
             return True
         return False
 
 wordDictionary = WordDictionary()
-wordDictionary.addWord("bad")
-wordDictionary.addWord("dad")
-wordDictionary.addWord("mad")
-print(wordDictionary.search("pad"))
-print(wordDictionary.search("bad"))
-print(wordDictionary.search(".ad"))
-print(wordDictionary.search("b.."))
+wordDictionary.addWord("a")
+print(wordDictionary.search("."))
+print(wordDictionary.search(".a"))
+print(wordDictionary.search("a."))
+# print(wordDictionary.search("b.."))
