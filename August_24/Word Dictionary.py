@@ -11,11 +11,16 @@ class WordDictionary:
         curr['*'] = True
 
     def search(self, word: str) -> bool:
-        curr = self.dick
+        return self.regexSearch(word, self.dick)
+
+    def regexSearch(self, word, curr):
         for i in range(len(word)):
             char = word[i]
             if char == '.':
-                print('fuck')
+                for item in curr:
+                    if self.regexSearch(word[i + 1:], curr[item]):
+                        return True
+                return False
             elif char not in curr:
                 return False
             else:
@@ -23,4 +28,12 @@ class WordDictionary:
         if curr['*']:
             return True
         return False
-    
+
+wordDictionary = WordDictionary()
+wordDictionary.addWord("bad")
+wordDictionary.addWord("dad")
+wordDictionary.addWord("mad")
+print(wordDictionary.search("pad"))
+print(wordDictionary.search("bad"))
+print(wordDictionary.search(".ad"))
+print(wordDictionary.search("b.."))
