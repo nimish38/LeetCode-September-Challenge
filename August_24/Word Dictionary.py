@@ -11,3 +11,16 @@ class WordDictionary:
         curr['*'] = True
 
     def search(self, word: str) -> bool:
+        curr = self.dick
+        for i in range(len(word)):
+            char = word[i]
+            if char == '.':
+                print('fuck')
+            elif char not in curr:
+                return False
+            else:
+                curr = curr[char]
+        if curr['*']:
+            return True
+        return False
+    
