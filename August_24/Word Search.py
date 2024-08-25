@@ -8,4 +8,12 @@ class Solution:
                     curr[char] = {}
                 curr = curr[char]
             curr['*'] = word
-        
+
+
+        self.res = []
+        for i in range(len(board)):
+            for j in range(len(board[0])):
+                if board[i][j] in self.trie:
+                    dfs(i, j, board)
+
+        return self.res
