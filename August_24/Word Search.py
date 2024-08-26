@@ -12,6 +12,7 @@ class Solution:
             if i + dx >= 0 and i + dx < len(bo) and j + dy >= 0 and j + dy < len(bo[0]) and key in curr:
                 new_bo = copy.deepcopy(bo)
                 self.dfs(i + dx, j + dy, new_bo, curr[key])
+        bo[i][j] = key
 
 
     def findWords(self, board, words):
@@ -29,8 +30,7 @@ class Solution:
         for i in range(len(board)):
             for j in range(len(board[0])):
                 if board[i][j] in self.trie:
-                    new_board = copy.deepcopy(board)
-                    self.dfs(i, j, new_board, self.trie)
+                    self.dfs(i, j, board, self.trie)
         return list(self.res)
 
 print(Solution().findWords(board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]], words = ["oath","pea","eat","rain"]))
