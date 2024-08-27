@@ -1,4 +1,3 @@
-from collections import deque
 class Solution:
     def letterCombinations(self, digits):
         if not digits:
@@ -14,18 +13,16 @@ class Solution:
             "8": "tuv",
             "9": "wxyz"
         }
+        res = []
+        def solve(ind, curr):
+            if ind >= len(digits):
+                res.append(curr)
+                return
+            word = buttons[digits[ind]]
+            for char in word:
+                solve(ind + 1, curr + char)
 
-        que = deque()
-        for char in buttons[digits[0]]:
-            que.append(char)
-
-        for i in range(1, len(digits)):
-            curr = buttons[digits[i]]
-            lvl = len(que)
-            for j in range(lvl):
-                word = que.popleft()
-                for char in curr:
-                    que.append(word + char)
-        return list(que)
+        solve(0, "")
+        return res
 
 print(Solution().letterCombinations(digits = "234"))
