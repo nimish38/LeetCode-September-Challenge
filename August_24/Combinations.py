@@ -3,14 +3,13 @@ class Solution:
         res = []
         def solve(curr, combo):
             if len(combo) == k:
-                res.append(combo)
+                res.append([*combo])
                 return
-            if curr > n:
-                return
-            combo.append(curr)
-            solve(curr + 1, list(combo))
-            combo.pop()
-            solve(curr + 1, list(combo))
+
+            for i in range(curr, n+1):
+                combo.append(i)
+                solve(i + 1, combo)
+                combo.pop()
 
         solve(1, [])
         return res
