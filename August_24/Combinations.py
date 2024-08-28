@@ -5,10 +5,12 @@ class Solution:
             if len(combo) == k:
                 res.append(combo)
                 return
-            for i in range(curr, n + 1):
-                combo.append(curr)
-                solve(curr + 1, combo)
+            for i in range(curr + 1, n + 1):
+                combo.append(i)
+                solve(curr + 1, list(combo))
                 combo.pop()
 
-        solve(1, [])
+        solve(0, [])
         return res
+
+print(Solution().combine(n = 4, k = 2))
