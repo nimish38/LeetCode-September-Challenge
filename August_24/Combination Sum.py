@@ -1,19 +1,27 @@
 class Solution:
     def combinationSum(self, candidates, target: int):
-        res = []
+        ans, path = [], []
 
-        def solve(combo, cursum, ind):
-            if cursum == target:
-                res.append([*combo])
+        def backtrack(total, start_index):
+            if total > target:
                 return
-            if cursum > target:
-                return
-            for i in range(ind, len(candidates)):
-                combo.append(candidates[i])
-                solve(combo, cursum + candidates[i], i)
-                combo.pop()
 
-        solve([], 0, 0)
-        return res
+            if total == target:
+                ans.append(path[:])
+                return
+
+            for i in range(start_index, len(candidates)):
+                if total + candidates[i] > target:
+                    break
+
+                total += candidates[i]
+                path.append(candidates[i])
+                backtrack(total, i)
+                total -= candidates[i]
+                path.pop()
+
+        candidates.sort()
+        backtrack(0, 0)
+        return ans
 
 print(Solution().combinationSum(candidates = [2,3,6,7], target = 7))
