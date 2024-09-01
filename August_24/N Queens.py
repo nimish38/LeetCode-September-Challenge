@@ -2,13 +2,18 @@ class Solution:
     def solveNQueens(self, n: int):
         board, res = [], []
         for _ in range(n):
-            board.append([0]*n)
+            board.append([1]*n)
 
-        def solve(chess, row):
-            
+        def solve(row):
+            for i in range(n):
+                if isAvailable(board[row][i]):
+                    board[row][i] = 'Q'
+                    if row == n - 1:
+                        addanswer(board)
+                        return
+                    solve(row + 1)
+                board[row][i] = '1'
 
-        for col in range(n):
-            board[0][col] = 1
-            solve([*board], 0)
-            board[0][col] = 0
+        solve(0)
+
         return res
