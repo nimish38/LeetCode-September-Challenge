@@ -33,6 +33,18 @@ class Solution:
 
             return True
 
+        def addanswer(chess):
+            val = []
+            for i in range(n):
+                str = ''
+                for j in range(n):
+                    if chess[i][j] == 'Q':
+                        str += 'Q'
+                    else:
+                        str += '.'
+                val.append(str)
+            res.append(val)
+
         def solve(row):
             for i in range(n):
                 if isAvailable(row, i):
@@ -41,7 +53,7 @@ class Solution:
                         addanswer(board)
                         return
                     solve(row + 1)
-                board[row][i] = '1'
+                board[row][i] = 1
 
         solve(0)
 
