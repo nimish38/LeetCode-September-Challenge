@@ -51,10 +51,12 @@ class Solution:
                     board[row][i] = 'Q'
                     if row == n - 1:
                         addanswer(board)
+                        board[row][i] = 1
                         return
                     solve(row + 1)
                 board[row][i] = 1
 
         solve(0)
-
         return res
+
+print(Solution().solveNQueens(4))
