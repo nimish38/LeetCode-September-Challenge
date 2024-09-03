@@ -13,3 +13,5 @@ class Solution:
 
         solve('(', n - 1, n)
         return res
+
+print(Solution().generateParenthesis(1))
