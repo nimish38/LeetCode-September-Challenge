@@ -15,3 +15,6 @@ class Solution:
         root.right = self.sortedArrayToBST(nums[mid + 1:])
         return root
 
+
+x = Solution().sortedArrayToBST(nums = [-10,-3,0,5,9])
+print(x.val)
