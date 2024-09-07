@@ -6,6 +6,16 @@ class ListNode:
 
 class Solution:
     def sortList(self, head):
+
+        def splitlist(node):
+            slow, fast = node, node
+            while fast and fast.next:
+                slow = slow.next
+                fast = fast.next.next
+            right = slow.next
+            slow.next = None
+            return right
+
         if not head or head.next:
             return head
         mid = splitlist(head)
