@@ -10,10 +10,11 @@ class Solution:
         def splitlist(node):
             slow, fast = node, node
             while fast and fast.next:
+                prev = slow
                 slow = slow.next
                 fast = fast.next.next
-            right = slow.next
-            slow.next = None
+            right = prev.next
+            prev.next = None
             return right
 
         def mergelist(l, r):
@@ -39,7 +40,7 @@ class Solution:
         left = self.sortList(head)
         right = self.sortList(mid)
 
-        mergelist(left, right)
+        head = mergelist(left, right)
 
         return head
 
