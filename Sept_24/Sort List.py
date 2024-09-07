@@ -32,7 +32,7 @@ class Solution:
                 tail.next = r
             return dummy.next
 
-        if not head or head.next:
+        if not head or not head.next:
             return head
         mid = splitlist(head)
 
@@ -42,3 +42,13 @@ class Solution:
         mergelist(left, right)
 
         return head
+
+a = ListNode(4)
+b = ListNode(2)
+c = ListNode(1)
+d = ListNode(3)
+a.next = b
+b.next = c
+c.next = d
+x = Solution().sortList(a)
+print(x)
