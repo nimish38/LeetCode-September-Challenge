@@ -16,6 +16,22 @@ class Solution:
             slow.next = None
             return right
 
+        def mergelist(l, r):
+            tail = dummy = ListNode('$')
+            while l and r:
+                if l.val < r.val:
+                    tail.next = l
+                    l = l.next
+                else:
+                    tail.next = r
+                    r = r.next
+                tail = tail.next
+            if l:
+                tail.next = l
+            if r:
+                tail.next = r
+            return dummy.next
+
         if not head or head.next:
             return head
         mid = splitlist(head)
