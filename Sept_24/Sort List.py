@@ -2,16 +2,17 @@ class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
+
 class Solution:
     def sortList(self, head):
-        curr, vals = head, []
-        while curr:
-            vals.append(curr.val)
-            curr = curr.next
-        vals.sort()
-        curr, i = head, 0
-        while curr:
-            curr.val = vals[i]
-            curr = curr.next
-            i += 1
+        if not head or head.next:
+            return head
+        mid = splitlist(head)
+
+        left = self.sortList(head)
+        right = self.sortList(mid)
+
+        mergelist(left, right)
+
         return head
