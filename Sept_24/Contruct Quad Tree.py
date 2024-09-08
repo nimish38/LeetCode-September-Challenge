@@ -38,3 +38,5 @@ class Solution:
                 curr.topLeft = curr.topRight = curr.bottomLeft = curr.bottomRight = None
         return curr
 
+x = Solution().construct(grid = [[1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0],[1,1,1,1,1,1,1,1],[1,1,1,1,1,1,1,1],[1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0],[1,1,1,1,0,0,0,0]])
+print(x)
