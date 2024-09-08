@@ -16,10 +16,20 @@ class Solution:
             return curr
 
         # split grids
-        curr.topLeft = self.construct()
-        curr.topRight = self.construct()
-        curr.bottomLeft = self.construct()
-        curr.bottomRight = self.construct()
+        mid, tl, tr, bl, br = n//2, [], [], [], []
+        for i in range(mid):
+            left, right = grid[i][:mid], grid[i][mid:]
+            tl.append(left)
+            tr.append(right)
+        for i in range(mid, n):
+            left, right = grid[i][:mid], grid[i][mid:]
+            bl.append(left)
+            br.append(right)
+        
+        curr.topLeft = self.construct(tl)
+        curr.topRight = self.construct(tr)
+        curr.bottomLeft = self.construct(bl)
+        curr.bottomRight = self.construct(br)
 
         if curr.topLeft.isLeaf and curr.topRight.isLeaf and curr.bottomLeft.isLeaf and curr.bottomRight.isLeaf:
             if curr.topLeft.val == curr.topRight.val == curr.bottomLeft.val == curr.bottomRight.val:
@@ -28,4 +38,3 @@ class Solution:
                 curr.topLeft = curr.topRight = curr.bottomLeft = curr.bottomRight = None
         return curr
 
-             
