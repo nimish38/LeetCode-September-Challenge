@@ -6,6 +6,23 @@ class ListNode:
 
 class Solution:
     def mergeKLists(self, lists):
+
+        def merge(l1, l2):
+            if not l1 and not l2:
+                return None
+            if not l1:
+                return l2
+            if not l2:
+                return l1
+
+            if l1.val <= l2.val:
+                merge(l1.next, l2)
+                return l1
+            else:
+                merge(l1, l2.next)
+                return l2
+
+
         start, end = 0, len(lists) - 1
         if start == end:
             return lists[start]
