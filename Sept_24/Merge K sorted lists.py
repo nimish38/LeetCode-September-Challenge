@@ -6,17 +6,11 @@ class ListNode:
 
 class Solution:
     def mergeKLists(self, lists):
-        vals = []
-        for list in lists:
-            curr = list
-            while curr:
-                vals.append(curr.val)
-                curr = curr.next
-        vals.sort()
-        curr = dummy = ListNode('$')
+        start, end = 0, len(lists) - 1
+        if start == end:
+            return lists[start]
+        mid = (start + end) // 2
+        list1 = self.mergeKLists(lists[:mid])
+        list2 = self.mergeKLists(lists[mid:])
 
-        for num in vals:
-            curr.next = ListNode(num)
-            curr = curr.next
-
-        return dummy.next
+        return merge(list1, list2)
