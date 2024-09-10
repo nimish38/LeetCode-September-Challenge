@@ -26,8 +26,8 @@ class Solution:
         if start == end:
             return lists[start]
         mid = (start + end) // 2
-        list1 = self.mergeKLists(lists[:mid])
-        list2 = self.mergeKLists(lists[mid:])
+        list1 = self.mergeKLists(lists[:mid + 1])
+        list2 = self.mergeKLists(lists[mid + 1:])
 
         return merge(list1, list2)
 
