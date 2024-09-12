@@ -1,5 +1,8 @@
 class Solution:
     def maxSubarraySumCircular(self, nums):
+        if len(nums) == 1:
+            return nums[0]
+
         last, curr, bestSum = False, 0, nums[1]
         for i in range(1, len(nums)):
             curr += nums[i]
