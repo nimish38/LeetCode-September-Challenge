@@ -3,19 +3,27 @@ class Solution:
         if len(nums) == 1:
             return nums[0]
 
-        def Kadanes(arr):
-            curr, bestSum = 0, arr[0]
-            for i in range(len(arr)):
-                curr += arr[i]
+        def Kadanes():
+            totsum, curr, bestSum = 0, 0, nums[0]
+            for i in range(len(nums)):
+                curr += nums[i]
+                totsum += nums[i]
                 bestSum = max(bestSum, curr)
                 if curr < 0:
                     curr = 0
-            return bestSum
-        res = float('-inf')
-        for _ in range(len(nums)):
-            nums = [nums[-1]] + nums[:-1]
-            sum = Kadanes(nums)
-            res = max(res, sum)
-        return res
+            return (bestSum, totsum)
 
-print(Solution().maxSubarraySumCircular(nums = [2,-2,2,7,8,0]))
+        def Kadanes_min():
+            curr, minSum = nums[0], nums[0]
+            for i in range(1, len(nums)):
+                curr = min(nums[i], curr + nums[i])
+                minSum = min(minSum, curr)
+            return minSum
+
+        straight, total = Kadanes()
+        circular = Kadanes_min()
+        if straight > 0:
+            return max(straight, total - circular)
+        return straight
+    
+print(Solution().maxSubarraySumCircular(nums = [-3,-2,-3]))
