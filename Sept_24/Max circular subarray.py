@@ -1,7 +1,7 @@
 class Solution:
     def maxSubarraySumCircular(self, nums):
-        first, last, curr, bestSum = True, False, 0, nums[0]
-        for i in range(len(nums)):
+        last, curr, bestSum = False, 0, nums[1]
+        for i in range(1, len(nums)):
             curr += nums[i]
             if curr > bestSum:
                 bestSum = curr
@@ -9,7 +9,15 @@ class Solution:
                     last = True
             if curr < 0:
                 curr = 0
-                first = False
-        if not first and last:
-            return max(bestSum, bestSum + nums[0])
+        if last:
+            bestSum = max(bestSum, bestSum + nums[0])
+
+        curr, i = 0, 0
+        while curr >= 0 and i < len(nums):
+            curr += nums[i]
+            bestSum = max(bestSum, curr)
+            i += 1
+
         return bestSum
+
+print(Solution().maxSubarraySumCircular(nums = [5,-3,5,-2,-2]))
