@@ -3,24 +3,19 @@ class Solution:
         if len(nums) == 1:
             return nums[0]
 
-        last, curr, bestSum = False, 0, nums[1]
-        for i in range(1, len(nums)):
-            curr += nums[i]
-            if curr > bestSum:
-                bestSum = curr
-                if i == len(nums) - 1:
-                    last = True
-            if curr < 0:
-                curr = 0
-        if last:
-            bestSum = max(bestSum, bestSum + nums[0])
+        def Kadanes(arr):
+            curr, bestSum = 0, arr[0]
+            for i in range(len(arr)):
+                curr += arr[i]
+                bestSum = max(bestSum, curr)
+                if curr < 0:
+                    curr = 0
+            return bestSum
+        res = float('-inf')
+        for _ in range(len(nums)):
+            nums = [nums[-1]] + nums[:-1]
+            sum = Kadanes(nums)
+            res = max(res, sum)
+        return res
 
-        curr, i = 0, 0
-        while curr >= 0 and i < len(nums):
-            curr += nums[i]
-            bestSum = max(bestSum, curr)
-            i += 1
-
-        return bestSum
-
-print(Solution().maxSubarraySumCircular(nums = [5,-3,5,-2,-2]))
+print(Solution().maxSubarraySumCircular(nums = [2,-2,2,7,8,0]))
