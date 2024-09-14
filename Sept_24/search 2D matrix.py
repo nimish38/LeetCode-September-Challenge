@@ -14,5 +14,19 @@ class Solution:
                     start = mid
             return start - 1, False
 
+        def bi_search_col(row):
+            start, end = 0, n - 1
+            while start <= end:
+                mid = (start + end) // 2
+                if matrix[row][mid] == target:
+                    return True
+                elif target < matrix[row][mid]:
+                    end = mid - 1
+                else:
+                    start = mid + 1
+            return False
+
         row, found = bi_search_row()
-        return bi_search_col(row)
+        if not found:
+            return bi_search_col(row)
+        return found
