@@ -3,7 +3,7 @@ class Solution:
         n = len(nums)
         if n == 1:
             return nums[0]
-        if nums[1] > nums[0]:
+        if nums[0] > nums[1]:
             return 1
         if nums[-1] > nums[-2]:
             return n - 1
@@ -19,3 +19,4 @@ class Solution:
 
         return start
 
+print(Solution().findPeakElement(nums = [1,2,1,3,5,6,4]))
