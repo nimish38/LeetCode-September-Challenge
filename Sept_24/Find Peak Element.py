@@ -1,10 +1,8 @@
 class Solution:
     def findPeakElement(self, nums):
         n = len(nums)
-        if n == 1:
-            return nums[0]
-        if nums[0] > nums[1]:
-            return 1
+        if n == 1 or nums[0] > nums[1]:
+            return 0
         if nums[-1] > nums[-2]:
             return n - 1
         start, end = 0, n - 1
