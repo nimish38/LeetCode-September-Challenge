@@ -1,6 +1,7 @@
 class Solution:
     def search(self, nums, target: int):
         n = len(nums)
+
         def findPivot():
             start, end = 0, n - 1
             while start < end:
@@ -8,6 +9,17 @@ class Solution:
                 if nums[mid] > nums[mid + 1]:
                     return mid
                 elif nums[mid] > nums[end]:
+                    start = mid + 1
+                else:
+                    end = mid - 1
+            return -1
+
+        def binarySearch(start, end):
+            while start <= end:
+                mid = (start + end) // 2
+                if nums[mid] == target:
+                    return mid
+                elif target > nums[mid]:
                     start = mid + 1
                 else:
                     end = mid - 1
