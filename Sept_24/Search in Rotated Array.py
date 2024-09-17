@@ -2,7 +2,7 @@ class Solution:
     def search(self, nums, target: int):
         n = len(nums)
         if n == 1:
-            return nums[0] == target
+            return -1 if nums[0] != target else 0
 
         def findPivot():
             start, end = 0, n - 1
