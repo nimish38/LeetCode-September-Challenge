@@ -1,6 +1,8 @@
 class Solution:
     def search(self, nums, target: int):
         n = len(nums)
+        if n == 1:
+            return nums[0] == target
 
         def findPivot():
             start, end = 0, n - 1
