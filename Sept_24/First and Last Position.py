@@ -2,7 +2,7 @@ class Solution:
     def searchRange(self, nums, target: int):
         def binarySearch():
             start, end = 0, len(nums) - 1
-            while start < end:
+            while start <= end:
                 mid = (start + end) // 2
                 if nums[mid] == target:
                     return mid
@@ -18,8 +18,8 @@ class Solution:
         start, end = found, found
         while start > 0 and nums[start - 1] == target:
             start -= 1
-        while end < len(nums) and nums[end + 1] == target:
+        while end < len(nums) - 1 and nums[end + 1] == target:
             end += 1
         return [start, end]
 
-print(Solution().searchRange(nums = [5,7,7,8,8,10], target = 6))
+print(Solution().searchRange(nums = [1], target = 1))
