@@ -21,3 +21,5 @@ class Solution:
         while end < len(nums) and nums[end + 1] == target:
             end += 1
         return [start, end]
+
+print(Solution().searchRange(nums = [5,7,7,8,8,10], target = 6))
