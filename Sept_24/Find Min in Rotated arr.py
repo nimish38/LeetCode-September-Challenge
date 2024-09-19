@@ -7,4 +7,6 @@ class Solution:
                 start = mid + 1
             else:
                 end = mid
-        return end
+        return nums[end]
+
+print(Solution().findMin(nums = [4,5,6,7,0,1,2]))
