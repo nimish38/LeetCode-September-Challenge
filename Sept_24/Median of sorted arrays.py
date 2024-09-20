@@ -1,6 +1,11 @@
 class Solution:
     def findMedianSortedArrays(self, nums1, nums2):
         m, n, odd = len(nums1), len(nums2), False
+        if m == 0:
+            return nums2[n // 2]
+        if n == 0:
+            return nums1[m // 2]
+
         if (m + n) % 2:
             odd = True
 
