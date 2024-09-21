@@ -33,5 +33,11 @@ class Solution:
                     return max(x1, x2)
                 return (max(x1, x2) + min(x3, x4)) / 2
 
+            elif x1 > x4:
+                end = Px - 1
+            else:
+                start = Px + 1
+                
+
 
 print(Solution().findMedianSortedArrays(nums1 = [1,3], nums2 = [2,4,5]))
