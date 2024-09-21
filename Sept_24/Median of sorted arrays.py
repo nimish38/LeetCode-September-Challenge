@@ -7,18 +7,24 @@ class Solution:
         if (m + n) % 2:
             odd = True
 
-        i, j, k, nums = 0, 0, 0, []
-        while k < (m + n) // 2:
+        i, j, k = 0, 0, 0
+        idx1 = (m + n) // 2
+        idx2 = idx1 - 1
+        mid1, mid2 = -1, -1
+        while k < idx1:
             if nums1[i] < nums2[j]:
-                nums.append(nums1[i])
+                if k == idx2:
+                    mid2 = nums1[i]
                 i += 1
             else:
-                nums.append(nums2[j])
+                if k == idx2:
+                    mid2 = nums2[j]
                 j += 1
             k += 1
-        nums.append(min(nums1[i], nums2[j]))
+
+        mid1 = min(nums1[i], nums2[j])
         if not odd:
-            return (nums[-1] + nums[-2]) / 2
-        return nums[-1]
+            return (mid1 + mid2) / 2
+        return mid1
 
 print(Solution().findMedianSortedArrays(nums1 = [1,3], nums2 = [2,4,5]))
