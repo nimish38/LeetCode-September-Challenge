@@ -1,36 +1,24 @@
 class Solution:
     def findMedianSortedArrays(self, nums1, nums2):
         m, n, odd = len(nums1), len(nums2), False
-        if m == 0:
-            return nums2[n // 2]
-        if n == 0:
-            return nums1[m // 2]
+        nums1.append(float('inf'))
+        nums2.append(float('inf'))
 
         if (m + n) % 2:
             odd = True
 
-        i, j, k, last, mid = 0, 0, 0, False, 0
-        while i < m and j < n and k <= (m + n) // 2:
+        i, j, k, nums = 0, 0, 0, []
+        while k < (m + n) // 2:
             if nums1[i] < nums2[j]:
+                nums.append(nums1[i])
                 i += 1
-                last = False
             else:
+                nums.append(nums2[j])
                 j += 1
-                last = True
             k += 1
-
-        if last:
-            mid = nums2[j - 1]
-        else:
-            mid = nums1[i - 1]
-
+        nums.append(min(nums1[i], nums2[j]))
         if not odd:
-            sec = float('inf')
-            if i < m:
-                sec = nums1[i]
-            if j < n:
-                sec = min(sec, nums2[j])
-            return (mid + sec) / 2
-        return mid
+            return (nums[-1] + nums[-2]) / 2
+        return nums[-1]
 
-print(Solution().findMedianSortedArrays(nums1 = [1,2], nums2 = [3,4]))
+print(Solution().findMedianSortedArrays(nums1 = [1,3], nums2 = [2,4,5]))
