@@ -1,6 +1,20 @@
 class Solution:
     def findKthLargest(self, nums, k: int) -> int:
-        l, r, pivot = 0, len(nums), 0
+        def quick_select(i, j):
+            piv, x, i = nums[i], i, i + 1
+            while i <= j:
+                if nums[i] < piv < nums[j]:
+                    nums[i], nums[j] = nums[j], nums[i]
+                    i += 1
+                    j -= 1
+                if nums[i] >= piv:
+                    i += 1
+                if nums[j] <= piv:
+                    j -= 1
+            nums[x], nums[j] = nums[j], nums[x]
+            return j
+
+        l, r, pivot = 0, len(nums) - 1, 0
         while True:
             pivot = quick_select(l, r)
             if pivot == k - 1:
@@ -12,4 +26,4 @@ class Solution:
 
         return nums[pivot]
 
-print(Solution().findKthLargest(nums = [3,2,3,1,2,4,5,5,6], k = 4))
+print(Solution().findKthLargest(nums = [3], k = 1))
