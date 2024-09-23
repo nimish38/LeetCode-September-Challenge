@@ -4,6 +4,7 @@ class Solution:
         for i in range(len(capital)):
             if capital[i] == 0:
                 w += profits[i]
+                k -= 2
 
         heap = []
         for i in range(len(capital)):
@@ -20,5 +21,5 @@ class Solution:
         return w
 
 
-print(Solution().findMaximizedCapital(k = 2, w = 0, profits = [1,2,3], capital = [0,1,1]))
+print(Solution().findMaximizedCapital(k = 3, w = 0, profits = [1,2,3], capital = [0,1,2]))
 
