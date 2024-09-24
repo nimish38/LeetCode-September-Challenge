@@ -8,11 +8,13 @@ class Solution:
         i = 0
         while k > 0:
             while i < len(capital) and pairs[i][0] <= w:
-                heapq.heappush(heap, pairs[i][1])
+                heapq.heappush(heap, pairs[i][1] * -1)
                 i += 1
+            if len(heap) == 0:
+                break
 
-            heapq._heapify_max(heap)
-            w += heapq._heappop_max(heap)
+            # heapq._heapify_max(heap)
+            w += (-1 * heapq.heappop(heap))
             k -= 1
         return w
 
