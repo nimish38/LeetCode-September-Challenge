@@ -1,15 +1,13 @@
 import heapq
 class Solution:
     def kSmallestPairs(self, nums1, nums2, k: int):
-        res = []
-        heapq.heapify(nums1)
-        heapq.heapify(nums2)
+        res, i, j = [], 0, 0
 
-        for _ in range(k):
-            a, b = heapq.heappop(nums1), heapq.heappop(nums2)
-            res.append([a, b])
-            if nums1[0] < nums2[0]:
-                heapq.heappush(nums2, b)
-            else:
-                heapq.heappush(nums1, a)
-        return res
+        for i in range(len(nums1)):
+            for j in range(len(nums2)):
+                res.append([nums1[i], nums2[j]])
+
+        res.sort(key=lambda x: sum(x))
+        return res[:k]
+
+print(Solution().kSmallestPairs(nums1 = [1,7,11], nums2 = [2,4,6], k = 3))
