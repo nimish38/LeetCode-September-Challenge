@@ -1,10 +1,13 @@
 import heapq
 class MedianFinder:
     def __init__(self):
-        self.nums = []
+        self.min_heap, self.max_heap = [], []
 
     def addNum(self, num: int) -> None:
-        heapq.heappush(self.nums, num)
+        if len(self.min_heap) == len(self.max_heap):
+            heapq.heappush(self.max_heap, -1 * num)
+        else:
+            heapq.heappush(self.min_heap, num)
 
     def findMedian(self) -> float:
         n = len(self.nums)
