@@ -7,11 +7,9 @@ class Solution:
 
         res = 0
         for k in range(0, 32):
-            curr, cntOne, cntZer = 1 << k, 0, 0
+            curr, cntOne = 1 << k, 0
             for num in nums:
-                if curr & num == 0:
-                    cntZer += 1
-                else:
+                if curr & num:
                     cntOne += 1
             if cntOne % 3:
                 res = res | curr
