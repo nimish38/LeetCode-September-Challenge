@@ -1,10 +1,7 @@
 class Solution:
     def rangeBitwiseAnd(self, left: int, right: int) -> int:
-        shifts = 0
-        while left != right:
-            left >>= 1
-            right >>= 1
-            shifts += 1
-        return left << shifts
+        while right > left:
+            right &= right - 1 #n & n-1 removes set bit
+        return right
 
 print(Solution().rangeBitwiseAnd(left = 5, right = 7))
