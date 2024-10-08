@@ -1,10 +1,10 @@
 class Solution:
     def rangeBitwiseAnd(self, left: int, right: int) -> int:
-        res = left
-        for num in range(left + 1, right + 1):
-            res = res & num
-            if res == 0:
-                return 0
-        return res
+        shifts = 0
+        while left != right:
+            left >>= 1
+            right >>= 1
+            shifts += 1
+        return left << shifts
 
-print(Solution().rangeBitwiseAnd(left = 1, right = 2147483647))
+print(Solution().rangeBitwiseAnd(left = 5, right = 7))
