@@ -6,7 +6,7 @@ class Solution:
         while x >= divisor:
             divisor *= 10
         divisor //= 10
-        while x > 10:
+        while x:
             left, right = x // divisor, x % 10
             if left != right:
                 return False
@@ -15,4 +15,4 @@ class Solution:
             divisor //= 100
         return True
 
-print(Solution().isPalindrome(x = 31213))
+print(Solution().isPalindrome(x = 1000021))
