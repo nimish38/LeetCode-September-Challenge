@@ -15,5 +15,8 @@ class Solution:
                     digits[i] += 1
                     carry = False
                 i -= 1
+            if carry:
+                digits = [1] + digits
             return digits
-        
+
+print(Solution().plusOne(digits=[1,2,3,9,9]))
