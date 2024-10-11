@@ -8,3 +8,5 @@ class Solution:
             res += 1
             n //= 10
         return res
+
+print(Solution().trailingZeroes(n = 5))
