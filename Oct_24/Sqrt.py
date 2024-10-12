@@ -10,5 +10,6 @@ class Solution:
                 r = mid
             else:
                 l = mid + 1
-        return l
+        return l - 1
 
+print(Solution().mySqrt(x = 36))
