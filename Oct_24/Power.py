@@ -4,7 +4,7 @@ class Solution:
             return 1
         if n < 0:
             return self.myPow(1/x, -n)
-        if n % 2:
+        if not n % 2:
             return self.myPow(x*x, n//2)
         else:
             return x * self.myPow(x * x, (n-1)//2)
