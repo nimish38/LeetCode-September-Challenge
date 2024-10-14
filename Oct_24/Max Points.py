@@ -1,6 +1,8 @@
 class Solution:
     def maxPoints(self, points) -> int:
         res, n = 0, len(points)
+        if n == 1:
+            return 1
         for i in range(n):
             for j in range(i + 1, n):
                 cnt = 2
