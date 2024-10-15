@@ -18,6 +18,6 @@ class Solution:
                 val = max(val, cnt[i])
             res = max(res, val)
 
-        return res
+        return res + 1
 
 print(Solution().maxPoints(points = [[1,1],[3,2],[5,3],[4,1],[2,3],[1,4]]))
