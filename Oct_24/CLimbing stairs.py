@@ -1,5 +1,7 @@
 class Solution:
     def climbStairs(self, n: int) -> int:
+        if n == 0 or n == 1 or n == 2:
+            return n
         steps = [-1]*(n+1)
         steps[1] = 1
         steps[0] = 0
