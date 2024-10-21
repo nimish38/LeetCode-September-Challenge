@@ -2,14 +2,16 @@ class Solution:
     def change(self, amount: int, coins) -> int:
         if amount == 0:
             return 0
+        self.temp = 0
 
         def solve(amt):
-            if amt in coins:
-                return 1
-            res = 0
             for coin in coins:
-                if amt - coin > 0:
-                    res += solve(amt - coin)
-            return res
+                if amt - coin == 0:
+                    self.temp += 1
+                elif amt - coin > 0:
+                    solve(amt - coin)
+        solve(amount)
+        return self.temp
+        # return self.res
 
-        return solve(amount)
+print(Solution().change(amount = 5, coins = [1,2,5]))
