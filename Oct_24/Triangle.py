@@ -1,15 +1,19 @@
 class Solution:
     def minimumTotal(self, triangle) -> int:
-        n = len(triangle)
+        n, memo = len(triangle), []
+        for _ in range(n):
+            memo.append(['*']*n)
 
         def solve(row, col):
             if col < 0 or col > row:
                 return float('inf')
             if row == n - 1:
                 return triangle[row][col]
-            left = solve(row + 1, col)
-            right = solve(row + 1, col + 1)
-            return triangle[row][col] + min(left, right)
+            if memo[row][col] == '*':
+                left = solve(row + 1, col)
+                right = solve(row + 1, col + 1)
+                memo[row][col] = triangle[row][col] + min(left, right)
+            return memo[row][col]
 
         return solve(0, 0)
 
