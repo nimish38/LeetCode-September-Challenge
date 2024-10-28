@@ -5,10 +5,12 @@ class Solution:
         def solve(row, col):
             if col < 0 or col > row:
                 return float('inf')
-            if row == n:
-                return triangle[row - 1][col - 1]
+            if row == n - 1:
+                return triangle[row][col]
             left = solve(row + 1, col)
             right = solve(row + 1, col + 1)
-            return triangle[row - 1][col - 1] + min(left, right)
-        
+            return triangle[row][col] + min(left, right)
+
         return solve(0, 0)
+
+print(Solution().minimumTotal(triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]))
