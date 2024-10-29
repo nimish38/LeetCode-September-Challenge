@@ -12,3 +12,5 @@ class Solution:
             return grid[row][col] + min(left, up)
 
         return solve(m - 1, n - 1)
+
+print(Solution().minPathSum(grid = [[1,2,3],[4,5,6]]))
