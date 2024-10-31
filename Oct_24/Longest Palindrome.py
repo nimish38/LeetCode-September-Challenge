@@ -8,3 +8,5 @@ class Solution:
                     if x == x[::-1]:
                         maxlen, res = len(x), x
         return res
+
+print(Solution().longestPalindrome(s = "babad"))
