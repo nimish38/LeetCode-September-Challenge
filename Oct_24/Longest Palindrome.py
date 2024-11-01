@@ -3,22 +3,15 @@ class Solution:
         n, maxlen, res, memo = len(s), 0, '', []
         for _ in range(n + 1):
             memo.append([-1]*(n+1))
+            memo[_][_] = True
 
-        def solve(i, j):
-            if i >= j:
-                return True
-            if memo[i][j] == -1:
-                if s[i] == s[j]:
-                    memo[i][j] = solve(i + 1, j - 1)
-                else:
-                    memo[i][j] = False
-            return memo[i][j]
-
-        for i in range(n):
-            for j in range(i, n):
-                if j + 1 - i > maxlen:
-                    if solve(i, j):
-                        maxlen, res = j + 1 - i, s[i: j + 1]
+        for l in range(2, n):
+            for i in range(n - l + 1):
+                for j in range(i, n):
+                    if s[i] == s[j] and (l == 2 or memo[i + 1][j - 1]):
+                        res, memo[i][j] = s[i: j + 1], True
+                    else:
+                        memo[i][j] = False
         return res
 
 print(Solution().longestPalindrome(s = "babad"))
