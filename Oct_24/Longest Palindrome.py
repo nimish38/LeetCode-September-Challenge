@@ -6,7 +6,7 @@ class Solution:
             memo[_][_] = True
             res = s[_]
 
-        for l in range(2, n):
+        for l in range(2, n + 1):
             for i in range(n - l + 1):
                 j = i + l - 1
                 if s[i] == s[j] and (l == 2 or memo[i + 1][j - 1]):
