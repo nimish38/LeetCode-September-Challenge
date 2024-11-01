@@ -1,5 +1,7 @@
 class Solution:
     def longestPalindrome(self, s: str) -> str:
+        if s == s[::-1]:
+            return s
         n, maxlen, res, memo = len(s), 0, '', []
         for _ in range(n + 1):
             memo.append([-1]*(n+1))
