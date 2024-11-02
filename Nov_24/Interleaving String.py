@@ -7,15 +7,13 @@ class Solution:
         def solve(i, j, k):
             if i == m and j == n and k == o:
                 return True
-            if i == m or j == n or k == o:
-                return False
             first, second = False, False
-            if s3[k] == s2[j]:
+            if j < n and s3[k] == s2[j]:
                 second = solve(i, j + 1, k + 1)
-            if s3[k] == s1[i]:
+            if i < m and  s3[k] == s1[i]:
                 first = solve(i + 1, j, k + 1)
             return first or second
 
         return solve(0, 0, 0)
 
-
+print(Solution().isInterleave(s1 = "aabcc", s2 = "dbbca", s3 = "aadbbcbcac"))
