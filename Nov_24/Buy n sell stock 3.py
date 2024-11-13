@@ -14,3 +14,5 @@ class Solution:
             return max(take, hold)
 
         return solve(0, True, 2)
+
+print(Solution().maxProfit(prices = [1,2,3,4,5]))
