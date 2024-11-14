@@ -14,3 +14,5 @@ class Solution:
             return max(take, hold)
 
         return solve(0, 1, k)
+
+print(Solution().maxProfit(k = 2, prices = [3,2,6,5,0,3]))
