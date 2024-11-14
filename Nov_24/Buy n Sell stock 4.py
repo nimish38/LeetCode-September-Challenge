@@ -1,6 +1,11 @@
 class Solution:
     def maxProfit(self, k: int, prices) -> int:
-        n = len(prices)
+        n, memo = len(prices), []
+        for _ in range(n):
+            x = []
+            for z in range(k + 1):
+                x.append([-1] * 2)
+            memo.append(x)
 
         def solve(ind, buy, cap):
             if ind == n or cap == 0:
