@@ -6,8 +6,12 @@ class Solution:
 
         for col in range(n):
             memo[m - 1][col] = int(matrix[m - 1][col])
+            if memo[m - 1][col]:
+                self.best = 1
         for row in range(m):
             memo[row][n - 1] = int(matrix[row][n - 1])
+            if memo[row][n - 1]:
+                self.best = 1
 
         for i in range(m - 2, -1, -1):
             for j in range(n - 2, -1, -1):
