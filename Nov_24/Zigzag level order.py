@@ -7,6 +7,9 @@ class TreeNode:
 
 class Solution:
     def zigzagLevelOrder(self, root):
+        if not root:
+            return []
+
         st, res, level, l2r = [root], [], [], True
 
         while st:
