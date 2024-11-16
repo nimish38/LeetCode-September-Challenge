@@ -27,5 +27,11 @@ class Solution:
                 level.append(node.val)
                 l2r = not l2r
             res.append(level)
+            level.clear()
         return res
 
+
+a, b, c, d, e = TreeNode(3), TreeNode(9), TreeNode(20), TreeNode(15), TreeNode(7)
+c.left, c.right = d, e
+a.left, a.right = b, c
+print(Solution().zigzagLevelOrder(a))
