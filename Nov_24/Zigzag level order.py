@@ -12,22 +12,17 @@ class Solution:
         while st:
             n = len(st)
             for _ in range(n):
-                node = st.pop()
-                if l2r:
-                    if node.left:
-                        st.append(node.left)
-                    if node.right:
-                        st.append(node.right)
-                else:
-                    if node.right:
-                        st.append(node.right)
-                    if node.left:
-                        st.append(node.left)
-
+                node = st.pop(0)
+                if node.left:
+                    st.append(node.left)
+                if node.right:
+                    st.append(node.right)
                 level.append(node.val)
-                l2r = not l2r
-            res.append(level)
+            if not l2r:
+                level = level[::-1]
+            res.append(list(level))
             level.clear()
+            l2r = not l2r
         return res
 
 
