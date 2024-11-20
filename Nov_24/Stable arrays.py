@@ -3,10 +3,18 @@ class Solution:
         def solve(zero, one, consCnt, consEle):
             if zero == 0 and one == 0:
                 return 1
-            if zero > 0 and consCnt <= limit or consEle == 1:
-                solve(zero - 1, one, consCnt + 1, 0)
+            res = 0
+            if zero > 0:
+                if consEle == 0 and consCnt <= limit:
+                    res += solve(zero - 1, one, consCnt + 1, 0)
+                else:
+                    res += solve(zero, one - 1, 1, 1)
 
-            if one > 0 and consCnt <= limit or consEle == 0:
-                solve(zero, one - 1, consCnt + 1, 1)
+            if one > 0:
+                if consEle == 1 and consCnt <= limit:
+                    res += solve(zero, one - 1, consCnt + 1, 1)
+                else:
+                    res += solve(zero - 1, one, 1, 0)
 
+            return res
         return solve(zero, one - 1, 1, 1) + solve(zero - 1, one, 1, 0)
