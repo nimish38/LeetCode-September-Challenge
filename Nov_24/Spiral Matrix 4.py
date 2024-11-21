@@ -8,28 +8,35 @@ class Solution:
     def spiralMatrix(self, m: int, n: int, head):
         mat = []
         for i in range(m):
-            x = []
-            for j in range(n):
-                x.append((i, j))
-            mat.append(x)
+            mat.append([-1] * n)
 
         up, down, left, right = 0, m - 1, 0, n - 1
-        while up <= down and left <= right:
+        while up <= down and left <= right and head:
 
             for i in range(left, right + 1):
-                print(mat[up][i])
+                if head:
+                    mat[up][i] = head.val
+                    head = head.next
             up += 1
 
             for i in range(up, down + 1):
-                print(mat[i][right])
+                if head:
+                    mat[i][right] = head.val
+                    head = head.next
             right -= 1
 
             for i in range(right, left - 1, -1):
-                print(mat[down][i])
+                if head:
+                    mat[down][i] = head.val
+                    head = head.next
             down -= 1
 
             for i in range(down, up - 1, -1):
-                print(mat[i][left])
+                if head:
+                    mat[i][left] = head.val
+                    head = head.next
             left += 1
+
+        return mat
 
 print(Solution().spiralMatrix(4, 3, None))
