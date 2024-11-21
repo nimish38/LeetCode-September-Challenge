@@ -1,8 +1,9 @@
 # Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
 
 class Solution:
     def spiralMatrix(self, m: int, n: int, head):
@@ -39,4 +40,11 @@ class Solution:
 
         return mat
 
-print(Solution().spiralMatrix(4, 3, None))
+
+val, head = [3,0,2,6,8,1,7,9,4,2,5,5,0], ListNode(-1)
+dummy = head
+for v in val:
+    dummy.next = ListNode(v)
+    dummy = dummy.next
+
+print(Solution().spiralMatrix(3, 5, head.next))
