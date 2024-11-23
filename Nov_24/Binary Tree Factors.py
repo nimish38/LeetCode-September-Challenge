@@ -10,7 +10,7 @@ class Solution:
                 if arr[ind] % arr[i] == 0:
                     x = arr[ind] // arr[i]
                     if x in fact:
-                        fact[arr[ind]] += 1 + (fact[arr[i]] - 1) + (fact[x] - 1)
+                        fact[arr[ind]] += fact[arr[i]] * fact[x]
 
         for i in range(len(arr)):
             solve(i)
