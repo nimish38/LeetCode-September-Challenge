@@ -10,4 +10,4 @@ class Solution:
 
         return nums
 
-
+print(Solution().getFinalState(nums = [2,1,3,5,6], k = 5, multiplier = 2))
