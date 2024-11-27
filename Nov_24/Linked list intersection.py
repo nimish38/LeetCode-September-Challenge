@@ -3,6 +3,7 @@ class ListNode:
         self.val = x
         self.next = None
 
+
 class Solution:
     def getIntersectionNode(self, headA: ListNode, headB: ListNode):
         nodes, curr = {}, headA
@@ -14,6 +15,13 @@ class Solution:
         while curr:
             if curr in nodes:
                 return curr
+            curr = curr.next
         return None
 
 
+a, b, c, d, e = ListNode(4),ListNode(1),ListNode(8),ListNode(4),ListNode(5),
+p, q, r = ListNode(5),ListNode(6),ListNode(1)
+
+a.next, b.next, c.next, d.next, p.next, q.next, r.next = b, c, d, e, q, r, c
+x = Solution().getIntersectionNode(a, p)
+print(x.val)
