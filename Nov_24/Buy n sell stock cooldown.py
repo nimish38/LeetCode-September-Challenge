@@ -12,5 +12,8 @@ class Solution:
                 take = solve(ind + 2, 1) + prices[ind]
                 hold = solve(ind + 1, 0)
             return max(take, hold)
-        
+
         return solve(0, 1)
+
+
+print(Solution().maxProfit(prices = [1,2,3,0,2]))
