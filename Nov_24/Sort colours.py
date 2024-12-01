@@ -9,3 +9,5 @@ class Solution:
         nums = [0]*zero + [1]*one + [2]*(n - zero - one)
         return nums
 
+
+print(Solution().sortColors(nums = [2,0,2,1,1,0]))
