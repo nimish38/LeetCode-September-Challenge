@@ -19,4 +19,4 @@ class Solution:
         return False
 
 
-print(Solution().isPossible())
+print(Solution().isPossible(target = [9,3,5]))
