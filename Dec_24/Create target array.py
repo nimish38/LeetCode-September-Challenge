@@ -8,7 +8,9 @@ class Solution:
         val = heapq._heappop_max(target)
         while val > 1:
             curr -= val
-            heapq.heappush(val - curr)
+            if curr <= 0 or (val - curr) <= 0:
+                return False
+            heapq.heappush(target, val - curr)
             val = heapq._heappop_max(target)
         return val == 1
 
