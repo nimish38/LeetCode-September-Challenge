@@ -11,7 +11,10 @@ class Solution:
             if curr <= 0 or val <= curr:
                 return False
             val = val % curr
-            heapq.heappush(target, val)
+            if val > 0:
+                heapq.heappush(target, val)
+            else:
+                heapq.heappush(target, curr)
             curr += val
             heapq._heapify_max(target)
             val = heapq._heappop_max(target)
