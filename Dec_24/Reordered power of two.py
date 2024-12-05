@@ -1,7 +1,7 @@
 import itertools
 class Solution:
     def reorderedPowerOf2(self, n: int) -> bool:
-        def IsPowerOfTwo( x):
+        def IsPowerOfTwo(x):
             return x & (x - 1) == 0
 
         num = list(str(n))
@@ -15,4 +15,4 @@ class Solution:
                 return True
         return False
 
-Solution().reorderedPowerOf2(435)
+print(Solution().reorderedPowerOf2(2041))
