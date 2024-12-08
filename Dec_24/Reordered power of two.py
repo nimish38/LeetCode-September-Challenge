@@ -1,18 +1,12 @@
-import itertools
+from collections import defaultdict
+
 class Solution:
     def reorderedPowerOf2(self, n: int) -> bool:
-        def IsPowerOfTwo(x):
-            return x & (x - 1) == 0
-
-        num = list(str(n))
-        perms = list(itertools.permutations(num))
-
-        for val in perms:
-            if val[0] == '0':
-                continue
-            number = int(''.join(val))
-            if IsPowerOfTwo(number):
-                return True
-        return False
-
+        def checkdigits(num):
+            arr = defaultdict(0)
+            while num > 0:
+                arr[num % 10] += 1
+                num //= 10
+            return arr
+        
 print(Solution().reorderedPowerOf2(2041))
