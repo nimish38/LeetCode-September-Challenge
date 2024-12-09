@@ -1,7 +1,7 @@
 class Solution:
     def maxCompatibilitySum(self, students, mentors) -> int:
         self.maxsum, n = 0, len(students)
-        
+
         def compatibility(a, b):
             val = 0
             for i in range(len(a)):
@@ -18,9 +18,11 @@ class Solution:
                         continue
                     else:
                         seen.add(i)
-                        score += compatibility(students[ind], mentors[i])
+                        value = compatibility(students[ind], mentors[i])
+                        score += value
                         solve(ind + 1, score, seen)
                         seen.remove(i)
+                        score -= value
 
         solve(0, 0, set())
         return self.maxsum
