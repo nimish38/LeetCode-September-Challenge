@@ -14,5 +14,9 @@ class Solution:
                 order.append((positions[val][-1], val))
         order.sort()
 
+        s = ''
+        for a, b in order:
+            s += b
+        return s
 
 print(Solution().lastNonEmptyString(s = "aabcbbca"))
