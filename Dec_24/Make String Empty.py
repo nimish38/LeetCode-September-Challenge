@@ -3,12 +3,16 @@ from collections import defaultdict
 
 class Solution:
     def lastNonEmptyString(self, s: str) -> str:
-        positions, longest = defaultdict(list), 0
+        positions, longest, order = defaultdict(list), 0, []
         for i in range(len(s)):
             positions[s[i]].append(i)
             if len(positions[s[i]]) > longest:
                 longest = len(positions[s[i]])
-        print(positions, longest)
+
+        for val in positions:
+            if len(positions[val]) == longest:
+                order.append((positions[val][-1], val))
+        order.sort()
 
 
 print(Solution().lastNonEmptyString(s = "aabcbbca"))
