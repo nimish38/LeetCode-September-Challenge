@@ -15,3 +15,5 @@ class Solution:
         if zero == 0 or one == 0:
             return max(score) - 1
         return max(score)
+
+print(Solution().maxScore(s = "111"))
