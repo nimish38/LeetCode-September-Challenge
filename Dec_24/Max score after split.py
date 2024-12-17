@@ -1,6 +1,6 @@
 class Solution:
     def maxScore(self, s: str) -> int:
-        n, score, zero, one = len(s), 0, 0, 0
+        n, score, zero, one = len(s), float('-inf'), 0, 0
         for i in range(n - 1):
             if s[i] == '0':
                 zero += 1
@@ -11,4 +11,4 @@ class Solution:
             one += 1
         return score + one
 
-print(Solution().maxScore(s = "00111"))
+print(Solution().maxScore(s = "1111"))
