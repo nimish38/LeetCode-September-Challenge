@@ -13,14 +13,17 @@ class Solution:
         while curr < n:
             res = curr * full
             ## get max distribution as partial at this stage
-            temp, x = newFlowers, curr
-            while addition[x] >= temp:
+            temp, x, val = newFlowers, curr, target - 1
+            while x < n and addition[x] >= temp:
                 x += 1
-            temp -= addition[x]
-            val = addition[x]
+            if x < n:
+                val = min(target - 1, addition[x])
+            temp -= val
             val += temp // (n - curr)
             parsum = partial * (n - curr)
             ans = max(ans, res + parsum)
+
+            newFlowers -= target - flowers[curr]
             curr += 1
         return res
 
