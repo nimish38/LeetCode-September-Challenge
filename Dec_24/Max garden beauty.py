@@ -1,6 +1,6 @@
 class Solution:
     def maximumBeauty(self, flowers: list, newFlowers: int, target: int, full: int, partial: int) -> int:
-        n, curr = len(flowers), 0
+        n, curr, res = len(flowers), 0, 0
         flowers.sort(reverse=True)
 
         addition = [0] * n
@@ -9,5 +9,16 @@ class Solution:
 
         while curr < n and flowers[curr] >= target:
             curr += 1
+        res = curr * full
+
+        ## get max distribution as partial at this stage
+        temp, x = newFlowers, curr
+        while addition[x] >= temp:
+            x += 1
+        temp -= addition[x]
+        val = addition[x]
+        val += temp // (n - curr)
+        parsum = partial * (n - curr)
+        res = max(res,res + parsum)
 
 
