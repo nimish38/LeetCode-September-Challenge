@@ -1,6 +1,6 @@
 class Solution:
     def maximumBeauty(self, flowers: list, newFlowers: int, target: int, full: int, partial: int) -> int:
-        n, curr, res = len(flowers), 0, 0
+        n, curr, res, ans = len(flowers), 0, 0, 0
         flowers.sort(reverse=True)
 
         addition = [0] * n
@@ -20,8 +20,8 @@ class Solution:
             val = addition[x]
             val += temp // (n - curr)
             parsum = partial * (n - curr)
-            res = max(res,res + parsum)
+            ans = max(ans, res + parsum)
             curr += 1
         return res
 
-
+print(Solution().maximumBeauty(flowers = [1,3,1,1], newFlowers = 7, target = 6, full = 12, partial = 1))
