@@ -9,16 +9,19 @@ class Solution:
 
         while curr < n and flowers[curr] >= target:
             curr += 1
-        res = curr * full
 
-        ## get max distribution as partial at this stage
-        temp, x = newFlowers, curr
-        while addition[x] >= temp:
-            x += 1
-        temp -= addition[x]
-        val = addition[x]
-        val += temp // (n - curr)
-        parsum = partial * (n - curr)
-        res = max(res,res + parsum)
+        while curr < n:
+            res = curr * full
+            ## get max distribution as partial at this stage
+            temp, x = newFlowers, curr
+            while addition[x] >= temp:
+                x += 1
+            temp -= addition[x]
+            val = addition[x]
+            val += temp // (n - curr)
+            parsum = partial * (n - curr)
+            res = max(res,res + parsum)
+            curr += 1
+        return res
 
 
