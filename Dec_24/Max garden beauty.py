@@ -1,30 +1,38 @@
+import bisect
 class Solution:
-    def maximumBeauty(self, flowers: list, newFlowers: int, target: int, full: int, partial: int) -> int:
-        n, curr, res, ans = len(flowers), 0, 0, 0
-        flowers.sort(reverse=True)
+    def maximumBeauty(self, A, new: int, t: int, full: int, part: int) -> int:
+        A = [min(t, a) for a in A]
+        A.sort()
 
-        addition = [0] * n
-        for i in range(n - 2, -1, -1):
-            addition[i] = ((flowers[i] - flowers[i + 1]) * (n - 1 - i)) + addition[i + 1]
+        # Two edge cases
+        if min(A) == t: return full * len(A)
+        if new >= t * len(A) - sum(A):
+            return max(full * len(A), full * (len(A) - 1) + part * (t - 1))
 
-        while curr < n and flowers[curr] >= target:
-            curr += 1
+        # Build the array `cost`.
+        cost = [0]
+        for i in range(1, len(A)):
+            pre = cost[-1]
+            cost.append(pre + i * (A[i] - A[i - 1]))
 
-        while curr < n:
-            res = curr * full
-            ## get max distribution as partial at this stage
-            temp, x, val = newFlowers, curr, target - 1
-            while x < n and addition[x] >= temp:
-                x += 1
-            if x < n:
-                val = min(target - 1, addition[x])
-            temp -= val
-            val += temp // (n - curr)
-            parsum = partial * (n - curr)
-            ans = max(ans, res + parsum)
+        # Since there might be some gardens having `target` flowers already, we will skip them.
+        j = len(A) - 1
+        while A[j] == t:
+            j -= 1
 
-            newFlowers -= target - flowers[curr]
-            curr += 1
-        return res
+        # Start the iteration
+        ans = 0
+        while new >= 0:
+            # idx stands for the first `j` gardens, notice a edge case might happen.
+            idx = min(j, bisect.bisect_right(cost, new) - 1)
 
-print(Solution().maximumBeauty(flowers = [1,3,1,1], newFlowers = 7, target = 6, full = 12, partial = 1))
+            # bar is the current minimum flower in the incomplete garden
+            bar = A[idx] + (new - cost[idx]) // (idx + 1)
+
+            ans = max(ans, bar * part + full * (len(A) - j - 1))
+
+            # Now we would like to complete garden j, thus deduct the cost for garden j
+            # from new and move on to the previous(next) incomplete garden!
+            new -= (t - A[j])
+        j -= 1
+        return ans
