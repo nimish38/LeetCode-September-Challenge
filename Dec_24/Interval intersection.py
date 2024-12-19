@@ -3,7 +3,8 @@ class Solution:
         res, i, j = [], 0, 0
 
         while i < len(firstList) and j < len(secondList):
-            fs, fe, ss, se = firstList[i][0], firstList[i][1], secondList[j][0], secondList[j][1]
+            fs, fe = firstList[i]
+            ss, se = secondList[j]
             start, end = max(fs, ss), min(fe, se)
             if start <= end:
                 res.append([start, end])
