@@ -8,7 +8,8 @@ class Solution:
         for char in set(s):
             if s.count(char) % 2:
                 odd += 1
-
         if odd > k:
             return False
         return True
+
+print(Solution().canConstruct(s = "annabelle", k = 2))
