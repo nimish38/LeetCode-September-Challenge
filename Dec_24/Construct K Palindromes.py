@@ -4,4 +4,11 @@ class Solution:
             return True
         if len(s) < k:
             return False
-        
+        odd = 0
+        for char in set(s):
+            if s.count(char) % 2:
+                odd += 1
+
+        if odd > k:
+            return False
+        return True
