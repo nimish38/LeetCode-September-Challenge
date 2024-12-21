@@ -12,7 +12,8 @@ class Codec:
         :type root: TreeNode
         :rtype: str
         """
-
+        if not root:
+            return ''
         res, lvl = str(root.val), [root]
         while lvl:
             node = lvl.pop(0)
