@@ -35,3 +35,28 @@ class Codec:
         :type data: str
         :rtype: TreeNode
         """
+
+        if data == '':
+            return None
+        root = TreeNode(int(data[0]))
+        st, i, n = [root], 1, len(data)
+        while st:
+            for _ in range(len(st)):
+                node = st.pop(0)
+                if i < n:
+                    l, r = data[i + 1], data[i + 3]
+                    if l != '#':
+                        left = TreeNode(int(l))
+                        node.left = left
+                        st.append(left)
+                    if r != '#':
+                        right = TreeNode(int(l))
+                        node.right = right
+                        st.append(right)
+                i += 4
+        return root
+
+        
+a, b, c, d, e = TreeNode(1),TreeNode(2), TreeNode(3), TreeNode(4), TreeNode(5)
+a.left, a.right, c.left, c.right = b, c, d, e
+print(Codec().serialize(a))
