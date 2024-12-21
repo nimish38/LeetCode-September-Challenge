@@ -50,13 +50,15 @@ class Codec:
                         node.left = left
                         st.append(left)
                     if r != '#':
-                        right = TreeNode(int(l))
+                        right = TreeNode(int(r))
                         node.right = right
                         st.append(right)
                 i += 4
         return root
 
-        
+
 a, b, c, d, e = TreeNode(1),TreeNode(2), TreeNode(3), TreeNode(4), TreeNode(5)
 a.left, a.right, c.left, c.right = b, c, d, e
-print(Codec().serialize(a))
+val = Codec().serialize(a)
+tree = Codec().deserialize(val)
+print(tree)
