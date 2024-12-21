@@ -47,11 +47,17 @@ class Codec:
                 if i < n:
                     l, r = data[i + 1], data[i + 3]
                     if l != '#':
-                        left = TreeNode(int(l))
+                        if l == '-':
+                            l = int(data[i + 2]) * -1
+                            i += 1
+                        left = TreeNode(l)
                         node.left = left
                         st.append(left)
                     if r != '#':
-                        right = TreeNode(int(r))
+                        if r == '-':
+                            r = int(data[i + 4]) * -1
+                            i += 1
+                        right = TreeNode(r)
                         node.right = right
                         st.append(right)
                 i += 4
