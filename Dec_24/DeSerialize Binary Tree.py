@@ -49,28 +49,31 @@ class Codec:
             for _ in range(len(st)):
                 node = st.pop(0)
                 if i < n:
-                    l = data[i + 1]
-                    if l != '#':
-                        if l == '-':
-                            l = int(data[i + 2]) * -1
+                    if data[i] == 'L':
+                        i += 1
+                        lstr = ''
+                        while data[i] != 'R':
+                            lstr += data[i]
                             i += 1
-                        left = TreeNode(l)
-                        node.left = left
-                        st.append(left)
-                    r = data[i + 3]
-                    if r != '#':
-                        if r == '-':
-                            r = int(data[i + 4]) * -1
+                        if lstr != '#':
+                            left = TreeNode(int(lstr))
+                            node.left = left
+                            st.append(left)
+                    if data[i] == 'R':
+                        i += 1
+                        rstr =''
+                        while i < n and data[i] != 'L':
+                            rstr += data[i]
                             i += 1
-                        right = TreeNode(r)
-                        node.right = right
-                        st.append(right)
-                i += 4
+                        if rstr != '#':
+                            right = TreeNode(int(rstr))
+                            node.right = right
+                            st.append(right)
         return root
 
 
-a, b, c, d, e = TreeNode(-1),TreeNode(0), TreeNode(1), TreeNode(-4), TreeNode(5)
-a.left, a.right = b, c
+a, b, c, d, e = TreeNode(1),TreeNode(2), TreeNode(-13), TreeNode(4), TreeNode(5)
+a.left, a.right, c.right, c.left = b, c, e, d
 val = Codec().serialize(a)
 tree = Codec().deserialize(val)
 print(tree)
