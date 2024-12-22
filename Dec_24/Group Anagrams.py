@@ -2,7 +2,7 @@ class Solution:
     def groupAnagrams(self, strs):
         anagrams = {}
         for word in strs:
-            sortedWord = sorted(word)
+            sortedWord = ''.join(sorted(word))
             if sortedWord in anagrams:
                 anagrams[sortedWord].append(word)
             else:
@@ -11,3 +11,6 @@ class Solution:
         for val in anagrams:
             res.append(anagrams[val])
         return res
+
+
+print(Solution().groupAnagrams(strs = ["eat","tea","tan","ate","nat","bat"]))
