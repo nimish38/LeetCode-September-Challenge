@@ -39,12 +39,12 @@ class Codec:
 
         if data == '':
             return None
-        top, i = data[0], 0
-        if data[0] == '-':
-            top = int(data[1]) * -1
-            i = i + 1
-        root = TreeNode(top)
-        st, i, n = [root], i + 1, len(data)
+        top, i = '', 0
+        while data[i] != 'L':
+            top += data[i]
+            i += 1
+        root = TreeNode(int(top))
+        st, n = [root], len(data)
         while st:
             for _ in range(len(st)):
                 node = st.pop(0)
