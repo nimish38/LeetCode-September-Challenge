@@ -6,39 +6,15 @@ class ListNode:
 
 class Solution:
     def addTwoNumbers(self, l1, l2):
-        dummy = curr = ListNode(-1)
-        carry = 0
-        while l1 and l2:
-            val = l1.val + l2.val
-            if carry:
-                val += 1
-                carry = 0
-            newnode = ListNode(val % 10)
-            carry = val // 10
-            curr.next, curr = newnode, newnode
-            l1 = l1.next
-            l2 = l2.next
+        s1, s2 = '', ''
         while l1:
-            val = l1.val
-            if carry:
-                val += 1
-                carry = 0
-            newnode = ListNode(val % 10)
-            carry = val // 10
-            curr.next, curr = newnode, newnode
+            s1 += str(l1.val)
             l1 = l1.next
         while l2:
-            val = l2.val
-            if carry:
-                val += 1
-                carry = 0
-            newnode = ListNode(val % 10)
-            carry = val // 10
-            curr.next, curr = newnode, newnode
+            s2 += str(l2.val)
             l2 = l2.next
-        if carry:
-            curr.next = ListNode(1)
-        return dummy.next
+        res = int(s1[::-1]) + int(s2[::-1])
+        return self.build(list(str(res)[::-1]))
 
     def build(self, nums):
         root = curr = ListNode(nums[0])
@@ -49,7 +25,7 @@ class Solution:
         return root
 
 
-a = Solution().build([9,9,9,9,9,9,9])
-b = Solution().build([9,9,9,9])
+a = Solution().build([2,4,3])
+b = Solution().build([5,6,4])
 c = Solution().addTwoNumbers(a, b)
 print(c)
