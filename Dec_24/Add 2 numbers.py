@@ -18,7 +18,6 @@ class Solution:
             curr.next, curr = newnode, newnode
             l1 = l1.next
             l2 = l2.next
-
         while l1:
             val = l1.val
             if carry:
@@ -28,7 +27,6 @@ class Solution:
             carry = val // 10
             curr.next, curr = newnode, newnode
             l1 = l1.next
-
         while l2:
             val = l2.val
             if carry:
@@ -38,8 +36,20 @@ class Solution:
             carry = val // 10
             curr.next, curr = newnode, newnode
             l2 = l2.next
-
         if carry:
             curr.next = ListNode(1)
-
         return dummy.next
+
+    def build(self, nums):
+        root = curr = ListNode(nums[0])
+        for i in range(1, len(nums)):
+            node = ListNode(nums[i])
+            curr.next = node
+            curr = node
+        return root
+
+
+a = Solution().build([2,4,3])
+b = Solution().build([5,6,4])
+c = Solution().addTwoNumbers(a, b)
+print(c)
