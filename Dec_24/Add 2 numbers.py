@@ -14,7 +14,8 @@ class Solution:
             s2 += str(l2.val)
             l2 = l2.next
         res = int(s1[::-1]) + int(s2[::-1])
-        return self.build(list(str(res)[::-1]))
+        res = list(str(res)[::-1])
+        return self.build(list(map(int, res)))
 
     def build(self, nums):
         root = curr = ListNode(nums[0])
