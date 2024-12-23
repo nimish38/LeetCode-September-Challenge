@@ -49,7 +49,7 @@ class Solution:
         return root
 
 
-a = Solution().build([2,4,3])
-b = Solution().build([5,6,4])
+a = Solution().build([9,9,9,9,9,9,9])
+b = Solution().build([9,9,9,9])
 c = Solution().addTwoNumbers(a, b)
 print(c)
