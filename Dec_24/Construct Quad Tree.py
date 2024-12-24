@@ -15,6 +15,9 @@ class Solution:
         n = len(grid)
 
         def solve(rowStart, rowEnd, colStart, colEnd):
+            if rowStart == rowEnd and colStart == colEnd:
+                return Node(grid[rowStart][colStart], True, None, None, None, None)
+            
             tl = solve(rowStart, rowEnd // 2, colStart, colEnd // 2)
             tr = solve(rowStart, rowEnd // 2, colEnd // 2, colEnd)
             bl = solve(rowEnd // 2, rowEnd, colStart, colEnd // 2)
