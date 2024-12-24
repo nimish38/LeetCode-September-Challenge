@@ -17,11 +17,11 @@ class Solution:
         def solve(rowStart, rowEnd, colStart, colEnd):
             if rowStart == rowEnd and colStart == colEnd:
                 return Node(grid[rowStart][colStart], True, None, None, None, None)
-            
+
             tl = solve(rowStart, rowEnd // 2, colStart, colEnd // 2)
-            tr = solve(rowStart, rowEnd // 2, colEnd // 2, colEnd)
-            bl = solve(rowEnd // 2, rowEnd, colStart, colEnd // 2)
-            br = solve(rowEnd // 2, rowEnd, colEnd // 2, colEnd)
+            tr = solve(rowStart, rowEnd // 2, (colEnd // 2) + 1, colEnd)
+            bl = solve((rowEnd // 2) + 1, rowEnd, colStart, colEnd // 2)
+            br = solve((rowEnd // 2) + 1, rowEnd, (colEnd // 2) + 1, colEnd)
             quad = Node(0, False, tl, tr, bl, br)
 
             if tl.isLeaf and tr.isLeaf and bl.isLeaf and br.isLeaf and (tl.val == tr.val == bl.val == br.val):
@@ -29,4 +29,8 @@ class Solution:
                 quad.val = tl.val
             return quad
 
-        return solve(0, n, 0, n)
+        return solve(0, n - 1, 0, n - 1)
+
+
+x = Solution().construct(grid = [[0,1],[1,0]])
+print(x)
