@@ -12,4 +12,8 @@ class Solution:
                 res.append([currStart, currEnd])
                 currStart, currEnd = intervals[j]
                 j += 1
+        res.append([currStart, currEnd])
         return res
+
+
+print(Solution().merge(intervals = [[1,3],[2,6],[8,10],[15,18]]))
