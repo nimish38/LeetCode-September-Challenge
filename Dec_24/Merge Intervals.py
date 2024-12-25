@@ -1,6 +1,7 @@
 class Solution:
     def merge(self, intervals):
         res, j = [], 1
+        intervals.sort(key=lambda x: x[1])
         currStart, currEnd = intervals[0]
         while j < len(intervals):
             nextStart, nextEnd = intervals[j]
