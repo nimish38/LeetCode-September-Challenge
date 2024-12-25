@@ -1,12 +1,12 @@
 class Solution:
     def merge(self, intervals):
         res, j = [], 1
-        intervals.sort(key=lambda x: x[1])
+        intervals.sort(key=lambda x: x[0])
         currStart, currEnd = intervals[0]
         while j < len(intervals):
             nextStart, nextEnd = intervals[j]
             if currEnd >= nextStart:
-                currEnd = nextEnd
+                currEnd = max(currEnd, nextEnd)
                 j += 1
             else:
                 res.append([currStart, currEnd])
