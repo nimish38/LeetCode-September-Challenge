@@ -1,6 +1,6 @@
 class Solution:
     def searchRange(self, nums, target):
-        i, j, start, end = 0, len(nums), -1, -1
+        i, j, start, end = 0, len(nums) - 1, -1, -1
 
         def get_left(a, b):
             while b >= a and nums[b] == target:
@@ -15,11 +15,12 @@ class Solution:
         while i < j:
             mid = (i + j) // 2
             if nums[mid] == target:
-                start, end = mid
+                start = end = mid
                 if mid > 0 and nums[mid - 1] == target:
                     start = get_left(i, mid - 1)
                 if mid < len(nums) - 1 and nums[mid + 1] == target:
                     end = get_right(mid + 1, j)
+                break
             elif nums[mid] < target:
                 i = mid + 1
             else:
