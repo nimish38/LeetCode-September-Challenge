@@ -1,6 +1,17 @@
 class Solution:
     def searchRange(self, nums, target):
         i, j, start, end = 0, len(nums), -1, -1
+
+        def get_left(a, b):
+            while b >= a and nums[b] == target:
+                b -= 1
+            return b + 1
+
+        def get_right(a, b):
+            while a <= b and nums[a] == target:
+                a += 1
+            return a - 1
+
         while i < j:
             mid = (i + j) // 2
             if nums[mid] == target:
@@ -14,5 +25,6 @@ class Solution:
             else:
                 j = mid - 1
         return [start, end]
+
 
 print(Solution().searchRange( nums = [5,7,7,8,8,10], target = 8))
