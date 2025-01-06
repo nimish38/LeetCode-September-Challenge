@@ -12,7 +12,7 @@ class Solution:
                 a += 1
             return a - 1
 
-        while i < j:
+        while i <= j:
             mid = (i + j) // 2
             if nums[mid] == target:
                 start = end = mid
@@ -28,4 +28,4 @@ class Solution:
         return [start, end]
 
 
-print(Solution().searchRange( nums = [5,7,7,8,8,10], target = 8))
+print(Solution().searchRange( nums = [5], target = 5))
