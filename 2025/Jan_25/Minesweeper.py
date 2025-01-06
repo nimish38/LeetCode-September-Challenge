@@ -1,10 +1,10 @@
 class Solution:
     def updateBoard(self, board, click):
         def get_count(r, c):
-            rt, rb, cl, cr, cnt = max(0, r - 1), min(len(board), r + 1), max(0, c - 1), min(len(board[0]), c + 1), 0
-            for i in range(rt, rb + 1):
-                for j in range(cl, cr + 1):
-                    if board[i][j] == 'M':
+            cnt = 0
+            for i in range(r - 1, r + 2):
+                for j in range(c - 1, c + 2):
+                    if len(board) > i >= 0 and len(board[0]) > j >= 0 and board[i][j] == 'M':
                         cnt += 1
             return cnt
 
@@ -17,10 +17,11 @@ class Solution:
                 board[r][c] = str(mines)
             else:
                 board[r][c] = 'B'
-                rt, rb, cl, cr, cnt = max(0, r - 1), min(len(board), r + 1), max(0, c - 1), min(len(board[0]), c + 1), 0
-                for i in range(rt, rb + 1):
-                    for j in range(cl, cr + 1):
-                        if board[i][j] != 'B':
+                for i in range(r - 1, r + 2):
+                    for j in range(c - 1, c + 2):
+                        if len(board) > i >= 0 and len(board[0]) > j >= 0 and board[i][j] != 'B':
                             self.updateBoard(board, [i, j])
         return board
 
+
+print(Solution().updateBoard(board = [["E","E","E","E","E"],["E","E","M","E","E"],["E","E","E","E","E"],["E","E","E","E","E"]], click = [3,0]))
