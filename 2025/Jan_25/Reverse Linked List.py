@@ -22,3 +22,8 @@ class Solution:
             curr.next = node
             curr = node
         return dummy.next
+
+
+x = Solution().buildList([1,2,3,4,5])
+y = Solution().reverseList(head = x)
+print(y)
