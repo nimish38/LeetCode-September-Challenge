@@ -4,6 +4,7 @@ class ListNode:
         self.val = val
         self.next = next
 
+
 class Solution:
     def reverseList(self, head):
         first, second = head, head.next
@@ -14,3 +15,10 @@ class Solution:
         head.next = None
         return first
 
+    def buildList(self, nums):
+        dummy = curr = ListNode('#')
+        for num in nums:
+            node = ListNode(num)
+            curr.next = node
+            curr = node
+        return dummy.next
