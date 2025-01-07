@@ -7,6 +7,8 @@ class ListNode:
 
 class Solution:
     def reverseList(self, head):
+        if not head or not head.next:
+            return head
         first, second = head, head.next
         while second:
             third = second.next
