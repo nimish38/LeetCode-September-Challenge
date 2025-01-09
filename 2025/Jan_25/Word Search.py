@@ -2,6 +2,13 @@ class Solution:
     def findWords(self, board, words):
         res, m, n = [], len(board), len(board[0])
 
+        def check(s):
+            for i in range(m):
+                for j in range(n):
+                    if board[i][j] == s[0] and solve(i, j, s[1:]):
+                        return True
+            return False
+
         def solve(i, j, str):
             if not str:
                 return True
@@ -20,12 +27,10 @@ class Solution:
             return up or down or left or right
 
         for word in words:
-            for i in range(m):
-                for j in range(n):
-                    if board[i][j] == word[0] and solve(i, j, word[1:]):
-                        res.append(word)
-                        break
+            if check(word):
+                res.append(word)
+                
         return res
 
 
-print(Solution().findWords(board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]], words = ["oath","pea","eat","rain"]))
+print(Solution().findWords(board = [["o","a","b","n"],["o","t","a","e"],["a","h","k","r"],["a","f","l","v"]], words = ["oa","oaa"]))
