@@ -7,8 +7,8 @@ class Solution:
                 return
             letter = board[i][j]
             if letter in root:
-                if '*' in root:
-                    res.append(root['*'])
+                if '*' in root[letter]:
+                    res.append(root[letter]['*'])
 
                 board[i][j] = '#'
                 adj = [(1, 0), (-1, 0), (0, 1), (0, -1)]
@@ -28,7 +28,7 @@ class Solution:
             for j in range(n):
                 if board[i][j] in tree:
                     getWords(i, j, tree)
-        return res
+        return list(set(res))
 
 
 print(Solution().findWords(board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]], words = ["oath","pea","eat","rain"]))
