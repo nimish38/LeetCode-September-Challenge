@@ -24,5 +24,8 @@ class Solution:
                 for j in range(n):
                     if board[i][j] == word[0] and solve(i, j, word[1:]):
                         res.append(word)
-
+                        break
         return res
+
+
+print(Solution().findWords(board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]], words = ["oath","pea","eat","rain"]))
