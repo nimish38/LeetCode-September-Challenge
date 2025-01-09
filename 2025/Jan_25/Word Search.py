@@ -2,6 +2,20 @@ class Solution:
     def findWords(self, board, words):
         res, m, n, tree = [], len(board), len(board[0]), {}
 
+        def getWords(i, j, root):
+            if i < 0 or i >= m or j < 0 or j >= n:
+                return
+            letter = board[i][j]
+            if letter in root:
+                if '*' in root:
+                    res.append(root['*'])
+
+                board[i][j] = '#'
+                adj = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+                for a, b in adj:
+                    getWords(i + a, j + b, root[letter])
+                board[i][j] = letter
+
         for word in words:
             curr = tree
             for i in range(len(word)):
@@ -9,7 +23,11 @@ class Solution:
                     curr[word[i]] = {}
                 curr = curr[word[i]]
             curr['*'] = word
-        print(tree)
+
+        for i in range(m):
+            for j in range(n):
+                if board[i][j] in tree:
+                    getWords(i, j, tree)
         return res
 
 
