@@ -4,11 +4,11 @@ class Solution:
         for k in range(len(customers)):
             if j < minutes and grumpy[k]:
                 gr_tot += customers[k]
-                j += 1
             if not grumpy[k]:
                 ngr_tot += customers[k]
+            j += 1
 
-        res, i = gr_tot + ngr_tot, 1
+        res, i, j = gr_tot + ngr_tot, 1, minutes
         while j < len(customers):
             if grumpy[i - 1]:
                 gr_tot -= customers[i - 1]
@@ -18,3 +18,6 @@ class Solution:
             i += 1
             j += 1
         return res
+
+
+print(Solution().maxSatisfied(customers = [1,0,1,2,1,1,7,5], grumpy = [0,1,0,1,0,1,0,1], minutes = 3))
