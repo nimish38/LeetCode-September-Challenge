@@ -20,19 +20,19 @@ class Solution:
                         if left_pad > 0:
                             line += ' '
                             left_pad -= 1
-                    line += sent[i]
+                    line += sent[i + 1]
                 else:
                     line += sent[0] + ' ' * (maxWidth - txt)
             return line
 
-        word, res, minspaces = 0, '', 0
+        word, res, minspaces = 0, [], 0
         while word < len(words):
             curr, available = [], maxWidth
             while word < len(words) and available - (len(curr) - 1) >= len(words[word]):
                 curr.append(words[word])
                 available = available - len(words[word])
                 word += 1
-            res += build_sentence(curr, word == len(words), available) + '\n'
+            res.append(build_sentence(curr, word == len(words), maxWidth - available))
         return res
 
 
