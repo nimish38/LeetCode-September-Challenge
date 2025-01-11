@@ -5,8 +5,9 @@ class Solution:
             cnt, line = len(sent) - 1, ''
             if last:
                 _ = 0
-                for _ in range(cnt):
+                while _ < cnt:
                     line += sent[_] + ' '
+                    _ += 1
                 line += sent[_]
                 remaining = maxWidth - len(line)
                 line += ' ' * remaining
@@ -28,7 +29,7 @@ class Solution:
         word, res, minspaces = 0, [], 0
         while word < len(words):
             curr, available = [], maxWidth
-            while word < len(words) and available - (len(curr) - 1) >= len(words[word]):
+            while word < len(words) and available - (len(curr) - 1) > len(words[word]):
                 curr.append(words[word])
                 available = available - len(words[word])
                 word += 1
@@ -36,4 +37,4 @@ class Solution:
         return res
 
 
-print(Solution().fullJustify(words = ["This", "is", "an", "example", "of", "text", "justification."], maxWidth = 16))
+print(Solution().fullJustify(words = ["Science","is","what","we","understand","well","enough","to","explain","to","a","computer.","Art","is","everything","else","we","do"], maxWidth = 20))
