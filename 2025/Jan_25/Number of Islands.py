@@ -2,14 +2,16 @@ class Solution:
     def numIslands(self, grid) -> int:
         m, n, cnt = len(grid), len(grid[0]), 0
 
-        def dfs(a, b):
-            if a < 0 or a >= m or b < 0 or b >= n:
-                return
-            if grid[a][b] == '1':
+        def dfs(p, q):
+            st = [(p, q)]
+            while st:
+                a, b = st.pop()
                 grid[a][b] = '$'
                 adj = [(1, 0), (-1, 0), (0, 1), (0, -1)]
                 for x, y in adj:
-                    dfs(a + x, b + y)
+                    r, s = a + x, b + y
+                    if r >= 0 and r < m and s >= 0 and s < n and grid[r][s] == '1':
+                        st.append((r, s))
 
         for i in range(m):
             for j in range(n):
