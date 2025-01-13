@@ -5,10 +5,11 @@ class Solution:
         def dfs(a, b):
             if a < 0 or a >= m or b < 0 or b >= n:
                 return
-            grid[a][b] = '$'
-            adj = [(1, 0), (-1, 0), (0, 1), (0, -1)]
-            for x, y in adj:
-                dfs(a + x, b + y)
+            if grid[a][b] == '1':
+                grid[a][b] = '$'
+                adj = [(1, 0), (-1, 0), (0, 1), (0, -1)]
+                for x, y in adj:
+                    dfs(a + x, b + y)
 
         for i in range(m):
             for j in range(n):
@@ -16,3 +17,12 @@ class Solution:
                     cnt += 1
                     dfs(i, j)
         return cnt
+
+
+print(Solution().numIslands(grid = [
+  ["1","1","0","0","0"],
+  ["1","1","0","0","0"],
+  ["0","0","1","0","0"],
+  ["0","0","0","1","1"]
+]
+))
