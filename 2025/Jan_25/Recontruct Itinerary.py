@@ -4,29 +4,29 @@ import bisect
 
 class Solution:
     def findItinerary(self, tickets):
-        airports, cnt = defaultdict(list), len(tickets)
+        airports, target = defaultdict(list), len(tickets) + 1
         for travel in tickets:
             a, b = travel[0], travel[1]
             bisect.insort(airports[a], b)
-        target = cnt + 1 - (cnt // 2)
 
         def solve(src, route):
             if len(route) == target - 1:
-                return route.append(src)
+                route.append(src)
+                return route
 
-            for i in range(airports[src]):
+            for i in range(len(airports[src])):
                 val = airports[src][i]
+                route.append(src)
                 if val != '#':
                     airports[src][i] = '#'
-                    travel = solve(val, route.append(src))
-                    if travel:
-                        return travel
+                    travell = solve(val, route)
+                    if travell:
+                        return travell
                     else:
                         airports[src][i] = val
             return []
 
-
         return solve('JFK', [])
 
 
-print(Solution().findItinerary(tickets = [["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]]))
+print(Solution().findItinerary(tickets = [["MUC","LHR"],["JFK","MUC"],["SFO","SJC"],["LHR","SFO"]]))
