@@ -4,7 +4,10 @@ class Solution:
         for i in range(n):
             for j in range(n):
                 if j > i:
-                    matrix[i][j] = matrix[j][i]
+                    matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
+
+        for i in range(n):
+            matrix[i] = matrix[i][::-1]
         return matrix
 
 
