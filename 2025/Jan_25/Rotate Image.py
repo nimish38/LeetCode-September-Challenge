@@ -1,15 +1,11 @@
 class Solution:
     def rotate(self, matrix) -> None:
-        n, temp = len(matrix), []
-        for i in range(n):
-            val = []
-            for j in range(n - 1, -1, -1):
-                val.append(matrix[j][i])
-            temp.append(val)
-
+        n = len(matrix)
         for i in range(n):
             for j in range(n):
-                matrix[i][j] = temp[i][j]
-
+                if j > i:
+                    matrix[i][j] = matrix[j][i]
         return matrix
 
+
+print(Solution().rotate(matrix = [[1,2,3],[4,5,6],[7,8,9]]))
