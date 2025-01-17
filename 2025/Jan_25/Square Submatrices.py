@@ -22,9 +22,18 @@ class Solution:
             return True
 
         for side in range(sides, 0, -1):
-            for i in range(0, m - side):
-                for j in range(0, n - side):
+            for i in range(0, m - side + 1):
+                for j in range(0, n - side + 1):
                     if row(i, j, side) and col(i, j, side) and diag(i, j, side):
                         cnt += 1
 
+
         return cnt
+
+
+print(Solution().countSquares(matrix =
+[
+  [0,1,1,1],
+  [1,1,1,1],
+  [0,1,1,1]
+]))
