@@ -2,21 +2,15 @@ class Solution:
     def countSquares(self, matrix):
         m, n, cnt, memo = len(matrix), len(matrix[0]), 0, []
         for _ in range(m):
-            memo.append([-1] * n)
-
-        def solve(r, c):
-            if r >= m or c >= n or not matrix[r][c]:
-                return 0
-            if memo[r][c] == -1:
-                right = solve(r, c + 1)
-                down = solve(r + 1, c)
-                diag = solve(r + 1, c + 1)
-                memo[r][c] = 1 + min(right, down, diag)
-            return memo[r][c]
+            memo.append([0] * n)
 
         for i in range(m):
             for j in range(n):
-                cnt += solve(i, j)
+                if i == 0 or i == 0:
+                    memo[i][j] = matrix[i][j]
+                elif matrix[i][j]:
+                    memo[i][j] = 1 + min(memo[i][j - 1], memo[i - 1][j], memo[i - 1][j - 1])
+                cnt += memo[i][j]
         return cnt
 
 
