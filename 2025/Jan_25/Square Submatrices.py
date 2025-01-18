@@ -1,20 +1,22 @@
 class Solution:
     def countSquares(self, matrix):
-        m, n, ones = len(matrix), len(matrix[0]), []
-        sides, cnt = min(m, n), 0
+        m, n, cnt, memo = len(matrix), len(matrix[0]), 0, []
+        for _ in range(m):
+            memo.append([-1] * n)
 
-        def checkSquare(a, b, val):
-            for x in range(val):
-                for y in range(val):
-                    if not matrix[a + x][b + y]:
-                        return False
-            return True
+        def solve(r, c):
+            if r >= m or c >= n or not matrix[r][c]:
+                return 0
+            if memo[r][c] == -1:
+                right = solve(r, c + 1)
+                down = solve(r + 1, c)
+                diag = solve(r + 1, c + 1)
+                memo[r][c] = 1 + min(right, down, diag)
+            return memo[r][c]
 
-        for side in range(sides, 0, -1):
-            for i in range(0, m - side + 1):
-                for j in range(0, n - side + 1):
-                    if checkSquare(i, j, side):
-                        cnt += 1
+        for i in range(m):
+            for j in range(n):
+                cnt += solve(i, j)
         return cnt
 
 
