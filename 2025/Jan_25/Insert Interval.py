@@ -3,6 +3,8 @@ class Solution:
         if not intervals:
             return [newInterval]
         i, n, newStart, newEnd, res = 0, len(intervals), newInterval[0], newInterval[1], []
+        if newEnd < intervals[0][0]:
+            return [newInterval] + intervals
         while i < n and intervals[i][1] < newStart:
             res.append(intervals[i])
             i += 1
@@ -16,5 +18,5 @@ class Solution:
         return res
 
 
-print(Solution().insert(intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]))
+print(Solution().insert(intervals = [[1,5]], newInterval = [0,0]))
 
