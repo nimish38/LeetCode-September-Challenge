@@ -8,37 +8,20 @@ class TreeNode:
 
 class Solution:
     def findDuplicateSubtrees(self, root):
-        nodes, st, res = {}, [root], []
+        nodes, res = {}, []
 
-        def checkDuplicate(a, b):
-            x, y = [a], [b]
-            while x and y:
-                p, q = x.pop(), y.pop()
-                if p.val != q.val:
-                    return False
-                if (not p.left and q.left) or (not q.left and p.left) or (not p.right and q.right) or (not q.right and p.right):
-                    return False
-                if p.left and q.left:
-                    x.append(p.left)
-                    y.append(q.left)
-                if q.right and p.right:
-                    x.append(p.right)
-                    y.append(q.right)
-            return True
-
-        while st:
-            value = st.pop()
-            if value.val in nodes and checkDuplicate(value, nodes[value.val]):
-                res.append(value)
-                nodes.pop(value.val)
+        def solve(node):
+            if not node:
+                return 'N'
+            curr = str(node.val) + ',' + solve(node.left) + ',' + solve(node.right)
+            if curr in nodes:
+                res.append(node)
+                nodes.pop(curr)
             else:
-                nodes[value.val] = value
-            if value.left:
-                st.append(value.left)
-            if value.right:
-                st.append(value.right)
+                nodes[curr] = 1
+            return curr
+        solve(root)
         return res
-
 
 l, m, n , o , c , d, e = TreeNode(1),TreeNode(2),TreeNode(3),TreeNode(4),TreeNode(2),TreeNode(4),TreeNode(4)
 l.left, l.right = m , n
