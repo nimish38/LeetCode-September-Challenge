@@ -1,4 +1,6 @@
 # Definition for a binary tree node.
+from collections import defaultdict
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -8,20 +10,19 @@ class TreeNode:
 
 class Solution:
     def findDuplicateSubtrees(self, root):
-        nodes, res = {}, []
+        nodes, res = defaultdict(int), []
 
         def solve(node):
             if not node:
                 return 'N'
             curr = str(node.val) + ',' + solve(node.left) + ',' + solve(node.right)
-            if curr in nodes:
+            if nodes[curr] == 1:
                 res.append(node)
-                nodes.pop(curr)
-            else:
-                nodes[curr] = 1
+            nodes[curr] += 1
             return curr
         solve(root)
         return res
+
 
 l, m, n , o , c , d, e = TreeNode(1),TreeNode(2),TreeNode(3),TreeNode(4),TreeNode(2),TreeNode(4),TreeNode(4)
 l.left, l.right = m , n
