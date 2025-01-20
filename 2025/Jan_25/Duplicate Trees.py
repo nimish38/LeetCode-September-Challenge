@@ -30,13 +30,13 @@ class Solution:
             value = st.pop()
             if value.val in nodes and checkDuplicate(value, nodes[value.val]):
                 res.append(value)
-                return res
+                nodes.pop(value.val)
             else:
                 nodes[value.val] = value
-                if value.left:
-                    st.append(value.left)
-                if value.right:
-                    st.append(value.right)
+            if value.left:
+                st.append(value.left)
+            if value.right:
+                st.append(value.right)
         return res
 
 
@@ -44,4 +44,5 @@ l, m, n , o , c , d, e = TreeNode(1),TreeNode(2),TreeNode(3),TreeNode(4),TreeNod
 l.left, l.right = m , n
 m.left, n. left, n.right = o, c, d
 c.left = e
-print(Solution().findDuplicateSubtrees(l))
+x = Solution().findDuplicateSubtrees(l)
+print(x)
