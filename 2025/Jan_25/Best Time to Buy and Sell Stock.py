@@ -6,3 +6,5 @@ class Solution:
             lowest = min(lowest, val)
         return margin
 
+
+print(Solution().maxProfit(prices = [7,6,4,3,1]))
