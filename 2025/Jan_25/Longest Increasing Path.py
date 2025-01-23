@@ -8,7 +8,7 @@ class Solution:
             for a, b in adj:
                 x, y = i + a, j + b
                 if 0 <= x < m and 0 <= y < n and matrix[x][y] > val:
-                    temp = max(temp, solve(i , j))
+                    temp = max(temp, solve(x, y))
             matrix[i][j] = val
             return 1 + temp
 
@@ -16,3 +16,6 @@ class Solution:
             for j in range(n):
                 cnt = max(cnt, solve(i, j))
         return cnt
+
+
+print(Solution().longestIncreasingPath(matrix = [[9,9,4],[6,6,8],[2,1,1]]))
