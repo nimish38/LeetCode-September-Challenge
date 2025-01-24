@@ -8,3 +8,6 @@ class Solution:
                 j += 1
             i += 1
         return best
+
+
+print(Solution().findMaxValueOfEquation(points = [[0,0],[3,0],[9,2]], k = 3))
