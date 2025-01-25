@@ -1,12 +1,16 @@
+import heapq
+
 class Solution:
     def findMaxValueOfEquation(self, points, k: int) -> int:
-        i, j, n, best = 0, 1, len(points), float('-inf')
-        while i < n - 1:
-            j = i + 1
-            while j < n and (points[j][0] - points[i][0]) <= k:
-                best = max(best, points[i][1] + points[j][1] + (points[j][0] - points[i][0]))
-                j += 1
-            i += 1
+        j, n, best, pq = 0, len(points), float('-inf'), []
+        heapq.heapify(pq)
+        for i in range(n):
+            while pq and points[i][0] - pq[0][1] > k:
+                heapq.heappop(pq)
+            if pq:
+                best = max(best, points[i][0] + points[i][1] + pq[0][0])
+            heapq.heappush((points[i][1] - points[i][0], points[i][0]))
+
         return best
 
 
