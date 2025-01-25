@@ -1,27 +1,48 @@
+class TreeNode():
+    def __init__(self, s, e):
+        self.s = s
+        self.e = e
+        self.left = None
+        self.right = None
+
+
 class MyCalendar:
 
     def __init__(self):
-        self.intervals = []
+        self.root = None
 
-    def book(self, startTime: int, endTime: int) -> bool:
-        if not self.intervals:
-            self.intervals.append((startTime, endTime))
-            return True
-        i, n = 0, len(self.intervals)
-        while i < n and self.intervals[i][1] <= startTime:
-            i += 1
-        if i == n:
-            self.intervals.append((startTime, endTime))
+    def book(self, start: int, end: int) -> bool:
+        if not self.root:
+            self.root = TreeNode(start, end)
             return True
         else:
-            if self.intervals[i][0] >= endTime:
-                self.intervals.insert(i, (startTime, endTime))
+            return self.insert(start, end, self.root)
+
+    # try to decide where I can go
+    # if my start is greater than or equal to end then go to the right
+    # equal is allowed as "end" is not part of the interval
+
+    # if my end is less than or equal to the start then go to the left
+    # equal is allowed as "end" is not part of the interval
+    def insert(self, s, e, node):
+        if s >= node.e:
+            if node.right:
+                return self.insert(s, e, node.right)
+            else:
+                node.right = TreeNode(s, e)
                 return True
+        elif e <= node.s:
+            if node.left:
+                return self.insert(s, e, node.left)
+            else:
+                node.left = TreeNode(s, e)
+                return True
+        else:
             return False
 
 
 cal = MyCalendar()
 ints, res = [[10,20],[15,25],[20,30]], []
 for s, e in ints:
-    res.append(cal.book(startTime=s, endTime=e))
+    res.append(cal.book(start=s, end=e))
 print(res)
