@@ -20,3 +20,10 @@ class MyCalendar:
                 return True
             else:
                 return False
+
+
+cal = MyCalendar()
+ints, res = [[10,20],[15,25],[20,30]], []
+for s, e in ints:
+    res.append(cal.book(startTime=s, endTime=e))
+print(res)
