@@ -7,8 +7,6 @@ class MyCalendar:
         if not self.intervals:
             self.intervals.append((startTime, endTime))
             return True
-
-        self.intervals.sort()
         i, n = 0, len(self.intervals)
         while i < n and self.intervals[i][1] <= startTime:
             i += 1
@@ -17,7 +15,7 @@ class MyCalendar:
             return True
         else:
             if self.intervals[i][0] >= endTime:
-                self.intervals.append((startTime, endTime))
+                self.intervals.insert(i, (startTime, endTime))
                 return True
             return False
 
