@@ -5,7 +5,7 @@ class Solution:
         def solve(i, j, par):
             if i == m - 1 and j == n - 1:
                 return abs(par - heights[i][j])
-            adj, eff = [(1, 0), (-1, 0), (0, 1), (0, -1)], 0
+            adj, eff = [(1, 0), (-1, 0), (0, 1), (0, -1)], float('inf')
             val, heights[i][j] = heights[i][j], 'V'
             for a, b in adj:
                 x, y = i + a, j + b
@@ -14,5 +14,7 @@ class Solution:
             heights[i][j] = val
             return eff
 
-
         return solve(0, 0, heights[0][0])
+
+
+print(Solution().minimumEffortPath(heights = [[1,2,1,1,1],[1,2,1,2,1],[1,2,1,2,1],[1,2,1,2,1],[1,1,1,2,1]]))
