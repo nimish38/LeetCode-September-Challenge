@@ -1,25 +1,25 @@
-class Solution:
-    def minimumEffortPath(self, heights) -> int:
-        m, n, memo = len(heights), len(heights[0]), []
-        for _ in range(m):
-            memo.append([-1] * n)
+import math, heapq
+class Solution(object):
+    def minimumEffortPath(self, heights):
+        m, n = len(heights), len(heights[0])
+        dist = [[math.inf] * n for _ in range(m)]
+        dist[0][0] = 0
+        minHeap = [(0, 0, 0)]  # distance, row, col
+        DIR = [0, 1, 0, -1, 0]
 
-        def solve(i, j):
-            if memo[i][j] == -1:
-                if i == m - 1 and j == n - 1:
-                    memo[i][j] = 0
-                else:
-                    adj, eff = [(1, 0), (-1, 0), (0, 1), (0, -1)], float('inf')
-                    val, heights[i][j] = heights[i][j], 'V'
-                    for a, b in adj:
-                        x, y = i + a, j + b
-                        if 0 <= x < m and 0 <= y < n and heights[x][y] != 'V':
-                            eff = min(eff, max(abs(val - heights[x][y]), solve(x, y)))
-                    heights[i][j] = val
-                    memo[i][j] = eff
-            return memo[i][j]
+        while minHeap:
+            d, r, c = heapq.heappop(minHeap)
+            if d > dist[r][c]: continue  # this is an outdated version -> skip it
+            if r == m - 1 and c == n - 1:
+                return d  # Reach to bottom right
 
-        return solve(0, 0)
+            for i in range(4):
+                nr, nc = r + DIR[i], c + DIR[i + 1]
+                if 0 <= nr < m and 0 <= nc < n:
+                    newDist = max(d, abs(heights[nr][nc] - heights[r][c]))
+                    if dist[nr][nc] > newDist:
+                        dist[nr][nc] = newDist
+                        heapq.heappush(minHeap, (dist[nr][nc], nr, nc))
 
 
 print(Solution().minimumEffortPath(heights = [[2, 3],[4, 2]]))
