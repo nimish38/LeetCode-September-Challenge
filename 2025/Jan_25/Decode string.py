@@ -10,8 +10,8 @@ class Solution:
                 while st and st[-1] != ']':
                     num = st.pop() + num
                 st.pop()
-                res += curr * int(num)
+                st.push(curr * int(num))
             else:
                 st.append(s[i])
             i += 1
-        return res
+        return st[0]
