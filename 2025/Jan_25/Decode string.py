@@ -16,4 +16,4 @@ class Solution:
         return ''.join(st)
 
 
-print(Solution().decodeString(s = "3[a]2[bc]"))
+print(Solution().decodeString(s = "2[abc]3[cd]ef"))
