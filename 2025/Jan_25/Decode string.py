@@ -7,11 +7,13 @@ class Solution:
                 while st[-1] != '[':
                     curr = st.pop() + curr
                 st.pop()
-                while st and st[-1] != ']':
+                while st and st[-1].isnumeric():
                     num = st.pop() + num
-                st.pop()
-                st.push(curr * int(num))
+                st.append(curr * int(num))
             else:
                 st.append(s[i])
             i += 1
-        return st[0]
+        return ''.join(st)
+
+
+print(Solution().decodeString(s = "3[a]2[bc]"))
