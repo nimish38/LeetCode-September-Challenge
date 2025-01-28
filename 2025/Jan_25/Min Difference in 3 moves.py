@@ -1,18 +1,12 @@
-import heapq
-
-
 class Solution:
     def minDifference(self, nums) -> int:
         if len(nums) < 5:
             return 0
         nums.sort()
-        diff, j = [], 3
-        for i in range(1, len(nums)):
-            heapq.heappush(diff, -1 * (nums[i] - nums[i - 1]))
-        while diff[0] != 0 and j > 0:
-            heapq.heappop(diff)
-            j -= 1
-        return -1 * sum(diff)
+        res, n = float('inf'), len(nums)
+        for i in range(4):
+            res = min(res, nums[n - 4 + i] - nums[i])
+        return res
 
 
-print(Solution().minDifference(nums = [1,5,0,10,14]))
+print(Solution().minDifference(nums = [6,6,0,1,1,4,6]))
