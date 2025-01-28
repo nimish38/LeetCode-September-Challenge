@@ -15,3 +15,4 @@ class Solution:
         return -1 * sum(diff)
 
 
+print(Solution().minDifference(nums = [1,5,0,10,14]))
