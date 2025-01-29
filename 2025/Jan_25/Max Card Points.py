@@ -11,4 +11,8 @@ class Solution:
             best = max(res, best)
             i -= 1
             j -= 1
+            k -= 1
         return best
+
+
+print(Solution().maxScore(cardPoints = [2,2,2], k = 2))
