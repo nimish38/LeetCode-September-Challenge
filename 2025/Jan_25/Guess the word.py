@@ -3,38 +3,40 @@ class Master:
         return len(word)
 
 
-class Solution:
-    def findSecretWord(self, words, master) -> None:
-        def eleminate(ind, cnt):
-            new_list = []
-            for j in range(len(words)):
-                if j != ind:
-                    curr = sum(char1 == char2 for char1, char2 in zip(ind, words[j]))
-                    if curr == cnt:
-                        new_list.append(words[j])
-            return new_list
+class Solution(object):
+    def findSecretWord(self, wordlist, master):
 
-        def get_best_word():
-            cnt = [[0] * 26 for _ in range(6)]
-            for w in words:
-                for i, c in enumerate(w):
-                    cnt[i][ord(c) - ord('a')] += 1
+        def pair_matches(a, b):  # count the number of matching characters
+            return sum(c1 == c2 for c1, c2 in zip(a, b))
 
-            top_word, best = '', 0
-            for w in words:
-                curr = 0
-                for i, c in enumerate(w):
-                    curr += cnt[i][ord(c) - ord('a')]
-                if curr > best:
-                    best, top_word = curr, w
-            return w
+        def most_overlap_word():
+            counts = [[0 for _ in range(26)] for _ in range(6)]  # counts[i][j] is nb of words with char j at index i
+            for word in candidates:
+                for i, c in enumerate(word):
+                    counts[i][ord(c) - ord("a")] += 1
 
-        while words:
-            val = get_best_word()
-            match = master.guess(val)
-            if match == 6:
+            best_score = 0
+            for word in candidates:
+                score = 0
+                for i, c in enumerate(word):
+                    score += counts[i][ord(c) - ord("a")]  # all words with same chars in same positions
+                if score > best_score:
+                    best_score = score
+                    best_word = word
+
+            return best_word
+
+        candidates = wordlist[:]  # all remaining candidates, initially all words
+        while candidates:
+
+            s = most_overlap_word()  # guess the word that overlaps with most others
+            matches = master.guess(s)
+
+            if matches == 6:
                 return
-            words = eleminate(val, match)
+
+            candidates = [w for w in candidates if pair_matches(s, w) == matches]  # filter words with same matches
+
 
 
 mas = Master()
