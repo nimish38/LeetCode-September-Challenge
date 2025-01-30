@@ -6,25 +6,20 @@ class Master:
 class Solution:
     def findSecretWord(self, words, master) -> None:
         def eleminate(ind, cnt):
-            j = 0
-            while j < len(words):
+            new_list = []
+            for j in range(len(words)):
                 if j != ind:
-                    curr = 0
-                    for x in range(6):
-                        if words[ind] == words[j]:
-                            curr += 1
-                    if curr != cnt:
-                        del words[j]
-                    else:
-                        j += 1
-        i = 0
+                    curr = sum(char1 == char2 for char1, char2 in zip(ind, words[j]))
+                    if curr == cnt:
+                        new_list.append(words[j])
+            return new_list
+
         while words:
-            val = words[i]
+            val = get_best_word()
             match = master.guess(val)
             if match == 6:
                 return
-            eleminate(i, match)
-            i += 1
+            words = eleminate(val, match)
 
 
 mas = Master()
