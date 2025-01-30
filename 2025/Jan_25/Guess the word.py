@@ -14,6 +14,21 @@ class Solution:
                         new_list.append(words[j])
             return new_list
 
+        def get_best_word():
+            cnt = [[0] * 26 for _ in range(6)]
+            for w in words:
+                for i, c in enumerate(w):
+                    cnt[i][ord(c) - ord('a')] += 1
+
+            top_word, best = '', 0
+            for w in words:
+                curr = 0
+                for i, c in enumerate(w):
+                    curr += cnt[i][ord(c) - ord('a')]
+                if curr > best:
+                    best, top_word = curr, w
+            return w
+
         while words:
             val = get_best_word()
             match = master.guess(val)
