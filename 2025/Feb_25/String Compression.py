@@ -10,8 +10,14 @@ class Solution:
                     chars[j] = chars[i]
                     j += 1
                     curr, cnt = chars[i], 1
-                j += 1
             else:
                 cnt += 1
-        return j
-    
+            i += 1
+        if cnt > 1:
+            for c in str(cnt):
+                chars[j] = c
+                j += 1
+        return j, chars
+
+
+print(Solution().compress(chars = ["a","a","b","b","c","c","c"]))
