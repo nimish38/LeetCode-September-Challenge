@@ -10,6 +10,10 @@ class Solution:
                     chars[j] = chars[i]
                     j += 1
                     curr, cnt = chars[i], 1
+                if j == 1:
+                    chars[j] = chars[i]
+                    j += 1
+                    curr, cnt = chars[i], 1
             else:
                 cnt += 1
             i += 1
@@ -20,4 +24,4 @@ class Solution:
         return j, chars
 
 
-print(Solution().compress(chars = ["a","a","b","b","c","c","c"]))
+print(Solution().compress(chars = ["a","b","b","b","b","b","b","b","b","b","b","b","b"]))
