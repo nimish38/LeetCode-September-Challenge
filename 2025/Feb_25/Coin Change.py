@@ -10,6 +10,11 @@ class Solution:
             for c in coins:
                 if amt >= c:
                     res = min(res, solve(amt - c) + 1)
+            if res == float('inf'):
+                return -1
             return res
 
         return solve(amount)
+
+
+print(Solution().coinChange(coins = [1,2,5], amount = 11))
