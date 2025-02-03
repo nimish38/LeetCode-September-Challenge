@@ -1,23 +1,17 @@
 class Solution:
     def countSubstrings(self, s: str) -> int:
-        cnt, n, memo = 0, len(s), []
-        for _ in range(n + 1):
-            memo.append([False] * (n + 1))
+        self.cnt, n = 0, len(s)
 
-        for length in range(1, n + 1):
-            i = 0
-            while i + length - 1 < n:
-                j = i + length - 1
-                if i == j:
-                    memo[i][j] = True
-                elif i + 1 == j:
-                    memo[i][j] = s[i] == s[j]
-                else:
-                    memo[i][j] = (s[i] == s[j]) and memo[i + 1][j - 1]
-                if memo[i][j]:
-                    cnt += 1
-                i += 1
-        return cnt
+        def check(i, j):
+            while i >= 0 and j < n and s[i] == s[j]:
+                self.cnt += 1
+                i -= 1
+                j += 1
+
+        for i in range(n):
+            check(i, i)
+            check(i, i + 1)
+        return self.cnt
 
 
 print(Solution().countSubstrings(s = "abc"))
