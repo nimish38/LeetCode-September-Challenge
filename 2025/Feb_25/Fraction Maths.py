@@ -1,24 +1,20 @@
-from fractions import Fraction
-
-
 class Solution:
     def fractionAddition(self, expression: str) -> str:
-        res, num, den, sign, i = 0, 0, 0, 1, 0
-        if expression[0] != '-':
-            num, den = int(expression[0]), int(expression[2])
-            res += (num / den)
-            i = 3
+        num, den, i = 0, 1, 0
         while i < len(expression):
-            if expression[i] == '-':
-                sign = -1
-            else:
-                sign = 1
-            num, den = int(expression[i + 1]), int(expression[i + 3])
-            res += (num / den) * sign
-            i += 4
-        res = str(Fraction(res).limit_denominator())
-        if res.count('/') == 0:
-            res += '/1'
-        return res
+            numer, denom = '', ''
+            while expression[i] != '/':
+                numer += expression[i]
+                i += 1
+            i += 1
+            while expression[i] not in ['+', '-']:
+                denom += expression[i]
+                i += 1
+            numer, denom = int(numer), int(denom)
+            num = (num * denom) + (den * numer)
+            den = den * denom
+            i += 1
+        return str(num) + '/' + str(den)
 
-print(Solution().fractionAddition(expression = "1/3-1/2"))
+
+print(Solution().fractionAddition(expression = "-5/2+10/3+7/9"))
