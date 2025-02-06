@@ -1,16 +1,30 @@
+from collections import deque
+
+
 class Solution:
     def shortestSubarray(self, nums, k: int) -> int:
-        n = len(nums)
-        for length in range(1, n + 1):
-            val = None
-            for i in range(n - length + 1):
-                if not val:
-                    val = sum(nums[i: i + length])
-                else:
-                    val = val - nums[i - 1] + nums[i + length - 1]
-                if val >= k:
-                    return length
-        return -1
+        n, cumulative, res, mono, j = len(nums), [], float('inf'), deque(), 0
+        while j < n:
+            if j == 0:
+                cumulative.append(nums[j])
+            else:
+                cumulative.append(cumulative[j - 1] + nums[j])
+            if cumulative[j] >= k:
+                res = min(res, j + 1)
+            # check if value can be shrunk
+            while mono and cumulative[j] - cumulative[mono[0]] >= k:
+                res = min(res, j - mono[0])
+                mono.popleft()
+            # check increasing subsequence
+            while mono and cumulative[j] < cumulative[mono[-1]]:
+                mono.pop()
+
+            mono.append(j)
+            j += 1
+        if res == float('inf'):
+            return -1
+        return res
+
 
 
 print(Solution().shortestSubarray(nums = [2,-1,2], k = 3))
