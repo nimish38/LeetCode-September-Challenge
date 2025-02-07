@@ -8,3 +8,4 @@ class Solution:
         return cnt
 
 
+print(Solution().heightChecker(heights = [1,1,4,2,1,3]))
