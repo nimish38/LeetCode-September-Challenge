@@ -6,14 +6,17 @@ class Solution:
         else:
             res += str(numerator // denominator) + '.'
             numerator = numerator % denominator
-
+        numerator *= 10
         while numerator > 0 and numerator not in remainder:
-            remainder[numerator] = 1
+            quo = numerator // denominator
+            remainder[quo] = 1
             if numerator < denominator:
                 numerator *= 10
             else:
-                numerator //= denominator
                 numerator %= denominator
-        res += ''.join(remainder.values())
+        res += ''.join(str(x) for x in remainder.keys())
+        return res
 
+
+print(Solution().fractionToDecimal(numerator = 1, denominator = 2))
 
