@@ -4,8 +4,11 @@ class Solution:
         if numerator < denominator:
             res += '0.'
         else:
-            res += str(numerator // denominator) + '.'
+            res += str(numerator // denominator)
             numerator = numerator % denominator
+            if numerator != 0:
+                res += '.'
+
         remainder[numerator] = 1
         numerator *= 10
         while numerator > 0 and numerator not in remainder:
@@ -21,5 +24,5 @@ class Solution:
         return res
 
 
-print(Solution().fractionToDecimal(numerator = 4, denominator = 333))
+print(Solution().fractionToDecimal(numerator = 2, denominator = 1))
 
