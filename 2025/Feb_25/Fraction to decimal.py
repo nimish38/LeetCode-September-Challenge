@@ -1,28 +1,39 @@
 class Solution:
     def fractionToDecimal(self, numerator: int, denominator: int) -> str:
-        res, remainder, quotients = '', {}, set()
-        if numerator < denominator:
-            res += '0.'
-        else:
-            res += str(numerator // denominator)
-            numerator = numerator % denominator
-            if numerator != 0:
-                res += '.'
-
-        remainder[numerator] = 1
-        numerator *= 10
-        while numerator > 0 and numerator not in remainder:
-            quo, rem = numerator // denominator, numerator % denominator
-            remainder[rem] = 1
-            quotients.add(quo)
-            numerator = rem * 10
+        # Handle edge cases
         if numerator == 0:
-            res += ''.join(str(x) for x in quotients)
-        else:
-            val = ''.join(str(x) for x  in quotients)
-            res += '(' + val + ')'
-        return res
+            return "0"
+        if denominator == 0:
+            return ""
 
+        # Initialize result and check for negative sign
+        result = ""
+        if (numerator < 0) ^ (denominator < 0):
+            result += "-"
+        numerator, denominator = abs(numerator), abs(denominator)
 
-print(Solution().fractionToDecimal(numerator = 2, denominator = 1))
+        # Integer part of the result
+        result += str(numerator // denominator)
 
+        # Check if there is a fractional part
+        if numerator % denominator == 0:
+            return result
+
+        result += "."
+
+        # Use a dictionary to store the position of each remainder
+        remainder_dict = {}
+        remainder = numerator % denominator
+
+        # Keep adding the remainder to the result until it repeats or the remainder becomes 0
+        while remainder != 0 and remainder not in remainder_dict:
+            remainder_dict[remainder] = len(result)
+            remainder *= 10
+            result += str(remainder // denominator)
+            remainder %= denominator
+
+        # Check if there is a repeating part
+        if remainder in remainder_dict:
+            result = result[:remainder_dict[remainder]] + "(" + result[remainder_dict[remainder]:] + ")"
+
+        return result
