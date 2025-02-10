@@ -5,13 +5,14 @@ class Solution:
             if num in counter:
                 counter[num] += 1
             else:
-                counter[num] = 2
+                counter[num] = 1
 
         def solve(cnt):
             if not cnt:
                 return 0
             score, best = 0, -1
-            for val in cnt:
+            while cnt.values():
+                val = list(cnt.keys())[0]
                 prev, pcnt, nex, ncnt, score = val - 1, 0, val + 1, 0, val
                 cnt[val] -= 1
                 if cnt[val] == 0:
@@ -34,4 +35,7 @@ class Solution:
                 best = max(best, score)
             return best
 
-        return solve(nums)
+        return solve(counter)
+
+
+print(Solution().deleteAndEarn(nums = [3,4,2]))
