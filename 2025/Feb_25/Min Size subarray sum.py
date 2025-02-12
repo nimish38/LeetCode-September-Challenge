@@ -1,7 +1,7 @@
 class Solution:
     def minSubArrayLen(self, target: int, nums) -> int:
         n = len(nums)
-        for leng in range(1, n):
+        for leng in range(1, n + 1):
             curr = 0
             for i in range(n - leng + 1):
                 if i == 0:
@@ -13,5 +13,5 @@ class Solution:
         return 0
 
 
-print(Solution().minSubArrayLen(target = 7, nums = [2,3,1,2,4,3]))
+print(Solution().minSubArrayLen(target = 15, nums = [1,2,3,4,5]))
 
