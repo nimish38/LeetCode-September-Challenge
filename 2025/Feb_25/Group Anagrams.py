@@ -5,7 +5,10 @@ class Solution:
     def groupAnagrams(self, strs):
         res = defaultdict(list)
         for word in strs:
-            sortedWord = sorted(word)
+            sortedWord = ''.join(sorted(word))
             res[sortedWord].append(word)
         return list(res.values())
+
+
+print(Solution().groupAnagrams(strs = ["eat","tea","tan","ate","nat","bat"]))
 
