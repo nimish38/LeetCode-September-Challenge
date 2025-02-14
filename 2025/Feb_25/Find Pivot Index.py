@@ -1,13 +1,13 @@
-class Solution:
-    def pivotIndex(self, nums) -> int:
-        n = len(nums)
-        left, right = [0] * n, [0] * n
-        for i in range(1, n):
-            left[i] = left[i - 1] + nums[i - 1]
-            right[n - i - 1] = right[n - i] + nums[n - i]
-        for i in range(n):
-            if left[i] == right[i]:
-                return i
+class Solution(object):
+    def pivotIndex(self, nums):
+        # Time: O(n)
+        # Space: O(1)
+        left, right = 0, sum(nums)
+        for index, num in enumerate(nums):
+            right -= num
+            if left == right:
+                return index
+            left += num
         return -1
 
 
