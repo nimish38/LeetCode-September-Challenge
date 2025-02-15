@@ -26,9 +26,9 @@ class Solution:
         make_heap(nums1)
         make_heap(nums2)
         if (m + n) % 2:
-            return leftmax[0]
+            return -1 * leftmax[0]
         else:
-            return (leftmax[0] + rightmin[0]) / 2
+            return ((-1* leftmax[0]) + rightmin[0]) / 2
 
 
 print(Solution().findMedianSortedArrays(nums1 = [1,2], nums2 = [3,4]))
