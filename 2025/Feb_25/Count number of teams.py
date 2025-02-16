@@ -1,12 +1,16 @@
 class Solution:
     def numTeams(self, rating) -> int:
         cnt, n = 0, len(rating)
-        for i in range(n):
-            for j in range(i + 1, n):
-                for k in range(j + 1, n):
-                    if (rating[i] < rating[j] < rating[k]) or (rating[i] > rating[j] > rating[k]):
-                        cnt += 1
+        for j in range(1, n - 1):
+            leftsmall, leftlarge, rightsmall, rightlarge = 0, 0, 0, 0
+            for i in range(j):
+                if rating[i] < rating[j]:
+                    leftsmall += 1
+                if rating[i] > rating[j]:
+                    leftlarge += 1
+            
         return cnt
 
 
+print(Solution().numTeams(rating = [2,5,3,4,1]))
 
