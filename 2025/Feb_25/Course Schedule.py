@@ -12,19 +12,19 @@ class Solution:
             if val not in adj:
                 vis[val] = 1
 
-        while len(vis) < numCourses - 1:
+        while len(vis) < numCourses:
             before = len(vis)
             for node in adj:
-                flag = 0
-                for req in adj[node]:
-                    if req not in vis:
-                        flag = 1
-                if not flag:
-                    vis[node] = 1
-                    del adj[node]
+                if node not in vis:
+                    flag = 0
+                    for req in adj[node]:
+                        if req not in vis:
+                            flag = 1
+                    if not flag:
+                        vis[node] = 1
             if len(vis) == before:
                 return False
         return True
 
 
-
+print(Solution().canFinish(numCourses = 20, prerequisites =[[0,10],[3,18],[5,5],[6,11],[11,14],[13,1],[15,1],[17,4]]))
