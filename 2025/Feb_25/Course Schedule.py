@@ -6,8 +6,7 @@ class Solution:
         adj, indegree = defaultdict(list), [0] * numCourses
         for pre in prerequisites:
             take, req = pre[0], pre[1]
-            if req in adj:
-                adj[req].append(take)
+            adj[req].append(take)
             indegree[take] += 1
 
         # def isCycle(node):
