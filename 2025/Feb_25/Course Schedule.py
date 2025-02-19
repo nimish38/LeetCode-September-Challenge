@@ -1,28 +1,25 @@
 class Solution:
     def canFinish(self, numCourses, prerequisites) -> bool:
-        adj, st, vis = {}, [], {}
+        adj, inrecursion, vis = {}, [False]*numCourses, [False]*numCourses
         for pre in prerequisites:
             take, req = pre[0], pre[1]
-            if take in adj:
-                adj[take].append(req)
+            if req in adj:
+                adj[req].append(take)
             else:
-                adj[take] = [req]
+                adj[req] = [take]
 
-        for val in range(numCourses):
-            if val not in adj:
-                vis[val] = 1
+        def isCycle(node):
+            vis[node], inrecursion[node] = True, True
+            for nei in adj[node]:
+                if not vis[nei] and isCycle(nei):
+                    return True
+                elif inrecursion[nei]:
+                    return True
+            inrecursion[node] = False
+            return False
 
-        while len(vis) < numCourses:
-            before = len(vis)
-            for node in adj:
-                if node not in vis:
-                    flag = 0
-                    for req in adj[node]:
-                        if req not in vis:
-                            flag = 1
-                    if not flag:
-                        vis[node] = 1
-            if len(vis) == before:
+        for i in range(numCourses):
+            if not vis[i] and isCycle(i):
                 return False
         return True
 
