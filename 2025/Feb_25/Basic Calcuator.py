@@ -1,39 +1,25 @@
 class Solution:
     def calculate(self, s: str) -> int:
-        st, i, neg = [], 0, 1
-        while i < len(s):
-            if s[i].isnumeric():
-                num = ''
-                while s[i].isnumeric():
-                    num += s[i]
-                    i += 1
-                st.append(int(num) * neg)
-                neg = 1
-            if s[i] == ')':
-                while st[-1] != '(' and st[-2] in ['-', '+']:
-                    op2, opr, op1 = st.pop(), st.pop(), st.pop()
-                    if opr == '-':
-                        val = op1 - op2
-                    else:
-                        val = op1 + op2
-                    st.append(val)
-                num = st.pop()
-                st.pop()
-                st.append(num * neg)
-                neg = 1
-            elif s[i] == '-' and not st or st[-1] == '(':
-                neg = -1
+        current, result, sign, st = 0, 0, 1, []
+        for c in s:
+            if c.isnumeric():
+                current = (current * 10) + int(c)
+            elif c == '+' or c == '-':
+                result += current * sign
+                if c == '-':
+                    sign = -1
+                else:
+                    sign = 1
+            elif c == '(':
+                st.append(result)
+                st.append(sign)
+                current, result, sign = 0, 0, 1
             else:
-                st.append(s[i])
-            i += 1
-        while len(st) > 1:
-            op2, opr, op1 = st.pop(), st.pop(), st.pop()
-            if opr == '-':
-                val = int(op1) - int(op2)
-            else:
-                val = int(op1) + int(op2)
-            st.append(val)
-        return st[0]
+                result += current * sign
+                operand, prev_res = st.pop(), st.pop()
+                result, current, sign = result * operand + prev_res, 0, 1
+        result += current * sign
+        return result
 
 
-print(Solution().calculate(s = "-1-(4+5+2)"))
+print(Solution().calculate(s = "1-(-2)"))
