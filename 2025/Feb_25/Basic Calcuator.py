@@ -2,10 +2,13 @@ class Solution:
     def calculate(self, s: str) -> int:
         current, result, sign, st = 0, 0, 1, []
         for c in s:
-            if c.isnumeric():
+            if c == ' ':
+                continue
+            elif c.isnumeric():
                 current = (current * 10) + int(c)
             elif c == '+' or c == '-':
                 result += current * sign
+                current = 0
                 if c == '-':
                     sign = -1
                 else:
@@ -22,4 +25,4 @@ class Solution:
         return result
 
 
-print(Solution().calculate(s = "1-(-2)"))
+print(Solution().calculate(s = "1 + 1"))
