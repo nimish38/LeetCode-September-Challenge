@@ -1,14 +1,19 @@
 class Solution:
     def isHappy(self, n: int) -> bool:
-        prev = {}
-        while True:
-            if n == 1:
-                return True
-            if n in prev:
-                return False
-            prev[n], s, n = 1, str(n), 0
-            for c in s:
-                n += int(c) ** 2
+        def get_next_number(n):
+            output = 0
+            while n:
+                digit = n % 10
+                output += digit ** 2
+                n = n // 10
+            return output
+        slow = get_next_number(n)
+        fast = get_next_number(get_next_number(n))
+        while slow != fast:
+            if fast == 1: return True
+            slow = get_next_number(slow)
+            fast = get_next_number(get_next_number(fast))
+        return slow == 1
 
 
 print(Solution().isHappy(n = 2))
