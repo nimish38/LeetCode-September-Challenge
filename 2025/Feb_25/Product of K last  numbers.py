@@ -1,16 +1,24 @@
 class ProductOfNumbers:
 
     def __init__(self):
-        self.nums = []
+        self.nums, self.prev = [], 1
 
     def add(self, num: int) -> None:
-        self.nums.append(num)
+        if num == 0:
+            self.nums = [0] * (len(self.nums) + 1)
+            self.prev = 1
+        else:
+            self.nums.append(num * self.prev)
+            self.prev = num
 
     def getProduct(self, k: int) -> int:
-        n, res = len(self.nums), 1
-        for i in range(k):
-            res *= self.nums[n - 1 - i]
-        return res
+        n = len(self.nums)
+        if n == k:
+            return self.nums[-1]
+        den = self.nums[n - 1 - k]
+        if den == 0:
+            return self.nums[n - 1]
+        return self.nums[n - 1] // den
 
 
 productOfNumbers = ProductOfNumbers()
