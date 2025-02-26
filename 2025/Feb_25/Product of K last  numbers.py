@@ -5,20 +5,18 @@ class ProductOfNumbers:
 
     def add(self, num: int) -> None:
         if num == 0:
-            self.nums = [0] * (len(self.nums) + 1)
-            self.prev = 1
+            self.nums = []
+        elif len(self.nums) == 0:
+            self.nums.append(num)
         else:
-            self.nums.append(num * self.prev)
-            self.prev = self.nums[-1]
+            self.nums.append(self.nums[-1] * num)
 
     def getProduct(self, k: int) -> int:
-        n = len(self.nums)
-        if self.nums[n - k] == 0:
+        if k > len(self.nums):
             return 0
-        den = n - k - 1
-        if den < 0 or self.nums[den] == 0:
+        elif k == len(self.nums):
             return self.nums[-1]
-        return self.nums[-1] // self.nums[den]
+        return self.nums[-1] // self.nums[len(self.nums) - k - 1]
 
 
 productOfNumbers = ProductOfNumbers()
