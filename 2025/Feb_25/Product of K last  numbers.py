@@ -13,3 +13,14 @@ class ProductOfNumbers:
         return res
 
 
+productOfNumbers = ProductOfNumbers()
+productOfNumbers.add(3)
+productOfNumbers.add(0)
+productOfNumbers.add(2)
+productOfNumbers.add(5)
+productOfNumbers.add(4)
+print(productOfNumbers.getProduct(2))
+print(productOfNumbers.getProduct(3))
+print(productOfNumbers.getProduct(4))
+productOfNumbers.add(8)
+print(productOfNumbers.getProduct(2))
