@@ -4,10 +4,14 @@ import random
 class Solution:
 
     def __init__(self, w):
-        self.weights = w
+        self.buckets, self.val = [], 0
+        for v in w:
+            self.buckets.append(self.val + v)
+            self.val = v
 
     def pickIndex(self) -> int:
-        return random.randrange(0, len(self.weights))
+        randomval = random.randint % self.val
+        return findBucket(randomval)
 
 
 obj = Solution(w=[1, 3])
