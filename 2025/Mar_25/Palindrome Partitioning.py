@@ -7,10 +7,13 @@ class Solution:
                 res.append(curr)
                 return
             for i in range(idx, n):
-                presemt = s[idx: i]
+                presemt = s[idx: i + 1]
                 if presemt == presemt[::-1]:
                     curr.append(presemt)
-                    solve(i + 1, curr)
+                    solve(i + 1, list(curr))
                     curr.pop()
         solve(0, [])
         return res
+
+
+print(Solution().partition(s = "aab"))
