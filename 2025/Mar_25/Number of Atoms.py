@@ -33,12 +33,12 @@ class Solution:
                     suffix += formula[i]
                     i += 1
                 if suffix:
-                    prev = st.pop()
                     for ele in curr:
                         curr[ele] *= int(suffix)
-                    for ele in curr:
-                        prev[ele] += curr[ele]
-                    curr, mol, num = prev, '', ''
+                prev = st.pop()
+                for ele in curr:
+                    prev[ele] += curr[ele]
+                curr, mol, num = prev, '', ''
                 i -= 1
             i += 1
         if num:
@@ -55,7 +55,7 @@ class Solution:
         return res
 
 
-print(Solution().countOfAtoms(formula = "K4(ON(SO3)2)2"))
+print(Solution().countOfAtoms(formula = "Mg(H2O)N"))
 
 
 
