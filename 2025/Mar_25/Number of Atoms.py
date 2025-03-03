@@ -14,23 +14,31 @@ class Solution:
                     mol, num = '', ''
                 if c.isupper() and mol:
                     curr[mol] += 1
+                    mol = ''
                 mol += c
             if c == '(':
+                if mol and num:
+                    curr[mol] += int(num)
+                elif mol:
+                    curr[mol] += 1
                 st.append(curr)
-                curr, mol, num = defaultdict(int), '', '', []
+                curr, mol, num = defaultdict(int), '', ''
             if c == ')':
-                suffix = ''
+                if mol and num:
+                    curr[mol] += int(num)
+                elif mol:
+                    curr[mol] += 1
+                suffix, i = '', i + 1
                 while i < len(formula) and formula[i].isnumeric():
                     suffix += formula[i]
                     i += 1
                 if suffix:
                     prev = st.pop()
-                    for ele in prev:
-                        prev[ele] *= prev[ele]
-                    curr = st.pop()
-                    for ele in prev:
-                        curr[ele] += prev[ele]
-                    mol, num = '', ''
+                    for ele in curr:
+                        curr[ele] *= int(suffix)
+                    for ele in curr:
+                        prev[ele] += curr[ele]
+                    curr, mol, num = prev, '', ''
                 i -= 1
             i += 1
         if num:
@@ -47,7 +55,7 @@ class Solution:
         return res
 
 
-print(Solution().countOfAtoms(formula = "H2O"))
+print(Solution().countOfAtoms(formula = "K4(ON(SO3)2)2"))
 
 
 
