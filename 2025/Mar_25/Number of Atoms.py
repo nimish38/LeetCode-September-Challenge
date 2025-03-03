@@ -33,12 +33,21 @@ class Solution:
                     mol, num = '', ''
                 i -= 1
             i += 1
+        if num:
+            curr[mol] += int(num)
+        else:
+            curr[mol] += 1
 
         res, keys = '', list(curr.keys())
         keys.sort()
         for val in keys:
-            res += val + str(curr[val])
+            res += val
+            if curr[val] > 1:
+                res += str(curr[val])
         return res
+
+
+print(Solution().countOfAtoms(formula = "H2O"))
 
 
 
