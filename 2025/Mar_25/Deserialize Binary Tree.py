@@ -15,14 +15,22 @@ class Codec:
         return node2str(root)
 
     def deserialize(self, data):
-        """Decodes your encoded data to tree.
-
-        :type data: str
-        :rtype: TreeNode
-        """
+        data, self.val = data.split('|'), 0
+        def str2node():
+            if data[self.val] == '#':
+                return None
+            node = TreeNode(data[self.val])
+            self.val += 1
+            node.left = str2node()
+            self.val += 1
+            node.right = str2node()
+            return node
+        return str2node()
 
 
 a, b, c, d, e = TreeNode(1), TreeNode(2), TreeNode(3), TreeNode(4), TreeNode(5)
 a.left, a.right, c.left, c.right = b, c, d, e
 ser = Codec().serialize(a)
 print(ser)
+des = Codec().deserialize(ser)
+print(des)
