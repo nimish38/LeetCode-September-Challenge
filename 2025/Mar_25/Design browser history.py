@@ -13,7 +13,18 @@ class BrowserHistory:
         return self.pages[self.curr]
 
     def forward(self, steps: int) -> str:
-        self.curr += min(steps, len(self.pages) - self.curr)
+        self.curr += min(steps, len(self.pages) - self.curr - 1)
         return self.pages[self.curr]
 
 
+browserHistory = BrowserHistory("leetcode.com")
+browserHistory.visit("google.com")
+browserHistory.visit("facebook.com")
+browserHistory.visit("youtube.com")
+print(browserHistory.back(1))
+print(browserHistory.back(1))
+print(browserHistory.forward(1))
+browserHistory.visit("linkedin.com")
+print(browserHistory.forward(2))
+print(browserHistory.back(2))
+print(browserHistory.back(7))
