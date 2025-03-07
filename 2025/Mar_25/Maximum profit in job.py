@@ -4,6 +4,7 @@ class Solution:
         for i in range(n):
             jobs.append([startTime[i], endTime[i], profit[i]])
         jobs.sort(key=lambda x: x[0])
+        memo = [-1] * n
 
         def solve(i):
             def findNextJob(i, target):
@@ -18,10 +19,12 @@ class Solution:
                 return res
             if i >= len(profit):
                 return 0
-            next = findNextJob(i + 1, jobs[i][1])
-            take = jobs[i][2] + solve(next)
-            skip = solve(i + 1)
-            return max(take, skip)
+            if memo[i] == -1:
+                next = findNextJob(i + 1, jobs[i][1])
+                take = jobs[i][2] + solve(next)
+                skip = solve(i + 1)
+                memo[i] = max(take, skip)
+            return memo[i]
         return solve(0)
 
 
