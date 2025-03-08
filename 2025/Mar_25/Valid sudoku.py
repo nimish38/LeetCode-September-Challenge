@@ -1,41 +1,24 @@
 class Solution:
-    def isValidSudoku(self, board) -> bool:
+    def isValidSudoku(self, board):
+        row_set, col_set, box_set = set(), set(), set()
+        for i in range(9):
+            for j in range(9):
+                if board[i][j] != '.':
+                    x = str(i) + '_ROW_' + str(board[i][j])
+                    if x in row_set:
+                        return False
+                    row_set.add(x)
 
-        def checkRow():
-            for row in range(9):
-                seen = {}
-                for col in range(9):
-                    if board[row][col] != '.':
-                        if board[row][col] in seen:
-                            return False
-                        seen[board[row][col]] = 1
-            return True
+                    y = str(j) + '_COL_' + str(board[i][j])
+                    if y in col_set:
+                        return False
+                    col_set.add(y)
 
-        def checkCol():
-            for col in range(9):
-                seen = {}
-                for row in range(9):
-                    if board[row][col] != '.':
-                        if board[row][col] in seen:
-                            return False
-                        seen[board[row][col]] = 1
-            return True
-
-        def checkBox():
-            for i in range(0, 9, 3):
-                for j in range(0, 9, 3):
-                    rowStart, rowEnd, colStart, colEnd, seen = i, i + 3, j, j + 3, {}
-                    for row in range(rowStart, rowEnd):
-                        for col in range(colStart, colEnd):
-                            if board[row][col] != '.':
-                                if board[row][col] in seen:
-                                    return False
-                                seen[board[row][col]] = 1
-            return True
-
-        if checkRow() and checkCol() and checkBox():
-            return True
-        return False
+                    z = str(i//3) + str(j//3) + '_BOX_' + str(board[i][j])
+                    if z in box_set:
+                        return False
+                    box_set.add(z)
+        return True
 
 
 print(Solution().isValidSudoku(board =
