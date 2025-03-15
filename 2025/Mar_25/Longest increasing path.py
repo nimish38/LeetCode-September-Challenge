@@ -16,3 +16,4 @@ class Solution:
         return res
 
 
+print(Solution().longestIncreasingPath(matrix = [[1]]))
