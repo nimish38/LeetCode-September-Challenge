@@ -1,14 +1,18 @@
 class Solution:
     def longestIncreasingPath(self, matrix) -> int:
-        m, n, res = len(matrix), len(matrix[0]), 0
+        m, n, res, memo = len(matrix), len(matrix[0]), 0, []
+        for _ in range(m):
+            memo.append([-1]*n)
 
         def solve(i, j):
-            curr, adj = 0, [(0, 1), (1, 0), (0, -1), (-1, 0)]
-            for p, q in adj:
-                x, y = i + p, j + q
-                if 0 <= x < m and 0 <= y < n and matrix[x][y] > matrix[i][j]:
-                    curr = max(curr, solve(x, y))
-            return 1 + curr
+            if memo[i][j] == -1:
+                curr, adj = 0, [(0, 1), (1, 0), (0, -1), (-1, 0)]
+                for p, q in adj:
+                    x, y = i + p, j + q
+                    if 0 <= x < m and 0 <= y < n and matrix[x][y] > matrix[i][j]:
+                        curr = max(curr, solve(x, y))
+                memo[i][j] = 1 + curr
+            return memo[i][j]
 
         for i in range(m):
             for j in range(n):
@@ -16,4 +20,4 @@ class Solution:
         return res
 
 
-print(Solution().longestIncreasingPath(matrix = [[1]]))
+print(Solution().longestIncreasingPath(matrix = [[3,4,5],[3,2,6],[2,2,1]]))
