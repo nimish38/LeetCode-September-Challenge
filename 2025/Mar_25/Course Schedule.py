@@ -20,3 +20,6 @@ class Solution:
                     cnt += 1
         return cnt == numCourses
 
+
+print(Solution().canFinish(numCourses = 2, prerequisites = [[1,0],[0,1]]))
+
