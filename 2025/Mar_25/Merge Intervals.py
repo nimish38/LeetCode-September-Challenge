@@ -12,3 +12,7 @@ class Solution:
                 currStart, currEnd = newStart, newEnd
             i += 1
         res.append([currStart, currEnd])
+        return res
+
+
+print(Solution().merge(intervals = [[1,4],[4,5]]))
