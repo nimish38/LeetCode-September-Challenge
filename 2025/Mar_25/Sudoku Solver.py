@@ -2,6 +2,18 @@ class Solution:
     def solveSudoku(self, board) -> None:
 
         def solve():
+
+            def isValid(row, col, char):
+                for i in range(9):
+                    if board[i][col] == char:
+                        return False
+                    if board[row][i] == char:
+                        return False
+                    x, y = (row // 3) + i // 3, (col // 3) + i % 3
+                    if board[x][y] == char:
+                        return False
+                return True
+
             for i in range(9):
                 for j in range(9):
                     if board[i][j] == '.':
@@ -16,4 +28,7 @@ class Solution:
             return True
 
         solve(board)
+        print(board)
+
+
 
