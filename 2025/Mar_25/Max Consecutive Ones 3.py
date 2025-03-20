@@ -1,15 +1,16 @@
 class Solution:
     def longestOnes(self, nums, k: int) -> int:
-        best, n = 0, len(nums)
-        for i in range(n):
-            zero = 0
-            for j in range(i, n):
-                if not nums[j]:
-                    zero += 1
-                if zero <= k:
-                    best = max(best, j - i + 1)
-                else:
-                    break
+        best, zero, l, r, n = 0, 0, 0, 0, len(nums)
+        while r < n:
+            if not nums[r]:
+                zero += 1
+                while zero > k:
+                    if not nums[l]:
+                        zero -= 1
+                    l += 1
+            else:
+                best = max(best, r - l + 1)
+            r += 1
         return best
 
 
