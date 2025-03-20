@@ -8,7 +8,7 @@ class Solution:
                     if not nums[l]:
                         zero -= 1
                     l += 1
-            else:
+            if zero <= k:
                 best = max(best, r - l + 1)
             r += 1
         return best
