@@ -25,3 +25,6 @@ class Solution:
 
         res = solve(0, k)
         return res
+
+
+print(Solution().longestOnes(nums = [0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], k = 3))
