@@ -2,18 +2,16 @@ class Solution:
     def permute(self, nums):
         res, n = [], len(nums)
 
-        def solve(arr, combo):
+        def solve(combo):
             if len(combo) == n:
-                res.append(list(combo))
+                res.append(combo)
                 return
-            for i in range(len(arr)):
-                x = arr.pop(i)
-                combo.append(x)
-                solve(arr, combo)
-                arr.insert(i, x)
-                combo.pop()
-
-        solve(nums, [])
+            for i in range(n):
+                if nums[i] not in combo:
+                    combo.append(nums[i])
+                    solve(list(combo))
+                    combo.pop()
+        solve([])
         return res
 
 
