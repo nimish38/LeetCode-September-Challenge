@@ -4,7 +4,7 @@ class Solution:
 
         def solve(arr, combo):
             if len(combo) == n:
-                res.append(combo)
+                res.append(list(combo))
                 return
             for i in range(len(arr)):
                 x = arr.pop(i)
@@ -15,3 +15,6 @@ class Solution:
 
         solve(nums, [])
         return res
+
+
+print(Solution().permute(nums = [1,2,3]))
