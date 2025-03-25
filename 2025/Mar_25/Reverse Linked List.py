@@ -6,9 +6,10 @@ class Node:
 
 class Solution:
     def reverseList(self, head):
-        if not head or head.next:
+        if not head or not head.next:
             return head
         p, c, n = head, head.next, None
+        p.next = None
         while c:
             n, c.next = c.next, p
             p, c = c, n
