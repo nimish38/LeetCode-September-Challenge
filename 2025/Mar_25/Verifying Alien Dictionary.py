@@ -9,7 +9,7 @@ class Solution:
                     return True
                 elif pos[first[i]] > pos[second[i]]:
                     return False
-            if len(second) < run:
+            if len(second) < len(first):
                 return False
             return True
 
