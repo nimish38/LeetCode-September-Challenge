@@ -1,30 +1,22 @@
 class Solution:
     def minRemoveToMakeValid(self, s: str) -> str:
-        st, cnt, res = [], 0, ''
 
-        for c in s:
-            if c == '(':
-                st.append('(')
-                cnt += 1
-            elif c == ')':
-                if cnt > 0:
-                    combine = c
-                    while st[-1] != '(':
-                        combine = st.pop() + combine
-                    st[-1] += combine
-                    cnt -= 1
-            else:
-                if not st or st[-1] == '(':
-                    st.append(c)
-                else:
-                    st[-1] += c
+        # remove extra right parenthese )
+        def remove_extra_rp(s: str) -> tuple:
 
-        for val in st:
-            if val == '(':
-                continue
-            res += val
+            extra_lp = 0
+            for l in s:
+                if l == "(": extra_lp += 1
+                if l == ")":
+                    if extra_lp == 0:
+                        s = s.replace(l, "", 1)
+                    else:
+                        extra_lp -= 1
+            return s, extra_lp
 
-        return res
+        s, extra_lp = remove_extra_rp(s)
+        s = s[::-1].replace("(", "", extra_lp)[::-1]
+        return s
 
 
 print(Solution().minRemoveToMakeValid(s = "))(("))
