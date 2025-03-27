@@ -1,6 +1,6 @@
 class Solution:
     def minRemoveToMakeValid(self, s: str) -> str:
-        st, cnt = [], 0
+        st, cnt, res = [], 0
 
         for c in s:
             if c == '(':
@@ -19,5 +19,10 @@ class Solution:
                 else:
                     st[-1] += c
 
+        for val in st:
+            if val == '(':
+                continue
+            res += val
 
+        return res
 
