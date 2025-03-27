@@ -1,6 +1,6 @@
 class Solution:
     def minRemoveToMakeValid(self, s: str) -> str:
-        st, cnt, res = [], 0
+        st, cnt, res = [], 0, ''
 
         for c in s:
             if c == '(':
@@ -25,4 +25,7 @@ class Solution:
             res += val
 
         return res
+
+
+print(Solution().minRemoveToMakeValid(s = "))(("))
 
