@@ -1,12 +1,14 @@
 class Solution:
     def productExceptSelf(self, nums):
-        left, right, ans = 1, 1, [1] * len(nums)
-        for i, val in enumerate(nums):
-            ans[i], left = left, left * val
-        for i in range(len(nums) - 1, -1, -1):
-            ans[i] *= right
-            right *= nums[i]
-        return ans
+        n = len(nums)
+        res = [1] * n
+        left, right = nums[0], nums[-1]
+        for i in range(1, n):
+            res[i] *= left
+            res[n - i - 1] *= right
+            left *= nums[i]
+            right *= nums[n - i - 1]
+        return res
 
 
 print(Solution().productExceptSelf(nums = [-1,1,0,-3,3]))
