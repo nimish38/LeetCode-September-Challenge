@@ -6,8 +6,11 @@ class Solution:
                 i += 1
                 j -= 1
             else:
-                left, right = s[i + 1: j], s[i: j]
+                left, right = s[i + 1: j + 1], s[i: j]
                 if left == left[:: -1] or right == right[:: -1]:
                     return True
                 return False
         return True
+
+
+print(Solution().validPalindrome(s = "aabbbcaa"))
