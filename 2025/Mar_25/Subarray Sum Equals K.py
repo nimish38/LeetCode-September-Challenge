@@ -5,6 +5,7 @@ class Solution:
             curr += nums[j]
             if curr == k:
                 cnt += 1
+                j += 1
             elif curr < k:
                 j += 1
             else:
@@ -15,3 +16,6 @@ class Solution:
                     cnt += 1
                 j += 1
         return cnt
+
+
+print(Solution().subarraySum(nums = [1,2,2,3,1,2,1,4], k = 4))
