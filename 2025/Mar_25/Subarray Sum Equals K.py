@@ -12,10 +12,10 @@ class Solution:
                 while curr > k:
                     curr -= nums[i]
                     i += 1
-                if curr == k:
+                if curr == k and i < len(nums):
                     cnt += 1
                 j += 1
         return cnt
 
 
-print(Solution().subarraySum(nums = [1,2,2,3,1,2,1,4], k = 4))
+print(Solution().subarraySum(nums = [1], k = 0))
