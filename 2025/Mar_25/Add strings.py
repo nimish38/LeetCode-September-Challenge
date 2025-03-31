@@ -9,6 +9,8 @@ class Solution:
             if val > 9:
                 carry = True
                 res = str(val % 10) + res
+            else:
+                res = str(val) + res
             i -= 1
             j -= 1
         while i >= 0:
@@ -19,15 +21,19 @@ class Solution:
             if val > 9:
                 carry = True
                 res = str(val % 10) + res
+            else:
+                res = str(val) + res
             i -= 1
         while j >= 0:
-            val = int(num1[j])
+            val = int(num2[j])
             if carry:
                 val += 1
                 carry = False
             if val > 9:
                 carry = True
                 res = str(val % 10) + res
+            else:
+                res = str(val) + res
             j -= 1
         if carry:
             return '1' + res
