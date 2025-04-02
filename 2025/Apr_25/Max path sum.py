@@ -22,3 +22,8 @@ class Solution:
 
         solve(root)
         return self.maxsum
+
+
+a, b, c, d, e = TreeNode(-10), TreeNode(9), TreeNode(20), TreeNode(15), TreeNode(7)
+a.left, a.right, c.left, c.right = b, c, d, e
+print(Solution().maxPathSum(a))
