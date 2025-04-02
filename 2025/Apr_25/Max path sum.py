@@ -7,7 +7,7 @@ class TreeNode:
 
 class Solution:
     def maxPathSum(self, root):
-        self.maxsum = 0
+        self.maxsum = float('-inf')
 
         def solve(node):
             if not node:
