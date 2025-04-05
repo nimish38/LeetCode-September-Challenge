@@ -13,14 +13,17 @@ class Solution:
         res, st = 0, deque([root])
         while st:
             node = st.popleft()
-            if node:
-                if low <= node.val <= high:
-                    res += node.val
+            if low <= node.val <= high:
+                res += node.val
+                if node.left:
                     st.append(node.left)
+                if node.right:
                     st.append(node.right)
-                elif node.val < low:
+            elif node.val < low:
+                if node.right:
                     st.append(node.right)
-                else:
+            else:
+                if node.left:
                     st.append(node.left)
         return res
 
