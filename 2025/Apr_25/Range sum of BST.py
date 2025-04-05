@@ -19,9 +19,12 @@ class Solution:
                     st.append(node.left)
                     st.append(node.right)
                 elif node.val < low:
-                    st.sppend(node.right)
+                    st.append(node.right)
                 else:
-                    st.map(node.left)
+                    st.append(node.left)
         return res
 
 
+a, b, c, d, e, f = TreeNode(10), TreeNode(5), TreeNode(15), TreeNode(3), TreeNode(7), TreeNode(18)
+a.left, a.right, b.left, b.right, c.right = b, c, d, e, f
+print(Solution().rangeSumBST(a, 7, 15))
