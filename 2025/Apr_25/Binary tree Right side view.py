@@ -21,3 +21,8 @@ class Solution:
                     st.append(node.right)
             res.append(node.val)
         return res
+
+
+a, b, c, d, e = TreeNode(1), TreeNode(2), TreeNode(3), TreeNode(4), TreeNode(5)
+a.left, a.right, b.right, c.right = b, c, e, d
+print(Solution().rightSideView(a))
