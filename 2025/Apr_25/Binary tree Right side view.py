@@ -11,6 +11,8 @@ class TreeNode:
 
 class Solution:
     def rightSideView(self, root):
+        if not root:
+            return []
         st, res = deque([root]), []
         while st:
             for _ in range(len(st)):
