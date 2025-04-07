@@ -13,6 +13,7 @@ class WordDictionary:
 
     def search(self, word: str) -> bool:
         k = len(word)
+
         def solve(ind, dic):
             if ind == k:
                 if '*' in dic:
@@ -27,5 +28,15 @@ class WordDictionary:
                 if word[ind] not in dic:
                     return False
                 return solve(ind + 1, dic[word[ind]])
-            
+
         return solve(0, self.tree)
+
+
+wordDictionary = WordDictionary()
+wordDictionary.addWord("bad");
+wordDictionary.addWord("dad");
+wordDictionary.addWord("mad");
+print(wordDictionary.search("pad"))
+print(wordDictionary.search("bad"))
+print(wordDictionary.search(".ad"))
+print(wordDictionary.search("b.."))
