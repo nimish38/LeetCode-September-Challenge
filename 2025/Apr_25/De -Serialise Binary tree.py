@@ -11,11 +11,11 @@ class Codec:
     def serialize(self, root):
         res, st = '', deque([root])
         while st:
-            node = st.pop(0)
+            node = st.popleft()
             if not node:
                 res += '#$'
             else:
-                res += '#' + node.val
+                res += '#' + str(node.val)
                 st.append(node.left)
                 st.append(node.right)
         return res
@@ -28,7 +28,7 @@ class Codec:
         :rtype: TreeNode
         """
 
-# Your Codec object will be instantiated and called as such:
-# ser = Codec()
-# deser = Codec()
-# ans = deser.deserialize(ser.serialize(root))
+a, b, c, d, e = TreeNode(1), TreeNode(2), TreeNode(3), TreeNode(4), TreeNode(5)
+a.left, a.right, c.left, c.right = b, c, d, e
+x = Codec().serialize(a)
+print(x)
