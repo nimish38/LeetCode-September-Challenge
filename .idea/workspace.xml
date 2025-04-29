@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="make serialization recursive as well">
-      <change beforePath="$PROJECT_DIR$/.idea/LeetCodes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LeetCodes.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="Empty tree edge case">
+      <change beforePath="$PROJECT_DIR$/2025/Apr_25/De -Serialise Binary tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/2025/Apr_25/De -Serialise Binary tree.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +93,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745947465526</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Empty tree edge case">
+      <option name="closed" value="true" />
+      <created>1745947616865</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745947616865</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -102,14 +109,15 @@
     <MESSAGE value="iterative explore and serialize" />
     <MESSAGE value="build tree and test serialize" />
     <MESSAGE value="make serialization recursive as well" />
-    <option name="LAST_COMMIT_MESSAGE" value="make serialization recursive as well" />
+    <MESSAGE value="Empty tree edge case" />
+    <option name="LAST_COMMIT_MESSAGE" value="Empty tree edge case" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/2025/Apr_25/De -Serialise Binary tree.py</url>
-          <line>46</line>
+          <line>64</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>

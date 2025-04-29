@@ -6,39 +6,56 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
-class Codec:
-    def serialize(self, root):
-        if not root:
-            return ''
-        self.res = ''
-        def build_str(node):
-            self.res += '#' + str(node.val)
-            if node.left:
-                build_str(node.left)
-            else:
-                self.res += '#$'
-            if node.right:
-                build_str(node.right)
-            else:
-                self.res += '#$'
-        build_str(root)
-        return self.res
 
+class Codec:
+
+    def serialize(self, root):
+        """Encodes a tree to a single string.
+        :type root: TreeNode
+        :rtype: str
+        """
+
+        if not root: return ""
+
+        string = []
+        q = deque()
+        q.append(root)
+        while q:
+            cur = q.popleft()
+            if cur:
+                string.append(str(cur.val))
+                q.append(cur.left)
+                q.append(cur.right)
+            else:
+                string.append('#')
+
+        return ','.join(string)
 
     def deserialize(self, data):
-        if not data:
-            return None
-        data, self.ind = data.split('#'), 1
-        def build_tree():
-            if data[self.ind] != '$':
-                node = TreeNode(int(data[self.ind]))
-                self.ind += 1
-                node.left = build_tree()
-                self.ind += 1
-                node.right = build_tree()
-                return node
-            return None
-        return build_tree()
+        """Decodes your encoded data to tree.
+        :type data: str
+        :rtype: TreeNode
+        """
+
+        if not data: return None
+        data = data.split(',')
+        q = deque()
+        root = TreeNode(int(data[0]))
+        q.append(root)
+        i = 1
+
+        while i < len(data):
+            cur = q.popleft()
+            if data[i] != '#':
+                cur.left = TreeNode(int(data[i]))
+                q.append(cur.left)
+            i += 1
+            if data[i] != '#':
+                cur.right = TreeNode(int(data[i]))
+                q.append(cur.right)
+            i += 1
+
+        return root
 
 a, b, c, d, e = TreeNode(1), TreeNode(2), TreeNode(3), TreeNode(4), TreeNode(5)
 a.left, a.right, c.left, c.right = b, c, d, e
