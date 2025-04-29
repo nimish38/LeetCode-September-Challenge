@@ -7,8 +7,9 @@ class TreeNode(object):
         self.right = None
 
 class Codec:
-
     def serialize(self, root):
+        if not root:
+            return ''
         self.res = ''
         def build_str(node):
             self.res += '#' + str(node.val)
@@ -25,8 +26,9 @@ class Codec:
 
 
     def deserialize(self, data):
+        if not data:
+            return None
         data, self.ind = data.split('#'), 1
-        
         def build_tree():
             if data[self.ind] != '$':
                 node = TreeNode(int(data[self.ind]))
@@ -36,7 +38,6 @@ class Codec:
                 node.right = build_tree()
                 return node
             return None
-        
         return build_tree()
 
 a, b, c, d, e = TreeNode(1), TreeNode(2), TreeNode(3), TreeNode(4), TreeNode(5)
