@@ -8,21 +8,24 @@ class TreeNode:
 class BSTIterator:
 
     def __init__(self, root):
-        self.nodes, self.ptr = [], -1
-        def inorder(node):
-            if node.left:
-                inorder(node.left)
-            self.nodes.append(node.val)
-            if node.right:
-                inorder(node.right)
-        inorder(root)
+        self.nodes, self.ptr = [root], -1
+        while root.left:
+            self.nodes.append(root.left)
+            root = root.left
 
     def next(self) -> int:
-        self.ptr += 1
-        return self.nodes[self.ptr]
+        node = self.nodes.pop()
+        curr = node
+        if curr.right:
+            curr = curr.right
+            self.nodes.append(curr)
+            while curr.left:
+                self.nodes.append(curr.left)
+                curr = curr.left
+        return node.val
 
     def hasNext(self) -> bool:
-        if self.ptr + 1 < len(self.nodes):
+        if self.nodes:
             return True
         return False
 
