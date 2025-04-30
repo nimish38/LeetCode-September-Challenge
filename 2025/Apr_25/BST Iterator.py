@@ -15,6 +15,7 @@ class BSTIterator:
             self.nodes.append(node.val)
             if node.right:
                 inorder(node.right)
+        inorder(root)
 
     def next(self) -> int:
         self.ptr += 1
@@ -24,3 +25,17 @@ class BSTIterator:
         if self.ptr + 1 < len(self.nodes):
             return True
         return False
+
+
+a, b, c, d, e = TreeNode(7), TreeNode(3), TreeNode(15), TreeNode(9), TreeNode(20)
+a.left, a.right, c.left, c.right = b, c, d, e
+bSTIterator = BSTIterator(a)
+print(bSTIterator.next())
+print(bSTIterator.next())
+print(bSTIterator.hasNext())
+print(bSTIterator.next())
+print(bSTIterator.hasNext())
+print(bSTIterator.next())
+print(bSTIterator.hasNext())
+print(bSTIterator.next())
+print(bSTIterator.hasNext())
