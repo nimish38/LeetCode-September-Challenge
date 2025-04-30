@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="Empty tree edge case">
-      <change beforePath="$PROJECT_DIR$/2025/Apr_25/De -Serialise Binary tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/2025/Apr_25/De -Serialise Binary tree.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="Iterative solution">
+      <change afterPath="$PROJECT_DIR$/2025/Apr_25/BST Iterator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745947616865</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Iterative solution">
+      <option name="closed" value="true" />
+      <created>1745947963085</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745947963085</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -110,7 +119,8 @@
     <MESSAGE value="build tree and test serialize" />
     <MESSAGE value="make serialization recursive as well" />
     <MESSAGE value="Empty tree edge case" />
-    <option name="LAST_COMMIT_MESSAGE" value="Empty tree edge case" />
+    <MESSAGE value="Iterative solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="Iterative solution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
