@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="brute force checking each substring">
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using expansion logic on each index">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Clone Graph.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/May_25/Longest Palindromic Substring.py" beforeDir="false" afterPath="$PROJECT_DIR$/2025/May_25/Longest Palindromic Substring.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -308,7 +308,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746102119187</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="using expansion logic on each index">
+      <option name="closed" value="true" />
+      <created>1746105641185</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1746105641185</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -327,7 +335,8 @@
     <MESSAGE value="using hash table to store values" />
     <MESSAGE value="sliding window with storing characters" />
     <MESSAGE value="brute force checking each substring" />
-    <option name="LAST_COMMIT_MESSAGE" value="brute force checking each substring" />
+    <MESSAGE value="using expansion logic on each index" />
+    <option name="LAST_COMMIT_MESSAGE" value="using expansion logic on each index" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
