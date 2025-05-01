@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using expansion logic on each index">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Clone Graph.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="DFS to clone nodes and store mapping in dict">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Graph Valid tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +51,7 @@
     "Python.Add binary.executor": "Run",
     "Python.BST Iterator.executor": "Run",
     "Python.De -Serialise Binary tree.executor": "Debug",
+    "Python.Graph Valid tree.executor": "Run",
     "Python.Longest Consecutive Sequence.executor": "Run",
     "Python.Longest Palindromic Substring.executor": "Run",
     "Python.Longest Sub without repeating char.executor": "Run",
@@ -60,8 +61,8 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Longest Palindromic Substring">
-    <configuration name="BST Iterator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Graph Valid tree">
+    <configuration name="Graph Valid tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -70,11 +71,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Apr_25" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Apr_25/BST Iterator.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Graph Valid tree.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -173,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Graph Valid tree" />
         <item itemvalue="Python.Longest Palindromic Substring" />
         <item itemvalue="Python.Longest Sub without repeating char" />
         <item itemvalue="Python.Two sum" />
         <item itemvalue="Python.Longest Consecutive Sequence" />
-        <item itemvalue="Python.BST Iterator" />
       </list>
     </recent_temporary>
   </component>
@@ -316,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746105641185</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="DFS to clone nodes and store mapping in dict">
+      <option name="closed" value="true" />
+      <created>1746106217457</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1746106217457</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -336,7 +345,8 @@
     <MESSAGE value="sliding window with storing characters" />
     <MESSAGE value="brute force checking each substring" />
     <MESSAGE value="using expansion logic on each index" />
-    <option name="LAST_COMMIT_MESSAGE" value="using expansion logic on each index" />
+    <MESSAGE value="DFS to clone nodes and store mapping in dict" />
+    <option name="LAST_COMMIT_MESSAGE" value="DFS to clone nodes and store mapping in dict" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
