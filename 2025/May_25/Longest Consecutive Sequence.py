@@ -2,16 +2,17 @@ class Solution:
     def longestConsecutive(self, nums) -> int:
         if not nums:
             return 0
-        nums = list(set(nums))
-        nums.sort()
+        nums = set(nums)
         best, curr = 0, 1
-        for i in range(len(nums) - 1):
-            if nums[i] == nums[i + 1] - 1:
+        for val in nums:
+            if val - 1 in nums:
+                continue
+            curr = val
+            while curr + 1 in nums:
                 curr += 1
-            else:
-                best, curr = max(best, curr), 1
-        return max(best, curr)
+            best = max(best, curr - val + 1)
+        return best
 
-print(Solution().longestConsecutive(nums = []))
+print(Solution().longestConsecutive(nums = [0,3,7,2,5,8,4,6,0,1]))
 
 

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="iterative store left children">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Longest Consecutive Sequence.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="empty corner case">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2025/May_25/Longest Consecutive Sequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/2025/May_25/Longest Consecutive Sequence.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +51,7 @@
     "Python.Add binary.executor": "Run",
     "Python.BST Iterator.executor": "Run",
     "Python.De -Serialise Binary tree.executor": "Debug",
+    "Python.Longest Consecutive Sequence.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master"
@@ -187,7 +188,23 @@
       <option name="project" value="LOCAL" />
       <updated>1746033240715</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="brute force approach by sorting">
+      <option name="closed" value="true" />
+      <created>1746096155379</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1746096155379</updated>
+    </task>
+    <task id="LOCAL-00010" summary="empty corner case">
+      <option name="closed" value="true" />
+      <created>1746096286607</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1746096286607</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -200,7 +217,9 @@
     <MESSAGE value="build inorder recursively" />
     <MESSAGE value="test and fix solution" />
     <MESSAGE value="iterative store left children" />
-    <option name="LAST_COMMIT_MESSAGE" value="iterative store left children" />
+    <MESSAGE value="brute force approach by sorting" />
+    <MESSAGE value="empty corner case" />
+    <option name="LAST_COMMIT_MESSAGE" value="empty corner case" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -214,6 +233,11 @@
           <url>file://$PROJECT_DIR$/2025/Apr_25/BST Iterator.py</url>
           <line>10</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/May_25/Longest Consecutive Sequence.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
