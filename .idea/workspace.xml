@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="expansion logic for palindrome">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Container with most water.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="2 pointer solution with increment">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Word Break.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,18 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "nimish38"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;nimish38&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/nimish38/LeetCode-September-Challenge.git",
-    "accountId": "6f3f6dd4-422e-4c0d-8899-89d7b33a6f94"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/nimish38/LeetCode-September-Challenge.git&quot;,
+    &quot;accountId&quot;: &quot;6f3f6dd4-422e-4c0d-8899-89d7b33a6f94&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -46,24 +46,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Add binary.executor": "Run",
-    "Python.BST Iterator.executor": "Run",
-    "Python.Container with most water.executor": "Run",
-    "Python.De -Serialise Binary tree.executor": "Debug",
-    "Python.Graph Valid tree.executor": "Run",
-    "Python.Longest Consecutive Sequence.executor": "Run",
-    "Python.Longest Palindromic Substring.executor": "Run",
-    "Python.Longest Sub without repeating char.executor": "Run",
-    "Python.Palindromic Substrings.executor": "Run",
-    "Python.Two sum.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Add binary.executor&quot;: &quot;Run&quot;,
+    &quot;Python.BST Iterator.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Container with most water.executor&quot;: &quot;Run&quot;,
+    &quot;Python.De -Serialise Binary tree.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.Graph Valid tree.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Longest Consecutive Sequence.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Longest Palindromic Substring.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Longest Sub without repeating char.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Palindromic Substrings.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Two sum.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Word Break.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python.Container with most water">
+}</component>
+  <component name="RunManager" selected="Python.Word Break">
     <configuration name="Container with most water" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -130,28 +131,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Longest Sub without repeating char" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Longest Sub without repeating char.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Palindromic Substrings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -174,13 +153,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Word Break" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Word Break.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Word Break" />
         <item itemvalue="Python.Container with most water" />
         <item itemvalue="Python.Palindromic Substrings" />
         <item itemvalue="Python.Graph Valid tree" />
         <item itemvalue="Python.Longest Palindromic Substring" />
-        <item itemvalue="Python.Longest Sub without repeating char" />
       </list>
     </recent_temporary>
   </component>
@@ -343,7 +344,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746114082075</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="2 pointer solution with increment">
+      <option name="closed" value="true" />
+      <created>1746115228568</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1746115228568</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -366,7 +375,8 @@
     <MESSAGE value="DFS to clone nodes and store mapping in dict" />
     <MESSAGE value="DFS to find cycle and visited array" />
     <MESSAGE value="expansion logic for palindrome" />
-    <option name="LAST_COMMIT_MESSAGE" value="expansion logic for palindrome" />
+    <MESSAGE value="2 pointer solution with increment" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 pointer solution with increment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -380,6 +390,11 @@
           <url>file://$PROJECT_DIR$/2025/Apr_25/BST Iterator.py</url>
           <line>10</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/May_25/Word Break.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
