@@ -1,26 +1,20 @@
 class Solution:
     def wordBreak(self, s: str, wordDict) -> bool:
-        trie = {}
-        for word in wordDict:
-            curr = trie
-            for c in word:
-                if c not in curr:
-                    curr[c] = {}
-                curr = curr[c]
-            curr['*'] = True
+        wordDict, n = {key : 1 for key in wordDict}, len(s)
+        memo = [-1] * n
+        def solve(ind):
+            if ind >= len(s):
+                return True
+            if memo[ind] == -1:
+                for i in range(1, n - ind + 1):
+                    val = s[ind: ind + i]
+                    if val in wordDict and solve(i + ind):
+                        memo[ind] = True
+                        break
+                if memo[ind] == -1:
+                    memo[ind] =False
+            return memo[ind]
 
-        def solve(i, cur):
-            if i >= len(s):
-                if '*' in cur:
-                    return True
-                return False
-            if s[i] not in cur:
-                return False
-            cur, new_explore = cur[s[i]], False
-            if '*' in cur:
-                new_explore = solve(i + 1, trie)
-            return solve(i + 1, cur) or new_explore
+        return solve(0)
 
-        return solve(0, trie)
-
-print(Solution().wordBreak(s = "aaaaaaa", wordDict = ["aaaa","aa"]))
+print(Solution().wordBreak(s = "catsandog", wordDict = ["cats","dog","sand","and","cat"]))

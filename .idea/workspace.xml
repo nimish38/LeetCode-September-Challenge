@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="2 pointer solution with increment">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Word Break.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="Trie attempt but get TLE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2025/May_25/Word Break.py" beforeDir="false" afterPath="$PROJECT_DIR$/2025/May_25/Word Break.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,24 +46,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.Add binary.executor&quot;: &quot;Run&quot;,
-    &quot;Python.BST Iterator.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Container with most water.executor&quot;: &quot;Run&quot;,
-    &quot;Python.De -Serialise Binary tree.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.Graph Valid tree.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Longest Consecutive Sequence.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Longest Palindromic Substring.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Longest Sub without repeating char.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Palindromic Substrings.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Two sum.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Word Break.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Add binary.executor": "Run",
+    "Python.BST Iterator.executor": "Run",
+    "Python.Container with most water.executor": "Run",
+    "Python.De -Serialise Binary tree.executor": "Debug",
+    "Python.Graph Valid tree.executor": "Run",
+    "Python.Longest Consecutive Sequence.executor": "Run",
+    "Python.Longest Palindromic Substring.executor": "Run",
+    "Python.Longest Sub without repeating char.executor": "Run",
+    "Python.Palindromic Substrings.executor": "Run",
+    "Python.Two sum.executor": "Run",
+    "Python.Word Break.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Python.Word Break">
     <configuration name="Container with most water" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
@@ -352,7 +352,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746115228568</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Trie attempt but get TLE">
+      <option name="closed" value="true" />
+      <created>1746119296116</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1746119296116</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -376,7 +384,8 @@
     <MESSAGE value="DFS to find cycle and visited array" />
     <MESSAGE value="expansion logic for palindrome" />
     <MESSAGE value="2 pointer solution with increment" />
-    <option name="LAST_COMMIT_MESSAGE" value="2 pointer solution with increment" />
+    <MESSAGE value="Trie attempt but get TLE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trie attempt but get TLE" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -390,11 +399,6 @@
           <url>file://$PROJECT_DIR$/2025/Apr_25/BST Iterator.py</url>
           <line>10</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/2025/May_25/Word Break.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
