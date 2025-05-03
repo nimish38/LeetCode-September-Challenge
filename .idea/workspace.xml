@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="create adjacency list and then perform topological sort">
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="correct length comparison case and single word case">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Encode and decode Strings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/May_25/Alien Dictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/2025/May_25/Alien Dictionary.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +54,7 @@
     "Python.BST Iterator.executor": "Run",
     "Python.Container with most water.executor": "Run",
     "Python.De -Serialise Binary tree.executor": "Debug",
+    "Python.Encode and decode Strings.executor": "Run",
     "Python.Graph Valid tree.executor": "Run",
     "Python.Linked list cycle.executor": "Run",
     "Python.Longest Consecutive Sequence.executor": "Run",
@@ -69,7 +70,7 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Alien Dictionary">
+  <component name="RunManager" selected="Python.Encode and decode Strings">
     <configuration name="3 Sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -114,7 +115,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Linked list cycle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Encode and decode Strings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -127,7 +128,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Linked list cycle.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Encode and decode Strings.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -182,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Encode and decode Strings" />
         <item itemvalue="Python.Alien Dictionary" />
         <item itemvalue="Python.Reorder List" />
         <item itemvalue="Python.3 Sum" />
         <item itemvalue="Python.Missing Number" />
-        <item itemvalue="Python.Linked list cycle" />
       </list>
     </recent_temporary>
   </component>
@@ -413,11 +414,18 @@
       <option name="project" value="LOCAL" />
       <updated>1746206949828</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="correct length comparison case and single word case">
+      <option name="closed" value="true" />
+      <created>1746266814617</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1746266814617</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="build tree and test serialize" />
     <MESSAGE value="make serialization recursive as well" />
     <MESSAGE value="Empty tree edge case" />
     <MESSAGE value="Iterative solution" />
@@ -442,7 +450,8 @@
     <MESSAGE value="Sorting and then applying 2 sum with 2 pointers" />
     <MESSAGE value="find mid point, break and reverse right part and then use 2 pointers" />
     <MESSAGE value="create adjacency list and then perform topological sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="create adjacency list and then perform topological sort" />
+    <MESSAGE value="correct length comparison case and single word case" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct length comparison case and single word case" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
