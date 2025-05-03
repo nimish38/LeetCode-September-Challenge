@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="correct length comparison case and single word case">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Encode and decode Strings.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using length of word and a delimeter while encoding">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Remove nth node from end.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +54,7 @@
     "Python.BST Iterator.executor": "Run",
     "Python.Container with most water.executor": "Run",
     "Python.De -Serialise Binary tree.executor": "Debug",
-    "Python.Encode and decode Strings.executor": "Run",
+    "Python.Encode and decode Strings.executor": "Debug",
     "Python.Graph Valid tree.executor": "Run",
     "Python.Linked list cycle.executor": "Run",
     "Python.Longest Consecutive Sequence.executor": "Run",
@@ -62,6 +62,7 @@
     "Python.Longest Sub without repeating char.executor": "Run",
     "Python.Missing Number.executor": "Run",
     "Python.Palindromic Substrings.executor": "Run",
+    "Python.Remove nth node from end.executor": "Debug",
     "Python.Reorder List.executor": "Debug",
     "Python.Two sum.executor": "Run",
     "Python.Word Break.executor": "Run",
@@ -70,7 +71,7 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Encode and decode Strings">
+  <component name="RunManager" selected="Python.Remove nth node from end">
     <configuration name="3 Sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -137,7 +138,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Missing Number" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Remove nth node from end" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -150,7 +151,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Missing Number.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Remove nth node from end.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Remove nth node from end" />
         <item itemvalue="Python.Encode and decode Strings" />
         <item itemvalue="Python.Alien Dictionary" />
         <item itemvalue="Python.Reorder List" />
         <item itemvalue="Python.3 Sum" />
-        <item itemvalue="Python.Missing Number" />
       </list>
     </recent_temporary>
   </component>
@@ -422,11 +423,18 @@
       <option name="project" value="LOCAL" />
       <updated>1746266814617</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="using length of word and a delimeter while encoding">
+      <option name="closed" value="true" />
+      <created>1746269737688</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1746269737688</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="make serialization recursive as well" />
     <MESSAGE value="Empty tree edge case" />
     <MESSAGE value="Iterative solution" />
     <MESSAGE value="build inorder recursively" />
@@ -451,7 +459,8 @@
     <MESSAGE value="find mid point, break and reverse right part and then use 2 pointers" />
     <MESSAGE value="create adjacency list and then perform topological sort" />
     <MESSAGE value="correct length comparison case and single word case" />
-    <option name="LAST_COMMIT_MESSAGE" value="correct length comparison case and single word case" />
+    <MESSAGE value="using length of word and a delimeter while encoding" />
+    <option name="LAST_COMMIT_MESSAGE" value="using length of word and a delimeter while encoding" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -470,6 +479,11 @@
           <url>file://$PROJECT_DIR$/2025/May_25/Linked list cycle.py</url>
           <line>7</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/May_25/Remove nth node from end.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
