@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using binary search and check at each step which half is sorted and eliminate">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Pacific Atlantic Water flow.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using dfs in reverse way ie ocean to island for optimal">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Combination Sum.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +52,7 @@
     "Python.Add binary.executor": "Run",
     "Python.Alien Dictionary.executor": "Run",
     "Python.BST Iterator.executor": "Run",
+    "Python.Combination Sum.executor": "Run",
     "Python.Container with most water.executor": "Run",
     "Python.De -Serialise Binary tree.executor": "Debug",
     "Python.Encode and decode Strings.executor": "Debug",
@@ -75,7 +76,29 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Pacific Atlantic Water flow">
+  <component name="RunManager" selected="Python.Combination Sum">
+    <configuration name="Combination Sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Combination Sum.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Min in Rotated Sorted Array" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -112,28 +135,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Pacific Atlantic Water flow.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Remove nth node from end" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Remove nth node from end.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -188,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Combination Sum" />
         <item itemvalue="Python.Pacific Atlantic Water flow" />
         <item itemvalue="Python.Search in rotated sorted array" />
         <item itemvalue="Python.Min in Rotated Sorted Array" />
         <item itemvalue="Python.Valid Parenthesis" />
-        <item itemvalue="Python.Remove nth node from end" />
       </list>
     </recent_temporary>
   </component>
@@ -491,11 +492,18 @@
       <option name="project" value="LOCAL" />
       <updated>1746355630730</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="using dfs in reverse way ie ocean to island for optimal">
+      <option name="closed" value="true" />
+      <created>1746465184487</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1746465184487</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="optimal solution with set" />
     <MESSAGE value="using hash table to store values" />
     <MESSAGE value="sliding window with storing characters" />
     <MESSAGE value="brute force checking each substring" />
@@ -520,7 +528,8 @@
     <MESSAGE value="use prefix and suffix product" />
     <MESSAGE value="using binary search" />
     <MESSAGE value="using binary search and check at each step which half is sorted and eliminate" />
-    <option name="LAST_COMMIT_MESSAGE" value="using binary search and check at each step which half is sorted and eliminate" />
+    <MESSAGE value="using dfs in reverse way ie ocean to island for optimal" />
+    <option name="LAST_COMMIT_MESSAGE" value="using dfs in reverse way ie ocean to island for optimal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
