@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using dict to store max frequency and 2 pointers">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/LIS.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using binary search to replace elements in subsequence">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Rotate Image.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +70,7 @@
     "Python.Palindromic Substrings.executor": "Run",
     "Python.Remove nth node from end.executor": "Debug",
     "Python.Reorder List.executor": "Debug",
+    "Python.Rotate Image.executor": "Run",
     "Python.Search in rotated sorted array.executor": "Run",
     "Python.Two sum.executor": "Run",
     "Python.Valid Parenthesis.executor": "Run",
@@ -79,7 +80,7 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.LIS">
+  <component name="RunManager" selected="Python.Rotate Image">
     <configuration name="Combination Sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -168,7 +169,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Pacific Atlantic Water flow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Rotate Image" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -181,7 +182,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Pacific Atlantic Water flow.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Rotate Image.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Rotate Image" />
         <item itemvalue="Python.LIS" />
         <item itemvalue="Python.Longest repeating char" />
         <item itemvalue="Python.FInd Median of data stream" />
         <item itemvalue="Python.Combination Sum" />
-        <item itemvalue="Python.Pacific Atlantic Water flow" />
       </list>
     </recent_temporary>
   </component>
@@ -527,11 +528,18 @@
       <option name="project" value="LOCAL" />
       <updated>1746558179501</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="using binary search to replace elements in subsequence">
+      <option name="closed" value="true" />
+      <created>1746560968816</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1746560968816</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="using expansion logic on each index" />
     <MESSAGE value="DFS to clone nodes and store mapping in dict" />
     <MESSAGE value="DFS to find cycle and visited array" />
     <MESSAGE value="expansion logic for palindrome" />
@@ -556,7 +564,8 @@
     <MESSAGE value="using index to prevent duplicate lists" />
     <MESSAGE value="using 2 heap solution" />
     <MESSAGE value="using dict to store max frequency and 2 pointers" />
-    <option name="LAST_COMMIT_MESSAGE" value="using dict to store max frequency and 2 pointers" />
+    <MESSAGE value="using binary search to replace elements in subsequence" />
+    <option name="LAST_COMMIT_MESSAGE" value="using binary search to replace elements in subsequence" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
