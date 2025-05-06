@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using 2 heap solution">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Longest repeating char.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using dict to store max frequency and 2 pointers">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/LIS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +58,7 @@
     "Python.Encode and decode Strings.executor": "Debug",
     "Python.FInd Median of data stream.executor": "Run",
     "Python.Graph Valid tree.executor": "Run",
+    "Python.LIS.executor": "Run",
     "Python.Linked list cycle.executor": "Run",
     "Python.Longest Consecutive Sequence.executor": "Run",
     "Python.Longest Palindromic Substring.executor": "Run",
@@ -78,7 +79,7 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Longest repeating char">
+  <component name="RunManager" selected="Python.LIS">
     <configuration name="Combination Sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -115,6 +116,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/FInd Median of data stream.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LIS" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/LIS.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -167,35 +190,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Search in rotated sorted array" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Search in rotated sorted array.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.LIS" />
         <item itemvalue="Python.Longest repeating char" />
         <item itemvalue="Python.FInd Median of data stream" />
         <item itemvalue="Python.Combination Sum" />
         <item itemvalue="Python.Pacific Atlantic Water flow" />
-        <item itemvalue="Python.Search in rotated sorted array" />
       </list>
     </recent_temporary>
   </component>
@@ -518,11 +519,18 @@
       <option name="project" value="LOCAL" />
       <updated>1746471756591</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="using dict to store max frequency and 2 pointers">
+      <option name="closed" value="true" />
+      <created>1746558179501</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1746558179501</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="brute force checking each substring" />
     <MESSAGE value="using expansion logic on each index" />
     <MESSAGE value="DFS to clone nodes and store mapping in dict" />
     <MESSAGE value="DFS to find cycle and visited array" />
@@ -547,7 +555,8 @@
     <MESSAGE value="using dfs in reverse way ie ocean to island for optimal" />
     <MESSAGE value="using index to prevent duplicate lists" />
     <MESSAGE value="using 2 heap solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="using 2 heap solution" />
+    <MESSAGE value="using dict to store max frequency and 2 pointers" />
+    <option name="LAST_COMMIT_MESSAGE" value="using dict to store max frequency and 2 pointers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
