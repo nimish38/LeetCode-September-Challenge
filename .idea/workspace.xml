@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="sort and increase window">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Insert Interval.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="check last interval">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Subtree of another tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -589,11 +589,18 @@
       <option name="project" value="LOCAL" />
       <updated>1746715358558</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="check last interval">
+      <option name="closed" value="true" />
+      <created>1746718760044</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1746718760044</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2 pointer solution" />
     <MESSAGE value="using math formula" />
     <MESSAGE value="Sorting and then applying 2 sum with 2 pointers" />
     <MESSAGE value="find mid point, break and reverse right part and then use 2 pointers" />
@@ -618,7 +625,8 @@
     <MESSAGE value="using 4 boundaries" />
     <MESSAGE value="greedy approach" />
     <MESSAGE value="sort and increase window" />
-    <option name="LAST_COMMIT_MESSAGE" value="sort and increase window" />
+    <MESSAGE value="check last interval" />
+    <option name="LAST_COMMIT_MESSAGE" value="check last interval" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
