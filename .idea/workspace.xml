@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use recursion, use string substring check">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Unique Paths.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use DP matrix to compute paths in reverse">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Reverse Bits.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +74,7 @@
     "Python.Palindromic Substrings.executor": "Run",
     "Python.Remove nth node from end.executor": "Debug",
     "Python.Reorder List.executor": "Debug",
+    "Python.Reverse Bits.executor": "Run",
     "Python.Rotate Image.executor": "Run",
     "Python.Search in rotated sorted array.executor": "Run",
     "Python.Spiral Matrix.executor": "Run",
@@ -86,7 +87,7 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Unique Paths">
+  <component name="RunManager" selected="Python.Reverse Bits">
     <configuration name="Insert Interval" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -153,7 +154,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Spiral Matrix" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Reverse Bits" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -166,7 +167,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Spiral Matrix.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Reverse Bits.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -199,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Reverse Bits" />
         <item itemvalue="Python.Unique Paths" />
         <item itemvalue="Python.Insert Interval" />
         <item itemvalue="Python.Merge Intervals" />
         <item itemvalue="Python.Jump Game" />
-        <item itemvalue="Python.Spiral Matrix" />
       </list>
     </recent_temporary>
   </component>
@@ -606,11 +607,18 @@
       <option name="project" value="LOCAL" />
       <updated>1746719963013</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="use DP matrix to compute paths in reverse">
+      <option name="closed" value="true" />
+      <created>1746775613002</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1746775613002</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Sorting and then applying 2 sum with 2 pointers" />
     <MESSAGE value="find mid point, break and reverse right part and then use 2 pointers" />
     <MESSAGE value="create adjacency list and then perform topological sort" />
     <MESSAGE value="correct length comparison case and single word case" />
@@ -635,7 +643,8 @@
     <MESSAGE value="sort and increase window" />
     <MESSAGE value="check last interval" />
     <MESSAGE value="use recursion, use string substring check" />
-    <option name="LAST_COMMIT_MESSAGE" value="use recursion, use string substring check" />
+    <MESSAGE value="use DP matrix to compute paths in reverse" />
+    <option name="LAST_COMMIT_MESSAGE" value="use DP matrix to compute paths in reverse" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
