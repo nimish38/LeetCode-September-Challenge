@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use DP matrix to compute paths in reverse">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Reverse Bits.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="check if lsb of n is 1, if yes make ans bit 1 and left shift ans while right shifting n to get reverse">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Number of 1 bits.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +70,7 @@
     "Python.Merge Intervals.executor": "Run",
     "Python.Min in Rotated Sorted Array.executor": "Run",
     "Python.Missing Number.executor": "Run",
+    "Python.Number of 1 bits.executor": "Debug",
     "Python.Pacific Atlantic Water flow.executor": "Run",
     "Python.Palindromic Substrings.executor": "Run",
     "Python.Remove nth node from end.executor": "Debug",
@@ -87,7 +88,7 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Reverse Bits">
+  <component name="RunManager" selected="Python.Number of 1 bits">
     <configuration name="Insert Interval" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -110,28 +111,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Jump Game" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Jump Game.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Merge Intervals" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -146,6 +125,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Merge Intervals.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Number of 1 bits" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Number of 1 bits.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -200,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Number of 1 bits" />
         <item itemvalue="Python.Reverse Bits" />
         <item itemvalue="Python.Unique Paths" />
         <item itemvalue="Python.Insert Interval" />
         <item itemvalue="Python.Merge Intervals" />
-        <item itemvalue="Python.Jump Game" />
       </list>
     </recent_temporary>
   </component>
@@ -222,14 +223,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00001" summary="iterative explore and serialize">
-      <option name="closed" value="true" />
-      <created>1745859073291</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1745859073291</updated>
     </task>
     <task id="LOCAL-00002" summary="build tree and test serialize">
       <option name="closed" value="true" />
@@ -615,11 +608,18 @@
       <option name="project" value="LOCAL" />
       <updated>1746775613002</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="check if lsb of n is 1, if yes make ans bit 1 and left shift ans while right shifting n to get reverse">
+      <option name="closed" value="true" />
+      <created>1746777944657</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1746777944657</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="find mid point, break and reverse right part and then use 2 pointers" />
     <MESSAGE value="create adjacency list and then perform topological sort" />
     <MESSAGE value="correct length comparison case and single word case" />
     <MESSAGE value="using length of word and a delimeter while encoding" />
@@ -644,7 +644,8 @@
     <MESSAGE value="check last interval" />
     <MESSAGE value="use recursion, use string substring check" />
     <MESSAGE value="use DP matrix to compute paths in reverse" />
-    <option name="LAST_COMMIT_MESSAGE" value="use DP matrix to compute paths in reverse" />
+    <MESSAGE value="check if lsb of n is 1, if yes make ans bit 1 and left shift ans while right shifting n to get reverse" />
+    <option name="LAST_COMMIT_MESSAGE" value="check if lsb of n is 1, if yes make ans bit 1 and left shift ans while right shifting n to get reverse" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -713,6 +714,11 @@
           <url>file://$PROJECT_DIR$/2025/May_25/Insert Interval.py</url>
           <line>2</line>
           <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/May_25/Number of 1 bits.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
