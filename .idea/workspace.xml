@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use &amp; to check if bit is 1">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Coin change.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="top down approach">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Num of connected components graph.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -224,14 +224,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00003" summary="make serialization recursive as well">
-      <option name="closed" value="true" />
-      <created>1745947465526</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1745947465526</updated>
     </task>
     <task id="LOCAL-00004" summary="Empty tree edge case">
       <option name="closed" value="true" />
@@ -617,11 +609,18 @@
       <option name="project" value="LOCAL" />
       <updated>1746807527544</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="top down approach">
+      <option name="closed" value="true" />
+      <created>1746812284071</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1746812284071</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="correct length comparison case and single word case" />
     <MESSAGE value="using length of word and a delimeter while encoding" />
     <MESSAGE value="use second pointer with a delay of n nodes" />
     <MESSAGE value="use stack" />
@@ -646,7 +645,8 @@
     <MESSAGE value="use DP matrix to compute paths in reverse" />
     <MESSAGE value="check if lsb of n is 1, if yes make ans bit 1 and left shift ans while right shifting n to get reverse" />
     <MESSAGE value="use &amp; to check if bit is 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="use &amp; to check if bit is 1" />
+    <MESSAGE value="top down approach" />
+    <option name="LAST_COMMIT_MESSAGE" value="top down approach" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
