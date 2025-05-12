@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="top down approach">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Num of connected components graph.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using dfs">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Climbing Stairs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -224,14 +224,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Empty tree edge case">
-      <option name="closed" value="true" />
-      <created>1745947616865</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1745947616865</updated>
     </task>
     <task id="LOCAL-00005" summary="Iterative solution">
       <option name="closed" value="true" />
@@ -617,11 +609,18 @@
       <option name="project" value="LOCAL" />
       <updated>1746812284071</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="using dfs">
+      <option name="closed" value="true" />
+      <created>1746941794319</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1746941794319</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="using length of word and a delimeter while encoding" />
     <MESSAGE value="use second pointer with a delay of n nodes" />
     <MESSAGE value="use stack" />
     <MESSAGE value="use a dummy node to track current and new head" />
@@ -646,7 +645,8 @@
     <MESSAGE value="check if lsb of n is 1, if yes make ans bit 1 and left shift ans while right shifting n to get reverse" />
     <MESSAGE value="use &amp; to check if bit is 1" />
     <MESSAGE value="top down approach" />
-    <option name="LAST_COMMIT_MESSAGE" value="top down approach" />
+    <MESSAGE value="using dfs" />
+    <option name="LAST_COMMIT_MESSAGE" value="using dfs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
