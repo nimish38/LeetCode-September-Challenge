@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using dfs">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Climbing Stairs.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="3 pointer approach">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/House Robber.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +59,7 @@
     "Python.Encode and decode Strings.executor": "Debug",
     "Python.FInd Median of data stream.executor": "Run",
     "Python.Graph Valid tree.executor": "Run",
+    "Python.House Robber.executor": "Run",
     "Python.Insert Interval.executor": "Run",
     "Python.Jump Game.executor": "Run",
     "Python.LIS.executor": "Run",
@@ -89,7 +90,7 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Coin change">
+  <component name="RunManager" selected="Python.House Robber">
     <configuration name="Coin change" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -112,7 +113,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Insert Interval" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="House Robber" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,7 +126,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Insert Interval.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/House Robber.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -202,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.House Robber" />
         <item itemvalue="Python.Coin change" />
         <item itemvalue="Python.Number of 1 bits" />
         <item itemvalue="Python.Reverse Bits" />
         <item itemvalue="Python.Unique Paths" />
-        <item itemvalue="Python.Insert Interval" />
       </list>
     </recent_temporary>
   </component>
@@ -224,14 +225,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Iterative solution">
-      <option name="closed" value="true" />
-      <created>1745947963085</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1745947963085</updated>
     </task>
     <task id="LOCAL-00006" summary="build inorder recursively">
       <option name="closed" value="true" />
@@ -617,11 +610,18 @@
       <option name="project" value="LOCAL" />
       <updated>1746941794319</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="3 pointer approach">
+      <option name="closed" value="true" />
+      <created>1747069380334</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1747069380334</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use second pointer with a delay of n nodes" />
     <MESSAGE value="use stack" />
     <MESSAGE value="use a dummy node to track current and new head" />
     <MESSAGE value="divide input list recursively and then merge" />
@@ -646,7 +646,8 @@
     <MESSAGE value="use &amp; to check if bit is 1" />
     <MESSAGE value="top down approach" />
     <MESSAGE value="using dfs" />
-    <option name="LAST_COMMIT_MESSAGE" value="using dfs" />
+    <MESSAGE value="3 pointer approach" />
+    <option name="LAST_COMMIT_MESSAGE" value="3 pointer approach" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
