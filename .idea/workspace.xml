@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="3 pointer approach">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/House Robber.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="top down and bottom approach">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Set Matrix Zeroes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +80,7 @@
     "Python.Reverse Bits.executor": "Run",
     "Python.Rotate Image.executor": "Run",
     "Python.Search in rotated sorted array.executor": "Run",
+    "Python.Set Matrix Zeroes.executor": "Run",
     "Python.Spiral Matrix.executor": "Run",
     "Python.Two sum.executor": "Run",
     "Python.Unique Paths.executor": "Run",
@@ -90,7 +91,7 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.House Robber">
+  <component name="RunManager" selected="Python.Set Matrix Zeroes">
     <configuration name="Coin change" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -179,7 +180,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unique Paths" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Set Matrix Zeroes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -192,7 +193,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Unique Paths.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Set Matrix Zeroes.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -203,11 +204,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Set Matrix Zeroes" />
         <item itemvalue="Python.House Robber" />
         <item itemvalue="Python.Coin change" />
         <item itemvalue="Python.Number of 1 bits" />
         <item itemvalue="Python.Reverse Bits" />
-        <item itemvalue="Python.Unique Paths" />
       </list>
     </recent_temporary>
   </component>
@@ -225,14 +226,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00006" summary="build inorder recursively">
-      <option name="closed" value="true" />
-      <created>1746031766500</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1746031766500</updated>
     </task>
     <task id="LOCAL-00007" summary="test and fix solution">
       <option name="closed" value="true" />
@@ -618,11 +611,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747069380334</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="top down and bottom approach">
+      <option name="closed" value="true" />
+      <created>1747206951567</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1747206951568</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use stack" />
     <MESSAGE value="use a dummy node to track current and new head" />
     <MESSAGE value="divide input list recursively and then merge" />
     <MESSAGE value="use prefix and suffix product" />
@@ -647,7 +647,8 @@
     <MESSAGE value="top down approach" />
     <MESSAGE value="using dfs" />
     <MESSAGE value="3 pointer approach" />
-    <option name="LAST_COMMIT_MESSAGE" value="3 pointer approach" />
+    <MESSAGE value="top down and bottom approach" />
+    <option name="LAST_COMMIT_MESSAGE" value="top down and bottom approach" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
