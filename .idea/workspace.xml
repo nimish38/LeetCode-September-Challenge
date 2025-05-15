@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use dfa but can prune beforehand">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Course Schedule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="topological sort">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Implement Trie.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,14 +227,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00011" summary="optimal solution with set">
-      <option name="closed" value="true" />
-      <created>1746098395393</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1746098395393</updated>
     </task>
     <task id="LOCAL-00012" summary="using hash table to store values">
       <option name="closed" value="true" />
@@ -621,11 +612,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747307771190</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="topological sort">
+      <option name="closed" value="true" />
+      <created>1747308931307</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1747308931307</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="using binary search and check at each step which half is sorted and eliminate" />
     <MESSAGE value="using dfs in reverse way ie ocean to island for optimal" />
     <MESSAGE value="using index to prevent duplicate lists" />
     <MESSAGE value="using 2 heap solution" />
@@ -650,7 +648,8 @@
     <MESSAGE value="use sliding window with map to store characters" />
     <MESSAGE value="2 pointer approach" />
     <MESSAGE value="use dfa but can prune beforehand" />
-    <option name="LAST_COMMIT_MESSAGE" value="use dfa but can prune beforehand" />
+    <MESSAGE value="topological sort" />
+    <option name="LAST_COMMIT_MESSAGE" value="topological sort" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
