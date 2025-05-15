@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="2 pointer approach">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Word Search.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use dfa but can prune beforehand">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Course Schedule.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -228,14 +228,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00010" summary="empty corner case">
-      <option name="closed" value="true" />
-      <created>1746096286607</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1746096286607</updated>
     </task>
     <task id="LOCAL-00011" summary="optimal solution with set">
       <option name="closed" value="true" />
@@ -621,11 +613,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747305070356</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="use dfa but can prune beforehand">
+      <option name="closed" value="true" />
+      <created>1747307771190</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1747307771190</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="using binary search" />
     <MESSAGE value="using binary search and check at each step which half is sorted and eliminate" />
     <MESSAGE value="using dfs in reverse way ie ocean to island for optimal" />
     <MESSAGE value="using index to prevent duplicate lists" />
@@ -650,7 +649,8 @@
     <MESSAGE value="use first row and column as flags" />
     <MESSAGE value="use sliding window with map to store characters" />
     <MESSAGE value="2 pointer approach" />
-    <option name="LAST_COMMIT_MESSAGE" value="2 pointer approach" />
+    <MESSAGE value="use dfa but can prune beforehand" />
+    <option name="LAST_COMMIT_MESSAGE" value="use dfa but can prune beforehand" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
