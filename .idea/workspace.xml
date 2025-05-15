@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use first row and column as flags">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Min window substring.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use sliding window with map to store characters" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -227,14 +224,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00008" summary="iterative store left children">
-      <option name="closed" value="true" />
-      <created>1746033240715</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1746033240715</updated>
     </task>
     <task id="LOCAL-00009" summary="brute force approach by sorting">
       <option name="closed" value="true" />
@@ -620,11 +609,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747208912794</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="use sliding window with map to store characters">
+      <option name="closed" value="true" />
+      <created>1747304372594</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1747304372594</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="divide input list recursively and then merge" />
     <MESSAGE value="use prefix and suffix product" />
     <MESSAGE value="using binary search" />
     <MESSAGE value="using binary search and check at each step which half is sorted and eliminate" />
@@ -649,7 +645,8 @@
     <MESSAGE value="3 pointer approach" />
     <MESSAGE value="top down and bottom approach" />
     <MESSAGE value="use first row and column as flags" />
-    <option name="LAST_COMMIT_MESSAGE" value="use first row and column as flags" />
+    <MESSAGE value="use sliding window with map to store characters" />
+    <option name="LAST_COMMIT_MESSAGE" value="use sliding window with map to store characters" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -723,6 +720,11 @@
           <url>file://$PROJECT_DIR$/2025/May_25/Number of 1 bits.py</url>
           <line>3</line>
           <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/May_25/Min window substring.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
