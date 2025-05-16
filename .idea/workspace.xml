@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use standard dp template">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Top K frequent Elements.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use min and max heap">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Meeting Rooms 2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +84,7 @@
     "Python.Search in rotated sorted array.executor": "Run",
     "Python.Set Matrix Zeroes.executor": "Run",
     "Python.Spiral Matrix.executor": "Run",
+    "Python.Top K frequent Elements.executor": "Run",
     "Python.Two sum.executor": "Run",
     "Python.Unique Paths.executor": "Run",
     "Python.Valid Parenthesis.executor": "Run",
@@ -229,14 +231,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00017" summary="DFS to find cycle and visited array">
-      <option name="closed" value="true" />
-      <created>1746113481715</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1746113481715</updated>
     </task>
     <task id="LOCAL-00018" summary="expansion logic for palindrome">
       <option name="closed" value="true" />
@@ -622,11 +616,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747382526078</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="use min and max heap">
+      <option name="closed" value="true" />
+      <created>1747383213754</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1747383213754</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="using binary search to replace elements in subsequence" />
     <MESSAGE value="transpose and reverse" />
     <MESSAGE value="sorting and 2 pointers" />
     <MESSAGE value="kadanes algo" />
@@ -651,7 +652,8 @@
     <MESSAGE value="use trie and then dfs" />
     <MESSAGE value="use 2 variables instead of array" />
     <MESSAGE value="use standard dp template" />
-    <option name="LAST_COMMIT_MESSAGE" value="use standard dp template" />
+    <MESSAGE value="use min and max heap" />
+    <option name="LAST_COMMIT_MESSAGE" value="use min and max heap" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
