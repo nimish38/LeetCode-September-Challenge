@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use upper and lower bound for each node">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Inverst Binary Tree.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="simple recursion">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Same Tree.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,14 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Trie attempt but get TLE">
-      <option name="closed" value="true" />
-      <created>1746119296116</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1746119296116</updated>
     </task>
     <task id="LOCAL-00021" summary="Use DP and memoization to find matching strings">
       <option name="closed" value="true" />
@@ -623,11 +615,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747410985856</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="simple recursion">
+      <option name="closed" value="true" />
+      <created>1747411223134</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1747411223134</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="kadanes algo" />
     <MESSAGE value="using 4 boundaries" />
     <MESSAGE value="greedy approach" />
     <MESSAGE value="sort and increase window" />
@@ -652,7 +651,8 @@
     <MESSAGE value="use min and max heap" />
     <MESSAGE value="split intervals and then use 2 pointers" />
     <MESSAGE value="use upper and lower bound for each node" />
-    <option name="LAST_COMMIT_MESSAGE" value="use upper and lower bound for each node" />
+    <MESSAGE value="simple recursion" />
+    <option name="LAST_COMMIT_MESSAGE" value="simple recursion" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
