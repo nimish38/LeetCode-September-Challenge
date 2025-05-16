@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="split intervals and then use 2 pointers">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Validate BST.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use upper and lower bound for each node">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Inverst Binary Tree.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,14 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00019" summary="2 pointer solution with increment">
-      <option name="closed" value="true" />
-      <created>1746115228568</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1746115228568</updated>
     </task>
     <task id="LOCAL-00020" summary="Trie attempt but get TLE">
       <option name="closed" value="true" />
@@ -624,11 +615,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747395142220</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="use upper and lower bound for each node">
+      <option name="closed" value="true" />
+      <created>1747410985855</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1747410985856</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="sorting and 2 pointers" />
     <MESSAGE value="kadanes algo" />
     <MESSAGE value="using 4 boundaries" />
     <MESSAGE value="greedy approach" />
@@ -653,7 +651,8 @@
     <MESSAGE value="use standard dp template" />
     <MESSAGE value="use min and max heap" />
     <MESSAGE value="split intervals and then use 2 pointers" />
-    <option name="LAST_COMMIT_MESSAGE" value="split intervals and then use 2 pointers" />
+    <MESSAGE value="use upper and lower bound for each node" />
+    <option name="LAST_COMMIT_MESSAGE" value="use upper and lower bound for each node" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
