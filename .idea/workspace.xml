@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use trie and then dfs">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/House Robber 2.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use 2 variables instead of array">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Decode Ways.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +56,7 @@
     "Python.Combination Sum.executor": "Run",
     "Python.Container with most water.executor": "Run",
     "Python.De -Serialise Binary tree.executor": "Debug",
+    "Python.Decode Ways.executor": "Run",
     "Python.Encode and decode Strings.executor": "Debug",
     "Python.FInd Median of data stream.executor": "Run",
     "Python.Graph Valid tree.executor": "Run",
@@ -93,8 +95,8 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Word Search 2">
-    <configuration name="House Robber" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Decode Ways">
+    <configuration name="Decode Ways" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -107,7 +109,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/House Robber.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Decode Ways.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -206,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Decode Ways" />
         <item itemvalue="Python.Word Search 2" />
         <item itemvalue="Python.Word Search" />
         <item itemvalue="Python.Min window substring" />
         <item itemvalue="Python.Set Matrix Zeroes" />
-        <item itemvalue="Python.House Robber" />
       </list>
     </recent_temporary>
   </component>
@@ -228,14 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00015" summary="using expansion logic on each index">
-      <option name="closed" value="true" />
-      <created>1746105641185</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1746105641185</updated>
     </task>
     <task id="LOCAL-00016" summary="DFS to clone nodes and store mapping in dict">
       <option name="closed" value="true" />
@@ -621,11 +615,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747334356154</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="use 2 variables instead of array">
+      <option name="closed" value="true" />
+      <created>1747335276097</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1747335276097</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="using 2 heap solution" />
     <MESSAGE value="using dict to store max frequency and 2 pointers" />
     <MESSAGE value="using binary search to replace elements in subsequence" />
     <MESSAGE value="transpose and reverse" />
@@ -650,7 +651,8 @@
     <MESSAGE value="topological sort" />
     <MESSAGE value="Simple Dictionary" />
     <MESSAGE value="use trie and then dfs" />
-    <option name="LAST_COMMIT_MESSAGE" value="use trie and then dfs" />
+    <MESSAGE value="use 2 variables instead of array" />
+    <option name="LAST_COMMIT_MESSAGE" value="use 2 variables instead of array" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
