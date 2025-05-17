@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use bst property" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using prefix and suffix sums">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Meeting Rooms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +78,7 @@
     "Python.Number of 1 bits.executor": "Run",
     "Python.Pacific Atlantic Water flow.executor": "Run",
     "Python.Palindromic Substrings.executor": "Run",
+    "Python.Product of array except self.executor": "Run",
     "Python.Remove nth node from end.executor": "Debug",
     "Python.Reorder List.executor": "Debug",
     "Python.Reverse Bits.executor": "Run",
@@ -229,14 +233,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00029" summary="use second pointer with a delay of n nodes">
-      <option name="closed" value="true" />
-      <created>1746273568373</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1746273568373</updated>
     </task>
     <task id="LOCAL-00030" summary="use stack">
       <option name="closed" value="true" />
@@ -622,11 +618,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747507172976</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="using prefix and suffix sums">
+      <option name="closed" value="true" />
+      <created>1747508103798</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1747508103798</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="check if lsb of n is 1, if yes make ans bit 1 and left shift ans while right shifting n to get reverse" />
     <MESSAGE value="use &amp; to check if bit is 1" />
     <MESSAGE value="top down approach" />
     <MESSAGE value="using dfs" />
@@ -651,7 +654,8 @@
     <MESSAGE value="recursive and iterative" />
     <MESSAGE value="can use map to store inorder and then use divide n conquer" />
     <MESSAGE value="use bst property" />
-    <option name="LAST_COMMIT_MESSAGE" value="use bst property" />
+    <MESSAGE value="using prefix and suffix sums" />
+    <option name="LAST_COMMIT_MESSAGE" value="using prefix and suffix sums" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
