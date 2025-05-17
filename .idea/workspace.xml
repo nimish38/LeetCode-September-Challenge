@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="keep lowest value seen">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use recursion and return only 2 paths above" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +95,7 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Product of array except self">
+  <component name="RunManager" selected="Python.Valid Palindrome">
     <configuration name="Decode Ways" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -186,7 +184,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Word Search 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Valid Palindrome" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -199,7 +197,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Word Search 2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Valid Palindrome.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -210,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Valid Palindrome" />
         <item itemvalue="Python.Product of array except self" />
         <item itemvalue="Python.Kth Smallest Element in BST" />
         <item itemvalue="Python.Top K frequent Elements" />
         <item itemvalue="Python.Decode Ways" />
-        <item itemvalue="Python.Word Search 2" />
       </list>
     </recent_temporary>
   </component>
@@ -232,14 +230,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00032" summary="divide input list recursively and then merge">
-      <option name="closed" value="true" />
-      <created>1746276598074</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1746276598074</updated>
     </task>
     <task id="LOCAL-00033" summary="use prefix and suffix product">
       <option name="closed" value="true" />
@@ -625,11 +615,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747509473487</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="use recursion and return only 2 paths above">
+      <option name="closed" value="true" />
+      <created>1747510783171</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1747510783171</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="using dfs" />
     <MESSAGE value="3 pointer approach" />
     <MESSAGE value="top down and bottom approach" />
     <MESSAGE value="use first row and column as flags" />
@@ -654,7 +651,8 @@
     <MESSAGE value="using prefix and suffix sums" />
     <MESSAGE value="sort and check" />
     <MESSAGE value="keep lowest value seen" />
-    <option name="LAST_COMMIT_MESSAGE" value="keep lowest value seen" />
+    <MESSAGE value="use recursion and return only 2 paths above" />
+    <option name="LAST_COMMIT_MESSAGE" value="use recursion and return only 2 paths above" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
