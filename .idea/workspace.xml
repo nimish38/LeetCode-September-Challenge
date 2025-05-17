@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="sort and check" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="keep lowest value seen">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -230,14 +232,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00031" summary="use a dummy node to track current and new head">
-      <option name="closed" value="true" />
-      <created>1746274639347</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1746274639347</updated>
     </task>
     <task id="LOCAL-00032" summary="divide input list recursively and then merge">
       <option name="closed" value="true" />
@@ -623,11 +617,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747509191260</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="keep lowest value seen">
+      <option name="closed" value="true" />
+      <created>1747509473472</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1747509473487</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="top down approach" />
     <MESSAGE value="using dfs" />
     <MESSAGE value="3 pointer approach" />
     <MESSAGE value="top down and bottom approach" />
@@ -652,7 +653,8 @@
     <MESSAGE value="use bst property" />
     <MESSAGE value="using prefix and suffix sums" />
     <MESSAGE value="sort and check" />
-    <option name="LAST_COMMIT_MESSAGE" value="sort and check" />
+    <MESSAGE value="keep lowest value seen" />
+    <option name="LAST_COMMIT_MESSAGE" value="keep lowest value seen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
