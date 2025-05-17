@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use queue for bfs">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Kth Smallest Element in BST.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="maintain count of nodes visited and return kth">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +62,7 @@
     "Python.House Robber.executor": "Run",
     "Python.Insert Interval.executor": "Run",
     "Python.Jump Game.executor": "Run",
+    "Python.Kth Smallest Element in BST.executor": "Run",
     "Python.LIS.executor": "Run",
     "Python.Linked list cycle.executor": "Run",
     "Python.Longest Consecutive Sequence.executor": "Run",
@@ -84,7 +84,7 @@
     "Python.Search in rotated sorted array.executor": "Run",
     "Python.Set Matrix Zeroes.executor": "Run",
     "Python.Spiral Matrix.executor": "Run",
-    "Python.Top K frequent Elements.executor": "Run",
+    "Python.Top K frequent Elements.executor": "Debug",
     "Python.Two sum.executor": "Run",
     "Python.Unique Paths.executor": "Run",
     "Python.Valid Parenthesis.executor": "Run",
@@ -231,14 +231,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Sorting and then applying 2 sum with 2 pointers">
-      <option name="closed" value="true" />
-      <created>1746176004338</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1746176004338</updated>
     </task>
     <task id="LOCAL-00025" summary="find mid point, break and reverse right part and then use 2 pointers">
       <option name="closed" value="true" />
@@ -624,11 +616,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747416336208</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="maintain count of nodes visited and return kth">
+      <option name="closed" value="true" />
+      <created>1747478659685</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1747478659686</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="sort and increase window" />
     <MESSAGE value="check last interval" />
     <MESSAGE value="use recursion, use string substring check" />
     <MESSAGE value="use DP matrix to compute paths in reverse" />
@@ -653,7 +652,8 @@
     <MESSAGE value="simple recursion" />
     <MESSAGE value="DP, move one index at a time" />
     <MESSAGE value="use queue for bfs" />
-    <option name="LAST_COMMIT_MESSAGE" value="use queue for bfs" />
+    <MESSAGE value="maintain count of nodes visited and return kth" />
+    <option name="LAST_COMMIT_MESSAGE" value="maintain count of nodes visited and return kth" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -737,6 +737,11 @@
           <url>file://$PROJECT_DIR$/2025/May_25/Word Search 2.py</url>
           <line>23</line>
           <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/May_25/Kth Smallest Element in BST.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
