@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use backtracking template">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Matchsticks to square.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use backtracking template amd sorting to optimise">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Open the lock.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +73,7 @@
     "Python.Longest Palindromic Substring.executor": "Run",
     "Python.Longest Sub without repeating char.executor": "Run",
     "Python.Longest repeating char.executor": "Run",
-    "Python.Matchsticks to square.executor": "Run",
+    "Python.Matchsticks to square.executor": "Debug",
     "Python.Maximum Subarray.executor": "Run",
     "Python.Merge Intervals.executor": "Run",
     "Python.Min in Rotated Sorted Array.executor": "Run",
@@ -81,6 +81,7 @@
     "Python.Missing Number.executor": "Run",
     "Python.N Queens.executor": "Run",
     "Python.Number of 1 bits.executor": "Run",
+    "Python.Open the lock.executor": "Run",
     "Python.Pacific Atlantic Water flow.executor": "Run",
     "Python.Palindromic Substrings.executor": "Run",
     "Python.Product of array except self.executor": "Run",
@@ -104,7 +105,7 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Matchsticks to square">
+  <component name="RunManager" selected="Python.Open the lock">
     <configuration name="Car Fleet" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -193,7 +194,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="N Queens" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Open the lock" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -206,7 +207,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/N Queens.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Open the lock.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -217,11 +218,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Open the lock" />
         <item itemvalue="Python.Matchsticks to square" />
         <item itemvalue="Python.Combination Sum 2" />
         <item itemvalue="Python.Delete Node in BST" />
         <item itemvalue="Python.Car Fleet" />
-        <item itemvalue="Python.N Queens" />
       </list>
     </recent_temporary>
   </component>
@@ -239,14 +240,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00038" summary="using 2 heap solution">
-      <option name="closed" value="true" />
-      <created>1746471756591</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1746471756591</updated>
     </task>
     <task id="LOCAL-00039" summary="using dict to store max frequency and 2 pointers">
       <option name="closed" value="true" />
@@ -632,11 +625,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747577076420</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="use backtracking template amd sorting to optimise">
+      <option name="closed" value="true" />
+      <created>1747594936094</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1747594936094</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use dfa but can prune beforehand" />
     <MESSAGE value="topological sort" />
     <MESSAGE value="Simple Dictionary" />
     <MESSAGE value="use trie and then dfs" />
@@ -661,7 +661,8 @@
     <MESSAGE value="sorting on position and find time to reach to find collision" />
     <MESSAGE value="replace entire right subtree to left rightmost node right and return" />
     <MESSAGE value="use backtracking template" />
-    <option name="LAST_COMMIT_MESSAGE" value="use backtracking template" />
+    <MESSAGE value="use backtracking template amd sorting to optimise" />
+    <option name="LAST_COMMIT_MESSAGE" value="use backtracking template amd sorting to optimise" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -760,6 +761,11 @@
           <url>file://$PROJECT_DIR$/2025/May_25/Delete Node in BST.py</url>
           <line>21</line>
           <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/May_25/Matchsticks to square.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
