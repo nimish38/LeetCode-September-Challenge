@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use alnum builtin method">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/N Queens.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using backtracking and set to optimise">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Car Fleet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +52,7 @@
     "Python.Add binary.executor": "Run",
     "Python.Alien Dictionary.executor": "Run",
     "Python.BST Iterator.executor": "Run",
+    "Python.Car Fleet.executor": "Run",
     "Python.Coin change.executor": "Run",
     "Python.Combination Sum.executor": "Run",
     "Python.Container with most water.executor": "Run",
@@ -100,7 +101,29 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.N Queens">
+  <component name="RunManager" selected="Python.Car Fleet">
+    <configuration name="Car Fleet" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Car Fleet.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Kth Smallest Element in BST" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -167,28 +190,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Top K frequent Elements" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Top K frequent Elements.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Valid Palindrome" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -213,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Car Fleet" />
         <item itemvalue="Python.N Queens" />
         <item itemvalue="Python.Valid Palindrome" />
         <item itemvalue="Python.Product of array except self" />
         <item itemvalue="Python.Kth Smallest Element in BST" />
-        <item itemvalue="Python.Top K frequent Elements" />
       </list>
     </recent_temporary>
   </component>
@@ -235,14 +236,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00034" summary="using binary search">
-      <option name="closed" value="true" />
-      <created>1746351124766</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1746351124766</updated>
     </task>
     <task id="LOCAL-00035" summary="using binary search and check at each step which half is sorted and eliminate">
       <option name="closed" value="true" />
@@ -628,11 +621,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747511292175</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="using backtracking and set to optimise">
+      <option name="closed" value="true" />
+      <created>1747566151859</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1747566151859</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="top down and bottom approach" />
     <MESSAGE value="use first row and column as flags" />
     <MESSAGE value="use sliding window with map to store characters" />
     <MESSAGE value="2 pointer approach" />
@@ -657,7 +657,8 @@
     <MESSAGE value="keep lowest value seen" />
     <MESSAGE value="use recursion and return only 2 paths above" />
     <MESSAGE value="use alnum builtin method" />
-    <option name="LAST_COMMIT_MESSAGE" value="use alnum builtin method" />
+    <MESSAGE value="using backtracking and set to optimise" />
+    <option name="LAST_COMMIT_MESSAGE" value="using backtracking and set to optimise" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
