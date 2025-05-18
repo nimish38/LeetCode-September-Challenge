@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="replace entire right subtree to left rightmost node right and return">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Combination Sum 2.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use backtracking template">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Matchsticks to square.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +73,7 @@
     "Python.Longest Palindromic Substring.executor": "Run",
     "Python.Longest Sub without repeating char.executor": "Run",
     "Python.Longest repeating char.executor": "Run",
+    "Python.Matchsticks to square.executor": "Run",
     "Python.Maximum Subarray.executor": "Run",
     "Python.Merge Intervals.executor": "Run",
     "Python.Min in Rotated Sorted Array.executor": "Run",
@@ -103,7 +104,7 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Combination Sum 2">
+  <component name="RunManager" selected="Python.Matchsticks to square">
     <configuration name="Car Fleet" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -170,6 +171,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Matchsticks to square" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Matchsticks to square.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="N Queens" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -192,35 +215,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Valid Palindrome" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Valid Palindrome.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Matchsticks to square" />
         <item itemvalue="Python.Combination Sum 2" />
         <item itemvalue="Python.Delete Node in BST" />
         <item itemvalue="Python.Car Fleet" />
         <item itemvalue="Python.N Queens" />
-        <item itemvalue="Python.Valid Palindrome" />
       </list>
     </recent_temporary>
   </component>
@@ -238,14 +239,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00037" summary="using index to prevent duplicate lists">
-      <option name="closed" value="true" />
-      <created>1746466469249</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1746466469249</updated>
     </task>
     <task id="LOCAL-00038" summary="using 2 heap solution">
       <option name="closed" value="true" />
@@ -631,11 +624,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747572779303</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="use backtracking template">
+      <option name="closed" value="true" />
+      <created>1747577076420</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1747577076420</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2 pointer approach" />
     <MESSAGE value="use dfa but can prune beforehand" />
     <MESSAGE value="topological sort" />
     <MESSAGE value="Simple Dictionary" />
@@ -660,7 +660,8 @@
     <MESSAGE value="using backtracking and set to optimise" />
     <MESSAGE value="sorting on position and find time to reach to find collision" />
     <MESSAGE value="replace entire right subtree to left rightmost node right and return" />
-    <option name="LAST_COMMIT_MESSAGE" value="replace entire right subtree to left rightmost node right and return" />
+    <MESSAGE value="use backtracking template" />
+    <option name="LAST_COMMIT_MESSAGE" value="use backtracking template" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -759,11 +760,6 @@
           <url>file://$PROJECT_DIR$/2025/May_25/Delete Node in BST.py</url>
           <line>21</line>
           <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/2025/May_25/Combination Sum 2.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
