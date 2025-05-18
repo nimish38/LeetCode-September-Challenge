@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use recursion and return only 2 paths above" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use alnum builtin method">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/N Queens.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,6 +75,7 @@
     "Python.Min in Rotated Sorted Array.executor": "Run",
     "Python.Min window substring.executor": "Run",
     "Python.Missing Number.executor": "Run",
+    "Python.N Queens.executor": "Run",
     "Python.Number of 1 bits.executor": "Run",
     "Python.Pacific Atlantic Water flow.executor": "Run",
     "Python.Palindromic Substrings.executor": "Run",
@@ -86,6 +90,7 @@
     "Python.Top K frequent Elements.executor": "Debug",
     "Python.Two sum.executor": "Run",
     "Python.Unique Paths.executor": "Run",
+    "Python.Valid Palindrome.executor": "Run",
     "Python.Valid Parenthesis.executor": "Run",
     "Python.Word Break.executor": "Run",
     "Python.Word Search 2.executor": "Run",
@@ -95,29 +100,7 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Valid Palindrome">
-    <configuration name="Decode Ways" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Decode Ways.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.N Queens">
     <configuration name="Kth Smallest Element in BST" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -132,6 +115,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Kth Smallest Element in BST.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="N Queens" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/N Queens.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -208,11 +213,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.N Queens" />
         <item itemvalue="Python.Valid Palindrome" />
         <item itemvalue="Python.Product of array except self" />
         <item itemvalue="Python.Kth Smallest Element in BST" />
         <item itemvalue="Python.Top K frequent Elements" />
-        <item itemvalue="Python.Decode Ways" />
       </list>
     </recent_temporary>
   </component>
@@ -230,14 +235,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00033" summary="use prefix and suffix product">
-      <option name="closed" value="true" />
-      <created>1746279067856</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1746279067856</updated>
     </task>
     <task id="LOCAL-00034" summary="using binary search">
       <option name="closed" value="true" />
@@ -623,11 +620,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747510783171</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="use alnum builtin method">
+      <option name="closed" value="true" />
+      <created>1747511292175</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1747511292175</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="3 pointer approach" />
     <MESSAGE value="top down and bottom approach" />
     <MESSAGE value="use first row and column as flags" />
     <MESSAGE value="use sliding window with map to store characters" />
@@ -652,7 +656,8 @@
     <MESSAGE value="sort and check" />
     <MESSAGE value="keep lowest value seen" />
     <MESSAGE value="use recursion and return only 2 paths above" />
-    <option name="LAST_COMMIT_MESSAGE" value="use recursion and return only 2 paths above" />
+    <MESSAGE value="use alnum builtin method" />
+    <option name="LAST_COMMIT_MESSAGE" value="use alnum builtin method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
