@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using backtracking and set to optimise">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Car Fleet.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="sorting on position and find time to reach to find collision">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Delete Node in BST.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,12 +52,13 @@
     "Python.Add binary.executor": "Run",
     "Python.Alien Dictionary.executor": "Run",
     "Python.BST Iterator.executor": "Run",
-    "Python.Car Fleet.executor": "Run",
+    "Python.Car Fleet.executor": "Debug",
     "Python.Coin change.executor": "Run",
     "Python.Combination Sum.executor": "Run",
     "Python.Container with most water.executor": "Run",
     "Python.De -Serialise Binary tree.executor": "Debug",
     "Python.Decode Ways.executor": "Run",
+    "Python.Delete Node in BST.executor": "Debug",
     "Python.Encode and decode Strings.executor": "Debug",
     "Python.FInd Median of data stream.executor": "Run",
     "Python.Graph Valid tree.executor": "Run",
@@ -101,7 +102,7 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Car Fleet">
+  <component name="RunManager" selected="Python.Delete Node in BST">
     <configuration name="Car Fleet" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -124,7 +125,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Kth Smallest Element in BST" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Delete Node in BST" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -137,7 +138,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Kth Smallest Element in BST.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Delete Node in BST.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -214,11 +215,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Delete Node in BST" />
         <item itemvalue="Python.Car Fleet" />
         <item itemvalue="Python.N Queens" />
         <item itemvalue="Python.Valid Palindrome" />
         <item itemvalue="Python.Product of array except self" />
-        <item itemvalue="Python.Kth Smallest Element in BST" />
       </list>
     </recent_temporary>
   </component>
@@ -236,14 +237,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00035" summary="using binary search and check at each step which half is sorted and eliminate">
-      <option name="closed" value="true" />
-      <created>1746355630730</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1746355630730</updated>
     </task>
     <task id="LOCAL-00036" summary="using dfs in reverse way ie ocean to island for optimal">
       <option name="closed" value="true" />
@@ -629,11 +622,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747566151859</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="sorting on position and find time to reach to find collision">
+      <option name="closed" value="true" />
+      <created>1747568904676</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1747568904676</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use first row and column as flags" />
     <MESSAGE value="use sliding window with map to store characters" />
     <MESSAGE value="2 pointer approach" />
     <MESSAGE value="use dfa but can prune beforehand" />
@@ -658,7 +658,8 @@
     <MESSAGE value="use recursion and return only 2 paths above" />
     <MESSAGE value="use alnum builtin method" />
     <MESSAGE value="using backtracking and set to optimise" />
-    <option name="LAST_COMMIT_MESSAGE" value="using backtracking and set to optimise" />
+    <MESSAGE value="sorting on position and find time to reach to find collision" />
+    <option name="LAST_COMMIT_MESSAGE" value="sorting on position and find time to reach to find collision" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -747,6 +748,16 @@
           <url>file://$PROJECT_DIR$/2025/May_25/Kth Smallest Element in BST.py</url>
           <line>20</line>
           <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/May_25/Car Fleet.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/May_25/Delete Node in BST.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
