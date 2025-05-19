@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use map to store tuple and use diagonal to fin square points">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Cheapest Flights with K stops.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use bfs and distance array">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Diameter of Binary tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +60,7 @@
     "Python.De -Serialise Binary tree.executor": "Debug",
     "Python.Decode Ways.executor": "Run",
     "Python.Delete Node in BST.executor": "Debug",
+    "Python.Diameter of Binary tree.executor": "Run",
     "Python.Encode and decode Strings.executor": "Debug",
     "Python.FInd Median of data stream.executor": "Run",
     "Python.Graph Valid tree.executor": "Run",
@@ -88,7 +89,7 @@
     "Python.Remove nth node from end.executor": "Debug",
     "Python.Reorder List.executor": "Debug",
     "Python.Reverse Bits.executor": "Run",
-    "Python.Rotate Array.executor": "Run",
+    "Python.Rotate Array.executor": "Debug",
     "Python.Rotate Image.executor": "Run",
     "Python.Search in rotated sorted array.executor": "Run",
     "Python.Set Matrix Zeroes.executor": "Run",
@@ -106,7 +107,7 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Rotate Array">
+  <component name="RunManager" selected="Python.Diameter of Binary tree">
     <configuration name="Combination Sum 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -129,7 +130,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Delete Node in BST" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Diameter of Binary tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -142,7 +143,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Delete Node in BST.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Diameter of Binary tree.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -219,11 +220,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Diameter of Binary tree" />
         <item itemvalue="Python.Rotate Array" />
         <item itemvalue="Python.Open the lock" />
         <item itemvalue="Python.Matchsticks to square" />
         <item itemvalue="Python.Combination Sum 2" />
-        <item itemvalue="Python.Delete Node in BST" />
       </list>
     </recent_temporary>
   </component>
@@ -241,14 +242,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00041" summary="transpose and reverse">
-      <option name="closed" value="true" />
-      <created>1746562410875</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1746562410875</updated>
     </task>
     <task id="LOCAL-00042" summary="sorting and 2 pointers">
       <option name="closed" value="true" />
@@ -634,11 +627,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747681271465</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="use bfs and distance array">
+      <option name="closed" value="true" />
+      <created>1747683451080</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1747683451080</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use trie and then dfs" />
     <MESSAGE value="use 2 variables instead of array" />
     <MESSAGE value="use standard dp template" />
     <MESSAGE value="use min and max heap" />
@@ -663,7 +663,8 @@
     <MESSAGE value="use backtracking template amd sorting to optimise" />
     <MESSAGE value="find pivot, reverse both sides and the reverse whole" />
     <MESSAGE value="use map to store tuple and use diagonal to fin square points" />
-    <option name="LAST_COMMIT_MESSAGE" value="use map to store tuple and use diagonal to fin square points" />
+    <MESSAGE value="use bfs and distance array" />
+    <option name="LAST_COMMIT_MESSAGE" value="use bfs and distance array" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
