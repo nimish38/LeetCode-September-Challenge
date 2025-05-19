@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use backtracking template amd sorting to optimise">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Rotate Array.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="find pivot, reverse both sides and the reverse whole">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Detect Squares.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -241,14 +241,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00039" summary="using dict to store max frequency and 2 pointers">
-      <option name="closed" value="true" />
-      <created>1746558179501</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1746558179501</updated>
     </task>
     <task id="LOCAL-00040" summary="using binary search to replace elements in subsequence">
       <option name="closed" value="true" />
@@ -634,11 +626,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747594936094</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="find pivot, reverse both sides and the reverse whole">
+      <option name="closed" value="true" />
+      <created>1747678629670</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1747678629670</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="topological sort" />
     <MESSAGE value="Simple Dictionary" />
     <MESSAGE value="use trie and then dfs" />
     <MESSAGE value="use 2 variables instead of array" />
@@ -663,7 +662,8 @@
     <MESSAGE value="replace entire right subtree to left rightmost node right and return" />
     <MESSAGE value="use backtracking template" />
     <MESSAGE value="use backtracking template amd sorting to optimise" />
-    <option name="LAST_COMMIT_MESSAGE" value="use backtracking template amd sorting to optimise" />
+    <MESSAGE value="find pivot, reverse both sides and the reverse whole" />
+    <option name="LAST_COMMIT_MESSAGE" value="find pivot, reverse both sides and the reverse whole" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
