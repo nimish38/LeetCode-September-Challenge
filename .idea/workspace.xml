@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use lambda function to sort">
-      <change afterPath="$PROJECT_DIR$/2025/Mar_25/Combo Sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use backtracking template">
+      <change afterPath="$PROJECT_DIR$/2025/Mar_25/Nth Tribonacci Number.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +55,7 @@
     "Python.Coin change.executor": "Run",
     "Python.Combination Sum 2.executor": "Run",
     "Python.Combination Sum.executor": "Run",
+    "Python.Combo Sum.executor": "Run",
     "Python.Container with most water.executor": "Run",
     "Python.De -Serialise Binary tree.executor": "Debug",
     "Python.Decode Ways.executor": "Run",
@@ -108,7 +108,7 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Combo Sum">
+  <component name="RunManager" selected="Python.Nth Tribonacci Number">
     <configuration name="Combo Sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -153,7 +153,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Open the lock" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Nth Tribonacci Number" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -162,11 +162,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Mar_25" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Open the lock.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Mar_25/Nth Tribonacci Number.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -221,11 +221,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Nth Tribonacci Number" />
         <item itemvalue="Python.Combo Sum" />
         <item itemvalue="Python.Pow" />
         <item itemvalue="Python.Diameter of Binary tree" />
         <item itemvalue="Python.Rotate Array" />
-        <item itemvalue="Python.Open the lock" />
       </list>
     </recent_temporary>
   </component>
@@ -243,14 +243,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00045" summary="greedy approach">
-      <option name="closed" value="true" />
-      <created>1746714317559</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1746714317559</updated>
     </task>
     <task id="LOCAL-00046" summary="sort and increase window">
       <option name="closed" value="true" />
@@ -636,7 +628,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747765997872</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="use backtracking template">
+      <option name="closed" value="true" />
+      <created>1747766748972</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1747766748972</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -657,7 +657,6 @@
     <MESSAGE value="using backtracking and set to optimise" />
     <MESSAGE value="sorting on position and find time to reach to find collision" />
     <MESSAGE value="replace entire right subtree to left rightmost node right and return" />
-    <MESSAGE value="use backtracking template" />
     <MESSAGE value="use backtracking template amd sorting to optimise" />
     <MESSAGE value="find pivot, reverse both sides and the reverse whole" />
     <MESSAGE value="use map to store tuple and use diagonal to fin square points" />
@@ -665,7 +664,8 @@
     <MESSAGE value="use dfs" />
     <MESSAGE value="break n into half and using carry" />
     <MESSAGE value="use lambda function to sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="use lambda function to sort" />
+    <MESSAGE value="use backtracking template" />
+    <option name="LAST_COMMIT_MESSAGE" value="use backtracking template" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
