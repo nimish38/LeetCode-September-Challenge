@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use dfs">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Pow.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="break n into half and using carry">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +84,7 @@
     "Python.Open the lock.executor": "Run",
     "Python.Pacific Atlantic Water flow.executor": "Run",
     "Python.Palindromic Substrings.executor": "Run",
+    "Python.Pow.executor": "Run",
     "Python.Product of array except self.executor": "Run",
     "Python.Remove nth node from end.executor": "Debug",
     "Python.Reorder List.executor": "Debug",
@@ -241,14 +242,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00043" summary="kadanes algo">
-      <option name="closed" value="true" />
-      <created>1746703437996</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1746703437996</updated>
     </task>
     <task id="LOCAL-00044" summary="using 4 boundaries">
       <option name="closed" value="true" />
@@ -634,11 +627,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747685755577</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="break n into half and using carry">
+      <option name="closed" value="true" />
+      <created>1747764864613</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1747764864614</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use standard dp template" />
     <MESSAGE value="use min and max heap" />
     <MESSAGE value="split intervals and then use 2 pointers" />
     <MESSAGE value="use upper and lower bound for each node" />
@@ -663,7 +663,8 @@
     <MESSAGE value="use map to store tuple and use diagonal to fin square points" />
     <MESSAGE value="use bfs and distance array" />
     <MESSAGE value="use dfs" />
-    <option name="LAST_COMMIT_MESSAGE" value="use dfs" />
+    <MESSAGE value="break n into half and using carry" />
+    <option name="LAST_COMMIT_MESSAGE" value="break n into half and using carry" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
