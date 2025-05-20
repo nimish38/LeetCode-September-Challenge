@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use backtracking template">
-      <change afterPath="$PROJECT_DIR$/2025/Mar_25/Nth Tribonacci Number.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="3 pointer solution">
+      <change afterPath="$PROJECT_DIR$/2025/Mar_25/Majority Element.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +81,7 @@
     "Python.Min window substring.executor": "Run",
     "Python.Missing Number.executor": "Run",
     "Python.N Queens.executor": "Run",
+    "Python.Nth Tribonacci Number.executor": "Run",
     "Python.Number of 1 bits.executor": "Run",
     "Python.Open the lock.executor": "Run",
     "Python.Pacific Atlantic Water flow.executor": "Run",
@@ -243,14 +244,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00046" summary="sort and increase window">
-      <option name="closed" value="true" />
-      <created>1746715358558</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1746715358558</updated>
     </task>
     <task id="LOCAL-00047" summary="check last interval">
       <option name="closed" value="true" />
@@ -636,11 +629,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747766748972</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="3 pointer solution">
+      <option name="closed" value="true" />
+      <created>1747767072872</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1747767072873</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="split intervals and then use 2 pointers" />
     <MESSAGE value="use upper and lower bound for each node" />
     <MESSAGE value="simple recursion" />
     <MESSAGE value="DP, move one index at a time" />
@@ -665,7 +665,8 @@
     <MESSAGE value="break n into half and using carry" />
     <MESSAGE value="use lambda function to sort" />
     <MESSAGE value="use backtracking template" />
-    <option name="LAST_COMMIT_MESSAGE" value="use backtracking template" />
+    <MESSAGE value="3 pointer solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="3 pointer solution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
