@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use recursion and list copies to explore">
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using proper backtracking template">
       <change afterPath="$PROJECT_DIR$/2025/Mar_25/Subsets 2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/Mar_25/Subsets repeat.py" beforeDir="false" afterPath="$PROJECT_DIR$/2025/Mar_25/Subsets repeat.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +112,7 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Subsets repeat">
+  <component name="RunManager" selected="Python.Subsets 2">
     <configuration name="Combo Sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -226,8 +225,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Subsets repeat" />
         <item itemvalue="Python.Subsets 2" />
+        <item itemvalue="Python.Subsets repeat" />
         <item itemvalue="Python.Nth Tribonacci Number" />
         <item itemvalue="Python.Combo Sum" />
         <item itemvalue="Python.Pow" />
@@ -248,14 +247,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00049" summary="use DP matrix to compute paths in reverse">
-      <option name="closed" value="true" />
-      <created>1746775613002</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1746775613002</updated>
     </task>
     <task id="LOCAL-00050" summary="check if lsb of n is 1, if yes make ans bit 1 and left shift ans while right shifting n to get reverse">
       <option name="closed" value="true" />
@@ -641,11 +632,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747813362263</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="using proper backtracking template">
+      <option name="closed" value="true" />
+      <created>1747817041019</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1747817041020</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="DP, move one index at a time" />
     <MESSAGE value="use queue for bfs" />
     <MESSAGE value="maintain count of nodes visited and return kth" />
     <MESSAGE value="recursive and iterative" />
@@ -670,7 +668,8 @@
     <MESSAGE value="3 pointer solution" />
     <MESSAGE value="use boyer moore voting algo which cancels out non majority element" />
     <MESSAGE value="use recursion and list copies to explore" />
-    <option name="LAST_COMMIT_MESSAGE" value="use recursion and list copies to explore" />
+    <MESSAGE value="using proper backtracking template" />
+    <option name="LAST_COMMIT_MESSAGE" value="using proper backtracking template" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -777,7 +776,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/2025/Mar_25/Subsets 2.py</url>
-          <line>9</line>
+          <line>6</line>
           <option name="timeStamp" value="66" />
         </line-breakpoint>
       </breakpoints>
