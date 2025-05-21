@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using proper backtracking template">
-      <change afterPath="$PROJECT_DIR$/2025/Mar_25/Subsets 2.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using proper backtracking template and sorting and skip to prevent duplicates">
+      <change afterPath="$PROJECT_DIR$/2025/Mar_25/Largest Rectangle in Histogram.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +70,7 @@
     "Python.Jump Game.executor": "Run",
     "Python.Kth Smallest Element in BST.executor": "Run",
     "Python.LIS.executor": "Run",
+    "Python.Largest Rectangle in Histogram.executor": "Run",
     "Python.Linked list cycle.executor": "Run",
     "Python.Longest Consecutive Sequence.executor": "Run",
     "Python.Longest Palindromic Substring.executor": "Run",
@@ -112,7 +113,7 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Subsets 2">
+  <component name="RunManager" selected="Python.Largest Rectangle in Histogram">
     <configuration name="Combo Sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -135,6 +136,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Largest Rectangle in Histogram" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Mar_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Mar_25/Largest Rectangle in Histogram.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Nth Tribonacci Number" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -149,28 +172,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Mar_25/Nth Tribonacci Number.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Pow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Pow.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -225,11 +226,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Largest Rectangle in Histogram" />
         <item itemvalue="Python.Subsets 2" />
         <item itemvalue="Python.Subsets repeat" />
         <item itemvalue="Python.Nth Tribonacci Number" />
         <item itemvalue="Python.Combo Sum" />
-        <item itemvalue="Python.Pow" />
       </list>
     </recent_temporary>
   </component>
@@ -247,14 +248,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00050" summary="check if lsb of n is 1, if yes make ans bit 1 and left shift ans while right shifting n to get reverse">
-      <option name="closed" value="true" />
-      <created>1746777944657</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1746777944657</updated>
     </task>
     <task id="LOCAL-00051" summary="use &amp; to check if bit is 1">
       <option name="closed" value="true" />
@@ -640,11 +633,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747817041020</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="using proper backtracking template and sorting and skip to prevent duplicates">
+      <option name="closed" value="true" />
+      <created>1747818844358</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1747818844358</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use queue for bfs" />
     <MESSAGE value="maintain count of nodes visited and return kth" />
     <MESSAGE value="recursive and iterative" />
     <MESSAGE value="can use map to store inorder and then use divide n conquer" />
@@ -669,7 +669,8 @@
     <MESSAGE value="use boyer moore voting algo which cancels out non majority element" />
     <MESSAGE value="use recursion and list copies to explore" />
     <MESSAGE value="using proper backtracking template" />
-    <option name="LAST_COMMIT_MESSAGE" value="using proper backtracking template" />
+    <MESSAGE value="using proper backtracking template and sorting and skip to prevent duplicates" />
+    <option name="LAST_COMMIT_MESSAGE" value="using proper backtracking template and sorting and skip to prevent duplicates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -776,7 +777,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/2025/Mar_25/Subsets 2.py</url>
-          <line>6</line>
+          <line>17</line>
           <option name="timeStamp" value="66" />
         </line-breakpoint>
       </breakpoints>
