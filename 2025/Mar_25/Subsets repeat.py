@@ -1,18 +1,17 @@
 class Solution(object):
     def subsets(self, nums):
-        n = len(nums)
+        n, res = len(nums), []
 
-        def solve(ind):
+        def solve(ind, curr):
             if ind >= n:
-                return [[]]
-            curr = solve(ind + 1)
-            res = list(curr)
-            for combo in curr:
-                x = list(combo)
-                x.append(nums[ind])
-                res.append(x)
-            return res
+                res.append(list(curr))
+                return
+            curr.append(nums[ind])
+            solve(ind + 1, curr)
+            curr.pop()
+            solve(ind + 1, curr)
 
-        return solve(0)
+        solve(0, [])
+        return res
 
 print(Solution().subsets(nums = [1,2,3]))

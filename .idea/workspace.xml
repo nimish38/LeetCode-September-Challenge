@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use boyer moore voting algo which cancels out non majority element">
-      <change afterPath="$PROJECT_DIR$/2025/Mar_25/Subsets repeat.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use recursion and list copies to explore">
+      <change afterPath="$PROJECT_DIR$/2025/Mar_25/Subsets 2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2025/Mar_25/Subsets repeat.py" beforeDir="false" afterPath="$PROJECT_DIR$/2025/Mar_25/Subsets repeat.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +98,7 @@
     "Python.Search in rotated sorted array.executor": "Run",
     "Python.Set Matrix Zeroes.executor": "Run",
     "Python.Spiral Matrix.executor": "Run",
+    "Python.Subsets 2.executor": "Run",
     "Python.Subsets repeat.executor": "Run",
     "Python.Top K frequent Elements.executor": "Debug",
     "Python.Two sum.executor": "Run",
@@ -126,28 +128,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Mar_25/Combo Sum.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Diameter of Binary tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Diameter of Binary tree.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -200,6 +180,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Subsets 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Mar_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Mar_25/Subsets 2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Subsets repeat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -225,10 +227,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.Subsets repeat" />
+        <item itemvalue="Python.Subsets 2" />
         <item itemvalue="Python.Nth Tribonacci Number" />
         <item itemvalue="Python.Combo Sum" />
         <item itemvalue="Python.Pow" />
-        <item itemvalue="Python.Diameter of Binary tree" />
       </list>
     </recent_temporary>
   </component>
@@ -246,14 +248,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00048" summary="use recursion, use string substring check">
-      <option name="closed" value="true" />
-      <created>1746719963013</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1746719963013</updated>
     </task>
     <task id="LOCAL-00049" summary="use DP matrix to compute paths in reverse">
       <option name="closed" value="true" />
@@ -639,11 +633,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747767709661</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="use recursion and list copies to explore">
+      <option name="closed" value="true" />
+      <created>1747813362263</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1747813362263</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="simple recursion" />
     <MESSAGE value="DP, move one index at a time" />
     <MESSAGE value="use queue for bfs" />
     <MESSAGE value="maintain count of nodes visited and return kth" />
@@ -668,7 +669,8 @@
     <MESSAGE value="use backtracking template" />
     <MESSAGE value="3 pointer solution" />
     <MESSAGE value="use boyer moore voting algo which cancels out non majority element" />
-    <option name="LAST_COMMIT_MESSAGE" value="use boyer moore voting algo which cancels out non majority element" />
+    <MESSAGE value="use recursion and list copies to explore" />
+    <option name="LAST_COMMIT_MESSAGE" value="use recursion and list copies to explore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -774,9 +776,9 @@
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/2025/Mar_25/Subsets repeat.py</url>
+          <url>file://$PROJECT_DIR$/2025/Mar_25/Subsets 2.py</url>
           <line>9</line>
-          <option name="timeStamp" value="64" />
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
