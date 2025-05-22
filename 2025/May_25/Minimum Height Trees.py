@@ -5,7 +5,7 @@ class Solution(object):
     def findMinHeightTrees(self, n, edges):
         if n == 1:
             return [0]
-        adj, deg, res, que, vis = defaultdict(list), [0] * n , [], deque([]), set()
+        adj, deg, res, que = defaultdict(list), [0] * n , [], deque([])
         for u,v in edges:
             adj[u].append(v)
             adj[v].append(u)
@@ -14,7 +14,6 @@ class Solution(object):
 
         for i in range(n):
             if deg[i] == 1:
-                vis.add(i)
                 que.append(i)
 
         while n > 2:
@@ -23,8 +22,7 @@ class Solution(object):
                 n -= 1
                 for nei in adj[node]:
                     deg[nei] -= 1
-                    if nei not in vis and deg[nei] == 1:
-                        vis.add(nei)
+                    if deg[nei] == 1:
                         que.append(nei)
         return list(que)
 
