@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use set">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Longest Consec Seq.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2025/May_25/N Queens 2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,6 +83,7 @@
     "Python.Min in Rotated Sorted Array.executor": "Run",
     "Python.Min window substring.executor": "Run",
     "Python.Missing Number.executor": "Run",
+    "Python.N Queens 2.executor": "Run",
     "Python.N Queens.executor": "Run",
     "Python.Nth Tribonacci Number.executor": "Run",
     "Python.Number of 1 bits.executor": "Run",
@@ -119,7 +120,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Longest Consec Seq">
+  <component name="RunManager" selected="Python.N Queens 2">
     <configuration name="Largest Rectangle in Histogram" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -164,7 +165,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Nth Tribonacci Number" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="N Queens 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -173,11 +174,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Mar_25" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Mar_25/Nth Tribonacci Number.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/N Queens 2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -232,11 +233,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.N Queens 2" />
         <item itemvalue="Python.Longest Consec Seq" />
         <item itemvalue="Python.Largest Rectangle in Histogram" />
         <item itemvalue="Python.Subsets 2" />
         <item itemvalue="Python.Subsets repeat" />
-        <item itemvalue="Python.Nth Tribonacci Number" />
       </list>
     </recent_temporary>
   </component>
@@ -254,14 +255,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00053" summary="using dfs">
-      <option name="closed" value="true" />
-      <created>1746941794319</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1746941794319</updated>
     </task>
     <task id="LOCAL-00054" summary="3 pointer approach">
       <option name="closed" value="true" />
@@ -647,7 +640,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747853572064</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="use set">
+      <option name="closed" value="true" />
+      <created>1747896376326</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1747896376326</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
