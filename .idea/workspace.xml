@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use set for positions and backtrack">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Coin Change 2.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using DP and memoization and then top down">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Find the town judge.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +65,7 @@
     "Python.Diameter of Binary tree.executor": "Run",
     "Python.Encode and decode Strings.executor": "Debug",
     "Python.FInd Median of data stream.executor": "Run",
+    "Python.Find the town judge.executor": "Run",
     "Python.Graph Valid tree.executor": "Run",
     "Python.House Robber.executor": "Run",
     "Python.Insert Interval.executor": "Run",
@@ -121,7 +122,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Coin Change 2">
+  <component name="RunManager" selected="Python.Find the town judge">
     <configuration name="Coin Change 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -136,6 +137,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Coin Change 2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Find the town judge" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Find the town judge.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -210,35 +233,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Subsets 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Mar_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Mar_25/Subsets 2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Find the town judge" />
         <item itemvalue="Python.Coin Change 2" />
         <item itemvalue="Python.N Queens 2" />
         <item itemvalue="Python.Longest Consec Seq" />
         <item itemvalue="Python.Largest Rectangle in Histogram" />
-        <item itemvalue="Python.Subsets 2" />
       </list>
     </recent_temporary>
   </component>
@@ -256,14 +257,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00055" summary="top down and bottom approach">
-      <option name="closed" value="true" />
-      <created>1747206951567</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1747206951568</updated>
     </task>
     <task id="LOCAL-00056" summary="use first row and column as flags">
       <option name="closed" value="true" />
@@ -649,11 +642,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747897162150</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="using DP and memoization and then top down">
+      <option name="closed" value="true" />
+      <created>1747901556185</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1747901556185</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use bst property" />
     <MESSAGE value="using prefix and suffix sums" />
     <MESSAGE value="sort and check" />
     <MESSAGE value="keep lowest value seen" />
@@ -678,7 +678,8 @@
     <MESSAGE value="use stack and one pass solution" />
     <MESSAGE value="use set" />
     <MESSAGE value="use set for positions and backtrack" />
-    <option name="LAST_COMMIT_MESSAGE" value="use set for positions and backtrack" />
+    <MESSAGE value="using DP and memoization and then top down" />
+    <option name="LAST_COMMIT_MESSAGE" value="using DP and memoization and then top down" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
