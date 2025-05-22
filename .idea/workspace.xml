@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using proper backtracking template and sorting and skip to prevent duplicates">
-      <change afterPath="$PROJECT_DIR$/2025/Mar_25/Largest Rectangle in Histogram.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use set">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Longest Consec Seq.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,6 +72,7 @@
     "Python.LIS.executor": "Run",
     "Python.Largest Rectangle in Histogram.executor": "Run",
     "Python.Linked list cycle.executor": "Run",
+    "Python.Longest Consec Seq.executor": "Run",
     "Python.Longest Consecutive Sequence.executor": "Run",
     "Python.Longest Palindromic Substring.executor": "Run",
     "Python.Longest Sub without repeating char.executor": "Run",
@@ -113,29 +114,12 @@
     "git-widget-placeholder": "master"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Largest Rectangle in Histogram">
-    <configuration name="Combo Sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Mar_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Mar_25/Combo Sum.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Longest Consec Seq">
     <configuration name="Largest Rectangle in Histogram" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -150,6 +134,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Mar_25/Largest Rectangle in Histogram.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Longest Consec Seq" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Longest Consec Seq.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -226,11 +232,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Longest Consec Seq" />
         <item itemvalue="Python.Largest Rectangle in Histogram" />
         <item itemvalue="Python.Subsets 2" />
         <item itemvalue="Python.Subsets repeat" />
         <item itemvalue="Python.Nth Tribonacci Number" />
-        <item itemvalue="Python.Combo Sum" />
       </list>
     </recent_temporary>
   </component>
@@ -248,22 +254,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00051" summary="use &amp; to check if bit is 1">
-      <option name="closed" value="true" />
-      <created>1746807527544</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1746807527544</updated>
-    </task>
-    <task id="LOCAL-00052" summary="top down approach">
-      <option name="closed" value="true" />
-      <created>1746812284071</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1746812284071</updated>
     </task>
     <task id="LOCAL-00053" summary="using dfs">
       <option name="closed" value="true" />
@@ -641,12 +631,26 @@
       <option name="project" value="LOCAL" />
       <updated>1747818844358</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="use stack and one pass solution">
+      <option name="closed" value="true" />
+      <created>1747853295038</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1747853295038</updated>
+    </task>
+    <task id="LOCAL-00101" summary="use set">
+      <option name="closed" value="true" />
+      <created>1747853572064</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1747853572064</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="maintain count of nodes visited and return kth" />
-    <MESSAGE value="recursive and iterative" />
     <MESSAGE value="can use map to store inorder and then use divide n conquer" />
     <MESSAGE value="use bst property" />
     <MESSAGE value="using prefix and suffix sums" />
@@ -670,7 +674,9 @@
     <MESSAGE value="use recursion and list copies to explore" />
     <MESSAGE value="using proper backtracking template" />
     <MESSAGE value="using proper backtracking template and sorting and skip to prevent duplicates" />
-    <option name="LAST_COMMIT_MESSAGE" value="using proper backtracking template and sorting and skip to prevent duplicates" />
+    <MESSAGE value="use stack and one pass solution" />
+    <MESSAGE value="use set" />
+    <option name="LAST_COMMIT_MESSAGE" value="use set" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
