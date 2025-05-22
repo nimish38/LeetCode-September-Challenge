@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="4 pointers">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Perfect Squares.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use dp and memoization and then bfs with 2 queues">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Minimum Height Trees.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,6 +84,7 @@
     "Python.Merge Intervals.executor": "Run",
     "Python.Min in Rotated Sorted Array.executor": "Run",
     "Python.Min window substring.executor": "Run",
+    "Python.Minimum Height Trees.executor": "Run",
     "Python.Missing Number.executor": "Run",
     "Python.N Queens 2.executor": "Run",
     "Python.N Queens.executor": "Run",
@@ -125,29 +126,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Perfect Squares">
-    <configuration name="Coin Change 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Coin Change 2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Minimum Height Trees">
     <configuration name="Find the town judge" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -162,6 +141,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Find the town judge.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Minimum Height Trees" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Minimum Height Trees.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -238,11 +239,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Minimum Height Trees" />
         <item itemvalue="Python.Perfect Squares" />
         <item itemvalue="Python.Word Ladder" />
         <item itemvalue="Python.Verify Alien Dictionary" />
         <item itemvalue="Python.Find the town judge" />
-        <item itemvalue="Python.Coin Change 2" />
       </list>
     </recent_temporary>
   </component>
@@ -260,14 +261,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00060" summary="topological sort">
-      <option name="closed" value="true" />
-      <created>1747308931307</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1747308931307</updated>
     </task>
     <task id="LOCAL-00061" summary="Simple Dictionary">
       <option name="closed" value="true" />
@@ -653,11 +646,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747929043275</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="use dp and memoization and then bfs with 2 queues">
+      <option name="closed" value="true" />
+      <created>1747940758132</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1747940758132</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use alnum builtin method" />
     <MESSAGE value="using backtracking and set to optimise" />
     <MESSAGE value="sorting on position and find time to reach to find collision" />
     <MESSAGE value="replace entire right subtree to left rightmost node right and return" />
@@ -682,7 +682,8 @@
     <MESSAGE value="use dict and compare adjacent words" />
     <MESSAGE value="use bfs" />
     <MESSAGE value="4 pointers" />
-    <option name="LAST_COMMIT_MESSAGE" value="4 pointers" />
+    <MESSAGE value="use dp and memoization and then bfs with 2 queues" />
+    <option name="LAST_COMMIT_MESSAGE" value="use dp and memoization and then bfs with 2 queues" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -791,6 +792,11 @@
           <url>file://$PROJECT_DIR$/2025/Mar_25/Subsets 2.py</url>
           <line>17</line>
           <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/May_25/Minimum Height Trees.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
