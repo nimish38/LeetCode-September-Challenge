@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use min heap of length k">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Number of Islands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="simple iterative dfs">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Merge 2 Sorted lists.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +90,7 @@
     "Python.N Queens.executor": "Run",
     "Python.Nth Tribonacci Number.executor": "Run",
     "Python.Number of 1 bits.executor": "Run",
+    "Python.Number of Islands.executor": "Run",
     "Python.Open the lock.executor": "Run",
     "Python.Pacific Atlantic Water flow.executor": "Run",
     "Python.Palindromic Substrings.executor": "Run",
@@ -262,14 +262,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00064" summary="use 2 variables instead of array">
-      <option name="closed" value="true" />
-      <created>1747335276097</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1747335276097</updated>
     </task>
     <task id="LOCAL-00065" summary="use standard dp template">
       <option name="closed" value="true" />
@@ -655,11 +647,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747987779721</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="simple iterative dfs">
+      <option name="closed" value="true" />
+      <created>1747988393832</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1747988393840</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use backtracking template amd sorting to optimise" />
     <MESSAGE value="find pivot, reverse both sides and the reverse whole" />
     <MESSAGE value="use map to store tuple and use diagonal to fin square points" />
     <MESSAGE value="use bfs and distance array" />
@@ -684,7 +683,8 @@
     <MESSAGE value="use topological sort" />
     <MESSAGE value="no need of visited array as its a tree so no cycle" />
     <MESSAGE value="use min heap of length k" />
-    <option name="LAST_COMMIT_MESSAGE" value="use min heap of length k" />
+    <MESSAGE value="simple iterative dfs" />
+    <option name="LAST_COMMIT_MESSAGE" value="simple iterative dfs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
