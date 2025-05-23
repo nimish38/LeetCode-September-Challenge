@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="no need of visited array as its a tree so no cycle">
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use min heap of length k">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Number of Islands.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +65,7 @@
     "Python.Diameter of Binary tree.executor": "Run",
     "Python.Encode and decode Strings.executor": "Debug",
     "Python.FInd Median of data stream.executor": "Run",
+    "Python.Find K largest element.executor": "Run",
     "Python.Find the town judge.executor": "Run",
     "Python.Graph Valid tree.executor": "Run",
     "Python.House Robber.executor": "Run",
@@ -125,7 +127,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Find K largest element">
+  <component name="RunManager" selected="Python.Number of Islands">
     <configuration name="Find K largest element" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -170,6 +172,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Number of Islands" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Number of Islands.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Perfect Squares" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -184,28 +208,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Perfect Squares.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Verify Alien Dictionary" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Verify Alien Dictionary.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -238,11 +240,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Number of Islands" />
         <item itemvalue="Python.Find K largest element" />
         <item itemvalue="Python.Minimum Height Trees" />
         <item itemvalue="Python.Perfect Squares" />
         <item itemvalue="Python.Word Ladder" />
-        <item itemvalue="Python.Verify Alien Dictionary" />
       </list>
     </recent_temporary>
   </component>
@@ -260,14 +262,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00063" summary="use trie and then dfs">
-      <option name="closed" value="true" />
-      <created>1747334356154</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1747334356154</updated>
     </task>
     <task id="LOCAL-00064" summary="use 2 variables instead of array">
       <option name="closed" value="true" />
@@ -653,11 +647,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747943738524</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="use min heap of length k">
+      <option name="closed" value="true" />
+      <created>1747987779721</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1747987779721</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="replace entire right subtree to left rightmost node right and return" />
     <MESSAGE value="use backtracking template amd sorting to optimise" />
     <MESSAGE value="find pivot, reverse both sides and the reverse whole" />
     <MESSAGE value="use map to store tuple and use diagonal to fin square points" />
@@ -682,7 +683,8 @@
     <MESSAGE value="use dp and memoization and then bfs with 2 queues" />
     <MESSAGE value="use topological sort" />
     <MESSAGE value="no need of visited array as its a tree so no cycle" />
-    <option name="LAST_COMMIT_MESSAGE" value="no need of visited array as its a tree so no cycle" />
+    <MESSAGE value="use min heap of length k" />
+    <option name="LAST_COMMIT_MESSAGE" value="use min heap of length k" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
