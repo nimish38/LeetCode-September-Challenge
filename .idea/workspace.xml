@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use dp and memoization and then bfs with 2 queues">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Minimum Height Trees.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="no need of visited array as its a tree so no cycle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,8 +125,8 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Minimum Height Trees">
-    <configuration name="Find the town judge" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Find K largest element">
+    <configuration name="Find K largest element" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -140,7 +139,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Find the town judge.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Find K largest element.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -239,11 +238,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Find K largest element" />
         <item itemvalue="Python.Minimum Height Trees" />
         <item itemvalue="Python.Perfect Squares" />
         <item itemvalue="Python.Word Ladder" />
         <item itemvalue="Python.Verify Alien Dictionary" />
-        <item itemvalue="Python.Find the town judge" />
       </list>
     </recent_temporary>
   </component>
@@ -261,22 +260,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Simple Dictionary">
-      <option name="closed" value="true" />
-      <created>1747322389212</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1747322389212</updated>
-    </task>
-    <task id="LOCAL-00062" summary="use trie and then dfs">
-      <option name="closed" value="true" />
-      <created>1747332643025</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1747332643025</updated>
     </task>
     <task id="LOCAL-00063" summary="use trie and then dfs">
       <option name="closed" value="true" />
@@ -654,12 +637,26 @@
       <option name="project" value="LOCAL" />
       <updated>1747940758132</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="use topological sort">
+      <option name="closed" value="true" />
+      <created>1747943569948</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1747943569948</updated>
+    </task>
+    <task id="LOCAL-00111" summary="no need of visited array as its a tree so no cycle">
+      <option name="closed" value="true" />
+      <created>1747943738524</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1747943738524</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="using backtracking and set to optimise" />
-    <MESSAGE value="sorting on position and find time to reach to find collision" />
     <MESSAGE value="replace entire right subtree to left rightmost node right and return" />
     <MESSAGE value="use backtracking template amd sorting to optimise" />
     <MESSAGE value="find pivot, reverse both sides and the reverse whole" />
@@ -683,7 +680,9 @@
     <MESSAGE value="use bfs" />
     <MESSAGE value="4 pointers" />
     <MESSAGE value="use dp and memoization and then bfs with 2 queues" />
-    <option name="LAST_COMMIT_MESSAGE" value="use dp and memoization and then bfs with 2 queues" />
+    <MESSAGE value="use topological sort" />
+    <MESSAGE value="no need of visited array as its a tree so no cycle" />
+    <option name="LAST_COMMIT_MESSAGE" value="no need of visited array as its a tree so no cycle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
