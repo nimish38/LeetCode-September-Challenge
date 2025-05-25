@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="simple iterative dfs">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Merge 2 Sorted lists.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="iteratively compare">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Dota2 Senate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +128,29 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Number of Islands">
+  <component name="RunManager" selected="Python.Dota2 Senate">
+    <configuration name="Dota2 Senate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Dota2 Senate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Find K largest element" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -216,35 +239,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Word Ladder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Word Ladder.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Dota2 Senate" />
         <item itemvalue="Python.Number of Islands" />
         <item itemvalue="Python.Find K largest element" />
         <item itemvalue="Python.Minimum Height Trees" />
         <item itemvalue="Python.Perfect Squares" />
-        <item itemvalue="Python.Word Ladder" />
       </list>
     </recent_temporary>
   </component>
@@ -262,14 +263,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00065" summary="use standard dp template">
-      <option name="closed" value="true" />
-      <created>1747382526077</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1747382526078</updated>
     </task>
     <task id="LOCAL-00066" summary="use min and max heap">
       <option name="closed" value="true" />
@@ -655,11 +648,18 @@
       <option name="project" value="LOCAL" />
       <updated>1747988393840</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="iteratively compare">
+      <option name="closed" value="true" />
+      <created>1747989017195</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1747989017195</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="find pivot, reverse both sides and the reverse whole" />
     <MESSAGE value="use map to store tuple and use diagonal to fin square points" />
     <MESSAGE value="use bfs and distance array" />
     <MESSAGE value="use dfs" />
@@ -684,7 +684,8 @@
     <MESSAGE value="no need of visited array as its a tree so no cycle" />
     <MESSAGE value="use min heap of length k" />
     <MESSAGE value="simple iterative dfs" />
-    <option name="LAST_COMMIT_MESSAGE" value="simple iterative dfs" />
+    <MESSAGE value="iteratively compare" />
+    <option name="LAST_COMMIT_MESSAGE" value="iteratively compare" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
