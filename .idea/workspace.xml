@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="top down dp">
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="copied quick sort code">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Add Binary.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +49,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.3 Sum.executor": "Run",
+    "Python.Add Binary.executor": "Debug",
     "Python.Add binary.executor": "Run",
     "Python.Alien Dictionary.executor": "Run",
     "Python.BST Iterator.executor": "Run",
@@ -129,7 +131,29 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Combinations">
+  <component name="RunManager" selected="Python.Add Binary">
+    <configuration name="Add Binary" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Add Binary.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Combinations" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -196,28 +220,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Minimum Height Trees" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Minimum Height Trees.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Number of Islands" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -242,11 +244,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Add Binary" />
         <item itemvalue="Python.Combinations" />
         <item itemvalue="Python.Dota2 Senate" />
         <item itemvalue="Python.Number of Islands" />
         <item itemvalue="Python.Find K largest element" />
-        <item itemvalue="Python.Minimum Height Trees" />
       </list>
     </recent_temporary>
   </component>
@@ -264,14 +266,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00070" summary="simple recursion">
-      <option name="closed" value="true" />
-      <created>1747411445129</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1747411445129</updated>
     </task>
     <task id="LOCAL-00071" summary="DP, move one index at a time">
       <option name="closed" value="true" />
@@ -657,11 +651,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748199956535</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="copied quick sort code">
+      <option name="closed" value="true" />
+      <created>1748200990340</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1748200990340</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use lambda function to sort" />
     <MESSAGE value="use backtracking template" />
     <MESSAGE value="3 pointer solution" />
     <MESSAGE value="use boyer moore voting algo which cancels out non majority element" />
@@ -686,7 +687,8 @@
     <MESSAGE value="backtracking template" />
     <MESSAGE value="use the same recursion call to find depth and if it is balanced" />
     <MESSAGE value="top down dp" />
-    <option name="LAST_COMMIT_MESSAGE" value="top down dp" />
+    <MESSAGE value="copied quick sort code" />
+    <option name="LAST_COMMIT_MESSAGE" value="copied quick sort code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -800,6 +802,11 @@
           <url>file://$PROJECT_DIR$/2025/May_25/Minimum Height Trees.py</url>
           <line>27</line>
           <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/May_25/Add Binary.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="77" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
