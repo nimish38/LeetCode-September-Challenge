@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="expansion logic">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Min Path Sum.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="bottom up dp">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Merge Strings Alternately.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -268,14 +268,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00075" summary="can use map to store inorder and then use divide n conquer">
-      <option name="closed" value="true" />
-      <created>1747504511791</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1747504511791</updated>
     </task>
     <task id="LOCAL-00076" summary="use bst property">
       <option name="closed" value="true" />
@@ -661,11 +653,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748331402308</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="bottom up dp">
+      <option name="closed" value="true" />
+      <created>1748333559582</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1748333559582</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="using proper backtracking template" />
     <MESSAGE value="using proper backtracking template and sorting and skip to prevent duplicates" />
     <MESSAGE value="use stack and one pass solution" />
     <MESSAGE value="use set" />
@@ -690,7 +689,8 @@
     <MESSAGE value="greedy" />
     <MESSAGE value="recursively check similarity" />
     <MESSAGE value="expansion logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="expansion logic" />
+    <MESSAGE value="bottom up dp" />
+    <option name="LAST_COMMIT_MESSAGE" value="bottom up dp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
