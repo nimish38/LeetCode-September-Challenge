@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="bottom up dp">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Merge Strings Alternately.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="brute force">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Swim in Rising Water.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,6 +113,7 @@
     "Python.Spiral Matrix.executor": "Run",
     "Python.Subsets 2.executor": "Run",
     "Python.Subsets repeat.executor": "Run",
+    "Python.Swim in Rising Water.executor": "Run",
     "Python.Top K frequent Elements.executor": "Debug",
     "Python.Two sum.executor": "Run",
     "Python.Unique Paths.executor": "Run",
@@ -133,7 +134,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Min Path Sum">
+  <component name="RunManager" selected="Python.Swim in Rising Water">
     <configuration name="Add Binary" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -170,28 +171,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Combinations.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Dota2 Senate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Dota2 Senate.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -244,13 +223,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Swim in Rising Water" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Swim in Rising Water.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Swim in Rising Water" />
         <item itemvalue="Python.Min Path Sum" />
         <item itemvalue="Python.Palindromic Substrings repeat" />
         <item itemvalue="Python.Add Binary" />
         <item itemvalue="Python.Combinations" />
-        <item itemvalue="Python.Dota2 Senate" />
       </list>
     </recent_temporary>
   </component>
@@ -268,14 +269,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00076" summary="use bst property">
-      <option name="closed" value="true" />
-      <created>1747506794902</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1747506794902</updated>
     </task>
     <task id="LOCAL-00077" summary="use bst property">
       <option name="closed" value="true" />
@@ -661,11 +654,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748333559582</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="brute force">
+      <option name="closed" value="true" />
+      <created>1748334341761</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1748334341761</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="using proper backtracking template and sorting and skip to prevent duplicates" />
     <MESSAGE value="use stack and one pass solution" />
     <MESSAGE value="use set" />
     <MESSAGE value="use set for positions and backtrack" />
@@ -690,7 +690,8 @@
     <MESSAGE value="recursively check similarity" />
     <MESSAGE value="expansion logic" />
     <MESSAGE value="bottom up dp" />
-    <option name="LAST_COMMIT_MESSAGE" value="bottom up dp" />
+    <MESSAGE value="brute force" />
+    <option name="LAST_COMMIT_MESSAGE" value="brute force" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
