@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="brute force">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Swim in Rising Water.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="perform DFS but use min heap to get minimum neighbor">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Bitwise And of number range.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +53,7 @@
     "Python.Add binary.executor": "Run",
     "Python.Alien Dictionary.executor": "Run",
     "Python.BST Iterator.executor": "Run",
+    "Python.Bitwise And of number range.executor": "Run",
     "Python.Car Fleet.executor": "Debug",
     "Python.Coin Change 2.executor": "Run",
     "Python.Coin change.executor": "Run",
@@ -134,7 +135,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Swim in Rising Water">
+  <component name="RunManager" selected="Python.Bitwise And of number range">
     <configuration name="Add Binary" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -157,7 +158,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Combinations" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Bitwise And of number range" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -170,7 +171,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Combinations.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Bitwise And of number range.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -247,11 +248,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Bitwise And of number range" />
         <item itemvalue="Python.Swim in Rising Water" />
         <item itemvalue="Python.Min Path Sum" />
         <item itemvalue="Python.Palindromic Substrings repeat" />
         <item itemvalue="Python.Add Binary" />
-        <item itemvalue="Python.Combinations" />
       </list>
     </recent_temporary>
   </component>
@@ -269,14 +270,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00077" summary="use bst property">
-      <option name="closed" value="true" />
-      <created>1747507172976</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1747507172976</updated>
     </task>
     <task id="LOCAL-00078" summary="using prefix and suffix sums">
       <option name="closed" value="true" />
@@ -662,11 +655,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748334341761</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="perform DFS but use min heap to get minimum neighbor">
+      <option name="closed" value="true" />
+      <created>1748372059573</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1748372059574</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use stack and one pass solution" />
     <MESSAGE value="use set" />
     <MESSAGE value="use set for positions and backtrack" />
     <MESSAGE value="using DP and memoization and then top down" />
@@ -691,7 +691,8 @@
     <MESSAGE value="expansion logic" />
     <MESSAGE value="bottom up dp" />
     <MESSAGE value="brute force" />
-    <option name="LAST_COMMIT_MESSAGE" value="brute force" />
+    <MESSAGE value="perform DFS but use min heap to get minimum neighbor" />
+    <option name="LAST_COMMIT_MESSAGE" value="perform DFS but use min heap to get minimum neighbor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
