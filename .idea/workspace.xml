@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="recursively check similarity">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Palindromic Substrings repeat.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="expansion logic">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Min Path Sum.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,6 +86,7 @@
     "Python.Matchsticks to square.executor": "Debug",
     "Python.Maximum Subarray.executor": "Run",
     "Python.Merge Intervals.executor": "Run",
+    "Python.Min Path Sum.executor": "Run",
     "Python.Min in Rotated Sorted Array.executor": "Run",
     "Python.Min window substring.executor": "Run",
     "Python.Minimum Height Trees.executor": "Run",
@@ -132,7 +133,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Palindromic Substrings repeat">
+  <component name="RunManager" selected="Python.Min Path Sum">
     <configuration name="Add Binary" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -199,7 +200,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Number of Islands" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Min Path Sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -212,7 +213,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Number of Islands.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Min Path Sum.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -245,11 +246,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Min Path Sum" />
         <item itemvalue="Python.Palindromic Substrings repeat" />
         <item itemvalue="Python.Add Binary" />
         <item itemvalue="Python.Combinations" />
         <item itemvalue="Python.Dota2 Senate" />
-        <item itemvalue="Python.Number of Islands" />
       </list>
     </recent_temporary>
   </component>
@@ -267,14 +268,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00074" summary="recursive and iterative">
-      <option name="closed" value="true" />
-      <created>1747501827276</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1747501827276</updated>
     </task>
     <task id="LOCAL-00075" summary="can use map to store inorder and then use divide n conquer">
       <option name="closed" value="true" />
@@ -660,11 +653,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748286462191</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="expansion logic">
+      <option name="closed" value="true" />
+      <created>1748331402308</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1748331402308</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use recursion and list copies to explore" />
     <MESSAGE value="using proper backtracking template" />
     <MESSAGE value="using proper backtracking template and sorting and skip to prevent duplicates" />
     <MESSAGE value="use stack and one pass solution" />
@@ -689,7 +689,8 @@
     <MESSAGE value="brute force and conversion" />
     <MESSAGE value="greedy" />
     <MESSAGE value="recursively check similarity" />
-    <option name="LAST_COMMIT_MESSAGE" value="recursively check similarity" />
+    <MESSAGE value="expansion logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="expansion logic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
