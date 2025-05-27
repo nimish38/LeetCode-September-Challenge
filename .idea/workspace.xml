@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="greedy">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Subtree Another tree.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="recursively check similarity">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Palindromic Substrings repeat.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,6 +97,7 @@
     "Python.Number of Islands.executor": "Run",
     "Python.Open the lock.executor": "Run",
     "Python.Pacific Atlantic Water flow.executor": "Run",
+    "Python.Palindromic Substrings repeat.executor": "Run",
     "Python.Palindromic Substrings.executor": "Run",
     "Python.Perfect Squares.executor": "Run",
     "Python.Pow.executor": "Run",
@@ -131,7 +132,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Add Binary">
+  <component name="RunManager" selected="Python.Palindromic Substrings repeat">
     <configuration name="Add Binary" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -198,28 +199,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Find K largest element" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Find K largest element.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Number of Islands" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -242,13 +221,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Palindromic Substrings repeat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Palindromic Substrings repeat.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Palindromic Substrings repeat" />
         <item itemvalue="Python.Add Binary" />
         <item itemvalue="Python.Combinations" />
         <item itemvalue="Python.Dota2 Senate" />
         <item itemvalue="Python.Number of Islands" />
-        <item itemvalue="Python.Find K largest element" />
       </list>
     </recent_temporary>
   </component>
@@ -266,14 +267,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00073" summary="maintain count of nodes visited and return kth">
-      <option name="closed" value="true" />
-      <created>1747478659685</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1747478659686</updated>
     </task>
     <task id="LOCAL-00074" summary="recursive and iterative">
       <option name="closed" value="true" />
@@ -659,11 +652,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748285791352</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="recursively check similarity">
+      <option name="closed" value="true" />
+      <created>1748286462191</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1748286462191</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use boyer moore voting algo which cancels out non majority element" />
     <MESSAGE value="use recursion and list copies to explore" />
     <MESSAGE value="using proper backtracking template" />
     <MESSAGE value="using proper backtracking template and sorting and skip to prevent duplicates" />
@@ -688,7 +688,8 @@
     <MESSAGE value="copied quick sort code" />
     <MESSAGE value="brute force and conversion" />
     <MESSAGE value="greedy" />
-    <option name="LAST_COMMIT_MESSAGE" value="greedy" />
+    <MESSAGE value="recursively check similarity" />
+    <option name="LAST_COMMIT_MESSAGE" value="recursively check similarity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
