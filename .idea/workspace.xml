@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use dp on strings">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Longest Common Prefix.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="check on each string">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Minimum Array end.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,6 +92,7 @@
     "Python.Min Path Sum.executor": "Run",
     "Python.Min in Rotated Sorted Array.executor": "Run",
     "Python.Min window substring.executor": "Run",
+    "Python.Minimum Array end.executor": "Run",
     "Python.Minimum Height Trees.executor": "Run",
     "Python.Missing Number.executor": "Run",
     "Python.N Queens 2.executor": "Run",
@@ -137,7 +138,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Bitwise And of number range">
+  <component name="RunManager" selected="Python.Minimum Array end">
     <configuration name="Bitwise And of number range" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -204,7 +205,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Min Path Sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Minimum Array end" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -217,7 +218,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Min Path Sum.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Minimum Array end.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -250,11 +251,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Minimum Array end" />
         <item itemvalue="Python.Bitwise And of number range" />
         <item itemvalue="Python.Longest Common Prefix" />
         <item itemvalue="Python.Edit distance" />
         <item itemvalue="Python.Swim in Rising Water" />
-        <item itemvalue="Python.Min Path Sum" />
       </list>
     </recent_temporary>
   </component>
@@ -272,14 +273,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00080" summary="keep lowest value seen">
-      <option name="closed" value="true" />
-      <created>1747509473472</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1747509473487</updated>
     </task>
     <task id="LOCAL-00081" summary="use recursion and return only 2 paths above">
       <option name="closed" value="true" />
@@ -665,11 +658,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748419176587</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="check on each string">
+      <option name="closed" value="true" />
+      <created>1748422952446</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1748422952446</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="using DP and memoization and then top down" />
     <MESSAGE value="indegree and outdegree" />
     <MESSAGE value="use dict and compare adjacent words" />
     <MESSAGE value="use bfs" />
@@ -694,7 +694,8 @@
     <MESSAGE value="perform DFS but use min heap to get minimum neighbor" />
     <MESSAGE value="right shift till both nums are equal and then left shift answer" />
     <MESSAGE value="use dp on strings" />
-    <option name="LAST_COMMIT_MESSAGE" value="use dp on strings" />
+    <MESSAGE value="check on each string" />
+    <option name="LAST_COMMIT_MESSAGE" value="check on each string" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
