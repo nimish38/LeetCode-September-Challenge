@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="perform DFS but use min heap to get minimum neighbor">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Bitwise And of number range.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="right shift till both nums are equal and then left shift answer">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Edit distance.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,6 +67,7 @@
     "Python.Delete Node in BST.executor": "Debug",
     "Python.Diameter of Binary tree.executor": "Run",
     "Python.Dota2 Senate.executor": "Run",
+    "Python.Edit distance.executor": "Run",
     "Python.Encode and decode Strings.executor": "Debug",
     "Python.FInd Median of data stream.executor": "Run",
     "Python.Find K largest element.executor": "Run",
@@ -135,29 +136,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Bitwise And of number range">
-    <configuration name="Add Binary" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Add Binary.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Edit distance">
     <configuration name="Bitwise And of number range" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -172,6 +151,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Bitwise And of number range.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Edit distance" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Edit distance.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -248,11 +249,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Edit distance" />
         <item itemvalue="Python.Bitwise And of number range" />
         <item itemvalue="Python.Swim in Rising Water" />
         <item itemvalue="Python.Min Path Sum" />
         <item itemvalue="Python.Palindromic Substrings repeat" />
-        <item itemvalue="Python.Add Binary" />
       </list>
     </recent_temporary>
   </component>
@@ -270,14 +271,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00078" summary="using prefix and suffix sums">
-      <option name="closed" value="true" />
-      <created>1747508103798</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1747508103798</updated>
     </task>
     <task id="LOCAL-00079" summary="sort and check">
       <option name="closed" value="true" />
@@ -663,11 +656,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748372059574</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="right shift till both nums are equal and then left shift answer">
+      <option name="closed" value="true" />
+      <created>1748373758974</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1748373758974</updated>
+    </task>
+    <option name="localTasksCounter" value="128" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use set" />
     <MESSAGE value="use set for positions and backtrack" />
     <MESSAGE value="using DP and memoization and then top down" />
     <MESSAGE value="indegree and outdegree" />
@@ -692,7 +692,8 @@
     <MESSAGE value="bottom up dp" />
     <MESSAGE value="brute force" />
     <MESSAGE value="perform DFS but use min heap to get minimum neighbor" />
-    <option name="LAST_COMMIT_MESSAGE" value="perform DFS but use min heap to get minimum neighbor" />
+    <MESSAGE value="right shift till both nums are equal and then left shift answer" />
+    <option name="LAST_COMMIT_MESSAGE" value="right shift till both nums are equal and then left shift answer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
