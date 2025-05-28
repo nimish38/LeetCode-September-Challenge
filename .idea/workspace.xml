@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="right shift till both nums are equal and then left shift answer">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Edit distance.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use dp on strings">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Longest Common Prefix.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +80,7 @@
     "Python.LIS.executor": "Run",
     "Python.Largest Rectangle in Histogram.executor": "Run",
     "Python.Linked list cycle.executor": "Run",
+    "Python.Longest Common Prefix.executor": "Run",
     "Python.Longest Consec Seq.executor": "Run",
     "Python.Longest Consecutive Sequence.executor": "Run",
     "Python.Longest Palindromic Substring.executor": "Run",
@@ -136,7 +137,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Edit distance">
+  <component name="RunManager" selected="Python.Bitwise And of number range">
     <configuration name="Bitwise And of number range" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -181,6 +182,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Longest Common Prefix" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Longest Common Prefix.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Min Path Sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -195,28 +218,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Min Path Sum.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Palindromic Substrings repeat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Palindromic Substrings repeat.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -249,11 +250,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Edit distance" />
         <item itemvalue="Python.Bitwise And of number range" />
+        <item itemvalue="Python.Longest Common Prefix" />
+        <item itemvalue="Python.Edit distance" />
         <item itemvalue="Python.Swim in Rising Water" />
         <item itemvalue="Python.Min Path Sum" />
-        <item itemvalue="Python.Palindromic Substrings repeat" />
       </list>
     </recent_temporary>
   </component>
@@ -271,14 +272,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00079" summary="sort and check">
-      <option name="closed" value="true" />
-      <created>1747509191260</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1747509191260</updated>
     </task>
     <task id="LOCAL-00080" summary="keep lowest value seen">
       <option name="closed" value="true" />
@@ -664,11 +657,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748373758974</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="use dp on strings">
+      <option name="closed" value="true" />
+      <created>1748419176586</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1748419176587</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use set for positions and backtrack" />
     <MESSAGE value="using DP and memoization and then top down" />
     <MESSAGE value="indegree and outdegree" />
     <MESSAGE value="use dict and compare adjacent words" />
@@ -693,7 +693,8 @@
     <MESSAGE value="brute force" />
     <MESSAGE value="perform DFS but use min heap to get minimum neighbor" />
     <MESSAGE value="right shift till both nums are equal and then left shift answer" />
-    <option name="LAST_COMMIT_MESSAGE" value="right shift till both nums are equal and then left shift answer" />
+    <MESSAGE value="use dp on strings" />
+    <option name="LAST_COMMIT_MESSAGE" value="use dp on strings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
