@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="trie and dfs">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/House Robber 2 repeat.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use bottom up dp without array">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Reverse Linked list 2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,6 +111,7 @@
     "Python.Remove nth node from end.executor": "Debug",
     "Python.Reorder List.executor": "Debug",
     "Python.Reverse Bits.executor": "Run",
+    "Python.Reverse Linked list 2.executor": "Debug",
     "Python.Rotate Array.executor": "Debug",
     "Python.Rotate Image.executor": "Run",
     "Python.Search in rotated sorted array.executor": "Run",
@@ -140,7 +141,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.House Robber 2 repeat">
+  <component name="RunManager" selected="Python.Reverse Linked list 2">
     <configuration name="Bitwise And of number range" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -185,28 +186,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Longest Common Prefix" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Longest Common Prefix.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Minimum Array end" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -221,6 +200,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Minimum Array end.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Reverse Linked list 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Reverse Linked list 2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -253,11 +254,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Reverse Linked list 2" />
         <item itemvalue="Python.House Robber 2 repeat" />
         <item itemvalue="Python.Word Search 2 repeat" />
         <item itemvalue="Python.Minimum Array end" />
         <item itemvalue="Python.Bitwise And of number range" />
-        <item itemvalue="Python.Longest Common Prefix" />
       </list>
     </recent_temporary>
   </component>
@@ -275,14 +276,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00084" summary="sorting on position and find time to reach to find collision">
-      <option name="closed" value="true" />
-      <created>1747568904676</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1747568904676</updated>
     </task>
     <task id="LOCAL-00085" summary="replace entire right subtree to left rightmost node right and return">
       <option name="closed" value="true" />
@@ -668,11 +661,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748506620436</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="use bottom up dp without array">
+      <option name="closed" value="true" />
+      <created>1748530913204</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1748530913204</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="4 pointers" />
     <MESSAGE value="use dp and memoization and then bfs with 2 queues" />
     <MESSAGE value="use topological sort" />
     <MESSAGE value="no need of visited array as its a tree so no cycle" />
@@ -697,7 +697,8 @@
     <MESSAGE value="bitwise 2 pointer solution by interweaving n - 1 into 0 bits of x" />
     <MESSAGE value="always check last digit so as to not overflow" />
     <MESSAGE value="trie and dfs" />
-    <option name="LAST_COMMIT_MESSAGE" value="trie and dfs" />
+    <MESSAGE value="use bottom up dp without array" />
+    <option name="LAST_COMMIT_MESSAGE" value="use bottom up dp without array" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -816,6 +817,11 @@
           <url>file://$PROJECT_DIR$/2025/May_25/Add Binary.py</url>
           <line>2</line>
           <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/May_25/Reverse Linked list 2.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="82" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
