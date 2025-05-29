@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="always check last digit so as to not overflow">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Word Search 2 repeat.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="trie and dfs">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/House Robber 2 repeat.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,6 +73,7 @@
     "Python.Find K largest element.executor": "Run",
     "Python.Find the town judge.executor": "Run",
     "Python.Graph Valid tree.executor": "Run",
+    "Python.House Robber 2 repeat.executor": "Run",
     "Python.House Robber.executor": "Run",
     "Python.Insert Interval.executor": "Run",
     "Python.Jump Game.executor": "Run",
@@ -139,7 +140,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Word Search 2 repeat">
+  <component name="RunManager" selected="Python.House Robber 2 repeat">
     <configuration name="Bitwise And of number range" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -162,7 +163,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Edit distance" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="House Robber 2 repeat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -175,7 +176,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Edit distance.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/House Robber 2 repeat.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -252,11 +253,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.House Robber 2 repeat" />
         <item itemvalue="Python.Word Search 2 repeat" />
         <item itemvalue="Python.Minimum Array end" />
         <item itemvalue="Python.Bitwise And of number range" />
         <item itemvalue="Python.Longest Common Prefix" />
-        <item itemvalue="Python.Edit distance" />
       </list>
     </recent_temporary>
   </component>
@@ -274,14 +275,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00083" summary="using backtracking and set to optimise">
-      <option name="closed" value="true" />
-      <created>1747566151859</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1747566151859</updated>
     </task>
     <task id="LOCAL-00084" summary="sorting on position and find time to reach to find collision">
       <option name="closed" value="true" />
@@ -667,11 +660,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748502836132</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="trie and dfs">
+      <option name="closed" value="true" />
+      <created>1748506620436</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1748506620436</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use bfs" />
     <MESSAGE value="4 pointers" />
     <MESSAGE value="use dp and memoization and then bfs with 2 queues" />
     <MESSAGE value="use topological sort" />
@@ -696,7 +696,8 @@
     <MESSAGE value="check on each string" />
     <MESSAGE value="bitwise 2 pointer solution by interweaving n - 1 into 0 bits of x" />
     <MESSAGE value="always check last digit so as to not overflow" />
-    <option name="LAST_COMMIT_MESSAGE" value="always check last digit so as to not overflow" />
+    <MESSAGE value="trie and dfs" />
+    <option name="LAST_COMMIT_MESSAGE" value="trie and dfs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
