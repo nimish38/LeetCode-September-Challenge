@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="search start and then call reverse with 3 pointers">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/LCA of BST repear.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="solved for both binary tree and bst">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Min stack.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -276,14 +276,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00086" summary="use backtracking template">
-      <option name="closed" value="true" />
-      <created>1747577076420</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1747577076420</updated>
     </task>
     <task id="LOCAL-00087" summary="use backtracking template amd sorting to optimise">
       <option name="closed" value="true" />
@@ -669,11 +661,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748535065402</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="solved for both binary tree and bst">
+      <option name="closed" value="true" />
+      <created>1748545062652</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1748545062652</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use topological sort" />
     <MESSAGE value="no need of visited array as its a tree so no cycle" />
     <MESSAGE value="use min heap of length k" />
     <MESSAGE value="simple iterative dfs" />
@@ -698,7 +697,8 @@
     <MESSAGE value="trie and dfs" />
     <MESSAGE value="use bottom up dp without array" />
     <MESSAGE value="search start and then call reverse with 3 pointers" />
-    <option name="LAST_COMMIT_MESSAGE" value="search start and then call reverse with 3 pointers" />
+    <MESSAGE value="solved for both binary tree and bst" />
+    <option name="LAST_COMMIT_MESSAGE" value="solved for both binary tree and bst" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
