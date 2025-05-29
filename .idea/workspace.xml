@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="check on each string">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Minimum Array end.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="bitwise 2 pointer solution by interweaving n - 1 into 0 bits of x">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -273,14 +272,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00081" summary="use recursion and return only 2 paths above">
-      <option name="closed" value="true" />
-      <created>1747510783171</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1747510783171</updated>
     </task>
     <task id="LOCAL-00082" summary="use alnum builtin method">
       <option name="closed" value="true" />
@@ -666,11 +657,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748422952446</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="bitwise 2 pointer solution by interweaving n - 1 into 0 bits of x">
+      <option name="closed" value="true" />
+      <created>1748457835378</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1748457835378</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="indegree and outdegree" />
     <MESSAGE value="use dict and compare adjacent words" />
     <MESSAGE value="use bfs" />
     <MESSAGE value="4 pointers" />
@@ -695,7 +693,8 @@
     <MESSAGE value="right shift till both nums are equal and then left shift answer" />
     <MESSAGE value="use dp on strings" />
     <MESSAGE value="check on each string" />
-    <option name="LAST_COMMIT_MESSAGE" value="check on each string" />
+    <MESSAGE value="bitwise 2 pointer solution by interweaving n - 1 into 0 bits of x" />
+    <option name="LAST_COMMIT_MESSAGE" value="bitwise 2 pointer solution by interweaving n - 1 into 0 bits of x" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
