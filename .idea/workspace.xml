@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="solved for both binary tree and bst">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Min stack.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="idea is to keep track of minimum value so far and update on every push and pop">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Evaluate Division.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,8 +141,8 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Reverse Linked list 2">
-    <configuration name="Bitwise And of number range" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Evaluate Division">
+    <configuration name="Evaluate Division" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -155,7 +155,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Bitwise And of number range.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Evaluate Division.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -254,11 +254,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Evaluate Division" />
         <item itemvalue="Python.Reverse Linked list 2" />
         <item itemvalue="Python.House Robber 2 repeat" />
         <item itemvalue="Python.Word Search 2 repeat" />
         <item itemvalue="Python.Minimum Array end" />
-        <item itemvalue="Python.Bitwise And of number range" />
       </list>
     </recent_temporary>
   </component>
@@ -276,14 +276,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00087" summary="use backtracking template amd sorting to optimise">
-      <option name="closed" value="true" />
-      <created>1747594936094</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1747594936094</updated>
     </task>
     <task id="LOCAL-00088" summary="find pivot, reverse both sides and the reverse whole">
       <option name="closed" value="true" />
@@ -669,11 +661,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748545062652</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="idea is to keep track of minimum value so far and update on every push and pop">
+      <option name="closed" value="true" />
+      <created>1748546379223</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1748546379223</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="no need of visited array as its a tree so no cycle" />
     <MESSAGE value="use min heap of length k" />
     <MESSAGE value="simple iterative dfs" />
     <MESSAGE value="iteratively compare" />
@@ -698,7 +697,8 @@
     <MESSAGE value="use bottom up dp without array" />
     <MESSAGE value="search start and then call reverse with 3 pointers" />
     <MESSAGE value="solved for both binary tree and bst" />
-    <option name="LAST_COMMIT_MESSAGE" value="solved for both binary tree and bst" />
+    <MESSAGE value="idea is to keep track of minimum value so far and update on every push and pop" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea is to keep track of minimum value so far and update on every push and pop" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
