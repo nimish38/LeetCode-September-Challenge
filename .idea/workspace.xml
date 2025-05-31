@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="actually a graph problem and perform dfs">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Jump Game 7.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use queue bfs with farthest value">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Top k frequent elements repeat.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +143,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Jump Game 7">
+  <component name="RunManager" selected="Python.Top k frequent elements repeat">
     <configuration name="Evaluate Division" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -232,7 +232,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Word Search 2 repeat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Top k frequent elements repeat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -245,7 +245,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Word Search 2 repeat.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Top k frequent elements repeat.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -256,11 +256,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Top k frequent elements repeat" />
         <item itemvalue="Python.Jump Game 7" />
         <item itemvalue="Python.Evaluate Division" />
         <item itemvalue="Python.Reverse Linked list 2" />
         <item itemvalue="Python.House Robber 2 repeat" />
-        <item itemvalue="Python.Word Search 2 repeat" />
       </list>
     </recent_temporary>
   </component>
@@ -278,14 +278,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00089" summary="use map to store tuple and use diagonal to fin square points">
-      <option name="closed" value="true" />
-      <created>1747681271465</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1747681271465</updated>
     </task>
     <task id="LOCAL-00090" summary="use bfs and distance array">
       <option name="closed" value="true" />
@@ -671,11 +663,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748630822107</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="use queue bfs with farthest value">
+      <option name="closed" value="true" />
+      <created>1748715235717</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1748715235717</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="simple iterative dfs" />
     <MESSAGE value="iteratively compare" />
     <MESSAGE value="update the banned senator by X and store counts" />
     <MESSAGE value="backtracking template" />
@@ -700,7 +699,8 @@
     <MESSAGE value="solved for both binary tree and bst" />
     <MESSAGE value="idea is to keep track of minimum value so far and update on every push and pop" />
     <MESSAGE value="actually a graph problem and perform dfs" />
-    <option name="LAST_COMMIT_MESSAGE" value="actually a graph problem and perform dfs" />
+    <MESSAGE value="use queue bfs with farthest value" />
+    <option name="LAST_COMMIT_MESSAGE" value="use queue bfs with farthest value" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
