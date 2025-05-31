@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="idea is to keep track of minimum value so far and update on every push and pop">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Evaluate Division.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="actually a graph problem and perform dfs">
+      <change afterPath="$PROJECT_DIR$/2025/May_25/Jump Game 7.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +69,7 @@
     "Python.Dota2 Senate.executor": "Run",
     "Python.Edit distance.executor": "Run",
     "Python.Encode and decode Strings.executor": "Debug",
+    "Python.Evaluate Division.executor": "Run",
     "Python.FInd Median of data stream.executor": "Run",
     "Python.Find K largest element.executor": "Run",
     "Python.Find the town judge.executor": "Run",
@@ -76,6 +77,7 @@
     "Python.House Robber 2 repeat.executor": "Run",
     "Python.House Robber.executor": "Run",
     "Python.Insert Interval.executor": "Run",
+    "Python.Jump Game 7.executor": "Run",
     "Python.Jump Game.executor": "Run",
     "Python.Kth Smallest Element in BST.executor": "Run",
     "Python.LIS.executor": "Run",
@@ -141,7 +143,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Evaluate Division">
+  <component name="RunManager" selected="Python.Jump Game 7">
     <configuration name="Evaluate Division" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -186,7 +188,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Minimum Array end" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Jump Game 7" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -199,7 +201,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Minimum Array end.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Jump Game 7.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -254,11 +256,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Jump Game 7" />
         <item itemvalue="Python.Evaluate Division" />
         <item itemvalue="Python.Reverse Linked list 2" />
         <item itemvalue="Python.House Robber 2 repeat" />
         <item itemvalue="Python.Word Search 2 repeat" />
-        <item itemvalue="Python.Minimum Array end" />
       </list>
     </recent_temporary>
   </component>
@@ -276,14 +278,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00088" summary="find pivot, reverse both sides and the reverse whole">
-      <option name="closed" value="true" />
-      <created>1747678629670</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1747678629670</updated>
     </task>
     <task id="LOCAL-00089" summary="use map to store tuple and use diagonal to fin square points">
       <option name="closed" value="true" />
@@ -669,11 +663,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748546379223</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="actually a graph problem and perform dfs">
+      <option name="closed" value="true" />
+      <created>1748630822107</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1748630822107</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use min heap of length k" />
     <MESSAGE value="simple iterative dfs" />
     <MESSAGE value="iteratively compare" />
     <MESSAGE value="update the banned senator by X and store counts" />
@@ -698,7 +699,8 @@
     <MESSAGE value="search start and then call reverse with 3 pointers" />
     <MESSAGE value="solved for both binary tree and bst" />
     <MESSAGE value="idea is to keep track of minimum value so far and update on every push and pop" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea is to keep track of minimum value so far and update on every push and pop" />
+    <MESSAGE value="actually a graph problem and perform dfs" />
+    <option name="LAST_COMMIT_MESSAGE" value="actually a graph problem and perform dfs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
