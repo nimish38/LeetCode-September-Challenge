@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use map and priority queue">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Pacific Atlantic Water Flow.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="reverse dfs for optimal run time">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,6 +103,7 @@
     "Python.Number of 1 bits.executor": "Run",
     "Python.Number of Islands.executor": "Run",
     "Python.Open the lock.executor": "Run",
+    "Python.Pacific Atlantic Water Flow.executor": "Run",
     "Python.Pacific Atlantic Water flow.executor": "Run",
     "Python.Palindromic Substrings repeat.executor": "Run",
     "Python.Palindromic Substrings.executor": "Run",
@@ -144,7 +144,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Pacific Atlantic Water Flow">
+  <component name="RunManager" selected="Python.Reverse Linked List">
     <configuration name="Evaluate Division" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -211,7 +211,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Reverse Linked list 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Reverse Linked List" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -220,11 +220,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Reverse Linked list 2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Reverse Linked List.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -257,11 +257,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Reverse Linked List" />
         <item itemvalue="Python.Pacific Atlantic Water Flow" />
         <item itemvalue="Python.Top k frequent elements repeat" />
         <item itemvalue="Python.Jump Game 7" />
         <item itemvalue="Python.Evaluate Division" />
-        <item itemvalue="Python.Reverse Linked list 2" />
       </list>
     </recent_temporary>
   </component>
@@ -279,14 +279,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00091" summary="use dfs">
-      <option name="closed" value="true" />
-      <created>1747685755577</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1747685755577</updated>
     </task>
     <task id="LOCAL-00092" summary="break n into half and using carry">
       <option name="closed" value="true" />
@@ -672,11 +664,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748721378480</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="reverse dfs for optimal run time">
+      <option name="closed" value="true" />
+      <created>1748792467017</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1748792467017</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update the banned senator by X and store counts" />
     <MESSAGE value="backtracking template" />
     <MESSAGE value="use the same recursion call to find depth and if it is balanced" />
     <MESSAGE value="top down dp" />
@@ -701,7 +700,8 @@
     <MESSAGE value="actually a graph problem and perform dfs" />
     <MESSAGE value="use queue bfs with farthest value" />
     <MESSAGE value="use map and priority queue" />
-    <option name="LAST_COMMIT_MESSAGE" value="use map and priority queue" />
+    <MESSAGE value="reverse dfs for optimal run time" />
+    <option name="LAST_COMMIT_MESSAGE" value="reverse dfs for optimal run time" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
