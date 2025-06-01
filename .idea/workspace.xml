@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use queue bfs with farthest value">
-      <change afterPath="$PROJECT_DIR$/2025/May_25/Top k frequent elements repeat.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use map and priority queue">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Pacific Atlantic Water Flow.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,6 +123,7 @@
     "Python.Subsets repeat.executor": "Run",
     "Python.Swim in Rising Water.executor": "Run",
     "Python.Top K frequent Elements.executor": "Debug",
+    "Python.Top k frequent elements repeat.executor": "Run",
     "Python.Two sum.executor": "Run",
     "Python.Unique Paths.executor": "Run",
     "Python.Valid Palindrome.executor": "Run",
@@ -143,7 +144,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Top k frequent elements repeat">
+  <component name="RunManager" selected="Python.Pacific Atlantic Water Flow">
     <configuration name="Evaluate Division" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -166,28 +167,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="House Robber 2 repeat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/House Robber 2 repeat.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Jump Game 7" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -202,6 +181,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Jump Game 7.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Pacific Atlantic Water Flow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Pacific Atlantic Water Flow.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -256,11 +257,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Pacific Atlantic Water Flow" />
         <item itemvalue="Python.Top k frequent elements repeat" />
         <item itemvalue="Python.Jump Game 7" />
         <item itemvalue="Python.Evaluate Division" />
         <item itemvalue="Python.Reverse Linked list 2" />
-        <item itemvalue="Python.House Robber 2 repeat" />
       </list>
     </recent_temporary>
   </component>
@@ -278,14 +279,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00090" summary="use bfs and distance array">
-      <option name="closed" value="true" />
-      <created>1747683451080</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1747683451080</updated>
     </task>
     <task id="LOCAL-00091" summary="use dfs">
       <option name="closed" value="true" />
@@ -671,11 +664,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748715235717</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="use map and priority queue">
+      <option name="closed" value="true" />
+      <created>1748721378480</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1748721378480</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="iteratively compare" />
     <MESSAGE value="update the banned senator by X and store counts" />
     <MESSAGE value="backtracking template" />
     <MESSAGE value="use the same recursion call to find depth and if it is balanced" />
@@ -700,7 +700,8 @@
     <MESSAGE value="idea is to keep track of minimum value so far and update on every push and pop" />
     <MESSAGE value="actually a graph problem and perform dfs" />
     <MESSAGE value="use queue bfs with farthest value" />
-    <option name="LAST_COMMIT_MESSAGE" value="use queue bfs with farthest value" />
+    <MESSAGE value="use map and priority queue" />
+    <option name="LAST_COMMIT_MESSAGE" value="use map and priority queue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
