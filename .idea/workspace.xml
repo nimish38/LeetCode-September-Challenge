@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="recursive solution">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Koko Eating Bananas.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="binary search solution">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Search Insert Position.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +80,7 @@
     "Python.Insert Interval.executor": "Run",
     "Python.Jump Game 7.executor": "Run",
     "Python.Jump Game.executor": "Run",
-    "Python.Koko Eating Bananas.executor": "Run",
+    "Python.Koko Eating Bananas.executor": "Debug",
     "Python.Kth Smallest Element in BST.executor": "Run",
     "Python.LIS.executor": "Run",
     "Python.Largest Rectangle in Histogram.executor": "Run",
@@ -120,6 +120,7 @@
     "Python.Reverse Linked list 2.executor": "Debug",
     "Python.Rotate Array.executor": "Debug",
     "Python.Rotate Image.executor": "Run",
+    "Python.Search Insert Position.executor": "Run",
     "Python.Search in rotated sorted array.executor": "Run",
     "Python.Set Matrix Zeroes.executor": "Run",
     "Python.Spiral Matrix.executor": "Run",
@@ -149,7 +150,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Koko Eating Bananas">
+  <component name="RunManager" selected="Python.Search Insert Position">
     <configuration name="Delete Leaves Value" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -194,28 +195,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Pacific Atlantic Water Flow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Pacific Atlantic Water Flow.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Reverse Linked List" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -230,6 +209,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Reverse Linked List.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Search Insert Position" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Search Insert Position.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -262,11 +263,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Search Insert Position" />
         <item itemvalue="Python.Koko Eating Bananas" />
         <item itemvalue="Python.Delete Leaves Value" />
         <item itemvalue="Python.Stone Game 3" />
         <item itemvalue="Python.Reverse Linked List" />
-        <item itemvalue="Python.Pacific Atlantic Water Flow" />
       </list>
     </recent_temporary>
   </component>
@@ -284,14 +285,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00095" summary="3 pointer solution">
-      <option name="closed" value="true" />
-      <created>1747767072872</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1747767072873</updated>
     </task>
     <task id="LOCAL-00096" summary="use boyer moore voting algo which cancels out non majority element">
       <option name="closed" value="true" />
@@ -677,11 +670,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748848165744</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="binary search solution">
+      <option name="closed" value="true" />
+      <created>1748851748313</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1748851748313</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="copied quick sort code" />
     <MESSAGE value="brute force and conversion" />
     <MESSAGE value="greedy" />
     <MESSAGE value="recursively check similarity" />
@@ -706,7 +706,8 @@
     <MESSAGE value="set head next to None" />
     <MESSAGE value="dp memoization and then bottom up" />
     <MESSAGE value="recursive solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="recursive solution" />
+    <MESSAGE value="binary search solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="binary search solution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -845,6 +846,11 @@
           <url>file://$PROJECT_DIR$/2025/Jun_25/Koko Eating Bananas.py</url>
           <line>14</line>
           <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/Jun_25/Search Insert Position.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="92" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
