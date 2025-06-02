@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="set head next to None">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Stone Game 3.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="dp memoization and then bottom up">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Delete Leaves Value.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +64,7 @@
     "Python.Container with most water.executor": "Run",
     "Python.De -Serialise Binary tree.executor": "Debug",
     "Python.Decode Ways.executor": "Run",
+    "Python.Delete Leaves Value.executor": "Debug",
     "Python.Delete Node in BST.executor": "Debug",
     "Python.Diameter of Binary tree.executor": "Run",
     "Python.Dota2 Senate.executor": "Run",
@@ -121,7 +122,7 @@
     "Python.Search in rotated sorted array.executor": "Run",
     "Python.Set Matrix Zeroes.executor": "Run",
     "Python.Spiral Matrix.executor": "Run",
-    "Python.Stone Game 3.executor": "Run",
+    "Python.Stone Game 3.executor": "Debug",
     "Python.Subsets 2.executor": "Run",
     "Python.Subsets repeat.executor": "Run",
     "Python.Swim in Rising Water.executor": "Run",
@@ -147,8 +148,8 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Stone Game 3">
-    <configuration name="Jump Game 7" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Delete Leaves Value">
+    <configuration name="Delete Leaves Value" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -157,11 +158,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Jump Game 7.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Delete Leaves Value.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -260,11 +261,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Delete Leaves Value" />
         <item itemvalue="Python.Stone Game 3" />
         <item itemvalue="Python.Reverse Linked List" />
         <item itemvalue="Python.Pacific Atlantic Water Flow" />
         <item itemvalue="Python.Top k frequent elements repeat" />
-        <item itemvalue="Python.Jump Game 7" />
       </list>
     </recent_temporary>
   </component>
@@ -282,14 +283,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00093" summary="use lambda function to sort">
-      <option name="closed" value="true" />
-      <created>1747765997872</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1747765997872</updated>
     </task>
     <task id="LOCAL-00094" summary="use backtracking template">
       <option name="closed" value="true" />
@@ -675,11 +668,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748793221382</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="dp memoization and then bottom up">
+      <option name="closed" value="true" />
+      <created>1748806218112</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1748806218112</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use the same recursion call to find depth and if it is balanced" />
     <MESSAGE value="top down dp" />
     <MESSAGE value="copied quick sort code" />
     <MESSAGE value="brute force and conversion" />
@@ -704,7 +704,8 @@
     <MESSAGE value="use map and priority queue" />
     <MESSAGE value="reverse dfs for optimal run time" />
     <MESSAGE value="set head next to None" />
-    <option name="LAST_COMMIT_MESSAGE" value="set head next to None" />
+    <MESSAGE value="dp memoization and then bottom up" />
+    <option name="LAST_COMMIT_MESSAGE" value="dp memoization and then bottom up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -833,6 +834,11 @@
           <url>file://$PROJECT_DIR$/2025/Jun_25/Reverse Linked List.py</url>
           <line>16</line>
           <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/Jun_25/Delete Leaves Value.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="90" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
