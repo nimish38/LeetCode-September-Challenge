@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="binary search with lower bound">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Target Sum.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="memoization with a trick">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Reverse Nodes in K Group.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,6 +118,7 @@
     "Python.Reverse Bits.executor": "Run",
     "Python.Reverse Linked List.executor": "Debug",
     "Python.Reverse Linked list 2.executor": "Debug",
+    "Python.Reverse Nodes in K Group.executor": "Debug",
     "Python.Rotate Array.executor": "Debug",
     "Python.Rotate Image.executor": "Run",
     "Python.Search Insert Position.executor": "Run",
@@ -128,7 +129,7 @@
     "Python.Subsets 2.executor": "Run",
     "Python.Subsets repeat.executor": "Run",
     "Python.Swim in Rising Water.executor": "Run",
-    "Python.Target Sum.executor": "Run",
+    "Python.Target Sum.executor": "Debug",
     "Python.Top K frequent Elements.executor": "Debug",
     "Python.Top k frequent elements repeat.executor": "Run",
     "Python.Two sum.executor": "Run",
@@ -151,7 +152,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Target Sum">
+  <component name="RunManager" selected="Python.Reverse Nodes in K Group">
     <configuration name="Delete Leaves Value" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -196,6 +197,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Reverse Nodes in K Group" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Reverse Nodes in K Group.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Search Insert Position" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -210,28 +233,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Search Insert Position.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Stone Game 3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Stone Game 3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -264,11 +265,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Reverse Nodes in K Group" />
         <item itemvalue="Python.Target Sum" />
         <item itemvalue="Python.Search Insert Position" />
         <item itemvalue="Python.Koko Eating Bananas" />
         <item itemvalue="Python.Delete Leaves Value" />
-        <item itemvalue="Python.Stone Game 3" />
       </list>
     </recent_temporary>
   </component>
@@ -286,14 +287,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00097" summary="use recursion and list copies to explore">
-      <option name="closed" value="true" />
-      <created>1747813362263</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1747813362263</updated>
     </task>
     <task id="LOCAL-00098" summary="using proper backtracking template">
       <option name="closed" value="true" />
@@ -679,11 +672,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748854787619</updated>
     </task>
-    <option name="localTasksCounter" value="146" />
+    <task id="LOCAL-00146" summary="memoization with a trick">
+      <option name="closed" value="true" />
+      <created>1748879799209</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1748879799209</updated>
+    </task>
+    <option name="localTasksCounter" value="147" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="greedy" />
     <MESSAGE value="recursively check similarity" />
     <MESSAGE value="expansion logic" />
     <MESSAGE value="bottom up dp" />
@@ -708,7 +708,8 @@
     <MESSAGE value="recursive solution" />
     <MESSAGE value="binary search solution" />
     <MESSAGE value="binary search with lower bound" />
-    <option name="LAST_COMMIT_MESSAGE" value="binary search with lower bound" />
+    <MESSAGE value="memoization with a trick" />
+    <option name="LAST_COMMIT_MESSAGE" value="memoization with a trick" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -847,6 +848,11 @@
           <url>file://$PROJECT_DIR$/2025/Jun_25/Koko Eating Bananas.py</url>
           <line>14</line>
           <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/Jun_25/Reverse Nodes in K Group.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="93" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
