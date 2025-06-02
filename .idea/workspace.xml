@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="dp memoization and then bottom up">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Delete Leaves Value.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="recursive solution">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Koko Eating Bananas.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +80,7 @@
     "Python.Insert Interval.executor": "Run",
     "Python.Jump Game 7.executor": "Run",
     "Python.Jump Game.executor": "Run",
+    "Python.Koko Eating Bananas.executor": "Run",
     "Python.Kth Smallest Element in BST.executor": "Run",
     "Python.LIS.executor": "Run",
     "Python.Largest Rectangle in Histogram.executor": "Run",
@@ -148,7 +149,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Delete Leaves Value">
+  <component name="RunManager" selected="Python.Koko Eating Bananas">
     <configuration name="Delete Leaves Value" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -163,6 +164,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Delete Leaves Value.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Koko Eating Bananas" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Koko Eating Bananas.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -237,35 +260,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Top k frequent elements repeat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/May_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/May_25/Top k frequent elements repeat.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Koko Eating Bananas" />
         <item itemvalue="Python.Delete Leaves Value" />
         <item itemvalue="Python.Stone Game 3" />
         <item itemvalue="Python.Reverse Linked List" />
         <item itemvalue="Python.Pacific Atlantic Water Flow" />
-        <item itemvalue="Python.Top k frequent elements repeat" />
       </list>
     </recent_temporary>
   </component>
@@ -283,14 +284,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00094" summary="use backtracking template">
-      <option name="closed" value="true" />
-      <created>1747766748972</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1747766748972</updated>
     </task>
     <task id="LOCAL-00095" summary="3 pointer solution">
       <option name="closed" value="true" />
@@ -676,11 +669,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748806218112</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="recursive solution">
+      <option name="closed" value="true" />
+      <created>1748848165744</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1748848165744</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="top down dp" />
     <MESSAGE value="copied quick sort code" />
     <MESSAGE value="brute force and conversion" />
     <MESSAGE value="greedy" />
@@ -705,7 +705,8 @@
     <MESSAGE value="reverse dfs for optimal run time" />
     <MESSAGE value="set head next to None" />
     <MESSAGE value="dp memoization and then bottom up" />
-    <option name="LAST_COMMIT_MESSAGE" value="dp memoization and then bottom up" />
+    <MESSAGE value="recursive solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="recursive solution" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -839,6 +840,11 @@
           <url>file://$PROJECT_DIR$/2025/Jun_25/Delete Leaves Value.py</url>
           <line>18</line>
           <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/Jun_25/Koko Eating Bananas.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="91" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
