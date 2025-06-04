@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use eulerian path logic instead of dfs">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Longest Repeating Chars.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use dictionary to store maxfreq and get valid solutions">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/De-Serialise Binary tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +63,7 @@
     "Python.Combo Sum.executor": "Run",
     "Python.Container with most water.executor": "Run",
     "Python.De -Serialise Binary tree.executor": "Debug",
+    "Python.De-Serialise Binary tree.executor": "Debug",
     "Python.Decode Ways.executor": "Run",
     "Python.Delete Leaves Value.executor": "Debug",
     "Python.Delete Node in BST.executor": "Debug",
@@ -153,8 +154,8 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Reconstuct Itinerary">
-    <configuration name="Koko Eating Bananas" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.De-Serialise Binary tree">
+    <configuration name="De-Serialise Binary tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -167,7 +168,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Koko Eating Bananas.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/De-Serialise Binary tree.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -266,11 +267,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.De-Serialise Binary tree" />
         <item itemvalue="Python.Reconstuct Itinerary" />
         <item itemvalue="Python.Reverse Nodes in K Group" />
         <item itemvalue="Python.Target Sum" />
         <item itemvalue="Python.Search Insert Position" />
-        <item itemvalue="Python.Koko Eating Bananas" />
       </list>
     </recent_temporary>
   </component>
@@ -288,14 +289,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00100" summary="use stack and one pass solution">
-      <option name="closed" value="true" />
-      <created>1747853295038</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1747853295038</updated>
     </task>
     <task id="LOCAL-00101" summary="use set">
       <option name="closed" value="true" />
@@ -681,11 +674,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748977850051</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="use dictionary to store maxfreq and get valid solutions">
+      <option name="closed" value="true" />
+      <created>1749056854291</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1749056854291</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bottom up dp" />
     <MESSAGE value="brute force" />
     <MESSAGE value="perform DFS but use min heap to get minimum neighbor" />
     <MESSAGE value="right shift till both nums are equal and then left shift answer" />
@@ -710,7 +710,8 @@
     <MESSAGE value="memoization with a trick" />
     <MESSAGE value="iterative linked list manipulation" />
     <MESSAGE value="use eulerian path logic instead of dfs" />
-    <option name="LAST_COMMIT_MESSAGE" value="use eulerian path logic instead of dfs" />
+    <MESSAGE value="use dictionary to store maxfreq and get valid solutions" />
+    <option name="LAST_COMMIT_MESSAGE" value="use dictionary to store maxfreq and get valid solutions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -854,6 +855,11 @@
           <url>file://$PROJECT_DIR$/2025/Jun_25/Reverse Nodes in K Group.py</url>
           <line>40</line>
           <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/Jun_25/De-Serialise Binary tree.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="98" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
