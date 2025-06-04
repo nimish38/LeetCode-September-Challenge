@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="iterative linked list manipulation">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Reconstuct Itinerary.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use eulerian path logic instead of dfs">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Longest Repeating Chars.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -288,14 +288,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00099" summary="using proper backtracking template and sorting and skip to prevent duplicates">
-      <option name="closed" value="true" />
-      <created>1747818844358</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1747818844358</updated>
     </task>
     <task id="LOCAL-00100" summary="use stack and one pass solution">
       <option name="closed" value="true" />
@@ -681,11 +673,18 @@
       <option name="project" value="LOCAL" />
       <updated>1748891397709</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL-00148" summary="use eulerian path logic instead of dfs">
+      <option name="closed" value="true" />
+      <created>1748977850051</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1748977850051</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="expansion logic" />
     <MESSAGE value="bottom up dp" />
     <MESSAGE value="brute force" />
     <MESSAGE value="perform DFS but use min heap to get minimum neighbor" />
@@ -710,7 +709,8 @@
     <MESSAGE value="binary search with lower bound" />
     <MESSAGE value="memoization with a trick" />
     <MESSAGE value="iterative linked list manipulation" />
-    <option name="LAST_COMMIT_MESSAGE" value="iterative linked list manipulation" />
+    <MESSAGE value="use eulerian path logic instead of dfs" />
+    <option name="LAST_COMMIT_MESSAGE" value="use eulerian path logic instead of dfs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
