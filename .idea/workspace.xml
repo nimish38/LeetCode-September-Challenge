@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use dictionary to store maxfreq and get valid solutions">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/De-Serialise Binary tree.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="recursive solutions">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Min Cost to connect all points.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,6 +95,7 @@
     "Python.Matchsticks to square.executor": "Debug",
     "Python.Maximum Subarray.executor": "Run",
     "Python.Merge Intervals.executor": "Run",
+    "Python.Min Cost to connect all points.executor": "Run",
     "Python.Min Path Sum.executor": "Run",
     "Python.Min in Rotated Sorted Array.executor": "Run",
     "Python.Min window substring.executor": "Run",
@@ -154,7 +155,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.De-Serialise Binary tree">
+  <component name="RunManager" selected="Python.Min Cost to connect all points">
     <configuration name="De-Serialise Binary tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -169,6 +170,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/De-Serialise Binary tree.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Min Cost to connect all points" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Min Cost to connect all points.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -221,28 +244,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Search Insert Position" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Search Insert Position.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Target Sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -267,11 +268,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Min Cost to connect all points" />
         <item itemvalue="Python.De-Serialise Binary tree" />
         <item itemvalue="Python.Reconstuct Itinerary" />
         <item itemvalue="Python.Reverse Nodes in K Group" />
         <item itemvalue="Python.Target Sum" />
-        <item itemvalue="Python.Search Insert Position" />
       </list>
     </recent_temporary>
   </component>
@@ -289,14 +290,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00101" summary="use set">
-      <option name="closed" value="true" />
-      <created>1747853572064</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1747853572064</updated>
     </task>
     <task id="LOCAL-00102" summary="use set">
       <option name="closed" value="true" />
@@ -682,11 +675,18 @@
       <option name="project" value="LOCAL" />
       <updated>1749056854291</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="recursive solutions">
+      <option name="closed" value="true" />
+      <created>1749062163177</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1749062163177</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="brute force" />
     <MESSAGE value="perform DFS but use min heap to get minimum neighbor" />
     <MESSAGE value="right shift till both nums are equal and then left shift answer" />
     <MESSAGE value="use dp on strings" />
@@ -711,7 +711,8 @@
     <MESSAGE value="iterative linked list manipulation" />
     <MESSAGE value="use eulerian path logic instead of dfs" />
     <MESSAGE value="use dictionary to store maxfreq and get valid solutions" />
-    <option name="LAST_COMMIT_MESSAGE" value="use dictionary to store maxfreq and get valid solutions" />
+    <MESSAGE value="recursive solutions" />
+    <option name="LAST_COMMIT_MESSAGE" value="recursive solutions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
