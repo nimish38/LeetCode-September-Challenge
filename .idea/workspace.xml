@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="MST by prims algo">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Generate Parenthesis.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="backtracking template">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Longest Common Subsequence.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,6 +88,7 @@
     "Python.Largest Rectangle in Histogram.executor": "Run",
     "Python.Linked list cycle.executor": "Run",
     "Python.Longest Common Prefix.executor": "Run",
+    "Python.Longest Common Subsequence.executor": "Run",
     "Python.Longest Consec Seq.executor": "Run",
     "Python.Longest Consecutive Sequence.executor": "Run",
     "Python.Longest Palindromic Substring.executor": "Run",
@@ -156,7 +157,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Generate Parenthesis">
+  <component name="RunManager" selected="Python.Longest Common Subsequence">
     <configuration name="De-Serialise Binary tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -193,6 +194,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Generate Parenthesis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Longest Common Subsequence" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Longest Common Subsequence.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -245,35 +268,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Reverse Nodes in K Group" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Reverse Nodes in K Group.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Longest Common Subsequence" />
         <item itemvalue="Python.Generate Parenthesis" />
         <item itemvalue="Python.Min Cost to connect all points" />
         <item itemvalue="Python.De-Serialise Binary tree" />
         <item itemvalue="Python.Reconstuct Itinerary" />
-        <item itemvalue="Python.Reverse Nodes in K Group" />
       </list>
     </recent_temporary>
   </component>
@@ -291,14 +292,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00103" summary="use set for positions and backtrack">
-      <option name="closed" value="true" />
-      <created>1747897162150</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1747897162150</updated>
     </task>
     <task id="LOCAL-00104" summary="using DP and memoization and then top down">
       <option name="closed" value="true" />
@@ -684,11 +677,18 @@
       <option name="project" value="LOCAL" />
       <updated>1749066645827</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="backtracking template">
+      <option name="closed" value="true" />
+      <created>1749148187545</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1749148187545</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="right shift till both nums are equal and then left shift answer" />
     <MESSAGE value="use dp on strings" />
     <MESSAGE value="check on each string" />
     <MESSAGE value="bitwise 2 pointer solution by interweaving n - 1 into 0 bits of x" />
@@ -713,7 +713,8 @@
     <MESSAGE value="use dictionary to store maxfreq and get valid solutions" />
     <MESSAGE value="recursive solutions" />
     <MESSAGE value="MST by prims algo" />
-    <option name="LAST_COMMIT_MESSAGE" value="MST by prims algo" />
+    <MESSAGE value="backtracking template" />
+    <option name="LAST_COMMIT_MESSAGE" value="backtracking template" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -862,6 +863,11 @@
           <url>file://$PROJECT_DIR$/2025/Jun_25/De-Serialise Binary tree.py</url>
           <line>30</line>
           <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/Jun_25/Longest Common Subsequence.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="101" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
