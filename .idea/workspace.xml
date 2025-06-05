@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="backtracking template">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Longest Common Subsequence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="top down as well as bottom up dp">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Valid Palindrome.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,14 +291,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00104" summary="using DP and memoization and then top down">
-      <option name="closed" value="true" />
-      <created>1747901556185</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1747901556185</updated>
     </task>
     <task id="LOCAL-00105" summary="indegree and outdegree">
       <option name="closed" value="true" />
@@ -685,11 +676,18 @@
       <option name="project" value="LOCAL" />
       <updated>1749148187545</updated>
     </task>
-    <option name="localTasksCounter" value="153" />
+    <task id="LOCAL-00153" summary="top down as well as bottom up dp">
+      <option name="closed" value="true" />
+      <created>1749149534056</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1749149534056</updated>
+    </task>
+    <option name="localTasksCounter" value="154" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use dp on strings" />
     <MESSAGE value="check on each string" />
     <MESSAGE value="bitwise 2 pointer solution by interweaving n - 1 into 0 bits of x" />
     <MESSAGE value="always check last digit so as to not overflow" />
@@ -714,7 +712,8 @@
     <MESSAGE value="recursive solutions" />
     <MESSAGE value="MST by prims algo" />
     <MESSAGE value="backtracking template" />
-    <option name="LAST_COMMIT_MESSAGE" value="backtracking template" />
+    <MESSAGE value="top down as well as bottom up dp" />
+    <option name="LAST_COMMIT_MESSAGE" value="top down as well as bottom up dp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
