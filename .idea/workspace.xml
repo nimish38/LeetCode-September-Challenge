@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="top down as well as bottom up dp">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Valid Palindrome.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use ascii values">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Longest Happy String.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +91,7 @@
     "Python.Longest Common Subsequence.executor": "Run",
     "Python.Longest Consec Seq.executor": "Run",
     "Python.Longest Consecutive Sequence.executor": "Run",
+    "Python.Longest Happy String.executor": "Run",
     "Python.Longest Palindromic Substring.executor": "Run",
     "Python.Longest Sub without repeating char.executor": "Run",
     "Python.Longest repeating char.executor": "Run",
@@ -156,7 +158,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Longest Common Subsequence">
+  <component name="RunManager" selected="Python.Longest Happy String">
     <configuration name="De-Serialise Binary tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -223,6 +225,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Longest Happy String" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Longest Happy String.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Min Cost to connect all points" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -245,35 +269,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Reconstuct Itinerary" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Reconstuct Itinerary.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Longest Happy String" />
         <item itemvalue="Python.Longest Common Subsequence" />
         <item itemvalue="Python.Generate Parenthesis" />
         <item itemvalue="Python.Min Cost to connect all points" />
         <item itemvalue="Python.De-Serialise Binary tree" />
-        <item itemvalue="Python.Reconstuct Itinerary" />
       </list>
     </recent_temporary>
   </component>
@@ -291,14 +293,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00105" summary="indegree and outdegree">
-      <option name="closed" value="true" />
-      <created>1747923745793</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1747923745793</updated>
     </task>
     <task id="LOCAL-00106" summary="use dict and compare adjacent words">
       <option name="closed" value="true" />
@@ -684,11 +678,18 @@
       <option name="project" value="LOCAL" />
       <updated>1749149534056</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="use ascii values">
+      <option name="closed" value="true" />
+      <created>1749150069761</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1749150069761</updated>
+    </task>
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="check on each string" />
     <MESSAGE value="bitwise 2 pointer solution by interweaving n - 1 into 0 bits of x" />
     <MESSAGE value="always check last digit so as to not overflow" />
     <MESSAGE value="trie and dfs" />
@@ -713,7 +714,8 @@
     <MESSAGE value="MST by prims algo" />
     <MESSAGE value="backtracking template" />
     <MESSAGE value="top down as well as bottom up dp" />
-    <option name="LAST_COMMIT_MESSAGE" value="top down as well as bottom up dp" />
+    <MESSAGE value="use ascii values" />
+    <option name="LAST_COMMIT_MESSAGE" value="use ascii values" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
