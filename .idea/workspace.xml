@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use max heap and greedy strategy">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Permutations.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use set for backtracking template and then use swap logic">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Permutations 2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,6 +116,7 @@
     "Python.Palindromic Substrings repeat.executor": "Run",
     "Python.Palindromic Substrings.executor": "Run",
     "Python.Perfect Squares.executor": "Run",
+    "Python.Permutations 2.executor": "Run",
     "Python.Permutations.executor": "Run",
     "Python.Pow.executor": "Run",
     "Python.Product of array except self.executor": "Run",
@@ -159,7 +160,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Permutations">
+  <component name="RunManager" selected="Python.Permutations 2">
     <configuration name="Generate Parenthesis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -226,7 +227,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Min Cost to connect all points" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Permutations 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -239,7 +240,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Min Cost to connect all points.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Permutations 2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -272,11 +273,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Permutations 2" />
         <item itemvalue="Python.Permutations" />
         <item itemvalue="Python.Longest Happy String" />
         <item itemvalue="Python.Longest Common Subsequence" />
         <item itemvalue="Python.Generate Parenthesis" />
-        <item itemvalue="Python.Min Cost to connect all points" />
       </list>
     </recent_temporary>
   </component>
@@ -294,14 +295,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00107" summary="use bfs">
-      <option name="closed" value="true" />
-      <created>1747927634413</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1747927634413</updated>
     </task>
     <task id="LOCAL-00108" summary="4 pointers">
       <option name="closed" value="true" />
@@ -687,11 +680,18 @@
       <option name="project" value="LOCAL" />
       <updated>1749235960126</updated>
     </task>
-    <option name="localTasksCounter" value="156" />
+    <task id="LOCAL-00156" summary="use set for backtracking template and then use swap logic">
+      <option name="closed" value="true" />
+      <created>1749322281673</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1749322281674</updated>
+    </task>
+    <option name="localTasksCounter" value="157" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="always check last digit so as to not overflow" />
     <MESSAGE value="trie and dfs" />
     <MESSAGE value="use bottom up dp without array" />
     <MESSAGE value="search start and then call reverse with 3 pointers" />
@@ -716,7 +716,8 @@
     <MESSAGE value="top down as well as bottom up dp" />
     <MESSAGE value="use ascii values" />
     <MESSAGE value="use max heap and greedy strategy" />
-    <option name="LAST_COMMIT_MESSAGE" value="use max heap and greedy strategy" />
+    <MESSAGE value="use set for backtracking template and then use swap logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="use set for backtracking template and then use swap logic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
