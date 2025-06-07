@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use ascii values">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Longest Happy String.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use max heap and greedy strategy">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Permutations.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,6 +116,7 @@
     "Python.Palindromic Substrings repeat.executor": "Run",
     "Python.Palindromic Substrings.executor": "Run",
     "Python.Perfect Squares.executor": "Run",
+    "Python.Permutations.executor": "Run",
     "Python.Pow.executor": "Run",
     "Python.Product of array except self.executor": "Run",
     "Python.Reconstuct Itinerary.executor": "Run",
@@ -158,29 +159,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Longest Happy String">
-    <configuration name="De-Serialise Binary tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/De-Serialise Binary tree.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Permutations">
     <configuration name="Generate Parenthesis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -269,13 +248,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Permutations" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Permutations.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Permutations" />
         <item itemvalue="Python.Longest Happy String" />
         <item itemvalue="Python.Longest Common Subsequence" />
         <item itemvalue="Python.Generate Parenthesis" />
         <item itemvalue="Python.Min Cost to connect all points" />
-        <item itemvalue="Python.De-Serialise Binary tree" />
       </list>
     </recent_temporary>
   </component>
@@ -293,14 +294,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00106" summary="use dict and compare adjacent words">
-      <option name="closed" value="true" />
-      <created>1747925057081</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1747925057081</updated>
     </task>
     <task id="LOCAL-00107" summary="use bfs">
       <option name="closed" value="true" />
@@ -686,11 +679,18 @@
       <option name="project" value="LOCAL" />
       <updated>1749150069761</updated>
     </task>
-    <option name="localTasksCounter" value="155" />
+    <task id="LOCAL-00155" summary="use max heap and greedy strategy">
+      <option name="closed" value="true" />
+      <created>1749235960126</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1749235960126</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bitwise 2 pointer solution by interweaving n - 1 into 0 bits of x" />
     <MESSAGE value="always check last digit so as to not overflow" />
     <MESSAGE value="trie and dfs" />
     <MESSAGE value="use bottom up dp without array" />
@@ -715,7 +715,8 @@
     <MESSAGE value="backtracking template" />
     <MESSAGE value="top down as well as bottom up dp" />
     <MESSAGE value="use ascii values" />
-    <option name="LAST_COMMIT_MESSAGE" value="use ascii values" />
+    <MESSAGE value="use max heap and greedy strategy" />
+    <option name="LAST_COMMIT_MESSAGE" value="use max heap and greedy strategy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
