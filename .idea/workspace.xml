@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use dict for backtracking template and then use swap logic">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Binary Search.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="normal iterative binary search">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Course Schedule 4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +62,7 @@
     "Python.Combinations.executor": "Run",
     "Python.Combo Sum.executor": "Run",
     "Python.Container with most water.executor": "Run",
+    "Python.Course Schedule 4.executor": "Run",
     "Python.De -Serialise Binary tree.executor": "Debug",
     "Python.De-Serialise Binary tree.executor": "Debug",
     "Python.Decode Ways.executor": "Run",
@@ -160,8 +161,8 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Permutations 2">
-    <configuration name="Generate Parenthesis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Course Schedule 4">
+    <configuration name="Course Schedule 4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,7 +175,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Generate Parenthesis.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Course Schedule 4.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -273,11 +274,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Course Schedule 4" />
         <item itemvalue="Python.Permutations 2" />
         <item itemvalue="Python.Permutations" />
         <item itemvalue="Python.Longest Happy String" />
         <item itemvalue="Python.Longest Common Subsequence" />
-        <item itemvalue="Python.Generate Parenthesis" />
       </list>
     </recent_temporary>
   </component>
@@ -295,14 +296,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00109" summary="use dp and memoization and then bfs with 2 queues">
-      <option name="closed" value="true" />
-      <created>1747940758132</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1747940758132</updated>
     </task>
     <task id="LOCAL-00110" summary="use topological sort">
       <option name="closed" value="true" />
@@ -688,11 +681,18 @@
       <option name="project" value="LOCAL" />
       <updated>1749324342231</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="normal iterative binary search">
+      <option name="closed" value="true" />
+      <created>1749367472035</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1749367472035</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use bottom up dp without array" />
     <MESSAGE value="search start and then call reverse with 3 pointers" />
     <MESSAGE value="solved for both binary tree and bst" />
     <MESSAGE value="idea is to keep track of minimum value so far and update on every push and pop" />
@@ -717,7 +717,8 @@
     <MESSAGE value="use max heap and greedy strategy" />
     <MESSAGE value="use set for backtracking template and then use swap logic" />
     <MESSAGE value="use dict for backtracking template and then use swap logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="use dict for backtracking template and then use swap logic" />
+    <MESSAGE value="normal iterative binary search" />
+    <option name="LAST_COMMIT_MESSAGE" value="normal iterative binary search" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
