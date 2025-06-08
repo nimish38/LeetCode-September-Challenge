@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use set for backtracking template and then use swap logic">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Permutations 2.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use dict for backtracking template and then use swap logic">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Binary Search.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -295,14 +295,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00108" summary="4 pointers">
-      <option name="closed" value="true" />
-      <created>1747929043275</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1747929043275</updated>
     </task>
     <task id="LOCAL-00109" summary="use dp and memoization and then bfs with 2 queues">
       <option name="closed" value="true" />
@@ -688,11 +680,18 @@
       <option name="project" value="LOCAL" />
       <updated>1749322281674</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="use dict for backtracking template and then use swap logic">
+      <option name="closed" value="true" />
+      <created>1749324342231</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1749324342231</updated>
+    </task>
+    <option name="localTasksCounter" value="158" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="trie and dfs" />
     <MESSAGE value="use bottom up dp without array" />
     <MESSAGE value="search start and then call reverse with 3 pointers" />
     <MESSAGE value="solved for both binary tree and bst" />
@@ -717,7 +716,8 @@
     <MESSAGE value="use ascii values" />
     <MESSAGE value="use max heap and greedy strategy" />
     <MESSAGE value="use set for backtracking template and then use swap logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="use set for backtracking template and then use swap logic" />
+    <MESSAGE value="use dict for backtracking template and then use swap logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="use dict for backtracking template and then use swap logic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
