@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="build reverse adjacency list by dfs on prerequisites">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Search in rotated sorted array 2.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="find the sorted half and then binary search, in case all 3 points are equal trim">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Reverse Polish Notation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,6 +128,7 @@
     "Python.Reverse Linked List.executor": "Debug",
     "Python.Reverse Linked list 2.executor": "Debug",
     "Python.Reverse Nodes in K Group.executor": "Debug",
+    "Python.Reverse Polish Notation.executor": "Run",
     "Python.Rotate Array.executor": "Debug",
     "Python.Rotate Image.executor": "Run",
     "Python.Search Insert Position.executor": "Run",
@@ -162,7 +163,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Search in rotated sorted array 2">
+  <component name="RunManager" selected="Python.Reverse Polish Notation">
     <configuration name="Course Schedule 4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -177,28 +178,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Course Schedule 4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Longest Happy String" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Longest Happy String.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -251,6 +230,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Reverse Polish Notation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Reverse Polish Notation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Search in rotated sorted array 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -275,11 +276,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Reverse Polish Notation" />
         <item itemvalue="Python.Search in rotated sorted array 2" />
         <item itemvalue="Python.Course Schedule 4" />
         <item itemvalue="Python.Permutations 2" />
         <item itemvalue="Python.Permutations" />
-        <item itemvalue="Python.Longest Happy String" />
       </list>
     </recent_temporary>
   </component>
@@ -297,14 +298,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00111" summary="no need of visited array as its a tree so no cycle">
-      <option name="closed" value="true" />
-      <created>1747943738524</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1747943738524</updated>
     </task>
     <task id="LOCAL-00112" summary="use min heap of length k">
       <option name="closed" value="true" />
@@ -690,11 +683,18 @@
       <option name="project" value="LOCAL" />
       <updated>1749370364763</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="find the sorted half and then binary search, in case all 3 points are equal trim">
+      <option name="closed" value="true" />
+      <created>1749495874903</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1749495874903</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="solved for both binary tree and bst" />
     <MESSAGE value="idea is to keep track of minimum value so far and update on every push and pop" />
     <MESSAGE value="actually a graph problem and perform dfs" />
     <MESSAGE value="use queue bfs with farthest value" />
@@ -719,7 +719,8 @@
     <MESSAGE value="use dict for backtracking template and then use swap logic" />
     <MESSAGE value="normal iterative binary search" />
     <MESSAGE value="build reverse adjacency list by dfs on prerequisites" />
-    <option name="LAST_COMMIT_MESSAGE" value="build reverse adjacency list by dfs on prerequisites" />
+    <MESSAGE value="find the sorted half and then binary search, in case all 3 points are equal trim" />
+    <option name="LAST_COMMIT_MESSAGE" value="find the sorted half and then binary search, in case all 3 points are equal trim" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -873,6 +874,11 @@
           <url>file://$PROJECT_DIR$/2025/Jun_25/Longest Common Subsequence.py</url>
           <line>6</line>
           <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/Jun_25/Reverse Polish Notation.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="108" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
