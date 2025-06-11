@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use dfs and keep track of max path">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Rotting Oranges.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use bfs with count to terminate">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Asteroid Collision.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +52,7 @@
     "Python.Add Binary.executor": "Run",
     "Python.Add binary.executor": "Run",
     "Python.Alien Dictionary.executor": "Run",
+    "Python.Asteroid Collision.executor": "Run",
     "Python.BST Iterator.executor": "Run",
     "Python.Bitwise And of number range.executor": "Run",
     "Python.Car Fleet.executor": "Debug",
@@ -131,6 +132,7 @@
     "Python.Reverse Polish Notation.executor": "Run",
     "Python.Rotate Array.executor": "Debug",
     "Python.Rotate Image.executor": "Run",
+    "Python.Rotting Oranges.executor": "Run",
     "Python.Search Insert Position.executor": "Run",
     "Python.Search in rotated sorted array 2.executor": "Run",
     "Python.Search in rotated sorted array.executor": "Run",
@@ -163,7 +165,29 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Rotting Oranges">
+  <component name="RunManager" selected="Python.Asteroid Collision">
+    <configuration name="Asteroid Collision" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Asteroid Collision.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Course Schedule 4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -178,28 +202,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Course Schedule 4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Permutations 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Permutations 2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -276,11 +278,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Asteroid Collision" />
         <item itemvalue="Python.Rotting Oranges" />
         <item itemvalue="Python.Reverse Polish Notation" />
         <item itemvalue="Python.Search in rotated sorted array 2" />
         <item itemvalue="Python.Course Schedule 4" />
-        <item itemvalue="Python.Permutations 2" />
       </list>
     </recent_temporary>
   </component>
@@ -298,14 +300,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00114" summary="iteratively compare">
-      <option name="closed" value="true" />
-      <created>1747989017195</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1747989017195</updated>
     </task>
     <task id="LOCAL-00115" summary="update the banned senator by X and store counts">
       <option name="closed" value="true" />
@@ -691,11 +685,18 @@
       <option name="project" value="LOCAL" />
       <updated>1749656376631</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="use bfs with count to terminate">
+      <option name="closed" value="true" />
+      <created>1749664679820</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1749664679820</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use queue bfs with farthest value" />
     <MESSAGE value="use map and priority queue" />
     <MESSAGE value="reverse dfs for optimal run time" />
     <MESSAGE value="set head next to None" />
@@ -720,7 +721,8 @@
     <MESSAGE value="find the sorted half and then binary search, in case all 3 points are equal trim" />
     <MESSAGE value="use stack" />
     <MESSAGE value="use dfs and keep track of max path" />
-    <option name="LAST_COMMIT_MESSAGE" value="use dfs and keep track of max path" />
+    <MESSAGE value="use bfs with count to terminate" />
+    <option name="LAST_COMMIT_MESSAGE" value="use bfs with count to terminate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
