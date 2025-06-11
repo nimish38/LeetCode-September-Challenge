@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="find the sorted half and then binary search, in case all 3 points are equal trim">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Reverse Polish Notation.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use stack">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Good nodes in binary tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -298,14 +298,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00112" summary="use min heap of length k">
-      <option name="closed" value="true" />
-      <created>1747987779721</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1747987779721</updated>
     </task>
     <task id="LOCAL-00113" summary="simple iterative dfs">
       <option name="closed" value="true" />
@@ -691,11 +683,18 @@
       <option name="project" value="LOCAL" />
       <updated>1749495874903</updated>
     </task>
-    <option name="localTasksCounter" value="161" />
+    <task id="LOCAL-00161" summary="use stack">
+      <option name="closed" value="true" />
+      <created>1749575518829</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1749575518829</updated>
+    </task>
+    <option name="localTasksCounter" value="162" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="idea is to keep track of minimum value so far and update on every push and pop" />
     <MESSAGE value="actually a graph problem and perform dfs" />
     <MESSAGE value="use queue bfs with farthest value" />
     <MESSAGE value="use map and priority queue" />
@@ -720,7 +719,8 @@
     <MESSAGE value="normal iterative binary search" />
     <MESSAGE value="build reverse adjacency list by dfs on prerequisites" />
     <MESSAGE value="find the sorted half and then binary search, in case all 3 points are equal trim" />
-    <option name="LAST_COMMIT_MESSAGE" value="find the sorted half and then binary search, in case all 3 points are equal trim" />
+    <MESSAGE value="use stack" />
+    <option name="LAST_COMMIT_MESSAGE" value="use stack" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
