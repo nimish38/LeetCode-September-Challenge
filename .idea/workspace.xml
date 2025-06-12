@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use bfs with count to terminate">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Asteroid Collision.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use stack for simulation">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Quad Tree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,6 +122,7 @@
     "Python.Permutations.executor": "Run",
     "Python.Pow.executor": "Run",
     "Python.Product of array except self.executor": "Run",
+    "Python.Quad Tree.executor": "Debug",
     "Python.Reconstuct Itinerary.executor": "Run",
     "Python.Remove nth node from end.executor": "Debug",
     "Python.Reorder List.executor": "Debug",
@@ -165,7 +166,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Asteroid Collision">
+  <component name="RunManager" selected="Python.Quad Tree">
     <configuration name="Asteroid Collision" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -188,7 +189,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Course Schedule 4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Quad Tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -201,7 +202,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Course Schedule 4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Quad Tree.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -278,11 +279,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Quad Tree" />
         <item itemvalue="Python.Asteroid Collision" />
         <item itemvalue="Python.Rotting Oranges" />
         <item itemvalue="Python.Reverse Polish Notation" />
         <item itemvalue="Python.Search in rotated sorted array 2" />
-        <item itemvalue="Python.Course Schedule 4" />
       </list>
     </recent_temporary>
   </component>
@@ -300,14 +301,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00115" summary="update the banned senator by X and store counts">
-      <option name="closed" value="true" />
-      <created>1748188857867</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1748188857867</updated>
     </task>
     <task id="LOCAL-00116" summary="backtracking template">
       <option name="closed" value="true" />
@@ -693,11 +686,18 @@
       <option name="project" value="LOCAL" />
       <updated>1749664679820</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="use stack for simulation">
+      <option name="closed" value="true" />
+      <created>1749667053599</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1749667053599</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use map and priority queue" />
     <MESSAGE value="reverse dfs for optimal run time" />
     <MESSAGE value="set head next to None" />
     <MESSAGE value="dp memoization and then bottom up" />
@@ -722,7 +722,8 @@
     <MESSAGE value="use stack" />
     <MESSAGE value="use dfs and keep track of max path" />
     <MESSAGE value="use bfs with count to terminate" />
-    <option name="LAST_COMMIT_MESSAGE" value="use bfs with count to terminate" />
+    <MESSAGE value="use stack for simulation" />
+    <option name="LAST_COMMIT_MESSAGE" value="use stack for simulation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -881,6 +882,11 @@
           <url>file://$PROJECT_DIR$/2025/Jun_25/Reverse Polish Notation.py</url>
           <line>7</line>
           <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/Jun_25/Quad Tree.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="113" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
