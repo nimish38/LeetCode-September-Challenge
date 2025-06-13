@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use first row and col as flags">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Hand of Straights.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using dictionary and simulate as an ordered dict">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Min Cost Climbing Stairs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,6 +101,7 @@
     "Python.Matchsticks to square.executor": "Debug",
     "Python.Maximum Subarray.executor": "Run",
     "Python.Merge Intervals.executor": "Run",
+    "Python.Min Cost Climbing Stairs.executor": "Run",
     "Python.Min Cost to connect all points.executor": "Run",
     "Python.Min Path Sum.executor": "Run",
     "Python.Min in Rotated Sorted Array.executor": "Run",
@@ -168,7 +169,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Hand of Straights">
+  <component name="RunManager" selected="Python.Min Cost Climbing Stairs">
     <configuration name="Asteroid Collision" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -213,6 +214,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Min Cost Climbing Stairs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Min Cost Climbing Stairs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Quad Tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -227,28 +250,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Quad Tree.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Rotting Oranges" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Rotting Oranges.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -281,11 +282,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Min Cost Climbing Stairs" />
         <item itemvalue="Python.Hand of Straights" />
         <item itemvalue="Python.Set Zeroes" />
         <item itemvalue="Python.Quad Tree" />
         <item itemvalue="Python.Asteroid Collision" />
-        <item itemvalue="Python.Rotting Oranges" />
       </list>
     </recent_temporary>
   </component>
@@ -303,14 +304,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00118" summary="top down dp">
-      <option name="closed" value="true" />
-      <created>1748199956535</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1748199956535</updated>
     </task>
     <task id="LOCAL-00119" summary="copied quick sort code">
       <option name="closed" value="true" />
@@ -696,11 +689,18 @@
       <option name="project" value="LOCAL" />
       <updated>1749743159916</updated>
     </task>
-    <option name="localTasksCounter" value="167" />
+    <task id="LOCAL-00167" summary="using dictionary and simulate as an ordered dict">
+      <option name="closed" value="true" />
+      <created>1749755199328</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1749755199328</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="dp memoization and then bottom up" />
     <MESSAGE value="recursive solution" />
     <MESSAGE value="binary search solution" />
     <MESSAGE value="binary search with lower bound" />
@@ -725,7 +725,8 @@
     <MESSAGE value="use stack for simulation" />
     <MESSAGE value="use recursion and four corners" />
     <MESSAGE value="use first row and col as flags" />
-    <option name="LAST_COMMIT_MESSAGE" value="use first row and col as flags" />
+    <MESSAGE value="using dictionary and simulate as an ordered dict" />
+    <option name="LAST_COMMIT_MESSAGE" value="using dictionary and simulate as an ordered dict" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
