@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="topological sort">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Max Area of Island.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="dfs">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Two Sum 2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -304,14 +304,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00121" summary="greedy">
-      <option name="closed" value="true" />
-      <created>1748285791352</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1748285791352</updated>
     </task>
     <task id="LOCAL-00122" summary="recursively check similarity">
       <option name="closed" value="true" />
@@ -697,11 +689,18 @@
       <option name="project" value="LOCAL" />
       <updated>1749840919312</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="dfs">
+      <option name="closed" value="true" />
+      <created>1749916634663</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1749916634663</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="binary search with lower bound" />
     <MESSAGE value="memoization with a trick" />
     <MESSAGE value="iterative linked list manipulation" />
     <MESSAGE value="use eulerian path logic instead of dfs" />
@@ -726,7 +725,8 @@
     <MESSAGE value="using dictionary and simulate as an ordered dict" />
     <MESSAGE value="bottom up and top down DP" />
     <MESSAGE value="topological sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="topological sort" />
+    <MESSAGE value="dfs" />
+    <option name="LAST_COMMIT_MESSAGE" value="dfs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
