@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="greedy approach">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/FInd MST by Kruskal.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="Kruskal algo">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Pseudo Critical Edges of MST.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,6 +125,7 @@
     "Python.Permutations.executor": "Run",
     "Python.Pow.executor": "Run",
     "Python.Product of array except self.executor": "Run",
+    "Python.Pseudo Critical Edges of MST.executor": "Run",
     "Python.Quad Tree.executor": "Debug",
     "Python.Reconstuct Itinerary.executor": "Run",
     "Python.Remove nth node from end.executor": "Debug",
@@ -170,7 +171,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.FInd MST by Kruskal">
+  <component name="RunManager" selected="Python.Pseudo Critical Edges of MST">
     <configuration name="FInd MST by Kruskal" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -237,7 +238,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Quad Tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Pseudo Critical Edges of MST" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -250,7 +251,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Quad Tree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Pseudo Critical Edges of MST.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -283,11 +284,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Pseudo Critical Edges of MST" />
         <item itemvalue="Python.FInd MST by Kruskal" />
         <item itemvalue="Python.Min Cost Climbing Stairs" />
         <item itemvalue="Python.Hand of Straights" />
         <item itemvalue="Python.Set Zeroes" />
-        <item itemvalue="Python.Quad Tree" />
       </list>
     </recent_temporary>
   </component>
@@ -305,14 +306,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00124" summary="bottom up dp">
-      <option name="closed" value="true" />
-      <created>1748333559582</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1748333559582</updated>
     </task>
     <task id="LOCAL-00125" summary="brute force">
       <option name="closed" value="true" />
@@ -698,11 +691,18 @@
       <option name="project" value="LOCAL" />
       <updated>1749993178722</updated>
     </task>
-    <option name="localTasksCounter" value="173" />
+    <task id="LOCAL-00173" summary="Kruskal algo">
+      <option name="closed" value="true" />
+      <created>1750060935740</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1750060935740</updated>
+    </task>
+    <option name="localTasksCounter" value="174" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use eulerian path logic instead of dfs" />
     <MESSAGE value="use dictionary to store maxfreq and get valid solutions" />
     <MESSAGE value="recursive solutions" />
     <MESSAGE value="MST by prims algo" />
@@ -727,7 +727,8 @@
     <MESSAGE value="dfs" />
     <MESSAGE value="use 2 pointer solution" />
     <MESSAGE value="greedy approach" />
-    <option name="LAST_COMMIT_MESSAGE" value="greedy approach" />
+    <MESSAGE value="Kruskal algo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kruskal algo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -896,6 +897,11 @@
           <url>file://$PROJECT_DIR$/2025/Jun_25/Hand of Straights.py</url>
           <line>7</line>
           <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/Jun_25/FInd MST by Kruskal.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="119" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
