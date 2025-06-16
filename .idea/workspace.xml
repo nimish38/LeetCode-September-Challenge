@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use 2 pointer solution" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="greedy approach">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/FInd MST by Kruskal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +74,7 @@
     "Python.Edit distance.executor": "Run",
     "Python.Encode and decode Strings.executor": "Debug",
     "Python.Evaluate Division.executor": "Run",
+    "Python.FInd MST by Kruskal.executor": "Run",
     "Python.FInd Median of data stream.executor": "Run",
     "Python.Find K largest element.executor": "Run",
     "Python.Find the town judge.executor": "Run",
@@ -166,8 +170,8 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Min Cost Climbing Stairs">
-    <configuration name="Asteroid Collision" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.FInd MST by Kruskal">
+    <configuration name="FInd MST by Kruskal" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -180,7 +184,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Asteroid Collision.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/FInd MST by Kruskal.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -279,11 +283,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.FInd MST by Kruskal" />
         <item itemvalue="Python.Min Cost Climbing Stairs" />
         <item itemvalue="Python.Hand of Straights" />
         <item itemvalue="Python.Set Zeroes" />
         <item itemvalue="Python.Quad Tree" />
-        <item itemvalue="Python.Asteroid Collision" />
       </list>
     </recent_temporary>
   </component>
@@ -301,14 +305,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00123" summary="expansion logic">
-      <option name="closed" value="true" />
-      <created>1748331402308</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1748331402308</updated>
     </task>
     <task id="LOCAL-00124" summary="bottom up dp">
       <option name="closed" value="true" />
@@ -694,11 +690,18 @@
       <option name="project" value="LOCAL" />
       <updated>1749919886965</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="greedy approach">
+      <option name="closed" value="true" />
+      <created>1749993178722</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1749993178722</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="iterative linked list manipulation" />
     <MESSAGE value="use eulerian path logic instead of dfs" />
     <MESSAGE value="use dictionary to store maxfreq and get valid solutions" />
     <MESSAGE value="recursive solutions" />
@@ -723,7 +726,8 @@
     <MESSAGE value="topological sort" />
     <MESSAGE value="dfs" />
     <MESSAGE value="use 2 pointer solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="use 2 pointer solution" />
+    <MESSAGE value="greedy approach" />
+    <option name="LAST_COMMIT_MESSAGE" value="greedy approach" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
