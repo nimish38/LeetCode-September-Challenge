@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="attempt of finding peak and binary search in each half">
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="finding peak and binary search in each half">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Extra Characters in a String.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/Jun_25/Find in Mountain array.py" beforeDir="false" afterPath="$PROJECT_DIR$/2025/Jun_25/Find in Mountain array.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +172,29 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Find in Mountain array">
+  <component name="RunManager" selected="Python.Extra Characters in a String">
+    <configuration name="Extra Characters in a String" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Extra Characters in a String.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="FInd MST by Kruskal" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -209,28 +231,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Find in Mountain array.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Hand of Straights" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Hand of Straights.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -285,11 +285,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Extra Characters in a String" />
         <item itemvalue="Python.Find in Mountain array" />
         <item itemvalue="Python.Pseudo Critical Edges of MST" />
         <item itemvalue="Python.FInd MST by Kruskal" />
         <item itemvalue="Python.Min Cost Climbing Stairs" />
-        <item itemvalue="Python.Hand of Straights" />
       </list>
     </recent_temporary>
   </component>
@@ -307,14 +307,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00127" summary="right shift till both nums are equal and then left shift answer">
-      <option name="closed" value="true" />
-      <created>1748373758974</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1748373758974</updated>
     </task>
     <task id="LOCAL-00128" summary="use dp on strings">
       <option name="closed" value="true" />
@@ -700,11 +692,18 @@
       <option name="project" value="LOCAL" />
       <updated>1750187841363</updated>
     </task>
-    <option name="localTasksCounter" value="176" />
+    <task id="LOCAL-00176" summary="finding peak and binary search in each half">
+      <option name="closed" value="true" />
+      <created>1750188536759</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1750188536759</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="MST by prims algo" />
     <MESSAGE value="backtracking template" />
     <MESSAGE value="top down as well as bottom up dp" />
     <MESSAGE value="use ascii values" />
@@ -729,7 +728,8 @@
     <MESSAGE value="Kruskal algo" />
     <MESSAGE value="using DSU with separate class and modified Kruskal" />
     <MESSAGE value="attempt of finding peak and binary search in each half" />
-    <option name="LAST_COMMIT_MESSAGE" value="attempt of finding peak and binary search in each half" />
+    <MESSAGE value="finding peak and binary search in each half" />
+    <option name="LAST_COMMIT_MESSAGE" value="finding peak and binary search in each half" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -903,6 +903,11 @@
           <url>file://$PROJECT_DIR$/2025/Jun_25/FInd MST by Kruskal.py</url>
           <line>4</line>
           <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/Jun_25/Find in Mountain array.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="131" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
