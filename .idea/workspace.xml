@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use DP and memoization">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use char appending instead of slicing">
       <change beforePath="$PROJECT_DIR$/2025/Jun_25/Extra Characters in a String.py" beforeDir="false" afterPath="$PROJECT_DIR$/2025/Jun_25/Extra Characters in a String.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -308,14 +307,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00129" summary="check on each string">
-      <option name="closed" value="true" />
-      <created>1748422952446</created>
-      <option name="number" value="00129" />
-      <option name="presentableId" value="LOCAL-00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1748422952446</updated>
     </task>
     <task id="LOCAL-00130" summary="bitwise 2 pointer solution by interweaving n - 1 into 0 bits of x">
       <option name="closed" value="true" />
@@ -701,11 +692,18 @@
       <option name="project" value="LOCAL" />
       <updated>1750267126724</updated>
     </task>
-    <option name="localTasksCounter" value="178" />
+    <task id="LOCAL-00178" summary="use char appending instead of slicing">
+      <option name="closed" value="true" />
+      <created>1750349350284</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1750349350285</updated>
+    </task>
+    <option name="localTasksCounter" value="179" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="top down as well as bottom up dp" />
     <MESSAGE value="use ascii values" />
     <MESSAGE value="use max heap and greedy strategy" />
     <MESSAGE value="use set for backtracking template and then use swap logic" />
@@ -730,7 +728,8 @@
     <MESSAGE value="attempt of finding peak and binary search in each half" />
     <MESSAGE value="finding peak and binary search in each half" />
     <MESSAGE value="use DP and memoization" />
-    <option name="LAST_COMMIT_MESSAGE" value="use DP and memoization" />
+    <MESSAGE value="use char appending instead of slicing" />
+    <option name="LAST_COMMIT_MESSAGE" value="use char appending instead of slicing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -912,7 +911,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/2025/Jun_25/Extra Characters in a String.py</url>
-          <line>8</line>
+          <line>14</line>
           <option name="timeStamp" value="132" />
         </line-breakpoint>
       </breakpoints>
