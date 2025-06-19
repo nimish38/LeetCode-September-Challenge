@@ -6,11 +6,11 @@ class Solution(object):
             if ind >= n:
                 return 0
             if memo[ind] == -1:
-                res = n
-                for i in range(1, n - ind + 1):
-                    val = s[ind: ind + i]
+                res, val = n, ''
+                for i in range(ind, n):
+                    val += s[i]
                     if val in dictionary:
-                        res = min(res, solve(ind + i))
+                        res = min(res, solve(i + 1))
                 res = min(res, 1 + solve(ind + 1))
                 memo[ind] = res
             return memo[ind]

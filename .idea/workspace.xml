@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="finding peak and binary search in each half">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Extra Characters in a String.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use DP and memoization">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2025/Jun_25/Extra Characters in a String.py" beforeDir="false" afterPath="$PROJECT_DIR$/2025/Jun_25/Extra Characters in a String.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +74,7 @@
     "Python.Edit distance.executor": "Run",
     "Python.Encode and decode Strings.executor": "Debug",
     "Python.Evaluate Division.executor": "Run",
+    "Python.Extra Characters in a String.executor": "Run",
     "Python.FInd MST by Kruskal.executor": "Run",
     "Python.FInd Median of data stream.executor": "Run",
     "Python.Find K largest element.executor": "Run",
@@ -307,14 +308,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00128" summary="use dp on strings">
-      <option name="closed" value="true" />
-      <created>1748419176586</created>
-      <option name="number" value="00128" />
-      <option name="presentableId" value="LOCAL-00128" />
-      <option name="project" value="LOCAL" />
-      <updated>1748419176587</updated>
     </task>
     <task id="LOCAL-00129" summary="check on each string">
       <option name="closed" value="true" />
@@ -700,11 +693,18 @@
       <option name="project" value="LOCAL" />
       <updated>1750188536759</updated>
     </task>
-    <option name="localTasksCounter" value="177" />
+    <task id="LOCAL-00177" summary="use DP and memoization">
+      <option name="closed" value="true" />
+      <created>1750267126724</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1750267126724</updated>
+    </task>
+    <option name="localTasksCounter" value="178" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="backtracking template" />
     <MESSAGE value="top down as well as bottom up dp" />
     <MESSAGE value="use ascii values" />
     <MESSAGE value="use max heap and greedy strategy" />
@@ -729,7 +729,8 @@
     <MESSAGE value="using DSU with separate class and modified Kruskal" />
     <MESSAGE value="attempt of finding peak and binary search in each half" />
     <MESSAGE value="finding peak and binary search in each half" />
-    <option name="LAST_COMMIT_MESSAGE" value="finding peak and binary search in each half" />
+    <MESSAGE value="use DP and memoization" />
+    <option name="LAST_COMMIT_MESSAGE" value="use DP and memoization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -908,6 +909,11 @@
           <url>file://$PROJECT_DIR$/2025/Jun_25/Find in Mountain array.py</url>
           <line>52</line>
           <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/Jun_25/Extra Characters in a String.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="132" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
