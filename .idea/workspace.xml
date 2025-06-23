@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use greedy and max heap">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/4Sum.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use 2 loops and then 2 pointers">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Stone Game.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -149,6 +149,7 @@
     "Python.Set Zeroes.executor": "Run",
     "Python.Spiral Matrix.executor": "Run",
     "Python.Stone Game 3.executor": "Debug",
+    "Python.Stone Game.executor": "Run",
     "Python.Subsets 2.executor": "Run",
     "Python.Subsets repeat.executor": "Run",
     "Python.Swim in Rising Water.executor": "Run",
@@ -175,7 +176,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.4Sum">
+  <component name="RunManager" selected="Python.Stone Game">
     <configuration name="4Sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -242,28 +243,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Pseudo Critical Edges of MST" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Pseudo Critical Edges of MST.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Reorganise String" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -286,13 +265,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Stone Game" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Stone Game.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Stone Game" />
         <item itemvalue="Python.4Sum" />
         <item itemvalue="Python.Reorganise String" />
         <item itemvalue="Python.Extra Characters in a String" />
         <item itemvalue="Python.Find in Mountain array" />
-        <item itemvalue="Python.Pseudo Critical Edges of MST" />
       </list>
     </recent_temporary>
   </component>
@@ -310,14 +311,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00133" summary="use bottom up dp without array">
-      <option name="closed" value="true" />
-      <created>1748530913204</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1748530913204</updated>
     </task>
     <task id="LOCAL-00134" summary="search start and then call reverse with 3 pointers">
       <option name="closed" value="true" />
@@ -703,11 +696,18 @@
       <option name="project" value="LOCAL" />
       <updated>1750526561177</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary="use 2 loops and then 2 pointers">
+      <option name="closed" value="true" />
+      <created>1750697068434</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1750697068434</updated>
+    </task>
+    <option name="localTasksCounter" value="183" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use dict for backtracking template and then use swap logic" />
     <MESSAGE value="normal iterative binary search" />
     <MESSAGE value="build reverse adjacency list by dfs on prerequisites" />
     <MESSAGE value="find the sorted half and then binary search, in case all 3 points are equal trim" />
@@ -732,7 +732,8 @@
     <MESSAGE value="Bottom up approach" />
     <MESSAGE value="simple binary search" />
     <MESSAGE value="use greedy and max heap" />
-    <option name="LAST_COMMIT_MESSAGE" value="use greedy and max heap" />
+    <MESSAGE value="use 2 loops and then 2 pointers" />
+    <option name="LAST_COMMIT_MESSAGE" value="use 2 loops and then 2 pointers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
