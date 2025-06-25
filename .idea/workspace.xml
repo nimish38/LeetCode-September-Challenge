@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use Dp top down">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Buy n Sell stock 2.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="As many trades possible just check if we get positive value">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Sort Colours.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,6 +148,7 @@
     "Python.Search in rotated sorted array.executor": "Run",
     "Python.Set Matrix Zeroes.executor": "Run",
     "Python.Set Zeroes.executor": "Run",
+    "Python.Sort Colours.executor": "Run",
     "Python.Spiral Matrix.executor": "Run",
     "Python.Stone Game 3.executor": "Debug",
     "Python.Stone Game.executor": "Run",
@@ -177,7 +178,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Buy n Sell stock 2">
+  <component name="RunManager" selected="Python.Sort Colours">
     <configuration name="4Sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -222,28 +223,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Extra Characters in a String" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Extra Characters in a String.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Reorganise String" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -258,6 +237,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Reorganise String.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Sort Colours" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Sort Colours.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -290,11 +291,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Sort Colours" />
         <item itemvalue="Python.Buy n Sell stock 2" />
         <item itemvalue="Python.Stone Game" />
         <item itemvalue="Python.4Sum" />
         <item itemvalue="Python.Reorganise String" />
-        <item itemvalue="Python.Extra Characters in a String" />
       </list>
     </recent_temporary>
   </component>
@@ -312,14 +313,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00135" summary="solved for both binary tree and bst">
-      <option name="closed" value="true" />
-      <created>1748545062652</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1748545062652</updated>
     </task>
     <task id="LOCAL-00136" summary="idea is to keep track of minimum value so far and update on every push and pop">
       <option name="closed" value="true" />
@@ -705,11 +698,18 @@
       <option name="project" value="LOCAL" />
       <updated>1750704251320</updated>
     </task>
-    <option name="localTasksCounter" value="184" />
+    <task id="LOCAL-00184" summary="As many trades possible just check if we get positive value">
+      <option name="closed" value="true" />
+      <created>1750785938837</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1750785938837</updated>
+    </task>
+    <option name="localTasksCounter" value="185" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="build reverse adjacency list by dfs on prerequisites" />
     <MESSAGE value="find the sorted half and then binary search, in case all 3 points are equal trim" />
     <MESSAGE value="use stack" />
     <MESSAGE value="use dfs and keep track of max path" />
@@ -734,7 +734,8 @@
     <MESSAGE value="use greedy and max heap" />
     <MESSAGE value="use 2 loops and then 2 pointers" />
     <MESSAGE value="use Dp top down" />
-    <option name="LAST_COMMIT_MESSAGE" value="use Dp top down" />
+    <MESSAGE value="As many trades possible just check if we get positive value" />
+    <option name="LAST_COMMIT_MESSAGE" value="As many trades possible just check if we get positive value" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -918,6 +919,11 @@
           <url>file://$PROJECT_DIR$/2025/Jun_25/Extra Characters in a String.py</url>
           <line>14</line>
           <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/Jun_25/Sort Colours.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="134" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
