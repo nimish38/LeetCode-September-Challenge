@@ -1,20 +1,20 @@
 class Solution(object):
     def uniquePathsWithObstacles(self, obstacleGrid):
-        m, n, self.cnt = len(obstacleGrid), len(obstacleGrid[0]), 0
-        if m == n == 1:
-            return 0 if obstacleGrid[0][0] else 1
+        m, n, cnt = len(obstacleGrid), len(obstacleGrid[0]), 0
+        memo = [[-1] * n for _ in range(m)]
         def dfs(i, j):
             if i == m - 1 and j == n - 1:
-                self.cnt += 1
-                return
-            obstacleGrid[i][j] = 1
-            for x, y in [(1, 0), (0, 1)]:
-                a, b = i + x, j + y
-                if m > a >= 0 and 0 <= b < n and obstacleGrid[a][b] == 0:
-                    dfs(a, b)
-            obstacleGrid[i][j] = 0
-
-        dfs(0, 0)
-        return self.cnt
+                return 1
+            if memo[i][j] == -1:
+                obstacleGrid[i][j], val = 1, 0
+                for x, y in [(1, 0), (0, 1)]:
+                    a, b = i + x, j + y
+                    if m > a >= 0 and 0 <= b < n and obstacleGrid[a][b] == 0:
+                        val += dfs(a, b)
+                obstacleGrid[i][j], memo[i][j] = 0, val
+            return memo[i][j]
+        if not obstacleGrid[0][0]:
+            cnt = dfs(0, 0)
+        return cnt
 
 print(Solution().uniquePathsWithObstacles(obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]))
