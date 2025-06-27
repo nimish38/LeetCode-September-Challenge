@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="by top down dp and memoization">
-      <change beforePath="$PROJECT_DIR$/2025/Jun_25/Unique Paths 2.py" beforeDir="false" afterPath="$PROJECT_DIR$/2025/Jun_25/Unique Paths 2.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="by bottom up dp">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,8 +179,8 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Unique Paths 2">
-    <configuration name="Buy n Sell stock 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.House Robber">
+    <configuration name="House Robber" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -193,7 +193,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Buy n Sell stock 2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/House Robber.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -292,11 +292,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.House Robber" />
         <item itemvalue="Python.Unique Paths 2" />
         <item itemvalue="Python.Remove Duplicates from sorted array" />
         <item itemvalue="Python.Search in rotated sorted array" />
         <item itemvalue="Python.Sort Colours" />
-        <item itemvalue="Python.Buy n Sell stock 2" />
       </list>
     </recent_temporary>
   </component>
@@ -314,14 +314,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00141" summary="set head next to None">
-      <option name="closed" value="true" />
-      <created>1748793221382</created>
-      <option name="number" value="00141" />
-      <option name="presentableId" value="LOCAL-00141" />
-      <option name="project" value="LOCAL" />
-      <updated>1748793221382</updated>
     </task>
     <task id="LOCAL-00142" summary="dp memoization and then bottom up">
       <option name="closed" value="true" />
@@ -707,11 +699,18 @@
       <option name="project" value="LOCAL" />
       <updated>1750953079526</updated>
     </task>
-    <option name="localTasksCounter" value="190" />
+    <task id="LOCAL-00190" summary="by bottom up dp">
+      <option name="closed" value="true" />
+      <created>1750954023254</created>
+      <option name="number" value="00190" />
+      <option name="presentableId" value="LOCAL-00190" />
+      <option name="project" value="LOCAL" />
+      <updated>1750954023254</updated>
+    </task>
+    <option name="localTasksCounter" value="191" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use recursion and four corners" />
     <MESSAGE value="use first row and col as flags" />
     <MESSAGE value="using dictionary and simulate as an ordered dict" />
     <MESSAGE value="bottom up and top down DP" />
@@ -736,7 +735,8 @@
     <MESSAGE value="check previous element" />
     <MESSAGE value="by backtracking method" />
     <MESSAGE value="by top down dp and memoization" />
-    <option name="LAST_COMMIT_MESSAGE" value="by top down dp and memoization" />
+    <MESSAGE value="by bottom up dp" />
+    <option name="LAST_COMMIT_MESSAGE" value="by bottom up dp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
