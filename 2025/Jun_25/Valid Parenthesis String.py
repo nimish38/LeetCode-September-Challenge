@@ -11,11 +11,23 @@ class Solution(object):
                     if len(st) >= 2 and st[-2] == '(':
                         val = st.pop()
                         st.pop()
-                        st.append(val)
+                        if st:
+                            if st[-1] == '(':
+                                st.append(val)
+                            else:
+                                st[-1] += val
+                        else:
+                            st.append(val)
                     else:
                         val = st.pop() - 1
                         if val > 0:
-                            st.append(val)
+                            if st:
+                                if st[-1] == '(':
+                                    st.append(val)
+                                else:
+                                    st[-1] += val
+                            else:
+                                st.append(val)
             elif c == '*':
                 if not st or st[-1] == '(':
                     st.append(1)
@@ -34,4 +46,4 @@ class Solution(object):
             return True
         return False
 
-print(Solution().checkValidString(s = "((()(()()()*()(((((*)()*(**(())))))(())()())(((())())())))))))(((((())*)))()))(()((*()*(*)))(*)())"))
+print(Solution().checkValidString(s = "((((()(()()()*()(((((*)()*(**(())))))(())()())(((())())())))))))(((((())*)))()))(()((*()*(*)))(*)()"))

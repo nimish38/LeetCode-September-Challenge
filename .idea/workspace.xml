@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="bottom up dp space optimized">
-      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Valid Parenthesis String.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="greedy approach">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2025/Jun_25/Valid Parenthesis String.py" beforeDir="false" afterPath="$PROJECT_DIR$/2025/Jun_25/Valid Parenthesis String.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +163,7 @@
     "Python.Unique Paths 2.executor": "Run",
     "Python.Unique Paths.executor": "Run",
     "Python.Valid Palindrome.executor": "Run",
-    "Python.Valid Parenthesis String.executor": "Run",
+    "Python.Valid Parenthesis String.executor": "Debug",
     "Python.Valid Parenthesis.executor": "Run",
     "Python.Verify Alien Dictionary.executor": "Run",
     "Python.Word Break.executor": "Run",
@@ -316,14 +316,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00144" summary="binary search solution">
-      <option name="closed" value="true" />
-      <created>1748851748313</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1748851748313</updated>
     </task>
     <task id="LOCAL-00145" summary="binary search with lower bound">
       <option name="closed" value="true" />
@@ -709,7 +701,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751038319658</updated>
     </task>
-    <option name="localTasksCounter" value="193" />
+    <task id="LOCAL-00193" summary="greedy approach">
+      <option name="closed" value="true" />
+      <created>1751041228419</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1751041228419</updated>
+    </task>
+    <option name="localTasksCounter" value="194" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -717,7 +717,6 @@
     <MESSAGE value="topological sort" />
     <MESSAGE value="dfs" />
     <MESSAGE value="use 2 pointer solution" />
-    <MESSAGE value="greedy approach" />
     <MESSAGE value="Kruskal algo" />
     <MESSAGE value="using DSU with separate class and modified Kruskal" />
     <MESSAGE value="attempt of finding peak and binary search in each half" />
@@ -738,7 +737,8 @@
     <MESSAGE value="by bottom up dp" />
     <MESSAGE value="top down dp with memoization" />
     <MESSAGE value="bottom up dp space optimized" />
-    <option name="LAST_COMMIT_MESSAGE" value="bottom up dp space optimized" />
+    <MESSAGE value="greedy approach" />
+    <option name="LAST_COMMIT_MESSAGE" value="greedy approach" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -932,6 +932,11 @@
           <url>file://$PROJECT_DIR$/2025/Jun_25/Search in rotated sorted array.py</url>
           <line>4</line>
           <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/Jun_25/Valid Parenthesis String.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="142" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
