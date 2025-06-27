@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="top down dp with memoization">
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="bottom up dp space optimized">
+      <change afterPath="$PROJECT_DIR$/2025/Jun_25/Valid Parenthesis String.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/Jun_25/House Robber.py" beforeDir="false" afterPath="$PROJECT_DIR$/2025/Jun_25/House Robber.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,6 +163,7 @@
     "Python.Unique Paths 2.executor": "Run",
     "Python.Unique Paths.executor": "Run",
     "Python.Valid Palindrome.executor": "Run",
+    "Python.Valid Parenthesis String.executor": "Run",
     "Python.Valid Parenthesis.executor": "Run",
     "Python.Verify Alien Dictionary.executor": "Run",
     "Python.Word Break.executor": "Run",
@@ -180,7 +181,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.House Robber">
+  <component name="RunManager" selected="Python.Valid Parenthesis String">
     <configuration name="House Robber" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -247,28 +248,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Sort Colours" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Sort Colours.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Unique Paths 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -291,13 +270,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Valid Parenthesis String" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Valid Parenthesis String.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Valid Parenthesis String" />
         <item itemvalue="Python.House Robber" />
         <item itemvalue="Python.Unique Paths 2" />
         <item itemvalue="Python.Remove Duplicates from sorted array" />
         <item itemvalue="Python.Search in rotated sorted array" />
-        <item itemvalue="Python.Sort Colours" />
       </list>
     </recent_temporary>
   </component>
@@ -315,14 +316,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00143" summary="recursive solution">
-      <option name="closed" value="true" />
-      <created>1748848165744</created>
-      <option name="number" value="00143" />
-      <option name="presentableId" value="LOCAL-00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1748848165744</updated>
     </task>
     <task id="LOCAL-00144" summary="binary search solution">
       <option name="closed" value="true" />
@@ -708,11 +701,18 @@
       <option name="project" value="LOCAL" />
       <updated>1751037542785</updated>
     </task>
-    <option name="localTasksCounter" value="192" />
+    <task id="LOCAL-00192" summary="bottom up dp space optimized">
+      <option name="closed" value="true" />
+      <created>1751038319658</created>
+      <option name="number" value="00192" />
+      <option name="presentableId" value="LOCAL-00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1751038319658</updated>
+    </task>
+    <option name="localTasksCounter" value="193" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="using dictionary and simulate as an ordered dict" />
     <MESSAGE value="bottom up and top down DP" />
     <MESSAGE value="topological sort" />
     <MESSAGE value="dfs" />
@@ -737,7 +737,8 @@
     <MESSAGE value="by top down dp and memoization" />
     <MESSAGE value="by bottom up dp" />
     <MESSAGE value="top down dp with memoization" />
-    <option name="LAST_COMMIT_MESSAGE" value="top down dp with memoization" />
+    <MESSAGE value="bottom up dp space optimized" />
+    <option name="LAST_COMMIT_MESSAGE" value="bottom up dp space optimized" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
