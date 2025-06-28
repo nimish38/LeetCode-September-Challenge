@@ -36,14 +36,15 @@ class Solution(object):
             else:
                 st.append(c)
 
-        for _ in st:
+        for i in range(len(st) - 1, -1, -1):
+            _ = st[i]
             if _ == '(':
-                opencnt += 1
+                starcnt -= 1
+                if starcnt < 0:
+                    return False
             else:
                 starcnt += _
+        return True
 
-        if opencnt == 0 or opencnt == starcnt:
-            return True
-        return False
 
-print(Solution().checkValidString(s = "((((()(()()()*()(((((*)()*(**(())))))(())()())(((())())())))))))(((((())*)))()))(()((*()*(*)))(*)()"))
+print(Solution().checkValidString(s = "(((((*(()((((*((**(((()()*)()()()*((((**)())*)*)))))))(())(()))())((*()()(((()((()*(())*(()**)()(())"))

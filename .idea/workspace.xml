@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="greedy approach">
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="manage * correctly">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2025/Jun_25/Valid Parenthesis String.py" beforeDir="false" afterPath="$PROJECT_DIR$/2025/Jun_25/Valid Parenthesis String.py" afterDir="false" />
     </list>
@@ -316,14 +316,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00145" summary="binary search with lower bound">
-      <option name="closed" value="true" />
-      <created>1748854787619</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1748854787619</updated>
     </task>
     <task id="LOCAL-00146" summary="memoization with a trick">
       <option name="closed" value="true" />
@@ -709,11 +701,18 @@
       <option name="project" value="LOCAL" />
       <updated>1751041228419</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="manage * correctly">
+      <option name="closed" value="true" />
+      <created>1751043612349</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1751043612349</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="bottom up and top down DP" />
     <MESSAGE value="topological sort" />
     <MESSAGE value="dfs" />
     <MESSAGE value="use 2 pointer solution" />
@@ -738,7 +737,8 @@
     <MESSAGE value="top down dp with memoization" />
     <MESSAGE value="bottom up dp space optimized" />
     <MESSAGE value="greedy approach" />
-    <option name="LAST_COMMIT_MESSAGE" value="greedy approach" />
+    <MESSAGE value="manage * correctly" />
+    <option name="LAST_COMMIT_MESSAGE" value="manage * correctly" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -935,8 +935,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/2025/Jun_25/Valid Parenthesis String.py</url>
-          <line>4</line>
-          <option name="timeStamp" value="142" />
+          <line>38</line>
+          <option name="timeStamp" value="143" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
