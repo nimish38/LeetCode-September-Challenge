@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use dfs to get all nodes and then iterate">
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="attempt using prefix sum">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2025/Jun_25/Range Sum Query.py" beforeDir="false" afterPath="$PROJECT_DIR$/2025/Jun_25/Range Sum Query.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +131,7 @@
     "Python.Product of array except self.executor": "Run",
     "Python.Pseudo Critical Edges of MST.executor": "Run",
     "Python.Quad Tree.executor": "Debug",
+    "Python.Range Sum Query.executor": "Run",
     "Python.Reconstuct Itinerary.executor": "Run",
     "Python.Remove Duplicates from sorted array.executor": "Run",
     "Python.Remove nth node from end.executor": "Debug",
@@ -181,7 +183,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Single Number">
+  <component name="RunManager" selected="Python.Range Sum Query">
     <configuration name="House Robber" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -204,7 +206,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Remove Duplicates from sorted array" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Range Sum Query" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -217,7 +219,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Remove Duplicates from sorted array.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Range Sum Query.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -294,11 +296,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Range Sum Query" />
         <item itemvalue="Python.Single Number" />
         <item itemvalue="Python.Valid Parenthesis String" />
         <item itemvalue="Python.House Robber" />
         <item itemvalue="Python.Unique Paths 2" />
-        <item itemvalue="Python.Remove Duplicates from sorted array" />
       </list>
     </recent_temporary>
   </component>
@@ -316,14 +318,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00149" summary="use dictionary to store maxfreq and get valid solutions">
-      <option name="closed" value="true" />
-      <created>1749056854291</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1749056854291</updated>
     </task>
     <task id="LOCAL-00150" summary="recursive solutions">
       <option name="closed" value="true" />
@@ -709,11 +703,18 @@
       <option name="project" value="LOCAL" />
       <updated>1751185284640</updated>
     </task>
-    <option name="localTasksCounter" value="198" />
+    <task id="LOCAL-00198" summary="attempt using prefix sum">
+      <option name="closed" value="true" />
+      <created>1751309203889</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1751309203889</updated>
+    </task>
+    <option name="localTasksCounter" value="199" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Kruskal algo" />
     <MESSAGE value="using DSU with separate class and modified Kruskal" />
     <MESSAGE value="attempt of finding peak and binary search in each half" />
     <MESSAGE value="finding peak and binary search in each half" />
@@ -738,7 +739,8 @@
     <MESSAGE value="using stack and then greedy approach and balance" />
     <MESSAGE value="using xor logic" />
     <MESSAGE value="use dfs to get all nodes and then iterate" />
-    <option name="LAST_COMMIT_MESSAGE" value="use dfs to get all nodes and then iterate" />
+    <MESSAGE value="attempt using prefix sum" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempt using prefix sum" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
