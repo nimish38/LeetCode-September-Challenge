@@ -1,23 +1,23 @@
-from collections import Counter
-
-
 class Solution(object):
     def checkInclusion(self, s1, s2):
-        s1, cnt = Counter(s1), len(s1)
+        if len(s2) < len(s1):
+            return False
+        main, side, j, i = {}, {}, len(s1), 0
+        for _ in range(97, 123):
+            main[chr(_)] = 0
+            side[chr(_)] = 0
 
-        def check(i):
-            dic = s1.copy()
-            for ind in range(i, i + cnt):
-                if s2[ind] not in dic:
-                    return False
-                dic[s2[ind]] -= 1
-                if dic[s2[ind]] == 0:
-                    del dic[s2[ind]]
-            return True
+        for _ in range(len(s1)):
+            main[s1[_]] += 1
+            side[s2[_]] += 1
 
-        for i in range(len(s2) - cnt + 1):
-            if s2[i] in s1 and check(i):
+        while j < len(s2):
+            if main == side:
                 return True
-        return False
+            side[s2[j]] += 1
+            j += 1
+            side[s2[i]] -= 1
+            i += 1
+        return main == side
 
 print(Solution().checkInclusion(s1 = "adc", s2 = "dcda"))
