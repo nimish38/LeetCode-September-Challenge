@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="check linearly">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/Jul_25/Permutation in String.py" beforeDir="false" afterPath="$PROJECT_DIR$/2025/Jul_25/Permutation in String.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use hashtables to store frequencies">
+      <change afterPath="$PROJECT_DIR$/2025/Jul_25/Two Sum.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,14 +318,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00154" summary="use ascii values">
-      <option name="closed" value="true" />
-      <created>1749150069761</created>
-      <option name="number" value="00154" />
-      <option name="presentableId" value="LOCAL-00154" />
-      <option name="project" value="LOCAL" />
-      <updated>1749150069761</updated>
     </task>
     <task id="LOCAL-00155" summary="use max heap and greedy strategy">
       <option name="closed" value="true" />
@@ -712,11 +703,18 @@
       <option name="project" value="LOCAL" />
       <updated>1751395744009</updated>
     </task>
-    <option name="localTasksCounter" value="203" />
+    <task id="LOCAL-00203" summary="use hashtables to store frequencies">
+      <option name="closed" value="true" />
+      <created>1751472506596</created>
+      <option name="number" value="00203" />
+      <option name="presentableId" value="LOCAL-00203" />
+      <option name="project" value="LOCAL" />
+      <updated>1751472506596</updated>
+    </task>
+    <option name="localTasksCounter" value="204" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use char appending instead of slicing" />
     <MESSAGE value="Bottom up approach" />
     <MESSAGE value="simple binary search" />
     <MESSAGE value="use greedy and max heap" />
@@ -741,7 +739,8 @@
     <MESSAGE value="its m X n matrix" />
     <MESSAGE value="2 pointer" />
     <MESSAGE value="check linearly" />
-    <option name="LAST_COMMIT_MESSAGE" value="check linearly" />
+    <MESSAGE value="use hashtables to store frequencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="use hashtables to store frequencies" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -943,7 +942,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/2025/Jul_25/Permutation in String.py</url>
-          <line>11</line>
+          <line>13</line>
           <option name="timeStamp" value="146" />
         </line-breakpoint>
       </breakpoints>
