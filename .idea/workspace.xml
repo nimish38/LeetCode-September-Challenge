@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use hashtables to store frequencies">
-      <change afterPath="$PROJECT_DIR$/2025/Jul_25/Two Sum.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="use hash">
+      <change afterPath="$PROJECT_DIR$/2025/Jul_25/Plus One.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +128,7 @@
     "Python.Permutation in String.executor": "Run",
     "Python.Permutations 2.executor": "Run",
     "Python.Permutations.executor": "Run",
+    "Python.Plus One.executor": "Run",
     "Python.Pow.executor": "Run",
     "Python.Product of array except self.executor": "Run",
     "Python.Pseudo Critical Edges of MST.executor": "Run",
@@ -183,29 +185,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Permutation in String">
-    <configuration name="House Robber" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/House Robber.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Plus One">
     <configuration name="Permutation in String" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -220,6 +200,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jul_25/Permutation in String.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Plus One" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jul_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jul_25/Plus One.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -296,11 +298,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Plus One" />
         <item itemvalue="Python.Permutation in String" />
         <item itemvalue="Python.Range Sum Query" />
         <item itemvalue="Python.Single Number" />
         <item itemvalue="Python.Valid Parenthesis String" />
-        <item itemvalue="Python.House Robber" />
       </list>
     </recent_temporary>
   </component>
@@ -318,14 +320,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00155" summary="use max heap and greedy strategy">
-      <option name="closed" value="true" />
-      <created>1749235960126</created>
-      <option name="number" value="00155" />
-      <option name="presentableId" value="LOCAL-00155" />
-      <option name="project" value="LOCAL" />
-      <updated>1749235960126</updated>
     </task>
     <task id="LOCAL-00156" summary="use set for backtracking template and then use swap logic">
       <option name="closed" value="true" />
@@ -711,11 +705,18 @@
       <option name="project" value="LOCAL" />
       <updated>1751472506596</updated>
     </task>
-    <option name="localTasksCounter" value="204" />
+    <task id="LOCAL-00204" summary="use hash">
+      <option name="closed" value="true" />
+      <created>1751474405594</created>
+      <option name="number" value="00204" />
+      <option name="presentableId" value="LOCAL-00204" />
+      <option name="project" value="LOCAL" />
+      <updated>1751474405594</updated>
+    </task>
+    <option name="localTasksCounter" value="205" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Bottom up approach" />
     <MESSAGE value="simple binary search" />
     <MESSAGE value="use greedy and max heap" />
     <MESSAGE value="use 2 loops and then 2 pointers" />
@@ -740,7 +741,8 @@
     <MESSAGE value="2 pointer" />
     <MESSAGE value="check linearly" />
     <MESSAGE value="use hashtables to store frequencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="use hashtables to store frequencies" />
+    <MESSAGE value="use hash" />
+    <option name="LAST_COMMIT_MESSAGE" value="use hash" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
