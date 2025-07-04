@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using carry variable">
-      <change afterPath="$PROJECT_DIR$/2025/Jul_25/Split Array Largest Sum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using DP + memoization + pruning technique">
+      <change beforePath="$PROJECT_DIR$/2025/Jul_25/Split Array Largest Sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/2025/Jul_25/Split Array Largest Sum.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -321,14 +320,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00157" summary="use dict for backtracking template and then use swap logic">
-      <option name="closed" value="true" />
-      <created>1749324342231</created>
-      <option name="number" value="00157" />
-      <option name="presentableId" value="LOCAL-00157" />
-      <option name="project" value="LOCAL" />
-      <updated>1749324342231</updated>
     </task>
     <task id="LOCAL-00158" summary="normal iterative binary search">
       <option name="closed" value="true" />
@@ -714,11 +705,18 @@
       <option name="project" value="LOCAL" />
       <updated>1751569269833</updated>
     </task>
-    <option name="localTasksCounter" value="206" />
+    <task id="LOCAL-00206" summary="using DP + memoization + pruning technique">
+      <option name="closed" value="true" />
+      <created>1751653848029</created>
+      <option name="number" value="00206" />
+      <option name="presentableId" value="LOCAL-00206" />
+      <option name="project" value="LOCAL" />
+      <updated>1751653848029</updated>
+    </task>
+    <option name="localTasksCounter" value="207" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use greedy and max heap" />
     <MESSAGE value="use 2 loops and then 2 pointers" />
     <MESSAGE value="use Dp top down" />
     <MESSAGE value="As many trades possible just check if we get positive value" />
@@ -743,7 +741,8 @@
     <MESSAGE value="use hashtables to store frequencies" />
     <MESSAGE value="use hash" />
     <MESSAGE value="using carry variable" />
-    <option name="LAST_COMMIT_MESSAGE" value="using carry variable" />
+    <MESSAGE value="using DP + memoization + pruning technique" />
+    <option name="LAST_COMMIT_MESSAGE" value="using DP + memoization + pruning technique" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -947,6 +946,16 @@
           <url>file://$PROJECT_DIR$/2025/Jul_25/Permutation in String.py</url>
           <line>13</line>
           <option name="timeStamp" value="146" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/Jul_25/Split Array Largest Sum.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2025/Jul_25/Split Array Largest Sum.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="148" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

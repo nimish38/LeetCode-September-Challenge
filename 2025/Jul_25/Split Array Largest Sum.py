@@ -1,18 +1,28 @@
 class Solution(object):
     def splitArray(self, nums, k):
-        memo = [[-1] * (k + 1) for _ in range(len(nums))]
-        def solve(ind, k):
-            if k == 1:
-                return sum(nums[ind:])
-            if memo[ind][k] == -1:
-                curr, res = 0, float('inf')
-                for i in range(ind, len(nums) - k + 1):
-                    curr += nums[i]
-                    res = min(res, max(curr, solve(i + 1, k - 1)))
-                    if curr > res:
-                        break
-                memo[ind][k] = res
-            return memo[ind][k]
-        return solve(0, k)
+        l, r, best = float('-inf'), 0, -1
+        for num in nums:
+            if num > l:
+                l = num
+            r += num
 
-print(Solution().splitArray(nums = [7,2,5,10,8], k = 2))
+        def checkSplitting(val):
+            i, curr, grp = 0, 0, 1
+            while i < len(nums) and grp <= k:
+                if curr + nums[i] <= val:
+                    curr += nums[i]
+                else:
+                    curr = nums[i]
+                    grp += 1
+                i += 1
+            return grp <= k
+
+        while l <= r:
+            mid = ((r - l) // 2) + l
+            if checkSplitting(mid):
+                best, r = mid, mid - 1
+            else:
+                l = mid + 1
+        return best
+
+print(Solution().splitArray(nums = [1,2,3,4,5], k = 2))
