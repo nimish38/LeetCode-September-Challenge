@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using DP + memoization + pruning technique">
-      <change beforePath="$PROJECT_DIR$/2025/Jul_25/Split Array Largest Sum.py" beforeDir="false" afterPath="$PROJECT_DIR$/2025/Jul_25/Split Array Largest Sum.py" afterDir="false" />
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using binary search + greedy">
+      <change afterPath="$PROJECT_DIR$/2025/Jul_25/Fink K closest elements.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +186,29 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Split Array Largest Sum">
+  <component name="RunManager" selected="Python.Fink K closest elements">
+    <configuration name="Fink K closest elements" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="LeetCodes" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jul_25" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jul_25/Fink K closest elements.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Permutation in String" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -252,28 +275,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Single Number" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="LeetCodes" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Single Number.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Split Array Largest Sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -298,11 +299,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Fink K closest elements" />
         <item itemvalue="Python.Split Array Largest Sum" />
         <item itemvalue="Python.Plus One" />
         <item itemvalue="Python.Permutation in String" />
         <item itemvalue="Python.Range Sum Query" />
-        <item itemvalue="Python.Single Number" />
       </list>
     </recent_temporary>
   </component>
@@ -320,14 +321,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00158" summary="normal iterative binary search">
-      <option name="closed" value="true" />
-      <created>1749367472035</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1749367472035</updated>
     </task>
     <task id="LOCAL-00159" summary="build reverse adjacency list by dfs on prerequisites">
       <option name="closed" value="true" />
@@ -713,11 +706,18 @@
       <option name="project" value="LOCAL" />
       <updated>1751653848029</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="using binary search + greedy">
+      <option name="closed" value="true" />
+      <created>1751654718346</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1751654718346</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use 2 loops and then 2 pointers" />
     <MESSAGE value="use Dp top down" />
     <MESSAGE value="As many trades possible just check if we get positive value" />
     <MESSAGE value="three pointer solution" />
@@ -742,7 +742,8 @@
     <MESSAGE value="use hash" />
     <MESSAGE value="using carry variable" />
     <MESSAGE value="using DP + memoization + pruning technique" />
-    <option name="LAST_COMMIT_MESSAGE" value="using DP + memoization + pruning technique" />
+    <MESSAGE value="using binary search + greedy" />
+    <option name="LAST_COMMIT_MESSAGE" value="using binary search + greedy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -946,16 +947,6 @@
           <url>file://$PROJECT_DIR$/2025/Jul_25/Permutation in String.py</url>
           <line>13</line>
           <option name="timeStamp" value="146" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/2025/Jul_25/Split Array Largest Sum.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="147" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/2025/Jul_25/Split Array Largest Sum.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="148" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
