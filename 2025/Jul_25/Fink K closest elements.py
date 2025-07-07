@@ -1,15 +1,12 @@
-import heapq
-
 class Solution(object):
     def findClosestElements(self, arr, k, x):
-        heap, res = [], []
-        for num in arr:
-            if len(heap) == k:
-                heapq.heappushpop(heap, (-abs(num - x), -num))
+        l, r = 0, len(arr) - k
+        while l < r:
+            mid = (r + l) // 2
+            if x - arr[mid] > arr[mid + k] - x:
+                l = mid + 1
             else:
-                heapq.heappush(heap, (-abs(num - x), -num))
-        for diff, val in heap:
-            res.append(-val)
-        return sorted(res)
+                r = mid
+        return arr[l : l + k]
 
-print(Solution().findClosestElements(arr = [1,2,3,4,5], k = 4, x = 3))
+print(Solution().findClosestElements(arr = [1,1,2,2,2,2,2,3,3], k = 3, x = 3))
