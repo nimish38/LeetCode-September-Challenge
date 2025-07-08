@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using priority queue solution">
+    <list default="true" id="a4f9fac6-4e6c-498c-98b2-039ff69c8bd1" name="Changes" comment="using binary search with a sliding window">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2025/Jul_25/Fink K closest elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/2025/Jul_25/Fink K closest elements.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +81,7 @@
     "Python.Find K largest element.executor": "Run",
     "Python.Find in Mountain array.executor": "Run",
     "Python.Find the town judge.executor": "Run",
-    "Python.Fink K closest elements.executor": "Run",
+    "Python.Fink K closest elements.executor": "Debug",
     "Python.Generate Parenthesis.executor": "Run",
     "Python.Graph Valid tree.executor": "Run",
     "Python.Hand of Straights.executor": "Run",
@@ -187,7 +186,7 @@
       <recent name="C:\Users\HP\PycharmProjects\LeetCode-September-Challenge\2025\May_25" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Fink K closest elements">
+  <component name="RunManager" selected="Python.Remove Element">
     <configuration name="Fink K closest elements" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
@@ -254,7 +253,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Range Sum Query" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Remove Element" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LeetCodes" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -263,11 +262,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jun_25" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2025/Jul_25" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jun_25/Range Sum Query.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2025/Jul_25/Remove Element.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -300,11 +299,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Remove Element" />
         <item itemvalue="Python.Fink K closest elements" />
         <item itemvalue="Python.Split Array Largest Sum" />
         <item itemvalue="Python.Plus One" />
         <item itemvalue="Python.Permutation in String" />
-        <item itemvalue="Python.Range Sum Query" />
       </list>
     </recent_temporary>
   </component>
@@ -322,14 +321,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1745426613903</updated>
-    </task>
-    <task id="LOCAL-00161" summary="use stack">
-      <option name="closed" value="true" />
-      <created>1749575518829</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1749575518829</updated>
     </task>
     <task id="LOCAL-00162" summary="use dfs and keep track of max path">
       <option name="closed" value="true" />
@@ -715,11 +706,18 @@
       <option name="project" value="LOCAL" />
       <updated>1751910574095</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="using binary search with a sliding window">
+      <option name="closed" value="true" />
+      <created>1751914878900</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1751914878900</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="three pointer solution" />
     <MESSAGE value="use binary search on the sorted part" />
     <MESSAGE value="check previous element" />
     <MESSAGE value="by backtracking method" />
@@ -744,7 +742,8 @@
     <MESSAGE value="using binary search + greedy" />
     <MESSAGE value="using dictionary and lots of sorting" />
     <MESSAGE value="using priority queue solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="using priority queue solution" />
+    <MESSAGE value="using binary search with a sliding window" />
+    <option name="LAST_COMMIT_MESSAGE" value="using binary search with a sliding window" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
